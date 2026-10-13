@@ -2,7 +2,7 @@
   "id": "c3_s4",
   "name": "Mire Chieftain",
   "chapter": 3,
-  "baseInk": 1650,
+  "baseInk": 1120,
   "starts": [
     {
       "x": 360,
@@ -14,7 +14,7 @@
       "type": "goblin_king",
       "x": 360,
       "y": 164,
-      "scale": 0.43
+      "scale": 0.45
     }
   ],
   "obstacles": [],
@@ -156,7 +156,8 @@
           "type": "goblin_archer",
           "count": 2
         }
-      ]
+      ],
+      "loot": "hp_up"
     },
     {
       "x": 500,
@@ -170,7 +171,8 @@
           "type": "goblin_archer",
           "count": 2
         }
-      ]
+      ],
+      "loot": "shield"
     },
     {
       "x": 360,
@@ -184,12 +186,13 @@
           "type": "goblin",
           "count": 3
         }
-      ]
+      ],
+      "loot": "coins"
     }
   ],
   "enemySquads": [
     {
-      "spawnDelay": 5,
+      "spawnDelay": 13,
       "speed": 55,
       "units": [
         {
@@ -199,26 +202,20 @@
       ],
       "route": [
         [
-          88,
-          500
-        ],
-        [
           220,
-          460
+          276
         ],
         [
-          220,
-          260
-        ],
-        [
-          336,
-          188
+          320,
+          192
         ]
       ],
-      "id": "s0"
+      "id": "s0",
+      "camp": 0,
+      "origDelay": 5
     },
     {
-      "spawnDelay": 7,
+      "spawnDelay": 19,
       "speed": 50,
       "units": [
         {
@@ -232,23 +229,17 @@
       ],
       "route": [
         [
-          632,
-          500
-        ],
-        [
           500,
-          460
+          276
         ],
         [
-          500,
-          260
-        ],
-        [
-          384,
-          188
+          400,
+          192
         ]
       ],
-      "id": "s1"
+      "id": "s1",
+      "camp": 1,
+      "origDelay": 7
     }
   ],
   "bonusSquadRoute": [
@@ -268,43 +259,27 @@
         852
       ],
       [
-        240,
-        632
+        360,
+        664
       ],
       [
-        240,
+        360,
+        568
+      ],
+      [
+        472,
+        488
+      ],
+      [
+        472,
         336
       ],
       [
-        440,
+        280,
         304
       ],
       [
-        472,
-        336
-      ],
-      [
-        472,
-        480
-      ],
-      [
-        424,
-        480
-      ],
-      [
-        488,
-        528
-      ],
-      [
-        488,
-        696
-      ],
-      [
-        472,
-        312
-      ],
-      [
-        384,
+        336,
         224
       ]
     ]
@@ -317,8 +292,8 @@
     "h": 800
   },
   "design": {
-    "winInk": 623,
-    "threeStarInk": 1610,
+    "winInk": 621,
+    "threeStarInk": 1091,
     "threeStarBrush": "quill"
   }
 }

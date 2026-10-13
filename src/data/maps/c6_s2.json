@@ -2,7 +2,7 @@
   "id": "c6_s2",
   "name": "Healers' Hollow",
   "chapter": 6,
-  "baseInk": 1600,
+  "baseInk": 1550,
   "starts": [
     {
       "x": 360,
@@ -14,7 +14,7 @@
       "type": "goblin_chief",
       "x": 360,
       "y": 114,
-      "scale": 1.26
+      "scale": 0.88
     }
   ],
   "obstacles": [
@@ -94,7 +94,8 @@
           "type": "goblin",
           "count": 2
         }
-      ]
+      ],
+      "loot": "atk_up"
     },
     {
       "x": 599,
@@ -108,7 +109,8 @@
           "type": "goblin_archer",
           "count": 1
         }
-      ]
+      ],
+      "loot": "coins"
     },
     {
       "x": 378,
@@ -118,12 +120,13 @@
           "type": "goblin",
           "count": 2
         }
-      ]
+      ],
+      "loot": "ink"
     }
   ],
   "enemySquads": [
     {
-      "spawnDelay": 0,
+      "spawnDelay": 8,
       "speed": 50,
       "units": [
         {
@@ -138,30 +141,20 @@
       "route": [
         [
           599,
-          316
+          500
         ],
         [
-          599,
-          776
+          512,
+          232
         ],
         [
-          378,
-          831
-        ],
-        [
-          136,
-          776
-        ],
-        [
-          136,
-          270
-        ],
-        [
-          332,
-          141
+          344,
+          152
         ]
       ],
-      "id": "s0"
+      "id": "s0",
+      "camp": 1,
+      "origDelay": 0
     }
   ],
   "bonusSquadRoute": [
@@ -230,7 +223,7 @@
     "h": 920
   },
   "design": {
-    "winInk": 1502,
+    "winInk": 880,
     "threeStarInk": 2212,
     "threeStarBrush": "marsh"
   }

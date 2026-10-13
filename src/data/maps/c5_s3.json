@@ -2,7 +2,7 @@
   "id": "c5_s3",
   "name": "Dust Devils",
   "chapter": 5,
-  "baseInk": 1320,
+  "baseInk": 2160,
   "starts": [
     {
       "x": 360,
@@ -14,7 +14,7 @@
       "type": "goblin_chief",
       "x": 360,
       "y": 130,
-      "scale": 1.14
+      "scale": 1.62
     }
   ],
   "obstacles": [],
@@ -130,7 +130,8 @@
           "type": "goblin_archer",
           "count": 2
         }
-      ]
+      ],
+      "loot": "coins"
     },
     {
       "x": 158,
@@ -140,7 +141,8 @@
           "type": "goblin",
           "count": 3
         }
-      ]
+      ],
+      "loot": "atk_up"
     },
     {
       "x": 562,
@@ -154,12 +156,13 @@
           "type": "goblin_archer",
           "count": 1
         }
-      ]
+      ],
+      "loot": "coins"
     }
   ],
   "enemySquads": [
     {
-      "spawnDelay": 4,
+      "spawnDelay": 12,
       "speed": 55,
       "units": [
         {
@@ -169,22 +172,20 @@
       ],
       "route": [
         [
-          659,
-          456
+          562,
+          729
         ],
         [
-          360,
-          456
-        ],
-        [
-          61,
-          456
+          72,
+          464
         ]
       ],
-      "id": "s0"
+      "id": "s0",
+      "camp": 2,
+      "origDelay": 4
     },
     {
-      "spawnDelay": 0,
+      "spawnDelay": 12,
       "speed": 55,
       "units": [
         {
@@ -194,15 +195,17 @@
       ],
       "route": [
         [
-          61,
-          192
+          158,
+          324
         ],
         [
-          334,
-          157
+          320,
+          168
         ]
       ],
-      "id": "s1"
+      "id": "s1",
+      "camp": 1,
+      "origDelay": 0
     }
   ],
   "bonusSquadRoute": [
@@ -255,7 +258,7 @@
     "h": 880
   },
   "design": {
-    "winInk": 1244,
+    "winInk": 2031,
     "threeStarInk": 2031,
     "threeStarBrush": "reed"
   }

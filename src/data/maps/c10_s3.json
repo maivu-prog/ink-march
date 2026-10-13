@@ -14,7 +14,7 @@
       "type": "shadow_mage",
       "x": 360,
       "y": 80,
-      "scale": 1.17
+      "scale": 1.41
     }
   ],
   "obstacles": [
@@ -154,7 +154,8 @@
           "type": "goblin",
           "count": 2
         }
-      ]
+      ],
+      "loot": "shield"
     },
     {
       "x": 600,
@@ -168,7 +169,8 @@
           "type": "goblin_archer",
           "count": 2
         }
-      ]
+      ],
+      "loot": "coins"
     },
     {
       "x": 620,
@@ -186,7 +188,8 @@
           "type": "goblin_archer",
           "count": 1
         }
-      ]
+      ],
+      "loot": "atk_up"
     }
   ],
   "enemySquads": [
@@ -224,7 +227,7 @@
       "id": "s0"
     },
     {
-      "spawnDelay": 0,
+      "spawnDelay": 12,
       "speed": 55,
       "units": [
         {
@@ -234,15 +237,17 @@
       ],
       "route": [
         [
-          700,
-          250
+          600,
+          180
         ],
         [
-          390,
-          110
+          400,
+          120
         ]
       ],
-      "id": "s1"
+      "id": "s1",
+      "camp": 1,
+      "origDelay": 0
     }
   ],
   "bonusSquadRoute": [

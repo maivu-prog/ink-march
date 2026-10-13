@@ -2,7 +2,7 @@
   "id": "c9_s5",
   "name": "Heart of Shadow",
   "chapter": 9,
-  "baseInk": 2650,
+  "baseInk": 2660,
   "starts": [
     {
       "x": 180,
@@ -18,13 +18,13 @@
       "type": "goblin_king",
       "x": 180,
       "y": 80,
-      "scale": 0.47
+      "scale": 0.67
     },
     {
       "type": "shadow_mage",
       "x": 540,
       "y": 80,
-      "scale": 0.47
+      "scale": 0.67
     }
   ],
   "obstacles": [
@@ -116,7 +116,8 @@
           "type": "goblin",
           "count": 3
         }
-      ]
+      ],
+      "loot": "hp_up"
     },
     {
       "x": 620,
@@ -134,7 +135,8 @@
           "type": "goblin",
           "count": 2
         }
-      ]
+      ],
+      "loot": "shield"
     },
     {
       "x": 360,
@@ -148,12 +150,13 @@
           "type": "goblin_archer",
           "count": 2
         }
-      ]
+      ],
+      "loot": "coins"
     }
   ],
   "enemySquads": [
     {
-      "spawnDelay": 6,
+      "spawnDelay": 14,
       "speed": 45,
       "units": [
         {
@@ -167,18 +170,20 @@
       ],
       "route": [
         [
-          20,
-          250
+          100,
+          420
         ],
         [
-          180,
-          110
+          168,
+          120
         ]
       ],
-      "id": "s0"
+      "id": "s0",
+      "camp": 0,
+      "origDelay": 6
     },
     {
-      "spawnDelay": 6,
+      "spawnDelay": 18,
       "speed": 50,
       "units": [
         {
@@ -192,15 +197,17 @@
       ],
       "route": [
         [
-          700,
-          250
+          620,
+          420
         ],
         [
-          540,
-          110
+          552,
+          120
         ]
       ],
-      "id": "s1"
+      "id": "s1",
+      "camp": 1,
+      "origDelay": 6
     }
   ],
   "bonusSquadRoute": [
@@ -222,6 +229,10 @@
       [
         296,
         880
+      ],
+      [
+        128,
+        776
       ],
       [
         128,
@@ -255,8 +266,8 @@
     "h": 1000
   },
   "design": {
-    "winInk": 2495,
-    "threeStarInk": 2624,
+    "winInk": 2503,
+    "threeStarInk": 2672,
     "threeStarBrush": "marsh"
   }
 }

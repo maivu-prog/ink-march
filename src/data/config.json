@@ -74,5 +74,10 @@
     "#e08a3c"
   ],
   "timeScale": 2,
-  "aggroScale": 0.5
+  "aggroScale": 0.5,
+  "flagHoldSec": 10,
+  "campCoins": 25,
+  "campInk": 150,
+  "gemsPerPick": 20,
+  "campMusterSec": 8
 }

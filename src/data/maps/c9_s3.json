@@ -2,7 +2,7 @@
   "id": "c9_s3",
   "name": "Cursed Crossroads",
   "chapter": 9,
-  "baseInk": 1910,
+  "baseInk": 1190,
   "starts": [
     {
       "x": 360,
@@ -14,7 +14,7 @@
       "type": "shadow_mage",
       "x": 360,
       "y": 80,
-      "scale": 1.11
+      "scale": 1.58
     }
   ],
   "obstacles": [
@@ -179,7 +179,8 @@
           "type": "goblin",
           "count": 3
         }
-      ]
+      ],
+      "loot": "hp_up"
     },
     {
       "x": 525,
@@ -193,7 +194,8 @@
           "type": "goblin",
           "count": 3
         }
-      ]
+      ],
+      "loot": "shield"
     },
     {
       "x": 195,
@@ -207,12 +209,13 @@
           "type": "goblin_archer",
           "count": 2
         }
-      ]
+      ],
+      "loot": "coins"
     }
   ],
   "enemySquads": [
     {
-      "spawnDelay": 4,
+      "spawnDelay": 12,
       "speed": 55,
       "units": [
         {
@@ -222,22 +225,32 @@
       ],
       "route": [
         [
-          20,
-          500
+          195,
+          700
         ],
         [
-          250,
-          420
+          296,
+          440
         ],
         [
-          330,
-          110
+          328,
+          408
+        ],
+        [
+          336,
+          400
+        ],
+        [
+          336,
+          120
         ]
       ],
-      "id": "s0"
+      "id": "s0",
+      "camp": 2,
+      "origDelay": 4
     },
     {
-      "spawnDelay": 8,
+      "spawnDelay": 20,
       "speed": 45,
       "units": [
         {
@@ -247,19 +260,21 @@
       ],
       "route": [
         [
-          700,
-          500
+          525,
+          285
         ],
         [
-          470,
-          420
+          384,
+          168
         ],
         [
-          390,
-          110
+          384,
+          120
         ]
       ],
-      "id": "s1"
+      "id": "s1",
+      "camp": 1,
+      "origDelay": 8
     }
   ],
   "bonusSquadRoute": [
@@ -295,19 +310,11 @@
         312
       ],
       [
-        512,
-        672
+        368,
+        232
       ],
       [
-        424,
-        440
-      ],
-      [
-        384,
-        400
-      ],
-      [
-        376,
+        368,
         144
       ]
     ]
@@ -320,8 +327,8 @@
     "h": 1000
   },
   "design": {
-    "winInk": 803,
-    "threeStarInk": 2688,
+    "winInk": 1116,
+    "threeStarInk": 1706,
     "threeStarBrush": "marsh"
   }
 }

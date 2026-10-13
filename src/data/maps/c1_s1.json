@@ -14,7 +14,7 @@
       "type": "goblin_chief",
       "x": 360,
       "y": 206,
-      "scale": 0.35
+      "scale": 0.37
     }
   ],
   "obstacles": [
@@ -43,7 +43,8 @@
           "type": "goblin",
           "count": 1
         }
-      ]
+      ],
+      "loot": "coins"
     },
     {
       "x": 507,
@@ -53,7 +54,8 @@
           "type": "goblin",
           "count": 1
         }
-      ]
+      ],
+      "loot": "ink"
     },
     {
       "x": 255,
@@ -63,7 +65,8 @@
           "type": "goblin",
           "count": 1
         }
-      ]
+      ],
+      "loot": "hp_up"
     }
   ],
   "enemySquads": [],

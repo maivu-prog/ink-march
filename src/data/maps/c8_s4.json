@@ -14,7 +14,7 @@
       "type": "shadow_mage",
       "x": 360,
       "y": 80,
-      "scale": 1.33
+      "scale": 1.87
     }
   ],
   "obstacles": [
@@ -89,7 +89,8 @@
           "type": "goblin",
           "count": 3
         }
-      ]
+      ],
+      "loot": "ink"
     },
     {
       "x": 620,
@@ -103,7 +104,8 @@
           "type": "goblin",
           "count": 3
         }
-      ]
+      ],
+      "loot": "hp_up"
     },
     {
       "x": 360,
@@ -117,12 +119,13 @@
           "type": "goblin",
           "count": 3
         }
-      ]
+      ],
+      "loot": "shield"
     }
   ],
   "enemySquads": [
     {
-      "spawnDelay": 6,
+      "spawnDelay": 14,
       "speed": 50,
       "units": [
         {
@@ -136,19 +139,17 @@
       ],
       "route": [
         [
-          20,
-          400
+          100,
+          350
         ],
         [
-          360,
-          420
-        ],
-        [
-          360,
-          110
+          344,
+          112
         ]
       ],
-      "id": "s0"
+      "id": "s0",
+      "camp": 0,
+      "origDelay": 6
     }
   ],
   "bonusSquadRoute": [

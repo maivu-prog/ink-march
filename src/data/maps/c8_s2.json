@@ -2,7 +2,7 @@
   "id": "c8_s2",
   "name": "Ferry Point",
   "chapter": 8,
-  "baseInk": 1940,
+  "baseInk": 1950,
   "starts": [
     {
       "x": 180,
@@ -18,13 +18,13 @@
       "type": "shadow_mage",
       "x": 180,
       "y": 80,
-      "scale": 1.28
+      "scale": 1.55
     },
     {
       "type": "shadow_mage",
       "x": 540,
       "y": 80,
-      "scale": 1.28
+      "scale": 1.55
     }
   ],
   "obstacles": [
@@ -117,7 +117,8 @@
           "type": "goblin",
           "count": 3
         }
-      ]
+      ],
+      "loot": "ink"
     },
     {
       "x": 640,
@@ -131,7 +132,8 @@
           "type": "goblin",
           "count": 3
         }
-      ]
+      ],
+      "loot": "hp_up"
     },
     {
       "x": 360,
@@ -145,12 +147,13 @@
           "type": "goblin_archer",
           "count": 1
         }
-      ]
+      ],
+      "loot": "shield"
     }
   ],
   "enemySquads": [
     {
-      "spawnDelay": 5,
+      "spawnDelay": 13,
       "speed": 45,
       "units": [
         {
@@ -164,18 +167,20 @@
       ],
       "route": [
         [
-          20,
-          200
+          80,
+          470
         ],
         [
-          180,
-          110
+          168,
+          120
         ]
       ],
-      "id": "s0"
+      "id": "s0",
+      "camp": 0,
+      "origDelay": 5
     },
     {
-      "spawnDelay": 5,
+      "spawnDelay": 17,
       "speed": 45,
       "units": [
         {
@@ -189,15 +194,17 @@
       ],
       "route": [
         [
-          700,
-          200
+          640,
+          470
         ],
         [
-          540,
-          110
+          552,
+          120
         ]
       ],
-      "id": "s1"
+      "id": "s1",
+      "camp": 1,
+      "origDelay": 5
     }
   ],
   "bonusSquadRoute": [
@@ -221,6 +228,10 @@
         896
       ],
       [
+        112,
+        808
+      ],
+      [
         96,
         536
       ],
@@ -235,19 +246,11 @@
         940
       ],
       [
-        632,
-        832
-      ],
-      [
-        632,
+        624,
         536
       ],
       [
-        488,
-        272
-      ],
-      [
-        528,
+        552,
         144
       ]
     ]
@@ -260,8 +263,8 @@
     "h": 1000
   },
   "design": {
-    "winInk": 1825,
-    "threeStarInk": 2036,
+    "winInk": 1833,
+    "threeStarInk": 2030,
     "threeStarBrush": "golden"
   }
 }

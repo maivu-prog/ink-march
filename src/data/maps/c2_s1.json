@@ -2,7 +2,7 @@
   "id": "c2_s1",
   "name": "Dune Sea",
   "chapter": 2,
-  "baseInk": 1370,
+  "baseInk": 1100,
   "starts": [
     {
       "x": 360,
@@ -14,7 +14,7 @@
       "type": "goblin_chief",
       "x": 360,
       "y": 185,
-      "scale": 1.17
+      "scale": 0.71
     }
   ],
   "obstacles": [],
@@ -84,7 +84,8 @@
           "type": "goblin",
           "count": 2
         }
-      ]
+      ],
+      "loot": "ink"
     },
     {
       "x": 360,
@@ -94,7 +95,8 @@
           "type": "goblin",
           "count": 2
         }
-      ]
+      ],
+      "loot": "hp_up"
     },
     {
       "x": 555,
@@ -108,12 +110,13 @@
           "type": "goblin_archer",
           "count": 1
         }
-      ]
+      ],
+      "loot": "shield"
     }
   ],
   "enemySquads": [
     {
-      "spawnDelay": 5,
+      "spawnDelay": 13,
       "speed": 55,
       "units": [
         {
@@ -123,19 +126,17 @@
       ],
       "route": [
         [
-          105,
-          312
+          180,
+          515
         ],
         [
-          315,
-          238
-        ],
-        [
-          360,
-          200
+          352,
+          216
         ]
       ],
-      "id": "s0"
+      "id": "s0",
+      "camp": 0,
+      "origDelay": 5
     }
   ],
   "bonusSquadRoute": [
@@ -171,12 +172,8 @@
         328
       ],
       [
-        512,
-        336
-      ],
-      [
-        400,
-        232
+        344,
+        248
       ]
     ]
   ],
@@ -188,8 +185,8 @@
     "h": 750
   },
   "design": {
-    "winInk": 619,
-    "threeStarInk": 1337,
+    "winInk": 631,
+    "threeStarInk": 1076,
     "threeStarBrush": "quill"
   }
 }

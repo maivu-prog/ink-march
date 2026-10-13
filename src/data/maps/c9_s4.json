@@ -2,7 +2,7 @@
   "id": "c9_s4",
   "name": "Witch Hunt",
   "chapter": 9,
-  "baseInk": 1840,
+  "baseInk": 1830,
   "starts": [
     {
       "x": 180,
@@ -18,7 +18,7 @@
       "type": "shadow_mage",
       "x": 360,
       "y": 80,
-      "scale": 2.76
+      "scale": 3.87
     }
   ],
   "obstacles": [
@@ -76,7 +76,8 @@
           "type": "goblin",
           "count": 3
         }
-      ]
+      ],
+      "loot": "hp_up"
     },
     {
       "x": 630,
@@ -90,7 +91,8 @@
           "type": "goblin",
           "count": 3
         }
-      ]
+      ],
+      "loot": "shield"
     },
     {
       "x": 360,
@@ -104,12 +106,13 @@
           "type": "goblin_archer",
           "count": 3
         }
-      ]
+      ],
+      "loot": "coins"
     }
   ],
   "enemySquads": [
     {
-      "spawnDelay": 5,
+      "spawnDelay": 13,
       "speed": 50,
       "units": [
         {
@@ -123,18 +126,24 @@
       ],
       "route": [
         [
-          20,
-          250
+          90,
+          500
         ],
         [
-          330,
-          110
+          168,
+          272
+        ],
+        [
+          320,
+          120
         ]
       ],
-      "id": "s0"
+      "id": "s0",
+      "camp": 0,
+      "origDelay": 5
     },
     {
-      "spawnDelay": 5,
+      "spawnDelay": 17,
       "speed": 50,
       "units": [
         {
@@ -148,15 +157,21 @@
       ],
       "route": [
         [
-          700,
-          250
+          630,
+          500
         ],
         [
-          390,
-          110
+          552,
+          272
+        ],
+        [
+          400,
+          120
         ]
       ],
-      "id": "s1"
+      "id": "s1",
+      "camp": 1,
+      "origDelay": 5
     }
   ],
   "bonusSquadRoute": [
@@ -176,11 +191,7 @@
         940
       ],
       [
-        96,
-        832
-      ],
-      [
-        96,
+        120,
         560
       ],
       [
@@ -202,16 +213,12 @@
         940
       ],
       [
-        624,
-        832
-      ],
-      [
-        624,
+        600,
         560
       ],
       [
-        568,
-        312
+        576,
+        320
       ],
       [
         392,
@@ -227,8 +234,8 @@
     "h": 1000
   },
   "design": {
-    "winInk": 1731,
-    "threeStarInk": 1868,
+    "winInk": 1721,
+    "threeStarInk": 1799,
     "threeStarBrush": "golden"
   }
 }

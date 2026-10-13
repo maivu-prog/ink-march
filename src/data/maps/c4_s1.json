@@ -18,13 +18,13 @@
       "type": "goblin_chief",
       "x": 207,
       "y": 143,
-      "scale": 0.66
+      "scale": 1.3
     },
     {
       "type": "goblin_chief",
       "x": 513,
       "y": 143,
-      "scale": 0.66
+      "scale": 1.3
     }
   ],
   "obstacles": [
@@ -113,7 +113,8 @@
           "type": "goblin",
           "count": 3
         }
-      ]
+      ],
+      "loot": "shield"
     },
     {
       "x": 598,
@@ -123,7 +124,8 @@
           "type": "goblin",
           "count": 3
         }
-      ]
+      ],
+      "loot": "coins"
     },
     {
       "x": 360,
@@ -137,12 +139,13 @@
           "type": "goblin_archer",
           "count": 1
         }
-      ]
+      ],
+      "loot": "atk_up"
     }
   ],
   "enemySquads": [
     {
-      "spawnDelay": 4,
+      "spawnDelay": 12,
       "speed": 55,
       "units": [
         {
@@ -152,18 +155,20 @@
       ],
       "route": [
         [
-          71,
-          330
+          122,
+          500
         ],
         [
-          207,
-          202
+          200,
+          216
         ]
       ],
-      "id": "s0"
+      "id": "s0",
+      "camp": 0,
+      "origDelay": 4
     },
     {
-      "spawnDelay": 6,
+      "spawnDelay": 18,
       "speed": 55,
       "units": [
         {
@@ -173,15 +178,17 @@
       ],
       "route": [
         [
-          649,
-          330
+          598,
+          500
         ],
         [
-          513,
-          202
+          520,
+          216
         ]
       ],
-      "id": "s1"
+      "id": "s1",
+      "camp": 1,
+      "origDelay": 6
     }
   ],
   "bonusSquadRoute": [
@@ -227,8 +234,8 @@
         560
       ],
       [
-        568,
-        224
+        592,
+        320
       ],
       [
         544,

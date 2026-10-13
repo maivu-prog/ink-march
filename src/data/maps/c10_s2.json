@@ -2,7 +2,7 @@
   "id": "c10_s2",
   "name": "Ink Moat",
   "chapter": 10,
-  "baseInk": 2290,
+  "baseInk": 2210,
   "starts": [
     {
       "x": 180,
@@ -18,13 +18,13 @@
       "type": "shadow_mage",
       "x": 180,
       "y": 80,
-      "scale": 1.58
+      "scale": 1.71
     },
     {
       "type": "shadow_mage",
       "x": 540,
       "y": 80,
-      "scale": 1.58
+      "scale": 1.71
     }
   ],
   "obstacles": [
@@ -116,7 +116,8 @@
           "type": "goblin",
           "count": 2
         }
-      ]
+      ],
+      "loot": "shield"
     },
     {
       "x": 80,
@@ -134,7 +135,8 @@
           "type": "goblin_archer",
           "count": 1
         }
-      ]
+      ],
+      "loot": "coins"
     },
     {
       "x": 640,
@@ -152,12 +154,13 @@
           "type": "goblin_archer",
           "count": 1
         }
-      ]
+      ],
+      "loot": "atk_up"
     }
   ],
   "enemySquads": [
     {
-      "spawnDelay": 3,
+      "spawnDelay": 11,
       "speed": 55,
       "units": [
         {
@@ -167,18 +170,20 @@
       ],
       "route": [
         [
-          20,
-          200
+          360,
+          230
         ],
         [
-          180,
-          110
+          192,
+          120
         ]
       ],
-      "id": "s0"
+      "id": "s0",
+      "camp": 0,
+      "origDelay": 3
     },
     {
-      "spawnDelay": 3,
+      "spawnDelay": 15,
       "speed": 55,
       "units": [
         {
@@ -188,15 +193,17 @@
       ],
       "route": [
         [
-          700,
-          200
+          640,
+          720
         ],
         [
-          540,
-          110
+          552,
+          120
         ]
       ],
-      "id": "s1"
+      "id": "s1",
+      "camp": 2,
+      "origDelay": 3
     }
   ],
   "bonusSquadRoute": [
@@ -242,16 +249,8 @@
         940
       ],
       [
-        464,
-        832
-      ],
-      [
-        576,
-        736
-      ],
-      [
-        576,
-        280
+        624,
+        784
       ],
       [
         552,
@@ -267,8 +266,8 @@
     "h": 1000
   },
   "design": {
-    "winInk": 2152,
-    "threeStarInk": 2354,
+    "winInk": 2076,
+    "threeStarInk": 2300,
     "threeStarBrush": "marsh"
   }
 }

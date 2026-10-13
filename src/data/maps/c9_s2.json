@@ -2,7 +2,7 @@
   "id": "c9_s2",
   "name": "Twin Shadows",
   "chapter": 9,
-  "baseInk": 2120,
+  "baseInk": 2350,
   "starts": [
     {
       "x": 180,
@@ -18,13 +18,13 @@
       "type": "shadow_mage",
       "x": 180,
       "y": 80,
-      "scale": 1.46
+      "scale": 2.2
     },
     {
       "type": "shadow_mage",
       "x": 540,
       "y": 80,
-      "scale": 1.46
+      "scale": 2.2
     }
   ],
   "obstacles": [
@@ -116,7 +116,8 @@
           "type": "goblin",
           "count": 3
         }
-      ]
+      ],
+      "loot": "hp_up"
     },
     {
       "x": 540,
@@ -130,7 +131,8 @@
           "type": "goblin",
           "count": 3
         }
-      ]
+      ],
+      "loot": "shield"
     },
     {
       "x": 360,
@@ -144,12 +146,13 @@
           "type": "goblin_archer",
           "count": 2
         }
-      ]
+      ],
+      "loot": "coins"
     }
   ],
   "enemySquads": [
     {
-      "spawnDelay": 5,
+      "spawnDelay": 13,
       "speed": 55,
       "units": [
         {
@@ -159,18 +162,20 @@
       ],
       "route": [
         [
-          20,
-          110
+          180,
+          500
         ],
         [
-          180,
-          110
+          184,
+          120
         ]
       ],
-      "id": "s0"
+      "id": "s0",
+      "camp": 0,
+      "origDelay": 5
     },
     {
-      "spawnDelay": 5,
+      "spawnDelay": 17,
       "speed": 50,
       "units": [
         {
@@ -184,15 +189,17 @@
       ],
       "route": [
         [
-          700,
-          110
+          540,
+          500
         ],
         [
-          540,
-          110
+          544,
+          120
         ]
       ],
-      "id": "s1"
+      "id": "s1",
+      "camp": 1,
+      "origDelay": 5
     }
   ],
   "bonusSquadRoute": [
@@ -216,12 +223,24 @@
         920
       ],
       [
-        112,
-        808
+        312,
+        720
       ],
       [
-        152,
-        560
+        312,
+        600
+      ],
+      [
+        304,
+        592
+      ],
+      [
+        240,
+        528
+      ],
+      [
+        104,
+        224
       ],
       [
         168,
@@ -283,8 +302,8 @@
     "h": 1000
   },
   "design": {
-    "winInk": 1831,
-    "threeStarInk": 2596,
+    "winInk": 2217,
+    "threeStarInk": 2512,
     "threeStarBrush": "golden"
   }
 }

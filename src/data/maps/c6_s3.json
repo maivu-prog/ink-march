@@ -2,7 +2,7 @@
   "id": "c6_s3",
   "name": "Mirror Marsh",
   "chapter": 6,
-  "baseInk": 1960,
+  "baseInk": 1740,
   "starts": [
     {
       "x": 194,
@@ -18,13 +18,13 @@
       "type": "goblin_chief",
       "x": 194,
       "y": 114,
-      "scale": 0.64
+      "scale": 0.85
     },
     {
       "type": "goblin_chief",
       "x": 526,
       "y": 114,
-      "scale": 0.64
+      "scale": 0.85
     }
   ],
   "obstacles": [
@@ -102,7 +102,8 @@
           "type": "goblin_archer",
           "count": 2
         }
-      ]
+      ],
+      "loot": "atk_up"
     },
     {
       "x": 618,
@@ -116,7 +117,8 @@
           "type": "goblin_archer",
           "count": 2
         }
-      ]
+      ],
+      "loot": "coins"
     },
     {
       "x": 360,
@@ -130,12 +132,13 @@
           "type": "goblin",
           "count": 3
         }
-      ]
+      ],
+      "loot": "ink"
     }
   ],
   "enemySquads": [
     {
-      "spawnDelay": 5,
+      "spawnDelay": 13,
       "speed": 55,
       "units": [
         {
@@ -145,18 +148,20 @@
       ],
       "route": [
         [
-          360,
-          187
+          102,
+          316
         ],
         [
-          194,
-          150
+          184,
+          160
         ]
       ],
-      "id": "s0"
+      "id": "s0",
+      "camp": 0,
+      "origDelay": 5
     },
     {
-      "spawnDelay": 5,
+      "spawnDelay": 17,
       "speed": 55,
       "units": [
         {
@@ -166,15 +171,17 @@
       ],
       "route": [
         [
-          360,
-          196
+          618,
+          316
         ],
         [
-          526,
-          150
+          536,
+          160
         ]
       ],
-      "id": "s1"
+      "id": "s1",
+      "camp": 1,
+      "origDelay": 5
     }
   ],
   "bonusSquadRoute": [
@@ -253,7 +260,7 @@
     "h": 920
   },
   "design": {
-    "winInk": 1848,
+    "winInk": 1565,
     "threeStarInk": 1848,
     "threeStarBrush": "charcoal"
   }

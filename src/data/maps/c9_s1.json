@@ -2,7 +2,7 @@
   "id": "c9_s1",
   "name": "Thorn Lanes",
   "chapter": 9,
-  "baseInk": 2150,
+  "baseInk": 2980,
   "starts": [
     {
       "x": 360,
@@ -14,7 +14,7 @@
       "type": "shadow_mage",
       "x": 360,
       "y": 80,
-      "scale": 1.15
+      "scale": 2.46
     }
   ],
   "obstacles": [
@@ -91,7 +91,8 @@
           "type": "goblin_archer",
           "count": 1
         }
-      ]
+      ],
+      "loot": "hp_up"
     },
     {
       "x": 630,
@@ -109,7 +110,8 @@
           "type": "goblin_archer",
           "count": 1
         }
-      ]
+      ],
+      "loot": "shield"
     },
     {
       "x": 360,
@@ -123,12 +125,13 @@
           "type": "goblin",
           "count": 3
         }
-      ]
+      ],
+      "loot": "coins"
     }
   ],
   "enemySquads": [
     {
-      "spawnDelay": 4,
+      "spawnDelay": 12,
       "speed": 55,
       "units": [
         {
@@ -138,18 +141,24 @@
       ],
       "route": [
         [
-          20,
-          150
+          90,
+          400
         ],
         [
-          330,
-          110
+          168,
+          184
+        ],
+        [
+          320,
+          120
         ]
       ],
-      "id": "s0"
+      "id": "s0",
+      "camp": 0,
+      "origDelay": 4
     },
     {
-      "spawnDelay": 8,
+      "spawnDelay": 20,
       "speed": 45,
       "units": [
         {
@@ -159,15 +168,21 @@
       ],
       "route": [
         [
-          700,
-          150
+          630,
+          400
         ],
         [
-          390,
-          110
+          552,
+          184
+        ],
+        [
+          400,
+          120
         ]
       ],
-      "id": "s1"
+      "id": "s1",
+      "camp": 1,
+      "origDelay": 8
     }
   ],
   "bonusSquadRoute": [
@@ -236,7 +251,7 @@
     "h": 1000
   },
   "design": {
-    "winInk": 1025,
+    "winInk": 2804,
     "threeStarInk": 2804,
     "threeStarBrush": "marsh"
   }

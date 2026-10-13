@@ -14,7 +14,7 @@
       "type": "goblin_king",
       "x": 360,
       "y": 80,
-      "scale": 0.74
+      "scale": 0.61
     }
   ],
   "obstacles": [
@@ -91,7 +91,8 @@
           "type": "goblin",
           "count": 3
         }
-      ]
+      ],
+      "loot": "ink"
     },
     {
       "x": 100,
@@ -105,7 +106,8 @@
           "type": "goblin_archer",
           "count": 3
         }
-      ]
+      ],
+      "loot": "hp_up"
     },
     {
       "x": 620,
@@ -119,12 +121,13 @@
           "type": "goblin_archer",
           "count": 3
         }
-      ]
+      ],
+      "loot": "shield"
     }
   ],
   "enemySquads": [
     {
-      "spawnDelay": 5,
+      "spawnDelay": 13,
       "speed": 55,
       "units": [
         {
@@ -134,26 +137,20 @@
       ],
       "route": [
         [
-          20,
-          500
+          100,
+          180
         ],
         [
-          360,
-          420
-        ],
-        [
-          360,
-          280
-        ],
-        [
-          360,
-          120
+          344,
+          128
         ]
       ],
-      "id": "s0"
+      "id": "s0",
+      "camp": 1,
+      "origDelay": 5
     },
     {
-      "spawnDelay": 10,
+      "spawnDelay": 22,
       "speed": 45,
       "units": [
         {
@@ -167,19 +164,17 @@
       ],
       "route": [
         [
-          700,
-          500
+          620,
+          180
         ],
         [
-          360,
-          430
-        ],
-        [
-          360,
-          120
+          376,
+          128
         ]
       ],
-      "id": "s1"
+      "id": "s1",
+      "camp": 2,
+      "origDelay": 10
     }
   ],
   "bonusSquadRoute": [
@@ -240,7 +235,7 @@
     "h": 1000
   },
   "design": {
-    "winInk": 1001,
+    "winInk": 950,
     "threeStarInk": 1580,
     "threeStarBrush": "golden"
   }

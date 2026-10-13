@@ -18,7 +18,7 @@
       "type": "goblin_chief",
       "x": 360,
       "y": 114,
-      "scale": 1.91
+      "scale": 1.62
     }
   ],
   "obstacles": [],
@@ -155,7 +155,8 @@
           "type": "goblin",
           "count": 3
         }
-      ]
+      ],
+      "loot": "atk_up"
     },
     {
       "x": 84,
@@ -169,7 +170,8 @@
           "type": "goblin_archer",
           "count": 1
         }
-      ]
+      ],
+      "loot": "coins"
     },
     {
       "x": 636,
@@ -183,12 +185,13 @@
           "type": "goblin_archer",
           "count": 1
         }
-      ]
+      ],
+      "loot": "ink"
     }
   ],
   "enemySquads": [
     {
-      "spawnDelay": 6,
+      "spawnDelay": 14,
       "speed": 50,
       "units": [
         {
@@ -202,19 +205,17 @@
       ],
       "route": [
         [
-          47,
-          270
+          84,
+          224
         ],
         [
-          360,
-          270
-        ],
-        [
-          360,
-          141
+          344,
+          144
         ]
       ],
-      "id": "s0"
+      "id": "s0",
+      "camp": 1,
+      "origDelay": 6
     }
   ],
   "bonusSquadRoute": [
@@ -285,7 +286,7 @@
     "h": 920
   },
   "design": {
-    "winInk": 1423,
+    "winInk": 1364,
     "threeStarInk": 1928,
     "threeStarBrush": "atlas"
   }

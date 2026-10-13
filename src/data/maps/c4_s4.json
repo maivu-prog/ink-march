@@ -2,7 +2,7 @@
   "id": "c4_s4",
   "name": "Twin Fortress",
   "chapter": 4,
-  "baseInk": 1490,
+  "baseInk": 1540,
   "starts": [
     {
       "x": 207,
@@ -18,13 +18,13 @@
       "type": "goblin_king",
       "x": 207,
       "y": 143,
-      "scale": 0.37
+      "scale": 0.57
     },
     {
       "type": "goblin_king",
       "x": 513,
       "y": 143,
-      "scale": 0.37
+      "scale": 0.57
     }
   ],
   "obstacles": [
@@ -88,7 +88,8 @@
           "type": "goblin_archer",
           "count": 2
         }
-      ]
+      ],
+      "loot": "shield"
     },
     {
       "x": 615,
@@ -102,7 +103,8 @@
           "type": "goblin_archer",
           "count": 2
         }
-      ]
+      ],
+      "loot": "coins"
     },
     {
       "x": 360,
@@ -112,12 +114,13 @@
           "type": "goblin",
           "count": 4
         }
-      ]
+      ],
+      "loot": "atk_up"
     }
   ],
   "enemySquads": [
     {
-      "spawnDelay": 8,
+      "spawnDelay": 16,
       "speed": 55,
       "units": [
         {
@@ -127,18 +130,24 @@
       ],
       "route": [
         [
-          71,
-          262
+          105,
+          602
         ],
         [
-          207,
-          177
+          88,
+          304
+        ],
+        [
+          200,
+          192
         ]
       ],
-      "id": "s0"
+      "id": "s0",
+      "camp": 0,
+      "origDelay": 8
     },
     {
-      "spawnDelay": 8,
+      "spawnDelay": 20,
       "speed": 55,
       "units": [
         {
@@ -148,15 +157,21 @@
       ],
       "route": [
         [
-          649,
-          262
+          615,
+          602
         ],
         [
-          513,
-          177
+          632,
+          304
+        ],
+        [
+          520,
+          192
         ]
       ],
-      "id": "s1"
+      "id": "s1",
+      "camp": 1,
+      "origDelay": 8
     }
   ],
   "bonusSquadRoute": [
@@ -214,7 +229,15 @@
         384
       ],
       [
-        480,
+        448,
+        352
+      ],
+      [
+        552,
+        272
+      ],
+      [
+        544,
         200
       ]
     ]
@@ -227,8 +250,8 @@
     "h": 850
   },
   "design": {
-    "winInk": 1376,
-    "threeStarInk": 1587,
+    "winInk": 1375,
+    "threeStarInk": 1636,
     "threeStarBrush": "charcoal"
   }
 }

@@ -2,7 +2,7 @@
   "id": "c4_s2",
   "name": "Crossing Fords",
   "chapter": 4,
-  "baseInk": 1000,
+  "baseInk": 1030,
   "starts": [
     {
       "x": 360,
@@ -14,7 +14,7 @@
       "type": "goblin_chief",
       "x": 360,
       "y": 143,
-      "scale": 1.23
+      "scale": 1.64
     }
   ],
   "obstacles": [
@@ -97,7 +97,8 @@
           "type": "goblin_archer",
           "count": 1
         }
-      ]
+      ],
+      "loot": "shield"
     },
     {
       "x": 556,
@@ -111,7 +112,8 @@
           "type": "goblin_archer",
           "count": 1
         }
-      ]
+      ],
+      "loot": "coins"
     },
     {
       "x": 360,
@@ -125,12 +127,13 @@
           "type": "goblin_archer",
           "count": 1
         }
-      ]
+      ],
+      "loot": "atk_up"
     }
   ],
   "enemySquads": [
     {
-      "spawnDelay": 4,
+      "spawnDelay": 12,
       "speed": 55,
       "units": [
         {
@@ -140,19 +143,17 @@
       ],
       "route": [
         [
-          649,
-          288
+          556,
+          330
         ],
         [
-          360,
-          245
-        ],
-        [
-          360,
-          160
+          376,
+          168
         ]
       ],
-      "id": "s0"
+      "id": "s0",
+      "camp": 1,
+      "origDelay": 4
     }
   ],
   "bonusSquadRoute": [
@@ -189,6 +190,10 @@
       ],
       [
         328,
+        296
+      ],
+      [
+        328,
         200
       ]
     ]
@@ -201,8 +206,8 @@
     "h": 850
   },
   "design": {
-    "winInk": 773,
-    "threeStarInk": 1060,
+    "winInk": 930,
+    "threeStarInk": 1088,
     "threeStarBrush": "charcoal"
   }
 }

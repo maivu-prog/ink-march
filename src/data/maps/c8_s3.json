@@ -2,7 +2,7 @@
   "id": "c8_s3",
   "name": "The Golden Bridge",
   "chapter": 8,
-  "baseInk": 2300,
+  "baseInk": 1530,
   "starts": [
     {
       "x": 360,
@@ -14,7 +14,7 @@
       "type": "shadow_mage",
       "x": 360,
       "y": 80,
-      "scale": 0.99
+      "scale": 1.4
     }
   ],
   "obstacles": [
@@ -87,7 +87,8 @@
           "type": "goblin",
           "count": 3
         }
-      ]
+      ],
+      "loot": "ink"
     },
     {
       "x": 620,
@@ -101,7 +102,8 @@
           "type": "goblin",
           "count": 3
         }
-      ]
+      ],
+      "loot": "hp_up"
     },
     {
       "x": 100,
@@ -115,12 +117,13 @@
           "type": "goblin_archer",
           "count": 2
         }
-      ]
+      ],
+      "loot": "shield"
     }
   ],
   "enemySquads": [
     {
-      "spawnDelay": 0,
+      "spawnDelay": 8,
       "speed": 55,
       "units": [
         {
@@ -130,22 +133,20 @@
       ],
       "route": [
         [
-          20,
-          330
+          100,
+          250
         ],
         [
-          200,
-          220
-        ],
-        [
-          330,
-          110
+          320,
+          120
         ]
       ],
-      "id": "s0"
+      "id": "s0",
+      "camp": 0,
+      "origDelay": 0
     },
     {
-      "spawnDelay": 5,
+      "spawnDelay": 17,
       "speed": 45,
       "units": [
         {
@@ -155,19 +156,17 @@
       ],
       "route": [
         [
-          700,
-          360
-        ],
-        [
-          560,
+          620,
           250
         ],
         [
-          410,
-          110
+          424,
+          120
         ]
       ],
-      "id": "s1"
+      "id": "s1",
+      "camp": 1,
+      "origDelay": 5
     }
   ],
   "bonusSquadRoute": [
@@ -199,39 +198,19 @@
         552
       ],
       [
-        648,
-        440
+        640,
+        312
       ],
       [
         160,
         280
       ],
       [
-        560,
-        280
+        336,
+        312
       ],
       [
-        656,
-        464
-      ],
-      [
-        648,
-        592
-      ],
-      [
-        616,
-        624
-      ],
-      [
-        656,
-        528
-      ],
-      [
-        648,
-        416
-      ],
-      [
-        376,
+        344,
         144
       ]
     ]
@@ -245,7 +224,7 @@
   },
   "design": {
     "winInk": 1006,
-    "threeStarInk": 2808,
+    "threeStarInk": 1869,
     "threeStarBrush": "golden"
   }
 }

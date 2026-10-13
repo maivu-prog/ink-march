@@ -2,7 +2,7 @@
   "id": "c5_s1",
   "name": "Canyon Gate",
   "chapter": 5,
-  "baseInk": 1650,
+  "baseInk": 1570,
   "starts": [
     {
       "x": 360,
@@ -14,7 +14,7 @@
       "type": "goblin_chief",
       "x": 360,
       "y": 130,
-      "scale": 0.51
+      "scale": 1.53
     }
   ],
   "obstacles": [
@@ -98,7 +98,8 @@
           "type": "goblin_archer",
           "count": 1
         }
-      ]
+      ],
+      "loot": "coins"
     },
     {
       "x": 140,
@@ -112,7 +113,8 @@
           "type": "goblin_archer",
           "count": 1
         }
-      ]
+      ],
+      "loot": "atk_up"
     },
     {
       "x": 580,
@@ -126,12 +128,13 @@
           "type": "goblin_archer",
           "count": 1
         }
-      ]
+      ],
+      "loot": "coins"
     }
   ],
   "enemySquads": [
     {
-      "spawnDelay": 6,
+      "spawnDelay": 14,
       "speed": 55,
       "units": [
         {
@@ -141,19 +144,17 @@
       ],
       "route": [
         [
-          61,
-          368
-        ],
-        [
-          360,
+          140,
           280
         ],
         [
-          360,
-          157
+          344,
+          160
         ]
       ],
-      "id": "s0"
+      "id": "s0",
+      "camp": 1,
+      "origDelay": 6
     }
   ],
   "bonusSquadRoute": [
@@ -198,11 +199,7 @@
       ],
       [
         392,
-        320
-      ],
-      [
-        376,
-        192
+        184
       ]
     ]
   ],
@@ -214,8 +211,8 @@
     "h": 880
   },
   "design": {
-    "winInk": 1027,
-    "threeStarInk": 1843,
+    "winInk": 1229,
+    "threeStarInk": 1767,
     "threeStarBrush": "reed"
   }
 }

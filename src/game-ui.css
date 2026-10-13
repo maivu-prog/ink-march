@@ -254,3 +254,8 @@
 .g-stagepill small{display:flex;align-items:center;gap:4px;font-family:var(--fb);font-weight:800;font-size:11px;color:#ffe46b}.g-stagepill small .g-ico{font-size:13px}.g-campstars{top:112px}
 
 .g-campstars{top:62px!important;left:auto!important;right:12px;transform:none!important;font-size:22px}.g-teampick{top:112px!important}
+
+#labels .camp-tag{display:flex;align-items:center;gap:6px}#labels .camp-tag .loot{font-size:10px;padding:1px 6px;border-radius:6px;background:#ffe46b;color:#3a2a0e}#labels .camp-tag .muster{font-size:10px;padding:1px 6px;border-radius:6px;background:#c9302a;color:#fff}
+#labels .camp-star small{display:block;font-size:11px;font-family:var(--fd);color:#fff;background:#c9302a;border-radius:6px;padding:0 5px;text-shadow:none}
+#labels .clash-flag{font-size:26px;color:#3f9fe8;text-shadow:0 2px 0 #0b1626,0 0 8px #fff;transform:translate(-30%,-90%);display:flex;flex-direction:column;align-items:center;line-height:1}#labels .clash-flag.team-1{color:#e08a3c}#labels .clash-flag small{font-size:11px;font-family:var(--fd);color:#fff;background:#2f74c9;border-radius:6px;padding:1px 5px;text-shadow:none}
+.g-inkmeter b small{display:block;font-family:var(--fb);font-weight:900;font-size:11px;color:#9dff9d;text-align:right;line-height:1}

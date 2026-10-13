@@ -14,7 +14,7 @@
       "type": "goblin_king",
       "x": 360,
       "y": 206,
-      "scale": 0.19
+      "scale": 0.34
     }
   ],
   "obstacles": [
@@ -86,7 +86,8 @@
           "type": "goblin_archer",
           "count": 1
         }
-      ]
+      ],
+      "loot": "coins"
     },
     {
       "x": 563,
@@ -100,7 +101,8 @@
           "type": "goblin_archer",
           "count": 1
         }
-      ]
+      ],
+      "loot": "ink"
     },
     {
       "x": 360,
@@ -110,12 +112,13 @@
           "type": "goblin",
           "count": 2
         }
-      ]
+      ],
+      "loot": "hp_up"
     }
   ],
   "enemySquads": [
     {
-      "spawnDelay": 4,
+      "spawnDelay": 12,
       "speed": 55,
       "units": [
         {
@@ -125,30 +128,32 @@
       ],
       "route": [
         [
-          122,
-          654
-        ],
-        [
-          157,
-          430
-        ],
-        [
-          283,
-          346
-        ],
-        [
           360,
-          332
+          640
         ],
         [
-          360,
-          241
+          528,
+          520
+        ],
+        [
+          512,
+          424
+        ],
+        [
+          392,
+          304
+        ],
+        [
+          368,
+          256
         ]
       ],
-      "id": "s0"
+      "id": "s0",
+      "camp": 2,
+      "origDelay": 4
     },
     {
-      "spawnDelay": 8,
+      "spawnDelay": 20,
       "speed": 55,
       "units": [
         {
@@ -158,27 +163,21 @@
       ],
       "route": [
         [
-          598,
-          654
-        ],
-        [
           563,
-          430
+          381
         ],
         [
-          437,
-          346
+          408,
+          320
         ],
         [
-          360,
-          332
-        ],
-        [
-          360,
-          241
+          368,
+          256
         ]
       ],
-      "id": "s1"
+      "id": "s1",
+      "camp": 1,
+      "origDelay": 8
     }
   ],
   "bonusSquadRoute": [
@@ -231,7 +230,7 @@
     "h": 700
   },
   "design": {
-    "winInk": 664,
+    "winInk": 638,
     "threeStarInk": 939,
     "threeStarBrush": "quill"
   }
