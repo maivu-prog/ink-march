@@ -250,3 +250,7 @@
 .tut-block{position:absolute;pointer-events:auto;background:transparent}
 
 .tut-bubble.still~*,.tut .tut-hole{animation-delay:0s}
+
+.g-stagepill small{display:flex;align-items:center;gap:4px;font-family:var(--fb);font-weight:800;font-size:11px;color:#ffe46b}.g-stagepill small .g-ico{font-size:13px}.g-campstars{top:112px}
+
+.g-campstars{top:62px!important;left:auto!important;right:12px;transform:none!important;font-size:22px}.g-teampick{top:112px!important}
