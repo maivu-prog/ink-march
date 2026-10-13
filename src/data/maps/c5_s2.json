@@ -1,0 +1,275 @@
+{
+  "id": "c5_s2",
+  "name": "Twin Locks",
+  "chapter": 5,
+  "baseInk": 1930,
+  "starts": [
+    {
+      "x": 360,
+      "y": 887
+    }
+  ],
+  "bosses": [
+    {
+      "type": "goblin_chief",
+      "x": 360,
+      "y": 130,
+      "scale": 0.61
+    }
+  ],
+  "obstacles": [
+    {
+      "type": "rect",
+      "x": 43,
+      "y": 623,
+      "w": 458,
+      "h": 44
+    },
+    {
+      "type": "rect",
+      "x": 589,
+      "y": 623,
+      "w": 88,
+      "h": 44
+    },
+    {
+      "type": "rect",
+      "x": 43,
+      "y": 350,
+      "w": 88,
+      "h": 44
+    },
+    {
+      "type": "rect",
+      "x": 219,
+      "y": 350,
+      "w": 458,
+      "h": 44
+    }
+  ],
+  "items": [
+    {
+      "type": "key",
+      "x": 122,
+      "y": 782,
+      "color": "red"
+    },
+    {
+      "type": "gate",
+      "color": "red",
+      "rect": {
+        "x": 501,
+        "y": 623,
+        "w": 88,
+        "h": 44
+      }
+    },
+    {
+      "type": "key",
+      "x": 606,
+      "y": 482,
+      "color": "blue"
+    },
+    {
+      "type": "gate",
+      "color": "blue",
+      "rect": {
+        "x": 131,
+        "y": 350,
+        "w": 88,
+        "h": 44
+      }
+    },
+    {
+      "type": "atk_up",
+      "x": 122,
+      "y": 500
+    },
+    {
+      "type": "hp_up",
+      "x": 360,
+      "y": 236
+    }
+  ],
+  "goldZones": [],
+  "terrain": [
+    {
+      "kind": "sand",
+      "points": [
+        [
+          219,
+          667
+        ],
+        [
+          677,
+          667
+        ],
+        [
+          677,
+          843
+        ],
+        [
+          219,
+          843
+        ]
+      ]
+    }
+  ],
+  "camps": [
+    {
+      "x": 360,
+      "y": 500,
+      "units": [
+        {
+          "type": "goblin",
+          "count": 3
+        },
+        {
+          "type": "goblin_archer",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "x": 571,
+      "y": 236,
+      "units": [
+        {
+          "type": "goblin",
+          "count": 3
+        },
+        {
+          "type": "goblin_archer",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "x": 571,
+      "y": 782,
+      "units": [
+        {
+          "type": "goblin",
+          "count": 2
+        },
+        {
+          "type": "goblin_archer",
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "enemySquads": [
+    {
+      "spawnDelay": 5,
+      "speed": 45,
+      "units": [
+        {
+          "type": "orc",
+          "count": 1
+        },
+        {
+          "type": "goblin",
+          "count": 3
+        }
+      ],
+      "route": [
+        [
+          659,
+          553
+        ],
+        [
+          175,
+          518
+        ],
+        [
+          175,
+          280
+        ],
+        [
+          334,
+          157
+        ]
+      ],
+      "id": "s0"
+    }
+  ],
+  "bonusSquadRoute": [
+    [
+      61,
+      500
+    ],
+    [
+      307,
+      166
+    ]
+  ],
+  "referenceSolution": [
+    [
+      [
+        360,
+        887
+      ],
+      [
+        152,
+        808
+      ],
+      [
+        144,
+        800
+      ],
+      [
+        248,
+        848
+      ],
+      [
+        528,
+        848
+      ],
+      [
+        536,
+        840
+      ],
+      [
+        592,
+        504
+      ],
+      [
+        424,
+        504
+      ],
+      [
+        200,
+        392
+      ],
+      [
+        216,
+        336
+      ],
+      [
+        512,
+        264
+      ],
+      [
+        392,
+        240
+      ],
+      [
+        376,
+        192
+      ]
+    ]
+  ],
+  "tutorialHint": "Red key, red gate, blue key, blue gate. The orc band steals on its way.",
+  "field": {
+    "x": 43,
+    "y": 60,
+    "w": 634,
+    "h": 880
+  },
+  "design": {
+    "winInk": 1674,
+    "threeStarInk": 2066,
+    "threeStarBrush": "reed"
+  }
+}

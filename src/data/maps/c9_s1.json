@@ -1,0 +1,243 @@
+{
+  "id": "c9_s1",
+  "name": "Thorn Lanes",
+  "chapter": 9,
+  "baseInk": 2150,
+  "starts": [
+    {
+      "x": 360,
+      "y": 940
+    }
+  ],
+  "bosses": [
+    {
+      "type": "shadow_mage",
+      "x": 360,
+      "y": 80,
+      "scale": 1.15
+    }
+  ],
+  "obstacles": [
+    {
+      "type": "rect",
+      "x": 170,
+      "y": 200,
+      "w": 40,
+      "h": 600
+    },
+    {
+      "type": "rect",
+      "x": 510,
+      "y": 200,
+      "w": 40,
+      "h": 600
+    }
+  ],
+  "items": [
+    {
+      "type": "atk_up",
+      "x": 90,
+      "y": 790
+    },
+    {
+      "type": "hp_up",
+      "x": 630,
+      "y": 790
+    },
+    {
+      "type": "reinforce",
+      "x": 360,
+      "y": 250
+    }
+  ],
+  "goldZones": [],
+  "terrain": [
+    {
+      "kind": "swamp",
+      "points": [
+        [
+          210,
+          200
+        ],
+        [
+          510,
+          200
+        ],
+        [
+          510,
+          800
+        ],
+        [
+          210,
+          800
+        ]
+      ]
+    }
+  ],
+  "camps": [
+    {
+      "x": 90,
+      "y": 400,
+      "units": [
+        {
+          "type": "orc",
+          "count": 1
+        },
+        {
+          "type": "goblin",
+          "count": 3
+        },
+        {
+          "type": "goblin_archer",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "x": 630,
+      "y": 400,
+      "units": [
+        {
+          "type": "orc",
+          "count": 1
+        },
+        {
+          "type": "goblin",
+          "count": 3
+        },
+        {
+          "type": "goblin_archer",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "x": 360,
+      "y": 500,
+      "units": [
+        {
+          "type": "shaman",
+          "count": 1
+        },
+        {
+          "type": "goblin",
+          "count": 3
+        }
+      ]
+    }
+  ],
+  "enemySquads": [
+    {
+      "spawnDelay": 4,
+      "speed": 55,
+      "units": [
+        {
+          "type": "goblin_archer",
+          "count": 5
+        }
+      ],
+      "route": [
+        [
+          20,
+          150
+        ],
+        [
+          330,
+          110
+        ]
+      ],
+      "id": "s0"
+    },
+    {
+      "spawnDelay": 8,
+      "speed": 45,
+      "units": [
+        {
+          "type": "orc",
+          "count": 2
+        }
+      ],
+      "route": [
+        [
+          700,
+          150
+        ],
+        [
+          390,
+          110
+        ]
+      ],
+      "id": "s1"
+    }
+  ],
+  "bonusSquadRoute": [
+    [
+      20,
+      500
+    ],
+    [
+      300,
+      120
+    ]
+  ],
+  "referenceSolution": [
+    [
+      [
+        360,
+        940
+      ],
+      [
+        152,
+        800
+      ],
+      [
+        112,
+        464
+      ],
+      [
+        160,
+        192
+      ],
+      [
+        560,
+        192
+      ],
+      [
+        608,
+        336
+      ],
+      [
+        552,
+        184
+      ],
+      [
+        496,
+        192
+      ],
+      [
+        392,
+        440
+      ],
+      [
+        376,
+        280
+      ],
+      [
+        376,
+        144
+      ]
+    ]
+  ],
+  "tutorialHint": "Three lanes. The middle one is a swamp with a healer camp.",
+  "field": {
+    "x": 0,
+    "y": 0,
+    "w": 720,
+    "h": 1000
+  },
+  "design": {
+    "winInk": 1025,
+    "threeStarInk": 2804,
+    "threeStarBrush": "marsh"
+  }
+}

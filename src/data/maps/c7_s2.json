@@ -1,0 +1,206 @@
+{
+  "id": "c7_s2",
+  "name": "Iron Switchback",
+  "chapter": 7,
+  "baseInk": 1900,
+  "starts": [
+    {
+      "x": 360,
+      "y": 922
+    }
+  ],
+  "bosses": [
+    {
+      "type": "goblin_chief",
+      "x": 360,
+      "y": 97,
+      "scale": 1.24
+    }
+  ],
+  "obstacles": [
+    {
+      "type": "rect",
+      "x": 14,
+      "y": 644,
+      "w": 461,
+      "h": 58
+    },
+    {
+      "type": "rect",
+      "x": 245,
+      "y": 356,
+      "w": 461,
+      "h": 58
+    }
+  ],
+  "items": [
+    {
+      "type": "range_up",
+      "x": 91,
+      "y": 778
+    },
+    {
+      "type": "shield",
+      "x": 600,
+      "y": 519
+    },
+    {
+      "type": "hp_up",
+      "x": 610,
+      "y": 250
+    }
+  ],
+  "goldZones": [],
+  "terrain": [
+    {
+      "kind": "sand",
+      "points": [
+        [
+          14,
+          414
+        ],
+        [
+          706,
+          414
+        ],
+        [
+          706,
+          644
+        ],
+        [
+          14,
+          644
+        ]
+      ]
+    }
+  ],
+  "camps": [
+    {
+      "x": 110,
+      "y": 519,
+      "units": [
+        {
+          "type": "orc",
+          "count": 1
+        },
+        {
+          "type": "goblin",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "x": 610,
+      "y": 788,
+      "units": [
+        {
+          "type": "goblin",
+          "count": 3
+        },
+        {
+          "type": "goblin_archer",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "x": 130,
+      "y": 212,
+      "units": [
+        {
+          "type": "orc",
+          "count": 1
+        },
+        {
+          "type": "goblin",
+          "count": 2
+        }
+      ]
+    }
+  ],
+  "enemySquads": [
+    {
+      "spawnDelay": 0,
+      "speed": 45,
+      "units": [
+        {
+          "type": "goblin_archer",
+          "count": 6
+        }
+      ],
+      "route": [
+        [
+          677,
+          481
+        ],
+        [
+          130,
+          481
+        ],
+        [
+          120,
+          289
+        ],
+        [
+          331,
+          126
+        ]
+      ],
+      "id": "s0"
+    }
+  ],
+  "bonusSquadRoute": [
+    [
+      34,
+      500
+    ],
+    [
+      302,
+      135
+    ]
+  ],
+  "referenceSolution": [
+    [
+      [
+        360,
+        922
+      ],
+      [
+        544,
+        800
+      ],
+      [
+        480,
+        632
+      ],
+      [
+        168,
+        552
+      ],
+      [
+        160,
+        272
+      ],
+      [
+        584,
+        264
+      ],
+      [
+        424,
+        112
+      ]
+    ]
+  ],
+  "tutorialHint": "Enemy archers hold the sandy corridor between the walls.",
+  "field": {
+    "x": 14,
+    "y": 20,
+    "w": 691,
+    "h": 960
+  },
+  "design": {
+    "winInk": 1792,
+    "threeStarInk": 1934,
+    "threeStarBrush": "reed"
+  }
+}

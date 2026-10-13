@@ -1,0 +1,237 @@
+{
+  "id": "c6_s2",
+  "name": "Healers' Hollow",
+  "chapter": 6,
+  "baseInk": 1600,
+  "starts": [
+    {
+      "x": 360,
+      "y": 905
+    }
+  ],
+  "bosses": [
+    {
+      "type": "goblin_chief",
+      "x": 360,
+      "y": 114,
+      "scale": 1.26
+    }
+  ],
+  "obstacles": [
+    {
+      "type": "rect",
+      "x": 245,
+      "y": 252,
+      "w": 37,
+      "h": 478
+    },
+    {
+      "type": "rect",
+      "x": 475,
+      "y": 252,
+      "w": 37,
+      "h": 478
+    },
+    {
+      "type": "rect",
+      "x": 282,
+      "y": 445,
+      "w": 193,
+      "h": 55
+    }
+  ],
+  "items": [
+    {
+      "type": "atk_up",
+      "x": 599,
+      "y": 344
+    },
+    {
+      "type": "hp_up",
+      "x": 599,
+      "y": 666
+    },
+    {
+      "type": "reinforce",
+      "x": 136,
+      "y": 776
+    }
+  ],
+  "goldZones": [],
+  "terrain": [
+    {
+      "kind": "swamp",
+      "points": [
+        [
+          29,
+          252
+        ],
+        [
+          245,
+          252
+        ],
+        [
+          245,
+          730
+        ],
+        [
+          29,
+          730
+        ]
+      ]
+    }
+  ],
+  "camps": [
+    {
+      "x": 136,
+      "y": 500,
+      "units": [
+        {
+          "type": "shaman",
+          "count": 1
+        },
+        {
+          "type": "goblin",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "x": 599,
+      "y": 500,
+      "units": [
+        {
+          "type": "goblin",
+          "count": 2
+        },
+        {
+          "type": "goblin_archer",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "x": 378,
+      "y": 344,
+      "units": [
+        {
+          "type": "goblin",
+          "count": 2
+        }
+      ]
+    }
+  ],
+  "enemySquads": [
+    {
+      "spawnDelay": 0,
+      "speed": 50,
+      "units": [
+        {
+          "type": "shaman",
+          "count": 1
+        },
+        {
+          "type": "goblin",
+          "count": 4
+        }
+      ],
+      "route": [
+        [
+          599,
+          316
+        ],
+        [
+          599,
+          776
+        ],
+        [
+          378,
+          831
+        ],
+        [
+          136,
+          776
+        ],
+        [
+          136,
+          270
+        ],
+        [
+          332,
+          141
+        ]
+      ],
+      "id": "s0"
+    }
+  ],
+  "bonusSquadRoute": [
+    [
+      47,
+      500
+    ],
+    [
+      305,
+      150
+    ]
+  ],
+  "referenceSolution": [
+    [
+      [
+        360,
+        905
+      ],
+      [
+        184,
+        664
+      ],
+      [
+        168,
+        560
+      ],
+      [
+        240,
+        240
+      ],
+      [
+        296,
+        248
+      ],
+      [
+        336,
+        296
+      ],
+      [
+        512,
+        232
+      ],
+      [
+        568,
+        440
+      ],
+      [
+        592,
+        376
+      ],
+      [
+        512,
+        232
+      ],
+      [
+        416,
+        144
+      ]
+    ]
+  ],
+  "tutorialHint": "A shaman patrol loops the hollow. Meet it head-on or let it reach the boss.",
+  "field": {
+    "x": 29,
+    "y": 40,
+    "w": 662,
+    "h": 920
+  },
+  "design": {
+    "winInk": 1502,
+    "threeStarInk": 2212,
+    "threeStarBrush": "marsh"
+  }
+}

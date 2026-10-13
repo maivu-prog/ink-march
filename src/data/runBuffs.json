@@ -1,0 +1,98 @@
+{
+  "rb_atk": {
+    "name": "Sharp Edge",
+    "desc": "Army ATK +12%",
+    "weight": 10,
+    "value": 0.12,
+    "maxStack": 3,
+    "shopPrice": 60
+  },
+  "rb_hp": {
+    "name": "Thick Armor",
+    "desc": "Army HP +15%",
+    "weight": 10,
+    "value": 0.15,
+    "maxStack": 3,
+    "shopPrice": 70
+  },
+  "rb_volley": {
+    "name": "Volley",
+    "desc": "Archers shoot a second target",
+    "weight": 6,
+    "value": 1,
+    "maxStack": 3,
+    "shopPrice": 80
+  },
+  "rb_eagle": {
+    "name": "Eagle Eye",
+    "desc": "Ranged reach +15%",
+    "weight": 6,
+    "value": 0.15,
+    "maxStack": 3,
+    "shopPrice": 90
+  },
+  "rb_vamp": {
+    "name": "Vampirism",
+    "desc": "Melee heals for 10% of damage",
+    "weight": 6,
+    "value": 0.1,
+    "maxStack": 3,
+    "shopPrice": 100
+  },
+  "rb_pickup_heal": {
+    "name": "Healing Charm",
+    "desc": "Pickups heal 10% army HP",
+    "weight": 6,
+    "value": 0.1,
+    "maxStack": 3,
+    "shopPrice": 60
+  },
+  "rb_extra_unit": {
+    "name": "New Recruits",
+    "desc": "Add 1 soldier to every slot",
+    "weight": 5,
+    "value": 1,
+    "maxStack": 3,
+    "shopPrice": 70
+  },
+  "rb_boss_slayer": {
+    "name": "Boss Slayer",
+    "desc": "Boss damage +25%",
+    "weight": 6,
+    "value": 0.25,
+    "maxStack": 3,
+    "shopPrice": 80
+  },
+  "rb_first_strike": {
+    "name": "First Strike",
+    "desc": "ATK +40% for the first 5 seconds",
+    "weight": 6,
+    "value": 0.4,
+    "maxStack": 3,
+    "shopPrice": 90
+  },
+  "rb_frugal": {
+    "name": "Frugal",
+    "desc": "Leftover ink XP +50%",
+    "weight": 5,
+    "value": 0.5,
+    "maxStack": 3,
+    "shopPrice": 100
+  },
+  "rb_golden_touch": {
+    "name": "Golden Touch",
+    "desc": "Battle coins +20%",
+    "weight": 5,
+    "value": 0.2,
+    "maxStack": 3,
+    "shopPrice": 60
+  },
+  "rb_skull_ward": {
+    "name": "Skull Ward",
+    "desc": "Ignore skull traps",
+    "weight": 4,
+    "value": 1,
+    "maxStack": 1,
+    "shopPrice": 70
+  }
+}

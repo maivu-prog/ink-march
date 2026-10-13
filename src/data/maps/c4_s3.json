@@ -1,0 +1,246 @@
+{
+  "id": "c4_s3",
+  "name": "Split Assault",
+  "chapter": 4,
+  "baseInk": 1520,
+  "starts": [
+    {
+      "x": 207,
+      "y": 874
+    },
+    {
+      "x": 513,
+      "y": 874
+    }
+  ],
+  "bosses": [
+    {
+      "type": "goblin_chief",
+      "x": 360,
+      "y": 143,
+      "scale": 0.81
+    }
+  ],
+  "obstacles": [
+    {
+      "type": "rect",
+      "x": 309,
+      "y": 330,
+      "w": 102,
+      "h": 425
+    }
+  ],
+  "items": [
+    {
+      "type": "atk_up",
+      "x": 182,
+      "y": 721
+    },
+    {
+      "type": "hp_up",
+      "x": 538,
+      "y": 721
+    }
+  ],
+  "goldZones": [],
+  "terrain": [
+    {
+      "kind": "sand",
+      "points": [
+        [
+          80,
+          330
+        ],
+        [
+          284,
+          330
+        ],
+        [
+          284,
+          670
+        ],
+        [
+          80,
+          670
+        ]
+      ]
+    },
+    {
+      "kind": "swamp",
+      "points": [
+        [
+          436,
+          330
+        ],
+        [
+          640,
+          330
+        ],
+        [
+          640,
+          670
+        ],
+        [
+          436,
+          670
+        ]
+      ]
+    }
+  ],
+  "camps": [
+    {
+      "x": 182,
+      "y": 270,
+      "units": [
+        {
+          "type": "goblin",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "x": 538,
+      "y": 270,
+      "units": [
+        {
+          "type": "goblin",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "x": 360,
+      "y": 806,
+      "units": [
+        {
+          "type": "goblin",
+          "count": 2
+        },
+        {
+          "type": "goblin_archer",
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "enemySquads": [
+    {
+      "spawnDelay": 6,
+      "speed": 55,
+      "units": [
+        {
+          "type": "goblin",
+          "count": 5
+        }
+      ],
+      "route": [
+        [
+          71,
+          500
+        ],
+        [
+          182,
+          330
+        ],
+        [
+          334,
+          168
+        ]
+      ],
+      "id": "s0"
+    },
+    {
+      "spawnDelay": 6,
+      "speed": 55,
+      "units": [
+        {
+          "type": "goblin_archer",
+          "count": 4
+        }
+      ],
+      "route": [
+        [
+          649,
+          500
+        ],
+        [
+          538,
+          330
+        ],
+        [
+          386,
+          168
+        ]
+      ],
+      "id": "s1"
+    }
+  ],
+  "bonusSquadRoute": [
+    [
+      71,
+      500
+    ],
+    [
+      309,
+      177
+    ]
+  ],
+  "referenceSolution": [
+    [
+      [
+        207,
+        874
+      ],
+      [
+        296,
+        824
+      ],
+      [
+        288,
+        336
+      ],
+      [
+        240,
+        304
+      ],
+      [
+        328,
+        200
+      ]
+    ],
+    [
+      [
+        513,
+        874
+      ],
+      [
+        432,
+        640
+      ],
+      [
+        432,
+        328
+      ],
+      [
+        480,
+        304
+      ],
+      [
+        392,
+        200
+      ]
+    ]
+  ],
+  "tutorialHint": "A ridge splits the field. Sand on the west, swamp on the east, one boss for both squads.",
+  "field": {
+    "x": 54,
+    "y": 75,
+    "w": 612,
+    "h": 850
+  },
+  "design": {
+    "winInk": 1433,
+    "threeStarInk": 1557,
+    "threeStarBrush": "charcoal"
+  }
+}

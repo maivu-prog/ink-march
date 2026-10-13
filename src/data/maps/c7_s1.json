@@ -1,0 +1,251 @@
+{
+  "id": "c7_s1",
+  "name": "Orc Outpost",
+  "chapter": 7,
+  "baseInk": 1930,
+  "starts": [
+    {
+      "x": 360,
+      "y": 922
+    }
+  ],
+  "bosses": [
+    {
+      "type": "goblin_chief",
+      "x": 360,
+      "y": 97,
+      "scale": 0.55
+    }
+  ],
+  "obstacles": [
+    {
+      "type": "circle",
+      "x": 302,
+      "y": 519,
+      "r": 144
+    }
+  ],
+  "items": [
+    {
+      "type": "atk_up",
+      "x": 466,
+      "y": 692
+    },
+    {
+      "type": "reinforce",
+      "x": 101,
+      "y": 807
+    },
+    {
+      "type": "hp_up",
+      "x": 629,
+      "y": 519
+    }
+  ],
+  "goldZones": [],
+  "terrain": [
+    {
+      "kind": "road",
+      "points": [
+        [
+          552,
+          164
+        ],
+        [
+          619,
+          164
+        ],
+        [
+          619,
+          836
+        ],
+        [
+          552,
+          836
+        ]
+      ]
+    },
+    {
+      "kind": "sand",
+      "points": [
+        [
+          14,
+          308
+        ],
+        [
+          168,
+          308
+        ],
+        [
+          168,
+          788
+        ],
+        [
+          14,
+          788
+        ]
+      ]
+    }
+  ],
+  "camps": [
+    {
+      "x": 91,
+      "y": 519,
+      "units": [
+        {
+          "type": "orc",
+          "count": 1
+        },
+        {
+          "type": "goblin",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "x": 610,
+      "y": 260,
+      "units": [
+        {
+          "type": "orc",
+          "count": 1
+        },
+        {
+          "type": "goblin",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "x": 514,
+      "y": 788,
+      "units": [
+        {
+          "type": "goblin",
+          "count": 4
+        }
+      ]
+    }
+  ],
+  "enemySquads": [
+    {
+      "spawnDelay": 4,
+      "speed": 45,
+      "units": [
+        {
+          "type": "orc",
+          "count": 2
+        },
+        {
+          "type": "goblin",
+          "count": 3
+        }
+      ],
+      "route": [
+        [
+          686,
+          750
+        ],
+        [
+          590,
+          452
+        ],
+        [
+          427,
+          126
+        ]
+      ],
+      "id": "s0"
+    }
+  ],
+  "bonusSquadRoute": [
+    [
+      34,
+      500
+    ],
+    [
+      302,
+      135
+    ]
+  ],
+  "referenceSolution": [
+    [
+      [
+        360,
+        922
+      ],
+      [
+        464,
+        832
+      ],
+      [
+        552,
+        720
+      ],
+      [
+        584,
+        320
+      ],
+      [
+        224,
+        376
+      ],
+      [
+        136,
+        472
+      ],
+      [
+        168,
+        624
+      ],
+      [
+        168,
+        784
+      ],
+      [
+        152,
+        792
+      ],
+      [
+        128,
+        792
+      ],
+      [
+        160,
+        792
+      ],
+      [
+        168,
+        784
+      ],
+      [
+        168,
+        600
+      ],
+      [
+        144,
+        512
+      ],
+      [
+        240,
+        264
+      ],
+      [
+        344,
+        160
+      ]
+    ]
+  ],
+  "tutorialHint": "Orcs march up the eastern road. Meet them with Attack, or slip through the western sands.",
+  "field": {
+    "x": 14,
+    "y": 20,
+    "w": 691,
+    "h": 960
+  },
+  "design": {
+    "winInk": 814,
+    "threeStarInk": 2355,
+    "threeStarBrush": "golden"
+  }
+}

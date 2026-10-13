@@ -1,0 +1,235 @@
+{
+  "id": "c3_s2",
+  "name": "Reed Maze",
+  "chapter": 3,
+  "baseInk": 1300,
+  "starts": [
+    {
+      "x": 360,
+      "y": 852
+    }
+  ],
+  "bosses": [
+    {
+      "type": "goblin_chief",
+      "x": 360,
+      "y": 164,
+      "scale": 0.84
+    }
+  ],
+  "obstacles": [
+    {
+      "type": "rect",
+      "x": 72,
+      "y": 596,
+      "w": 400,
+      "h": 32
+    },
+    {
+      "type": "rect",
+      "x": 248,
+      "y": 404,
+      "w": 400,
+      "h": 32
+    }
+  ],
+  "items": [
+    {
+      "type": "shield",
+      "x": 160,
+      "y": 724
+    },
+    {
+      "type": "atk_up",
+      "x": 360,
+      "y": 516
+    },
+    {
+      "type": "reinforce",
+      "x": 160,
+      "y": 300
+    }
+  ],
+  "goldZones": [],
+  "terrain": [
+    {
+      "kind": "swamp",
+      "points": [
+        [
+          72,
+          436
+        ],
+        [
+          248,
+          436
+        ],
+        [
+          248,
+          596
+        ],
+        [
+          72,
+          596
+        ]
+      ]
+    },
+    {
+      "kind": "swamp",
+      "points": [
+        [
+          472,
+          628
+        ],
+        [
+          648,
+          628
+        ],
+        [
+          648,
+          788
+        ],
+        [
+          472,
+          788
+        ]
+      ]
+    }
+  ],
+  "camps": [
+    {
+      "x": 552,
+      "y": 516,
+      "units": [
+        {
+          "type": "goblin",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "x": 168,
+      "y": 516,
+      "units": [
+        {
+          "type": "goblin",
+          "count": 2
+        },
+        {
+          "type": "shaman",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "x": 552,
+      "y": 300,
+      "units": [
+        {
+          "type": "goblin",
+          "count": 2
+        },
+        {
+          "type": "goblin_archer",
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "enemySquads": [
+    {
+      "spawnDelay": 4,
+      "speed": 50,
+      "units": [
+        {
+          "type": "shaman",
+          "count": 1
+        },
+        {
+          "type": "goblin",
+          "count": 3
+        }
+      ],
+      "route": [
+        [
+          632,
+          468
+        ],
+        [
+          392,
+          516
+        ],
+        [
+          192,
+          500
+        ],
+        [
+          192,
+          300
+        ],
+        [
+          336,
+          188
+        ]
+      ],
+      "id": "s0"
+    }
+  ],
+  "bonusSquadRoute": [
+    [
+      88,
+      500
+    ],
+    [
+      312,
+      196
+    ]
+  ],
+  "referenceSolution": [
+    [
+      [
+        360,
+        852
+      ],
+      [
+        520,
+        576
+      ],
+      [
+        232,
+        536
+      ],
+      [
+        248,
+        520
+      ],
+      [
+        248,
+        456
+      ],
+      [
+        232,
+        400
+      ],
+      [
+        488,
+        320
+      ],
+      [
+        400,
+        216
+      ]
+    ]
+  ],
+  "tutorialHint": "The shaman's band loops through the maze and will steal what it passes.",
+  "field": {
+    "x": 72,
+    "y": 100,
+    "w": 576,
+    "h": 800
+  },
+  "design": {
+    "winInk": 1158,
+    "threeStarInk": 1270,
+    "threeStarBrush": "quill"
+  }
+}

@@ -1,0 +1,321 @@
+{
+  "id": "c10_s1",
+  "name": "Citadel Approach",
+  "chapter": 10,
+  "baseInk": 2820,
+  "starts": [
+    {
+      "x": 360,
+      "y": 940
+    }
+  ],
+  "bosses": [
+    {
+      "type": "shadow_mage",
+      "x": 360,
+      "y": 80,
+      "scale": 1.02
+    }
+  ],
+  "obstacles": [
+    {
+      "type": "rect",
+      "x": 0,
+      "y": 500,
+      "w": 310,
+      "h": 50
+    },
+    {
+      "type": "rect",
+      "x": 410,
+      "y": 500,
+      "w": 310,
+      "h": 50
+    }
+  ],
+  "items": [
+    {
+      "type": "key",
+      "x": 650,
+      "y": 820,
+      "color": "red"
+    },
+    {
+      "type": "gate",
+      "color": "red",
+      "rect": {
+        "x": 310,
+        "y": 500,
+        "w": 100,
+        "h": 50
+      }
+    },
+    {
+      "type": "atk_up",
+      "x": 360,
+      "y": 750
+    },
+    {
+      "type": "hp_up",
+      "x": 620,
+      "y": 400
+    }
+  ],
+  "goldZones": [],
+  "terrain": [
+    {
+      "kind": "swamp",
+      "points": [
+        [
+          520,
+          650
+        ],
+        [
+          720,
+          650
+        ],
+        [
+          720,
+          950
+        ],
+        [
+          520,
+          950
+        ]
+      ]
+    },
+    {
+      "kind": "sand",
+      "points": [
+        [
+          0,
+          150
+        ],
+        [
+          330,
+          150
+        ],
+        [
+          330,
+          500
+        ],
+        [
+          0,
+          500
+        ]
+      ]
+    },
+    {
+      "kind": "sand",
+      "points": [
+        [
+          390,
+          150
+        ],
+        [
+          720,
+          150
+        ],
+        [
+          720,
+          500
+        ],
+        [
+          390,
+          500
+        ]
+      ]
+    },
+    {
+      "kind": "road",
+      "points": [
+        [
+          330,
+          150
+        ],
+        [
+          390,
+          150
+        ],
+        [
+          390,
+          500
+        ],
+        [
+          330,
+          500
+        ]
+      ]
+    }
+  ],
+  "camps": [
+    {
+      "x": 100,
+      "y": 800,
+      "units": [
+        {
+          "type": "orc",
+          "count": 1
+        },
+        {
+          "type": "goblin",
+          "count": 3
+        },
+        {
+          "type": "goblin_archer",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "x": 100,
+      "y": 250,
+      "units": [
+        {
+          "type": "orc",
+          "count": 2
+        },
+        {
+          "type": "goblin_archer",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "x": 620,
+      "y": 250,
+      "units": [
+        {
+          "type": "orc",
+          "count": 2
+        },
+        {
+          "type": "goblin_archer",
+          "count": 2
+        }
+      ]
+    }
+  ],
+  "enemySquads": [
+    {
+      "spawnDelay": 4,
+      "speed": 55,
+      "units": [
+        {
+          "type": "goblin_archer",
+          "count": 6
+        }
+      ],
+      "route": [
+        [
+          20,
+          330
+        ],
+        [
+          330,
+          110
+        ]
+      ],
+      "id": "s0"
+    },
+    {
+      "spawnDelay": 8,
+      "speed": 45,
+      "units": [
+        {
+          "type": "orc",
+          "count": 2
+        },
+        {
+          "type": "goblin",
+          "count": 3
+        }
+      ],
+      "route": [
+        [
+          700,
+          330
+        ],
+        [
+          390,
+          110
+        ]
+      ],
+      "id": "s1"
+    }
+  ],
+  "bonusSquadRoute": [
+    [
+      20,
+      500
+    ],
+    [
+      300,
+      120
+    ]
+  ],
+  "referenceSolution": [
+    [
+      [
+        360,
+        940
+      ],
+      [
+        624,
+        832
+      ],
+      [
+        520,
+        728
+      ],
+      [
+        392,
+        536
+      ],
+      [
+        384,
+        456
+      ],
+      [
+        560,
+        280
+      ],
+      [
+        160,
+        280
+      ],
+      [
+        336,
+        456
+      ],
+      [
+        328,
+        544
+      ],
+      [
+        136,
+        744
+      ],
+      [
+        328,
+        744
+      ],
+      [
+        344,
+        144
+      ]
+    ]
+  ],
+  "tutorialHint": "The red key waits in the swamp. The road through the sand is the only cheap way.",
+  "field": {
+    "x": 0,
+    "y": 0,
+    "w": 720,
+    "h": 1000
+  },
+  "design": {
+    "winInk": 1268,
+    "threeStarInk": 3445,
+    "threeStarBrush": "golden"
+  }
+}

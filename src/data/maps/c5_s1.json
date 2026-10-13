@@ -1,0 +1,221 @@
+{
+  "id": "c5_s1",
+  "name": "Canyon Gate",
+  "chapter": 5,
+  "baseInk": 1650,
+  "starts": [
+    {
+      "x": 360,
+      "y": 887
+    }
+  ],
+  "bosses": [
+    {
+      "type": "goblin_chief",
+      "x": 360,
+      "y": 130,
+      "scale": 0.51
+    }
+  ],
+  "obstacles": [
+    {
+      "type": "rect",
+      "x": 43,
+      "y": 456,
+      "w": 273,
+      "h": 44
+    },
+    {
+      "type": "rect",
+      "x": 404,
+      "y": 456,
+      "w": 273,
+      "h": 44
+    }
+  ],
+  "items": [
+    {
+      "type": "key",
+      "x": 140,
+      "y": 729,
+      "color": "red"
+    },
+    {
+      "type": "gate",
+      "color": "red",
+      "rect": {
+        "x": 316,
+        "y": 456,
+        "w": 88,
+        "h": 44
+      }
+    },
+    {
+      "type": "atk_up",
+      "x": 571,
+      "y": 588
+    },
+    {
+      "type": "hp_up",
+      "x": 360,
+      "y": 324
+    }
+  ],
+  "goldZones": [],
+  "terrain": [
+    {
+      "kind": "sand",
+      "points": [
+        [
+          43,
+          588
+        ],
+        [
+          272,
+          588
+        ],
+        [
+          272,
+          852
+        ],
+        [
+          43,
+          852
+        ]
+      ]
+    }
+  ],
+  "camps": [
+    {
+      "x": 589,
+      "y": 746,
+      "units": [
+        {
+          "type": "goblin",
+          "count": 3
+        },
+        {
+          "type": "goblin_archer",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "x": 140,
+      "y": 280,
+      "units": [
+        {
+          "type": "goblin",
+          "count": 3
+        },
+        {
+          "type": "goblin_archer",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "x": 580,
+      "y": 280,
+      "units": [
+        {
+          "type": "goblin",
+          "count": 3
+        },
+        {
+          "type": "goblin_archer",
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "enemySquads": [
+    {
+      "spawnDelay": 6,
+      "speed": 55,
+      "units": [
+        {
+          "type": "goblin_archer",
+          "count": 5
+        }
+      ],
+      "route": [
+        [
+          61,
+          368
+        ],
+        [
+          360,
+          280
+        ],
+        [
+          360,
+          157
+        ]
+      ],
+      "id": "s0"
+    }
+  ],
+  "bonusSquadRoute": [
+    [
+      61,
+      500
+    ],
+    [
+      307,
+      166
+    ]
+  ],
+  "referenceSolution": [
+    [
+      [
+        360,
+        887
+      ],
+      [
+        528,
+        776
+      ],
+      [
+        168,
+        736
+      ],
+      [
+        336,
+        480
+      ],
+      [
+        320,
+        440
+      ],
+      [
+        192,
+        320
+      ],
+      [
+        520,
+        312
+      ],
+      [
+        392,
+        320
+      ],
+      [
+        376,
+        192
+      ]
+    ]
+  ],
+  "tutorialHint": "The wall is sealed. The red key lies in the sand.",
+  "field": {
+    "x": 43,
+    "y": 60,
+    "w": 634,
+    "h": 880
+  },
+  "design": {
+    "winInk": 1027,
+    "threeStarInk": 1843,
+    "threeStarBrush": "reed"
+  }
+}

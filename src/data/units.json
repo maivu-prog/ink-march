@@ -1,0 +1,68 @@
+{
+  "sword": {
+    "name": "Swordsman",
+    "role": "melee",
+    "count": 4,
+    "hp": 120,
+    "atk": 12,
+    "interval": 0.8,
+    "range": 30,
+    "icon": "\u00e2\u0161\u201d",
+    "rarity": "common"
+  },
+  "archer": {
+    "name": "Archer",
+    "role": "ranged",
+    "count": 4,
+    "hp": 70,
+    "atk": 10,
+    "interval": 1,
+    "range": 140,
+    "icon": "\u00e2\u017e\u00b6",
+    "rarity": "common"
+  },
+  "shield": {
+    "name": "Shieldbearer",
+    "role": "tank",
+    "count": 3,
+    "hp": 260,
+    "atk": 6,
+    "interval": 1,
+    "range": 30,
+    "icon": "\u00e2\u00ac\u0178",
+    "rarity": "rare"
+  },
+  "spear": {
+    "name": "Spearman",
+    "role": "melee",
+    "count": 3,
+    "hp": 100,
+    "atk": 14,
+    "interval": 0.9,
+    "range": 60,
+    "icon": "\u00e2\u2122\u0153",
+    "rarity": "rare"
+  },
+  "mage": {
+    "name": "Mage",
+    "role": "ranged",
+    "count": 2,
+    "hp": 60,
+    "atk": 18,
+    "interval": 1.6,
+    "range": 120,
+    "icon": "\u00e2\u0153\u00a6",
+    "rarity": "epic"
+  },
+  "healer": {
+    "name": "Healer",
+    "role": "support",
+    "count": 2,
+    "hp": 70,
+    "atk": 4,
+    "interval": 1.2,
+    "range": 110,
+    "icon": "\u00e2\u0153\u0161",
+    "rarity": "epic"
+  }
+}

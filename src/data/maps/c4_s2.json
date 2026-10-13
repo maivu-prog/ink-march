@@ -1,0 +1,208 @@
+{
+  "id": "c4_s2",
+  "name": "Crossing Fords",
+  "chapter": 4,
+  "baseInk": 1000,
+  "starts": [
+    {
+      "x": 360,
+      "y": 874
+    }
+  ],
+  "bosses": [
+    {
+      "type": "goblin_chief",
+      "x": 360,
+      "y": 143,
+      "scale": 1.23
+    }
+  ],
+  "obstacles": [
+    {
+      "type": "rect",
+      "x": 54,
+      "y": 458,
+      "w": 85,
+      "h": 76,
+      "kind": "water"
+    },
+    {
+      "type": "rect",
+      "x": 190,
+      "y": 458,
+      "w": 340,
+      "h": 76,
+      "kind": "water"
+    },
+    {
+      "type": "rect",
+      "x": 581,
+      "y": 458,
+      "w": 85,
+      "h": 76,
+      "kind": "water"
+    }
+  ],
+  "items": [
+    {
+      "type": "atk_up",
+      "x": 360,
+      "y": 288
+    },
+    {
+      "type": "hp_up",
+      "x": 164,
+      "y": 687
+    },
+    {
+      "type": "reinforce",
+      "x": 556,
+      "y": 687
+    }
+  ],
+  "goldZones": [],
+  "terrain": [
+    {
+      "kind": "sand",
+      "points": [
+        [
+          105,
+          381
+        ],
+        [
+          224,
+          381
+        ],
+        [
+          224,
+          610
+        ],
+        [
+          105,
+          610
+        ]
+      ]
+    }
+  ],
+  "camps": [
+    {
+      "x": 164,
+      "y": 330,
+      "units": [
+        {
+          "type": "goblin",
+          "count": 3
+        },
+        {
+          "type": "goblin_archer",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "x": 556,
+      "y": 330,
+      "units": [
+        {
+          "type": "goblin",
+          "count": 3
+        },
+        {
+          "type": "goblin_archer",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "x": 360,
+      "y": 687,
+      "units": [
+        {
+          "type": "goblin",
+          "count": 2
+        },
+        {
+          "type": "goblin_archer",
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "enemySquads": [
+    {
+      "spawnDelay": 4,
+      "speed": 55,
+      "units": [
+        {
+          "type": "goblin_archer",
+          "count": 5
+        }
+      ],
+      "route": [
+        [
+          649,
+          288
+        ],
+        [
+          360,
+          245
+        ],
+        [
+          360,
+          160
+        ]
+      ],
+      "id": "s0"
+    }
+  ],
+  "bonusSquadRoute": [
+    [
+      71,
+      500
+    ],
+    [
+      309,
+      177
+    ]
+  ],
+  "referenceSolution": [
+    [
+      [
+        360,
+        874
+      ],
+      [
+        360,
+        752
+      ],
+      [
+        544,
+        528
+      ],
+      [
+        544,
+        392
+      ],
+      [
+        224,
+        360
+      ],
+      [
+        328,
+        200
+      ]
+    ]
+  ],
+  "tutorialHint": "The river has two fords. Sand guards the western one.",
+  "field": {
+    "x": 54,
+    "y": 75,
+    "w": 612,
+    "h": 850
+  },
+  "design": {
+    "winInk": 773,
+    "threeStarInk": 1060,
+    "threeStarBrush": "charcoal"
+  }
+}

@@ -1,0 +1,306 @@
+{
+  "id": "c6_s4",
+  "name": "Shadow of the Fens",
+  "chapter": 6,
+  "baseInk": 1870,
+  "starts": [
+    {
+      "x": 360,
+      "y": 905
+    }
+  ],
+  "bosses": [
+    {
+      "type": "shadow_mage",
+      "x": 360,
+      "y": 114,
+      "scale": 1.2
+    }
+  ],
+  "obstacles": [
+    {
+      "type": "rect",
+      "x": 167,
+      "y": 592,
+      "w": 386,
+      "h": 37
+    }
+  ],
+  "items": [
+    {
+      "type": "reinforce",
+      "x": 121,
+      "y": 758
+    },
+    {
+      "type": "atk_up",
+      "x": 599,
+      "y": 758
+    },
+    {
+      "type": "hp_up",
+      "x": 360,
+      "y": 518
+    }
+  ],
+  "goldZones": [],
+  "terrain": [
+    {
+      "kind": "swamp",
+      "points": [
+        [
+          29,
+          270
+        ],
+        [
+          332,
+          270
+        ],
+        [
+          332,
+          500
+        ],
+        [
+          29,
+          500
+        ]
+      ]
+    },
+    {
+      "kind": "swamp",
+      "points": [
+        [
+          388,
+          270
+        ],
+        [
+          691,
+          270
+        ],
+        [
+          691,
+          500
+        ],
+        [
+          388,
+          500
+        ]
+      ]
+    },
+    {
+      "kind": "road",
+      "points": [
+        [
+          332,
+          270
+        ],
+        [
+          388,
+          270
+        ],
+        [
+          388,
+          500
+        ],
+        [
+          332,
+          500
+        ]
+      ]
+    }
+  ],
+  "camps": [
+    {
+      "x": 121,
+      "y": 390,
+      "units": [
+        {
+          "type": "shaman",
+          "count": 1
+        },
+        {
+          "type": "goblin",
+          "count": 3
+        },
+        {
+          "type": "goblin_archer",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "x": 599,
+      "y": 390,
+      "units": [
+        {
+          "type": "shaman",
+          "count": 1
+        },
+        {
+          "type": "goblin",
+          "count": 3
+        },
+        {
+          "type": "goblin_archer",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "x": 360,
+      "y": 758,
+      "units": [
+        {
+          "type": "orc",
+          "count": 1
+        },
+        {
+          "type": "goblin",
+          "count": 3
+        }
+      ]
+    }
+  ],
+  "enemySquads": [
+    {
+      "spawnDelay": 4,
+      "speed": 50,
+      "units": [
+        {
+          "type": "shaman",
+          "count": 2
+        },
+        {
+          "type": "goblin",
+          "count": 3
+        }
+      ],
+      "route": [
+        [
+          47,
+          546
+        ],
+        [
+          194,
+          454
+        ],
+        [
+          332,
+          178
+        ]
+      ],
+      "id": "s0"
+    },
+    {
+      "spawnDelay": 7,
+      "speed": 45,
+      "units": [
+        {
+          "type": "orc",
+          "count": 1
+        },
+        {
+          "type": "goblin",
+          "count": 3
+        }
+      ],
+      "route": [
+        [
+          673,
+          546
+        ],
+        [
+          526,
+          454
+        ],
+        [
+          388,
+          178
+        ]
+      ],
+      "id": "s1"
+    }
+  ],
+  "bonusSquadRoute": [
+    [
+      47,
+      500
+    ],
+    [
+      305,
+      150
+    ]
+  ],
+  "referenceSolution": [
+    [
+      [
+        360,
+        905
+      ],
+      [
+        360,
+        824
+      ],
+      [
+        568,
+        624
+      ],
+      [
+        584,
+        456
+      ],
+      [
+        536,
+        504
+      ],
+      [
+        392,
+        504
+      ],
+      [
+        384,
+        496
+      ],
+      [
+        256,
+        504
+      ],
+      [
+        184,
+        504
+      ],
+      [
+        136,
+        456
+      ],
+      [
+        136,
+        728
+      ],
+      [
+        160,
+        576
+      ],
+      [
+        336,
+        488
+      ],
+      [
+        344,
+        176
+      ]
+    ]
+  ],
+  "tutorialHint": "The Shadow Mage waits beyond the fen. One causeway, two flanks.",
+  "field": {
+    "x": 29,
+    "y": 40,
+    "w": 662,
+    "h": 920
+  },
+  "design": {
+    "winInk": 869,
+    "threeStarInk": 2155,
+    "threeStarBrush": "marsh"
+  }
+}

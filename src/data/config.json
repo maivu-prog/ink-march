@@ -1,0 +1,78 @@
+{
+  "sampleStep": 8,
+  "startSnapRadius": 50,
+  "bossSnapRadius": 70,
+  "pickupRadius": 36,
+  "liftGraceSec": 1,
+  "resumeRadius": 45,
+  "undoLength": 120,
+  "armySpeed": 60,
+  "slotSpacing": 34,
+  "aggroPadding": 12,
+  "leashRadius": 160,
+  "regroupSec": 1.5,
+  "projectileSpeed": 500,
+  "battleTimeoutSec": 180,
+  "inkToXp": 0.1,
+  "goldInkToXp": 0.05,
+  "battleXp": {
+    "battle": 30,
+    "elite": 50,
+    "boss": 80
+  },
+  "runLevelXp": [
+    40,
+    60,
+    80,
+    100,
+    120,
+    140,
+    160
+  ],
+  "battleCoins": {
+    "battle": 30,
+    "elite": 50,
+    "boss": 0
+  },
+  "battleGold": {
+    "battle": 20,
+    "elite": 45,
+    "boss": 120
+  },
+  "runClearGold": [
+    150,
+    300
+  ],
+  "levelStatPct": 8,
+  "upgradeBaseCost": 40,
+  "upgradeCostGrowth": 1.45,
+  "shadows": true,
+  "bossEnrageAtk": 0.25,
+  "bossEnrageHp": 0.2,
+  "shamanHeal": 8,
+  "unitSpeed": 100,
+  "shopRerollCost": 20,
+  "shopRerollGrowth": 10,
+  "forgeXp": 40,
+  "forgeInk": 250,
+  "goldInkPrice": 50,
+  "goldInkAmount": 150,
+  "mercenaryCost": 60,
+  "mercenaryCount": 2,
+  "shieldValue": 40,
+  "healValue": 10,
+  "shrineHp": 0.8,
+  "mysteryChance": 0.6,
+  "unstuckSec": 0.5,
+  "inkWidth": 16,
+  "inkArrowGap": 55,
+  "gemsFirstClear": 20,
+  "gemsPerStar": 10,
+  "gemsChapterClear": 100,
+  "teamColors": [
+    "#3f8fc4",
+    "#e08a3c"
+  ],
+  "timeScale": 2,
+  "aggroScale": 0.5
+}

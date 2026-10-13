@@ -1,0 +1,120 @@
+{
+  "id": "c1_s1",
+  "name": "First Lines",
+  "chapter": 1,
+  "baseInk": 810,
+  "starts": [
+    {
+      "x": 360,
+      "y": 808
+    }
+  ],
+  "bosses": [
+    {
+      "type": "goblin_chief",
+      "x": 360,
+      "y": 206,
+      "scale": 0.35
+    }
+  ],
+  "obstacles": [
+    {
+      "type": "circle",
+      "x": 360,
+      "y": 514,
+      "r": 42
+    }
+  ],
+  "items": [
+    {
+      "type": "atk_up",
+      "x": 444,
+      "y": 654
+    }
+  ],
+  "goldZones": [],
+  "terrain": [],
+  "camps": [
+    {
+      "x": 213,
+      "y": 584,
+      "units": [
+        {
+          "type": "goblin",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "x": 507,
+      "y": 451,
+      "units": [
+        {
+          "type": "goblin",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "x": 255,
+      "y": 332,
+      "units": [
+        {
+          "type": "goblin",
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "enemySquads": [],
+  "bonusSquadRoute": [
+    [
+      122,
+      500
+    ],
+    [
+      318,
+      234
+    ]
+  ],
+  "referenceSolution": [
+    [
+      [
+        360,
+        808
+      ],
+      [
+        232,
+        648
+      ],
+      [
+        432,
+        528
+      ],
+      [
+        464,
+        496
+      ],
+      [
+        312,
+        368
+      ],
+      [
+        336,
+        264
+      ]
+    ]
+  ],
+  "tutorialHint": "Draw from START to the boss. Pass close to a camp to attack it: every camp destroyed is a star.",
+  "field": {
+    "x": 108,
+    "y": 150,
+    "w": 504,
+    "h": 700
+  },
+  "design": {
+    "winInk": 551,
+    "threeStarInk": 789,
+    "threeStarBrush": "quill"
+  }
+}

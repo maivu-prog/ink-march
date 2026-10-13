@@ -1,0 +1,122 @@
+{
+  "sword": {
+    "model": "/assets/models/sword.glb",
+    "portrait": "/assets/portraits/sword.png",
+    "animations": [
+      "Idle",
+      "Walk",
+      "Attack",
+      "Death"
+    ]
+  },
+  "archer": {
+    "model": "/assets/models/archer.glb",
+    "portrait": "/assets/portraits/archer.png",
+    "animations": [
+      "Idle",
+      "Walk",
+      "Attack",
+      "Death"
+    ]
+  },
+  "shield": {
+    "model": "/assets/models/shield.glb",
+    "portrait": "/assets/portraits/shield.png",
+    "animations": [
+      "Idle",
+      "Walk",
+      "Attack",
+      "Death"
+    ]
+  },
+  "spear": {
+    "model": "/assets/models/spear.glb",
+    "portrait": "/assets/portraits/spear.png",
+    "animations": [
+      "Idle",
+      "Walk",
+      "Attack",
+      "Death"
+    ]
+  },
+  "mage": {
+    "model": "/assets/models/mage.glb",
+    "portrait": "/assets/portraits/mage.png",
+    "animations": [
+      "Idle",
+      "Walk",
+      "Attack",
+      "Death"
+    ]
+  },
+  "healer": {
+    "model": "/assets/models/healer.glb",
+    "portrait": "/assets/portraits/healer.png",
+    "animations": [
+      "Idle",
+      "Walk",
+      "Attack",
+      "Death"
+    ]
+  },
+  "goblin": {
+    "model": "/assets/models/goblin.glb",
+    "portrait": "/assets/portraits/goblin.png",
+    "animations": [
+      "Idle",
+      "Walk",
+      "Attack",
+      "Death"
+    ]
+  },
+  "goblin_archer": {
+    "model": "/assets/models/goblin_archer.glb",
+    "portrait": "/assets/portraits/goblin_archer.png",
+    "animations": [
+      "Idle",
+      "Walk",
+      "Attack",
+      "Death"
+    ]
+  },
+  "orc": {
+    "model": "/assets/models/orc.glb",
+    "portrait": "/assets/portraits/orc.png",
+    "animations": [
+      "Idle",
+      "Walk",
+      "Attack",
+      "Death"
+    ]
+  },
+  "shaman": {
+    "model": "/assets/models/shaman.glb",
+    "portrait": "/assets/portraits/shaman.png",
+    "animations": [
+      "Idle",
+      "Walk",
+      "Attack",
+      "Death"
+    ]
+  },
+  "goblin_king": {
+    "model": "/assets/models/goblin_king.glb",
+    "portrait": "/assets/portraits/goblin_king.png",
+    "animations": [
+      "Idle",
+      "Walk",
+      "Attack",
+      "Death"
+    ]
+  },
+  "shadow_mage": {
+    "model": "/assets/models/shadow_mage.glb",
+    "portrait": "/assets/portraits/shadow_mage.png",
+    "animations": [
+      "Idle",
+      "Walk",
+      "Attack",
+      "Death"
+    ]
+  }
+}

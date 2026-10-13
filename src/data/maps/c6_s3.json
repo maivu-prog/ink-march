@@ -1,0 +1,260 @@
+{
+  "id": "c6_s3",
+  "name": "Mirror Marsh",
+  "chapter": 6,
+  "baseInk": 1960,
+  "starts": [
+    {
+      "x": 194,
+      "y": 905
+    },
+    {
+      "x": 526,
+      "y": 905
+    }
+  ],
+  "bosses": [
+    {
+      "type": "goblin_chief",
+      "x": 194,
+      "y": 114,
+      "scale": 0.64
+    },
+    {
+      "type": "goblin_chief",
+      "x": 526,
+      "y": 114,
+      "scale": 0.64
+    }
+  ],
+  "obstacles": [
+    {
+      "type": "rect",
+      "x": 29,
+      "y": 500,
+      "w": 216,
+      "h": 37
+    },
+    {
+      "type": "rect",
+      "x": 475,
+      "y": 500,
+      "w": 216,
+      "h": 37
+    }
+  ],
+  "items": [
+    {
+      "type": "atk_up",
+      "x": 213,
+      "y": 638
+    },
+    {
+      "type": "hp_up",
+      "x": 507,
+      "y": 638
+    },
+    {
+      "type": "range_up",
+      "x": 102,
+      "y": 739
+    },
+    {
+      "type": "shield",
+      "x": 618,
+      "y": 739
+    }
+  ],
+  "goldZones": [],
+  "terrain": [
+    {
+      "kind": "swamp",
+      "points": [
+        [
+          259,
+          224
+        ],
+        [
+          461,
+          224
+        ],
+        [
+          461,
+          776
+        ],
+        [
+          259,
+          776
+        ]
+      ]
+    }
+  ],
+  "camps": [
+    {
+      "x": 102,
+      "y": 316,
+      "units": [
+        {
+          "type": "goblin",
+          "count": 3
+        },
+        {
+          "type": "goblin_archer",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "x": 618,
+      "y": 316,
+      "units": [
+        {
+          "type": "goblin",
+          "count": 3
+        },
+        {
+          "type": "goblin_archer",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "x": 360,
+      "y": 840,
+      "units": [
+        {
+          "type": "shaman",
+          "count": 1
+        },
+        {
+          "type": "goblin",
+          "count": 3
+        }
+      ]
+    }
+  ],
+  "enemySquads": [
+    {
+      "spawnDelay": 5,
+      "speed": 55,
+      "units": [
+        {
+          "type": "goblin",
+          "count": 5
+        }
+      ],
+      "route": [
+        [
+          360,
+          187
+        ],
+        [
+          194,
+          150
+        ]
+      ],
+      "id": "s0"
+    },
+    {
+      "spawnDelay": 5,
+      "speed": 55,
+      "units": [
+        {
+          "type": "goblin",
+          "count": 5
+        }
+      ],
+      "route": [
+        [
+          360,
+          196
+        ],
+        [
+          526,
+          150
+        ]
+      ],
+      "id": "s1"
+    }
+  ],
+  "bonusSquadRoute": [
+    [
+      47,
+      500
+    ],
+    [
+      305,
+      150
+    ]
+  ],
+  "referenceSolution": [
+    [
+      [
+        194,
+        905
+      ],
+      [
+        296,
+        856
+      ],
+      [
+        128,
+        760
+      ],
+      [
+        264,
+        520
+      ],
+      [
+        224,
+        456
+      ],
+      [
+        144,
+        368
+      ],
+      [
+        176,
+        176
+      ]
+    ],
+    [
+      [
+        526,
+        905
+      ],
+      [
+        608,
+        768
+      ],
+      [
+        456,
+        520
+      ],
+      [
+        512,
+        432
+      ],
+      [
+        576,
+        368
+      ],
+      [
+        544,
+        176
+      ]
+    ]
+  ],
+  "tutorialHint": "Two bosses mirror each other across the marsh.",
+  "field": {
+    "x": 29,
+    "y": 40,
+    "w": 662,
+    "h": 920
+  },
+  "design": {
+    "winInk": 1848,
+    "threeStarInk": 1848,
+    "threeStarBrush": "charcoal"
+  }
+}

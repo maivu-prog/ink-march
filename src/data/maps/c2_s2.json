@@ -1,0 +1,231 @@
+{
+  "id": "c2_s2",
+  "name": "Sun-baked Road",
+  "chapter": 2,
+  "baseInk": 1170,
+  "starts": [
+    {
+      "x": 360,
+      "y": 830
+    }
+  ],
+  "bosses": [
+    {
+      "type": "goblin_chief",
+      "x": 360,
+      "y": 185,
+      "scale": 0.31
+    }
+  ],
+  "obstacles": [
+    {
+      "type": "circle",
+      "x": 315,
+      "y": 575,
+      "r": 38
+    },
+    {
+      "type": "circle",
+      "x": 428,
+      "y": 425,
+      "r": 38
+    }
+  ],
+  "items": [
+    {
+      "type": "hp_up",
+      "x": 540,
+      "y": 590
+    },
+    {
+      "type": "reinforce",
+      "x": 360,
+      "y": 718
+    },
+    {
+      "type": "ink_bottle",
+      "x": 172,
+      "y": 575,
+      "value": 250
+    }
+  ],
+  "goldZones": [],
+  "terrain": [
+    {
+      "kind": "sand",
+      "points": [
+        [
+          202,
+          282
+        ],
+        [
+          630,
+          282
+        ],
+        [
+          630,
+          762
+        ],
+        [
+          202,
+          762
+        ]
+      ]
+    },
+    {
+      "kind": "road",
+      "points": [
+        [
+          150,
+          238
+        ],
+        [
+          202,
+          238
+        ],
+        [
+          202,
+          762
+        ],
+        [
+          150,
+          762
+        ]
+      ]
+    },
+    {
+      "kind": "road",
+      "points": [
+        [
+          150,
+          238
+        ],
+        [
+          570,
+          238
+        ],
+        [
+          570,
+          282
+        ],
+        [
+          150,
+          282
+        ]
+      ]
+    }
+  ],
+  "camps": [
+    {
+      "x": 540,
+      "y": 725,
+      "units": [
+        {
+          "type": "goblin",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "x": 540,
+      "y": 462,
+      "units": [
+        {
+          "type": "goblin",
+          "count": 2
+        },
+        {
+          "type": "goblin_archer",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "x": 278,
+      "y": 372,
+      "units": [
+        {
+          "type": "goblin",
+          "count": 2
+        }
+      ]
+    }
+  ],
+  "enemySquads": [
+    {
+      "spawnDelay": 3,
+      "speed": 55,
+      "units": [
+        {
+          "type": "goblin",
+          "count": 6
+        }
+      ],
+      "route": [
+        [
+          615,
+          350
+        ],
+        [
+          428,
+          275
+        ],
+        [
+          360,
+          200
+        ]
+      ],
+      "id": "s0"
+    }
+  ],
+  "bonusSquadRoute": [
+    [
+      105,
+      500
+    ],
+    [
+      315,
+      215
+    ]
+  ],
+  "referenceSolution": [
+    [
+      [
+        360,
+        830
+      ],
+      [
+        488,
+        768
+      ],
+      [
+        528,
+        528
+      ],
+      [
+        344,
+        432
+      ],
+      [
+        328,
+        416
+      ],
+      [
+        344,
+        248
+      ]
+    ]
+  ],
+  "tutorialHint": "Follow the road around the dunes, or cut across the sand and pay in ink.",
+  "field": {
+    "x": 90,
+    "y": 125,
+    "w": 540,
+    "h": 750
+  },
+  "design": {
+    "winInk": 369,
+    "threeStarInk": 1137,
+    "threeStarBrush": "quill"
+  }
+}

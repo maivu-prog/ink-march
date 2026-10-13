@@ -1,0 +1,103 @@
+[
+  {
+    "name": "The Waking Woods",
+    "stages": [
+      "c1_s1",
+      "c1_s2",
+      "shop",
+      "c1_s3"
+    ]
+  },
+  {
+    "name": "Dusty Trail",
+    "stages": [
+      "c2_s1",
+      "c2_s2",
+      "event:ev_shrine",
+      "c2_s3"
+    ]
+  },
+  {
+    "name": "Mirelands",
+    "stages": [
+      "c3_s1",
+      "c3_s2",
+      "shop",
+      "c3_s3",
+      "c3_s4"
+    ]
+  },
+  {
+    "name": "Twin Rivers",
+    "stages": [
+      "c4_s1",
+      "c4_s2",
+      "event:ev_mercenary",
+      "c4_s3",
+      "c4_s4"
+    ]
+  },
+  {
+    "name": "Red Canyon",
+    "stages": [
+      "c5_s1",
+      "c5_s2",
+      "shop",
+      "c5_s3",
+      "c5_s4"
+    ]
+  },
+  {
+    "name": "Shaman Fens",
+    "stages": [
+      "c6_s1",
+      "c6_s2",
+      "event:ev_mystery_chest",
+      "c6_s3",
+      "c6_s4"
+    ]
+  },
+  {
+    "name": "Iron Pass",
+    "stages": [
+      "c7_s1",
+      "c7_s2",
+      "shop",
+      "c7_s3",
+      "c7_s4",
+      "c7_s5"
+    ]
+  },
+  {
+    "name": "Golden Bridge",
+    "stages": [
+      "c8_s1",
+      "c8_s2",
+      "event:ev_ink_forge",
+      "c8_s3",
+      "c8_s4",
+      "c8_s5"
+    ]
+  },
+  {
+    "name": "Shadow Wood",
+    "stages": [
+      "c9_s1",
+      "c9_s2",
+      "shop",
+      "c9_s3",
+      "c9_s4",
+      "c9_s5"
+    ]
+  },
+  {
+    "name": "The Ink Citadel",
+    "stages": [
+      "c10_s1",
+      "c10_s2",
+      "c10_s3",
+      "c10_s4",
+      "c10_s5"
+    ]
+  }
+]

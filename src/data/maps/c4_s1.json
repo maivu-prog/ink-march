@@ -1,0 +1,251 @@
+{
+  "id": "c4_s1",
+  "name": "Two Banks",
+  "chapter": 4,
+  "baseInk": 1600,
+  "starts": [
+    {
+      "x": 207,
+      "y": 874
+    },
+    {
+      "x": 513,
+      "y": 874
+    }
+  ],
+  "bosses": [
+    {
+      "type": "goblin_chief",
+      "x": 207,
+      "y": 143,
+      "scale": 0.66
+    },
+    {
+      "type": "goblin_chief",
+      "x": 513,
+      "y": 143,
+      "scale": 0.66
+    }
+  ],
+  "obstacles": [
+    {
+      "type": "rect",
+      "x": 334,
+      "y": 202,
+      "w": 51,
+      "h": 595,
+      "kind": "water"
+    }
+  ],
+  "items": [
+    {
+      "type": "atk_up",
+      "x": 122,
+      "y": 721
+    },
+    {
+      "type": "hp_up",
+      "x": 598,
+      "y": 721
+    },
+    {
+      "type": "shield",
+      "x": 122,
+      "y": 288
+    },
+    {
+      "type": "range_up",
+      "x": 598,
+      "y": 288
+    }
+  ],
+  "goldZones": [],
+  "terrain": [
+    {
+      "kind": "sand",
+      "points": [
+        [
+          148,
+          398
+        ],
+        [
+          284,
+          398
+        ],
+        [
+          284,
+          585
+        ],
+        [
+          148,
+          585
+        ]
+      ]
+    },
+    {
+      "kind": "sand",
+      "points": [
+        [
+          436,
+          398
+        ],
+        [
+          572,
+          398
+        ],
+        [
+          572,
+          585
+        ],
+        [
+          436,
+          585
+        ]
+      ]
+    }
+  ],
+  "camps": [
+    {
+      "x": 122,
+      "y": 500,
+      "units": [
+        {
+          "type": "goblin",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "x": 598,
+      "y": 500,
+      "units": [
+        {
+          "type": "goblin",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "x": 360,
+      "y": 160,
+      "units": [
+        {
+          "type": "goblin",
+          "count": 2
+        },
+        {
+          "type": "goblin_archer",
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "enemySquads": [
+    {
+      "spawnDelay": 4,
+      "speed": 55,
+      "units": [
+        {
+          "type": "goblin",
+          "count": 4
+        }
+      ],
+      "route": [
+        [
+          71,
+          330
+        ],
+        [
+          207,
+          202
+        ]
+      ],
+      "id": "s0"
+    },
+    {
+      "spawnDelay": 6,
+      "speed": 55,
+      "units": [
+        {
+          "type": "goblin",
+          "count": 4
+        }
+      ],
+      "route": [
+        [
+          649,
+          330
+        ],
+        [
+          513,
+          202
+        ]
+      ],
+      "id": "s1"
+    }
+  ],
+  "bonusSquadRoute": [
+    [
+      71,
+      500
+    ],
+    [
+      309,
+      177
+    ]
+  ],
+  "referenceSolution": [
+    [
+      [
+        207,
+        874
+      ],
+      [
+        144,
+        560
+      ],
+      [
+        128,
+        320
+      ],
+      [
+        296,
+        176
+      ],
+      [
+        264,
+        176
+      ]
+    ],
+    [
+      [
+        513,
+        874
+      ],
+      [
+        576,
+        560
+      ],
+      [
+        568,
+        224
+      ],
+      [
+        544,
+        200
+      ]
+    ]
+  ],
+  "tutorialHint": "Two squads, one ink pot. Each squad must reach its own boss.",
+  "field": {
+    "x": 54,
+    "y": 75,
+    "w": 612,
+    "h": 850
+  },
+  "design": {
+    "winInk": 1504,
+    "threeStarInk": 1504,
+    "threeStarBrush": "charcoal"
+  }
+}

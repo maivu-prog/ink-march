@@ -1,0 +1,328 @@
+{
+  "id": "c7_s4",
+  "name": "Gatehouse",
+  "chapter": 7,
+  "baseInk": 2040,
+  "starts": [
+    {
+      "x": 360,
+      "y": 922
+    }
+  ],
+  "bosses": [
+    {
+      "type": "goblin_chief",
+      "x": 360,
+      "y": 97,
+      "scale": 0.58
+    }
+  ],
+  "obstacles": [
+    {
+      "type": "rect",
+      "x": 14,
+      "y": 634,
+      "w": 298,
+      "h": 48
+    },
+    {
+      "type": "rect",
+      "x": 408,
+      "y": 634,
+      "w": 298,
+      "h": 48
+    },
+    {
+      "type": "rect",
+      "x": 14,
+      "y": 308,
+      "w": 538,
+      "h": 48
+    },
+    {
+      "type": "rect",
+      "x": 648,
+      "y": 308,
+      "w": 58,
+      "h": 48
+    }
+  ],
+  "items": [
+    {
+      "type": "key",
+      "x": 91,
+      "y": 788,
+      "color": "red"
+    },
+    {
+      "type": "gate",
+      "color": "red",
+      "rect": {
+        "x": 312,
+        "y": 634,
+        "w": 96,
+        "h": 48
+      }
+    },
+    {
+      "type": "key",
+      "x": 101,
+      "y": 471,
+      "color": "blue"
+    },
+    {
+      "type": "gate",
+      "color": "blue",
+      "rect": {
+        "x": 552,
+        "y": 308,
+        "w": 96,
+        "h": 48
+      }
+    },
+    {
+      "type": "key",
+      "x": 629,
+      "y": 519,
+      "color": "red"
+    },
+    {
+      "type": "chest",
+      "x": 130,
+      "y": 212,
+      "color": "red"
+    },
+    {
+      "type": "atk_up",
+      "x": 226,
+      "y": 807
+    },
+    {
+      "type": "hp_up",
+      "x": 226,
+      "y": 164
+    }
+  ],
+  "goldZones": [],
+  "terrain": [
+    {
+      "kind": "sand",
+      "points": [
+        [
+          408,
+          682
+        ],
+        [
+          706,
+          682
+        ],
+        [
+          706,
+          894
+        ],
+        [
+          408,
+          894
+        ]
+      ]
+    }
+  ],
+  "camps": [
+    {
+      "x": 360,
+      "y": 481,
+      "units": [
+        {
+          "type": "orc",
+          "count": 1
+        },
+        {
+          "type": "goblin",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "x": 629,
+      "y": 183,
+      "units": [
+        {
+          "type": "orc",
+          "count": 1
+        },
+        {
+          "type": "goblin_archer",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "x": 610,
+      "y": 807,
+      "units": [
+        {
+          "type": "goblin",
+          "count": 3
+        },
+        {
+          "type": "goblin_archer",
+          "count": 2
+        }
+      ]
+    }
+  ],
+  "enemySquads": [
+    {
+      "spawnDelay": 0,
+      "speed": 45,
+      "units": [
+        {
+          "type": "goblin_archer",
+          "count": 3
+        }
+      ],
+      "route": [
+        [
+          686,
+          471
+        ],
+        [
+          600,
+          270
+        ],
+        [
+          427,
+          126
+        ]
+      ],
+      "id": "s0"
+    },
+    {
+      "spawnDelay": 6,
+      "speed": 45,
+      "units": [
+        {
+          "type": "orc",
+          "count": 1
+        },
+        {
+          "type": "goblin",
+          "count": 3
+        }
+      ],
+      "route": [
+        [
+          34,
+          471
+        ],
+        [
+          187,
+          471
+        ],
+        [
+          600,
+          423
+        ],
+        [
+          600,
+          260
+        ],
+        [
+          427,
+          126
+        ]
+      ],
+      "id": "s1"
+    }
+  ],
+  "bonusSquadRoute": [
+    [
+      34,
+      500
+    ],
+    [
+      302,
+      135
+    ]
+  ],
+  "referenceSolution": [
+    [
+      [
+        360,
+        922
+      ],
+      [
+        544,
+        896
+      ],
+      [
+        552,
+        888
+      ],
+      [
+        576,
+        864
+      ],
+      [
+        552,
+        888
+      ],
+      [
+        544,
+        896
+      ],
+      [
+        232,
+        896
+      ],
+      [
+        120,
+        792
+      ],
+      [
+        328,
+        680
+      ],
+      [
+        320,
+        624
+      ],
+      [
+        128,
+        480
+      ],
+      [
+        296,
+        480
+      ],
+      [
+        600,
+        512
+      ],
+      [
+        616,
+        248
+      ],
+      [
+        256,
+        176
+      ],
+      [
+        304,
+        128
+      ]
+    ]
+  ],
+  "tutorialHint": "Two gates, three keys. The second red key opens the treasure.",
+  "field": {
+    "x": 14,
+    "y": 20,
+    "w": 691,
+    "h": 960
+  },
+  "design": {
+    "winInk": 1721,
+    "threeStarInk": 2495,
+    "threeStarBrush": "golden"
+  }
+}

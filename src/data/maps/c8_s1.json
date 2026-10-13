@@ -1,0 +1,207 @@
+{
+  "id": "c8_s1",
+  "name": "River Run",
+  "chapter": 8,
+  "baseInk": 3280,
+  "starts": [
+    {
+      "x": 360,
+      "y": 940
+    }
+  ],
+  "bosses": [
+    {
+      "type": "shadow_mage",
+      "x": 360,
+      "y": 80,
+      "scale": 1.43
+    }
+  ],
+  "obstacles": [
+    {
+      "type": "rect",
+      "x": 0,
+      "y": 500,
+      "w": 640,
+      "h": 90,
+      "kind": "water"
+    }
+  ],
+  "items": [
+    {
+      "type": "atk_up",
+      "x": 100,
+      "y": 760
+    },
+    {
+      "type": "hp_up",
+      "x": 360,
+      "y": 300
+    }
+  ],
+  "goldZones": [],
+  "terrain": [
+    {
+      "kind": "sand",
+      "points": [
+        [
+          560,
+          420
+        ],
+        [
+          720,
+          420
+        ],
+        [
+          720,
+          680
+        ],
+        [
+          560,
+          680
+        ]
+      ]
+    }
+  ],
+  "camps": [
+    {
+      "x": 100,
+      "y": 300,
+      "units": [
+        {
+          "type": "goblin",
+          "count": 3
+        },
+        {
+          "type": "goblin_archer",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "x": 360,
+      "y": 760,
+      "units": [
+        {
+          "type": "orc",
+          "count": 1
+        },
+        {
+          "type": "goblin",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "x": 620,
+      "y": 250,
+      "units": [
+        {
+          "type": "goblin",
+          "count": 3
+        },
+        {
+          "type": "goblin_archer",
+          "count": 2
+        }
+      ]
+    }
+  ],
+  "enemySquads": [
+    {
+      "spawnDelay": 3,
+      "speed": 55,
+      "units": [
+        {
+          "type": "goblin_archer",
+          "count": 5
+        }
+      ],
+      "route": [
+        [
+          20,
+          350
+        ],
+        [
+          330,
+          110
+        ]
+      ],
+      "id": "s0"
+    }
+  ],
+  "bonusSquadRoute": [
+    [
+      20,
+      500
+    ],
+    [
+      300,
+      120
+    ]
+  ],
+  "referenceSolution": [
+    [
+      [
+        360,
+        940
+      ],
+      [
+        656,
+        584
+      ],
+      [
+        648,
+        488
+      ],
+      [
+        160,
+        328
+      ],
+      [
+        560,
+        280
+      ],
+      [
+        656,
+        520
+      ],
+      [
+        648,
+        600
+      ],
+      [
+        424,
+        744
+      ],
+      [
+        128,
+        744
+      ],
+      [
+        656,
+        592
+      ],
+      [
+        640,
+        392
+      ],
+      [
+        392,
+        136
+      ]
+    ]
+  ],
+  "tutorialHint": "The river only has a ford on the far east, behind the sand.",
+  "field": {
+    "x": 0,
+    "y": 0,
+    "w": 720,
+    "h": 1000
+  },
+  "design": {
+    "winInk": 1640,
+    "threeStarInk": 4014,
+    "threeStarBrush": "golden"
+  }
+}

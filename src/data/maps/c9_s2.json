@@ -1,0 +1,290 @@
+{
+  "id": "c9_s2",
+  "name": "Twin Shadows",
+  "chapter": 9,
+  "baseInk": 2120,
+  "starts": [
+    {
+      "x": 180,
+      "y": 940
+    },
+    {
+      "x": 540,
+      "y": 940
+    }
+  ],
+  "bosses": [
+    {
+      "type": "shadow_mage",
+      "x": 180,
+      "y": 80,
+      "scale": 1.46
+    },
+    {
+      "type": "shadow_mage",
+      "x": 540,
+      "y": 80,
+      "scale": 1.46
+    }
+  ],
+  "obstacles": [
+    {
+      "type": "rect",
+      "x": 330,
+      "y": 150,
+      "w": 60,
+      "h": 650
+    }
+  ],
+  "items": [
+    {
+      "type": "atk_up",
+      "x": 80,
+      "y": 800
+    },
+    {
+      "type": "hp_up",
+      "x": 640,
+      "y": 800
+    },
+    {
+      "type": "reinforce",
+      "x": 80,
+      "y": 200
+    },
+    {
+      "type": "shield",
+      "x": 640,
+      "y": 200
+    }
+  ],
+  "goldZones": [],
+  "terrain": [
+    {
+      "kind": "sand",
+      "points": [
+        [
+          30,
+          250
+        ],
+        [
+          310,
+          250
+        ],
+        [
+          310,
+          750
+        ],
+        [
+          30,
+          750
+        ]
+      ]
+    },
+    {
+      "kind": "swamp",
+      "points": [
+        [
+          410,
+          250
+        ],
+        [
+          690,
+          250
+        ],
+        [
+          690,
+          750
+        ],
+        [
+          410,
+          750
+        ]
+      ]
+    }
+  ],
+  "camps": [
+    {
+      "x": 180,
+      "y": 500,
+      "units": [
+        {
+          "type": "orc",
+          "count": 1
+        },
+        {
+          "type": "goblin",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "x": 540,
+      "y": 500,
+      "units": [
+        {
+          "type": "shaman",
+          "count": 1
+        },
+        {
+          "type": "goblin",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "x": 360,
+      "y": 900,
+      "units": [
+        {
+          "type": "goblin",
+          "count": 4
+        },
+        {
+          "type": "goblin_archer",
+          "count": 2
+        }
+      ]
+    }
+  ],
+  "enemySquads": [
+    {
+      "spawnDelay": 5,
+      "speed": 55,
+      "units": [
+        {
+          "type": "goblin",
+          "count": 6
+        }
+      ],
+      "route": [
+        [
+          20,
+          110
+        ],
+        [
+          180,
+          110
+        ]
+      ],
+      "id": "s0"
+    },
+    {
+      "spawnDelay": 5,
+      "speed": 50,
+      "units": [
+        {
+          "type": "shaman",
+          "count": 2
+        },
+        {
+          "type": "goblin",
+          "count": 3
+        }
+      ],
+      "route": [
+        [
+          700,
+          110
+        ],
+        [
+          540,
+          110
+        ]
+      ],
+      "id": "s1"
+    }
+  ],
+  "bonusSquadRoute": [
+    [
+      20,
+      500
+    ],
+    [
+      300,
+      120
+    ]
+  ],
+  "referenceSolution": [
+    [
+      [
+        180,
+        940
+      ],
+      [
+        296,
+        920
+      ],
+      [
+        112,
+        808
+      ],
+      [
+        152,
+        560
+      ],
+      [
+        168,
+        144
+      ]
+    ],
+    [
+      [
+        540,
+        940
+      ],
+      [
+        632,
+        832
+      ],
+      [
+        696,
+        728
+      ],
+      [
+        696,
+        624
+      ],
+      [
+        688,
+        616
+      ],
+      [
+        600,
+        528
+      ],
+      [
+        688,
+        440
+      ],
+      [
+        696,
+        432
+      ],
+      [
+        696,
+        256
+      ],
+      [
+        664,
+        224
+      ],
+      [
+        584,
+        128
+      ]
+    ]
+  ],
+  "tutorialHint": "Sand on the west, swamp on the east, a mage at the end of each.",
+  "field": {
+    "x": 0,
+    "y": 0,
+    "w": 720,
+    "h": 1000
+  },
+  "design": {
+    "winInk": 1831,
+    "threeStarInk": 2596,
+    "threeStarBrush": "golden"
+  }
+}

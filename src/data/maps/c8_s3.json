@@ -1,0 +1,251 @@
+{
+  "id": "c8_s3",
+  "name": "The Golden Bridge",
+  "chapter": 8,
+  "baseInk": 2300,
+  "starts": [
+    {
+      "x": 360,
+      "y": 940
+    }
+  ],
+  "bosses": [
+    {
+      "type": "shadow_mage",
+      "x": 360,
+      "y": 80,
+      "scale": 0.99
+    }
+  ],
+  "obstacles": [
+    {
+      "type": "rect",
+      "x": 0,
+      "y": 450,
+      "w": 640,
+      "h": 100,
+      "kind": "water"
+    }
+  ],
+  "items": [
+    {
+      "type": "key",
+      "x": 360,
+      "y": 700,
+      "color": "red"
+    },
+    {
+      "type": "chest",
+      "x": 360,
+      "y": 330,
+      "color": "red"
+    },
+    {
+      "type": "atk_up",
+      "x": 600,
+      "y": 650
+    },
+    {
+      "type": "hp_up",
+      "x": 600,
+      "y": 300
+    }
+  ],
+  "goldZones": [
+    {
+      "points": [
+        [
+          310,
+          445
+        ],
+        [
+          410,
+          445
+        ],
+        [
+          410,
+          555
+        ],
+        [
+          310,
+          555
+        ]
+      ]
+    }
+  ],
+  "terrain": [],
+  "camps": [
+    {
+      "x": 100,
+      "y": 250,
+      "units": [
+        {
+          "type": "orc",
+          "count": 1
+        },
+        {
+          "type": "goblin",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "x": 620,
+      "y": 250,
+      "units": [
+        {
+          "type": "orc",
+          "count": 1
+        },
+        {
+          "type": "goblin",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "x": 100,
+      "y": 760,
+      "units": [
+        {
+          "type": "goblin",
+          "count": 3
+        },
+        {
+          "type": "goblin_archer",
+          "count": 2
+        }
+      ]
+    }
+  ],
+  "enemySquads": [
+    {
+      "spawnDelay": 0,
+      "speed": 55,
+      "units": [
+        {
+          "type": "goblin_archer",
+          "count": 4
+        }
+      ],
+      "route": [
+        [
+          20,
+          330
+        ],
+        [
+          200,
+          220
+        ],
+        [
+          330,
+          110
+        ]
+      ],
+      "id": "s0"
+    },
+    {
+      "spawnDelay": 5,
+      "speed": 45,
+      "units": [
+        {
+          "type": "orc",
+          "count": 2
+        }
+      ],
+      "route": [
+        [
+          700,
+          360
+        ],
+        [
+          560,
+          250
+        ],
+        [
+          410,
+          110
+        ]
+      ],
+      "id": "s1"
+    }
+  ],
+  "bonusSquadRoute": [
+    [
+      20,
+      500
+    ],
+    [
+      300,
+      120
+    ]
+  ],
+  "referenceSolution": [
+    [
+      [
+        360,
+        940
+      ],
+      [
+        160,
+        792
+      ],
+      [
+        336,
+        712
+      ],
+      [
+        656,
+        552
+      ],
+      [
+        648,
+        440
+      ],
+      [
+        160,
+        280
+      ],
+      [
+        560,
+        280
+      ],
+      [
+        656,
+        464
+      ],
+      [
+        648,
+        592
+      ],
+      [
+        616,
+        624
+      ],
+      [
+        656,
+        528
+      ],
+      [
+        648,
+        416
+      ],
+      [
+        376,
+        144
+      ]
+    ]
+  ],
+  "tutorialHint": "Golden ink builds a bridge straight to the chest. Without it, take the long ford.",
+  "field": {
+    "x": 0,
+    "y": 0,
+    "w": 720,
+    "h": 1000
+  },
+  "design": {
+    "winInk": 1006,
+    "threeStarInk": 2808,
+    "threeStarBrush": "golden"
+  }
+}

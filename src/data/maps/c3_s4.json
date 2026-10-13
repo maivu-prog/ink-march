@@ -1,0 +1,324 @@
+{
+  "id": "c3_s4",
+  "name": "Mire Chieftain",
+  "chapter": 3,
+  "baseInk": 1650,
+  "starts": [
+    {
+      "x": 360,
+      "y": 852
+    }
+  ],
+  "bosses": [
+    {
+      "type": "goblin_king",
+      "x": 360,
+      "y": 164,
+      "scale": 0.43
+    }
+  ],
+  "obstacles": [],
+  "items": [
+    {
+      "type": "reinforce",
+      "x": 220,
+      "y": 724
+    },
+    {
+      "type": "atk_up",
+      "x": 500,
+      "y": 724
+    },
+    {
+      "type": "hp_up",
+      "x": 360,
+      "y": 740
+    }
+  ],
+  "goldZones": [],
+  "terrain": [
+    {
+      "kind": "swamp",
+      "points": [
+        [
+          72,
+          340
+        ],
+        [
+          192,
+          340
+        ],
+        [
+          192,
+          660
+        ],
+        [
+          72,
+          660
+        ]
+      ]
+    },
+    {
+      "kind": "swamp",
+      "points": [
+        [
+          248,
+          340
+        ],
+        [
+          472,
+          340
+        ],
+        [
+          472,
+          660
+        ],
+        [
+          248,
+          660
+        ]
+      ]
+    },
+    {
+      "kind": "swamp",
+      "points": [
+        [
+          528,
+          340
+        ],
+        [
+          648,
+          340
+        ],
+        [
+          648,
+          660
+        ],
+        [
+          528,
+          660
+        ]
+      ]
+    },
+    {
+      "kind": "road",
+      "points": [
+        [
+          192,
+          340
+        ],
+        [
+          248,
+          340
+        ],
+        [
+          248,
+          660
+        ],
+        [
+          192,
+          660
+        ]
+      ]
+    },
+    {
+      "kind": "road",
+      "points": [
+        [
+          472,
+          340
+        ],
+        [
+          528,
+          340
+        ],
+        [
+          528,
+          660
+        ],
+        [
+          472,
+          660
+        ]
+      ]
+    }
+  ],
+  "camps": [
+    {
+      "x": 220,
+      "y": 276,
+      "units": [
+        {
+          "type": "goblin",
+          "count": 3
+        },
+        {
+          "type": "goblin_archer",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "x": 500,
+      "y": 276,
+      "units": [
+        {
+          "type": "goblin",
+          "count": 3
+        },
+        {
+          "type": "goblin_archer",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "x": 360,
+      "y": 500,
+      "units": [
+        {
+          "type": "shaman",
+          "count": 1
+        },
+        {
+          "type": "goblin",
+          "count": 3
+        }
+      ]
+    }
+  ],
+  "enemySquads": [
+    {
+      "spawnDelay": 5,
+      "speed": 55,
+      "units": [
+        {
+          "type": "goblin",
+          "count": 6
+        }
+      ],
+      "route": [
+        [
+          88,
+          500
+        ],
+        [
+          220,
+          460
+        ],
+        [
+          220,
+          260
+        ],
+        [
+          336,
+          188
+        ]
+      ],
+      "id": "s0"
+    },
+    {
+      "spawnDelay": 7,
+      "speed": 50,
+      "units": [
+        {
+          "type": "shaman",
+          "count": 1
+        },
+        {
+          "type": "goblin",
+          "count": 3
+        }
+      ],
+      "route": [
+        [
+          632,
+          500
+        ],
+        [
+          500,
+          460
+        ],
+        [
+          500,
+          260
+        ],
+        [
+          384,
+          188
+        ]
+      ],
+      "id": "s1"
+    }
+  ],
+  "bonusSquadRoute": [
+    [
+      88,
+      500
+    ],
+    [
+      312,
+      196
+    ]
+  ],
+  "referenceSolution": [
+    [
+      [
+        360,
+        852
+      ],
+      [
+        240,
+        632
+      ],
+      [
+        240,
+        336
+      ],
+      [
+        440,
+        304
+      ],
+      [
+        472,
+        336
+      ],
+      [
+        472,
+        480
+      ],
+      [
+        424,
+        480
+      ],
+      [
+        488,
+        528
+      ],
+      [
+        488,
+        696
+      ],
+      [
+        472,
+        312
+      ],
+      [
+        384,
+        224
+      ]
+    ]
+  ],
+  "tutorialHint": "Two causeways cross the mire. The island camp can only be reached through the swamp.",
+  "field": {
+    "x": 72,
+    "y": 100,
+    "w": 576,
+    "h": 800
+  },
+  "design": {
+    "winInk": 623,
+    "threeStarInk": 1610,
+    "threeStarBrush": "quill"
+  }
+}

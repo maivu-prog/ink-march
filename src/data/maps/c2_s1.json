@@ -1,0 +1,195 @@
+{
+  "id": "c2_s1",
+  "name": "Dune Sea",
+  "chapter": 2,
+  "baseInk": 1370,
+  "starts": [
+    {
+      "x": 360,
+      "y": 830
+    }
+  ],
+  "bosses": [
+    {
+      "type": "goblin_chief",
+      "x": 360,
+      "y": 185,
+      "scale": 1.17
+    }
+  ],
+  "obstacles": [],
+  "items": [
+    {
+      "type": "atk_up",
+      "x": 360,
+      "y": 515
+    },
+    {
+      "type": "shield",
+      "x": 540,
+      "y": 350
+    }
+  ],
+  "goldZones": [],
+  "terrain": [
+    {
+      "kind": "sand",
+      "points": [
+        [
+          90,
+          350
+        ],
+        [
+          510,
+          350
+        ],
+        [
+          510,
+          650
+        ],
+        [
+          90,
+          650
+        ]
+      ]
+    },
+    {
+      "kind": "road",
+      "points": [
+        [
+          510,
+          350
+        ],
+        [
+          570,
+          350
+        ],
+        [
+          570,
+          650
+        ],
+        [
+          510,
+          650
+        ]
+      ]
+    }
+  ],
+  "camps": [
+    {
+      "x": 180,
+      "y": 515,
+      "units": [
+        {
+          "type": "goblin",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "x": 360,
+      "y": 275,
+      "units": [
+        {
+          "type": "goblin",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "x": 555,
+      "y": 710,
+      "units": [
+        {
+          "type": "goblin",
+          "count": 1
+        },
+        {
+          "type": "goblin_archer",
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "enemySquads": [
+    {
+      "spawnDelay": 5,
+      "speed": 55,
+      "units": [
+        {
+          "type": "goblin_archer",
+          "count": 4
+        }
+      ],
+      "route": [
+        [
+          105,
+          312
+        ],
+        [
+          315,
+          238
+        ],
+        [
+          360,
+          200
+        ]
+      ],
+      "id": "s0"
+    }
+  ],
+  "bonusSquadRoute": [
+    [
+      105,
+      500
+    ],
+    [
+      315,
+      215
+    ]
+  ],
+  "referenceSolution": [
+    [
+      [
+        360,
+        830
+      ],
+      [
+        488,
+        720
+      ],
+      [
+        256,
+        624
+      ],
+      [
+        208,
+        576
+      ],
+      [
+        320,
+        328
+      ],
+      [
+        512,
+        336
+      ],
+      [
+        400,
+        232
+      ]
+    ]
+  ],
+  "tutorialHint": "Sand burns ink fast and slows your march. The road on the east is cheap but long.",
+  "field": {
+    "x": 90,
+    "y": 125,
+    "w": 540,
+    "h": 750
+  },
+  "design": {
+    "winInk": 619,
+    "threeStarInk": 1337,
+    "threeStarBrush": "quill"
+  }
+}

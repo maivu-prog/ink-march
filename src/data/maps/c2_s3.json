@@ -1,0 +1,319 @@
+{
+  "id": "c2_s3",
+  "name": "Bandit King's Oasis",
+  "chapter": 2,
+  "baseInk": 2070,
+  "starts": [
+    {
+      "x": 360,
+      "y": 830
+    }
+  ],
+  "bosses": [
+    {
+      "type": "goblin_king",
+      "x": 360,
+      "y": 185,
+      "scale": 0.72
+    }
+  ],
+  "obstacles": [
+    {
+      "type": "rect",
+      "x": 300,
+      "y": 440,
+      "w": 120,
+      "h": 105,
+      "kind": "water"
+    }
+  ],
+  "items": [
+    {
+      "type": "atk_up",
+      "x": 202,
+      "y": 650
+    },
+    {
+      "type": "hp_up",
+      "x": 518,
+      "y": 575
+    },
+    {
+      "type": "shield",
+      "x": 360,
+      "y": 275
+    }
+  ],
+  "goldZones": [],
+  "terrain": [
+    {
+      "kind": "sand",
+      "points": [
+        [
+          150,
+          312
+        ],
+        [
+          570,
+          312
+        ],
+        [
+          570,
+          672
+        ],
+        [
+          150,
+          672
+        ]
+      ]
+    },
+    {
+      "kind": "road",
+      "points": [
+        [
+          338,
+          312
+        ],
+        [
+          382,
+          312
+        ],
+        [
+          382,
+          440
+        ],
+        [
+          338,
+          440
+        ]
+      ]
+    },
+    {
+      "kind": "road",
+      "points": [
+        [
+          338,
+          545
+        ],
+        [
+          382,
+          545
+        ],
+        [
+          382,
+          672
+        ],
+        [
+          338,
+          672
+        ]
+      ]
+    }
+  ],
+  "camps": [
+    {
+      "x": 172,
+      "y": 372,
+      "units": [
+        {
+          "type": "goblin",
+          "count": 3
+        },
+        {
+          "type": "goblin_archer",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "x": 548,
+      "y": 372,
+      "units": [
+        {
+          "type": "goblin",
+          "count": 3
+        },
+        {
+          "type": "goblin_archer",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "x": 548,
+      "y": 718,
+      "units": [
+        {
+          "type": "goblin",
+          "count": 2
+        },
+        {
+          "type": "goblin_archer",
+          "count": 2
+        }
+      ]
+    }
+  ],
+  "enemySquads": [
+    {
+      "spawnDelay": 4,
+      "speed": 55,
+      "units": [
+        {
+          "type": "goblin",
+          "count": 6
+        }
+      ],
+      "route": [
+        [
+          105,
+          575
+        ],
+        [
+          202,
+          425
+        ],
+        [
+          315,
+          275
+        ],
+        [
+          360,
+          215
+        ]
+      ],
+      "id": "s0"
+    },
+    {
+      "spawnDelay": 8,
+      "speed": 55,
+      "units": [
+        {
+          "type": "goblin_archer",
+          "count": 5
+        }
+      ],
+      "route": [
+        [
+          615,
+          575
+        ],
+        [
+          510,
+          425
+        ],
+        [
+          405,
+          275
+        ],
+        [
+          360,
+          215
+        ]
+      ],
+      "id": "s1"
+    }
+  ],
+  "bonusSquadRoute": [
+    [
+      105,
+      500
+    ],
+    [
+      315,
+      215
+    ]
+  ],
+  "referenceSolution": [
+    [
+      [
+        360,
+        830
+      ],
+      [
+        144,
+        632
+      ],
+      [
+        144,
+        432
+      ],
+      [
+        144,
+        320
+      ],
+      [
+        168,
+        304
+      ],
+      [
+        520,
+        312
+      ],
+      [
+        560,
+        304
+      ],
+      [
+        568,
+        312
+      ],
+      [
+        576,
+        320
+      ],
+      [
+        576,
+        648
+      ],
+      [
+        568,
+        656
+      ],
+      [
+        576,
+        648
+      ],
+      [
+        576,
+        624
+      ],
+      [
+        568,
+        616
+      ],
+      [
+        544,
+        592
+      ],
+      [
+        568,
+        568
+      ],
+      [
+        576,
+        560
+      ],
+      [
+        576,
+        320
+      ],
+      [
+        424,
+        200
+      ]
+    ]
+  ],
+  "tutorialHint": "The oasis blocks the middle. Roads north and south of it save ink.",
+  "field": {
+    "x": 90,
+    "y": 125,
+    "w": 540,
+    "h": 750
+  },
+  "design": {
+    "winInk": 828,
+    "threeStarInk": 2026,
+    "threeStarBrush": "quill"
+  }
+}

@@ -1,0 +1,259 @@
+{
+  "id": "c7_s3",
+  "name": "Hammer and Anvil",
+  "chapter": 7,
+  "baseInk": 1890,
+  "starts": [
+    {
+      "x": 187,
+      "y": 922
+    },
+    {
+      "x": 533,
+      "y": 922
+    }
+  ],
+  "bosses": [
+    {
+      "type": "goblin_chief",
+      "x": 360,
+      "y": 97,
+      "scale": 1.12
+    }
+  ],
+  "obstacles": [
+    {
+      "type": "rect",
+      "x": 322,
+      "y": 260,
+      "w": 77,
+      "h": 576
+    }
+  ],
+  "items": [
+    {
+      "type": "atk_up",
+      "x": 110,
+      "y": 519
+    },
+    {
+      "type": "hp_up",
+      "x": 590,
+      "y": 788
+    },
+    {
+      "type": "reinforce",
+      "x": 590,
+      "y": 452
+    }
+  ],
+  "goldZones": [],
+  "terrain": [
+    {
+      "kind": "road",
+      "points": [
+        [
+          72,
+          212
+        ],
+        [
+          149,
+          212
+        ],
+        [
+          149,
+          884
+        ],
+        [
+          72,
+          884
+        ]
+      ]
+    },
+    {
+      "kind": "swamp",
+      "points": [
+        [
+          446,
+          260
+        ],
+        [
+          686,
+          260
+        ],
+        [
+          686,
+          740
+        ],
+        [
+          446,
+          740
+        ]
+      ]
+    }
+  ],
+  "camps": [
+    {
+      "x": 206,
+      "y": 308,
+      "units": [
+        {
+          "type": "orc",
+          "count": 1
+        },
+        {
+          "type": "goblin",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "x": 552,
+      "y": 308,
+      "units": [
+        {
+          "type": "orc",
+          "count": 1
+        },
+        {
+          "type": "goblin",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "x": 360,
+      "y": 903,
+      "units": [
+        {
+          "type": "goblin",
+          "count": 4
+        }
+      ]
+    }
+  ],
+  "enemySquads": [
+    {
+      "spawnDelay": 6,
+      "speed": 45,
+      "units": [
+        {
+          "type": "orc",
+          "count": 2
+        }
+      ],
+      "route": [
+        [
+          34,
+          164
+        ],
+        [
+          331,
+          126
+        ]
+      ],
+      "id": "s0"
+    },
+    {
+      "spawnDelay": 3,
+      "speed": 55,
+      "units": [
+        {
+          "type": "goblin",
+          "count": 6
+        }
+      ],
+      "route": [
+        [
+          686,
+          164
+        ],
+        [
+          389,
+          126
+        ]
+      ],
+      "id": "s1"
+    }
+  ],
+  "bonusSquadRoute": [
+    [
+      34,
+      500
+    ],
+    [
+      302,
+      135
+    ]
+  ],
+  "referenceSolution": [
+    [
+      [
+        187,
+        922
+      ],
+      [
+        296,
+        920
+      ],
+      [
+        144,
+        720
+      ],
+      [
+        144,
+        368
+      ],
+      [
+        160,
+        352
+      ],
+      [
+        344,
+        160
+      ]
+    ],
+    [
+      [
+        533,
+        922
+      ],
+      [
+        688,
+        736
+      ],
+      [
+        688,
+        544
+      ],
+      [
+        680,
+        536
+      ],
+      [
+        616,
+        472
+      ],
+      [
+        584,
+        368
+      ],
+      [
+        416,
+        128
+      ]
+    ]
+  ],
+  "tutorialHint": "A ridge splits the pass. Road on the west, swamp on the east.",
+  "field": {
+    "x": 14,
+    "y": 20,
+    "w": 691,
+    "h": 960
+  },
+  "design": {
+    "winInk": 1774,
+    "threeStarInk": 2245,
+    "threeStarBrush": "marsh"
+  }
+}

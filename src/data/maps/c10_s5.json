@@ -1,0 +1,296 @@
+{
+  "id": "c10_s5",
+  "name": "The Ink Citadel",
+  "chapter": 10,
+  "baseInk": 2600,
+  "starts": [
+    {
+      "x": 180,
+      "y": 940
+    },
+    {
+      "x": 540,
+      "y": 940
+    }
+  ],
+  "bosses": [
+    {
+      "type": "goblin_king",
+      "x": 180,
+      "y": 80,
+      "scale": 0.58
+    },
+    {
+      "type": "shadow_mage",
+      "x": 540,
+      "y": 80,
+      "scale": 0.58
+    }
+  ],
+  "obstacles": [
+    {
+      "type": "rect",
+      "x": 100,
+      "y": 250,
+      "w": 200,
+      "h": 40
+    },
+    {
+      "type": "rect",
+      "x": 420,
+      "y": 250,
+      "w": 200,
+      "h": 40
+    },
+    {
+      "type": "rect",
+      "x": 330,
+      "y": 300,
+      "w": 60,
+      "h": 500
+    }
+  ],
+  "items": [
+    {
+      "type": "reinforce",
+      "x": 200,
+      "y": 700
+    },
+    {
+      "type": "reinforce",
+      "x": 520,
+      "y": 700
+    },
+    {
+      "type": "atk_up",
+      "x": 100,
+      "y": 450
+    },
+    {
+      "type": "hp_up",
+      "x": 620,
+      "y": 450
+    }
+  ],
+  "goldZones": [],
+  "terrain": [
+    {
+      "kind": "sand",
+      "points": [
+        [
+          0,
+          300
+        ],
+        [
+          330,
+          300
+        ],
+        [
+          330,
+          800
+        ],
+        [
+          0,
+          800
+        ]
+      ]
+    },
+    {
+      "kind": "swamp",
+      "points": [
+        [
+          390,
+          300
+        ],
+        [
+          720,
+          300
+        ],
+        [
+          720,
+          800
+        ],
+        [
+          390,
+          800
+        ]
+      ]
+    }
+  ],
+  "camps": [
+    {
+      "x": 60,
+      "y": 160,
+      "units": [
+        {
+          "type": "orc",
+          "count": 2
+        },
+        {
+          "type": "goblin_archer",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "x": 660,
+      "y": 160,
+      "units": [
+        {
+          "type": "shaman",
+          "count": 2
+        },
+        {
+          "type": "orc",
+          "count": 1
+        },
+        {
+          "type": "goblin_archer",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "x": 360,
+      "y": 880,
+      "units": [
+        {
+          "type": "orc",
+          "count": 2
+        },
+        {
+          "type": "goblin",
+          "count": 3
+        }
+      ]
+    }
+  ],
+  "enemySquads": [
+    {
+      "spawnDelay": 6,
+      "speed": 45,
+      "units": [
+        {
+          "type": "orc",
+          "count": 2
+        },
+        {
+          "type": "goblin",
+          "count": 4
+        }
+      ],
+      "route": [
+        [
+          20,
+          500
+        ],
+        [
+          60,
+          320
+        ],
+        [
+          180,
+          110
+        ]
+      ],
+      "id": "s0"
+    },
+    {
+      "spawnDelay": 6,
+      "speed": 50,
+      "units": [
+        {
+          "type": "shaman",
+          "count": 2
+        },
+        {
+          "type": "orc",
+          "count": 1
+        },
+        {
+          "type": "goblin",
+          "count": 3
+        }
+      ],
+      "route": [
+        [
+          700,
+          500
+        ],
+        [
+          660,
+          320
+        ],
+        [
+          540,
+          110
+        ]
+      ],
+      "id": "s1"
+    }
+  ],
+  "bonusSquadRoute": [
+    [
+      20,
+      500
+    ],
+    [
+      300,
+      120
+    ]
+  ],
+  "referenceSolution": [
+    [
+      [
+        180,
+        940
+      ],
+      [
+        296,
+        896
+      ],
+      [
+        216,
+        728
+      ],
+      [
+        80,
+        240
+      ],
+      [
+        80,
+        224
+      ],
+      [
+        152,
+        136
+      ]
+    ],
+    [
+      [
+        540,
+        940
+      ],
+      [
+        640,
+        224
+      ],
+      [
+        568,
+        136
+      ]
+    ]
+  ],
+  "tutorialHint": "The king and the mage defend the citadel together. Everything you learned, all at once.",
+  "field": {
+    "x": 0,
+    "y": 0,
+    "w": 720,
+    "h": 1000
+  },
+  "design": {
+    "winInk": 2452,
+    "threeStarInk": 2696,
+    "threeStarBrush": "marsh"
+  }
+}

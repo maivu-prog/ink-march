@@ -1,0 +1,234 @@
+{
+  "id": "c4_s4",
+  "name": "Twin Fortress",
+  "chapter": 4,
+  "baseInk": 1490,
+  "starts": [
+    {
+      "x": 207,
+      "y": 874
+    },
+    {
+      "x": 513,
+      "y": 874
+    }
+  ],
+  "bosses": [
+    {
+      "type": "goblin_king",
+      "x": 207,
+      "y": 143,
+      "scale": 0.37
+    },
+    {
+      "type": "goblin_king",
+      "x": 513,
+      "y": 143,
+      "scale": 0.37
+    }
+  ],
+  "obstacles": [
+    {
+      "type": "rect",
+      "x": 334,
+      "y": 75,
+      "w": 51,
+      "h": 697,
+      "kind": "water"
+    },
+    {
+      "type": "rect",
+      "x": 105,
+      "y": 372,
+      "w": 170,
+      "h": 34
+    },
+    {
+      "type": "rect",
+      "x": 445,
+      "y": 372,
+      "w": 170,
+      "h": 34
+    }
+  ],
+  "items": [
+    {
+      "type": "reinforce",
+      "x": 266,
+      "y": 500
+    },
+    {
+      "type": "reinforce",
+      "x": 454,
+      "y": 500
+    },
+    {
+      "type": "atk_up",
+      "x": 139,
+      "y": 262
+    },
+    {
+      "type": "hp_up",
+      "x": 581,
+      "y": 262
+    }
+  ],
+  "goldZones": [],
+  "terrain": [],
+  "camps": [
+    {
+      "x": 105,
+      "y": 602,
+      "units": [
+        {
+          "type": "goblin",
+          "count": 3
+        },
+        {
+          "type": "goblin_archer",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "x": 615,
+      "y": 602,
+      "units": [
+        {
+          "type": "goblin",
+          "count": 3
+        },
+        {
+          "type": "goblin_archer",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "x": 360,
+      "y": 840,
+      "units": [
+        {
+          "type": "goblin",
+          "count": 4
+        }
+      ]
+    }
+  ],
+  "enemySquads": [
+    {
+      "spawnDelay": 8,
+      "speed": 55,
+      "units": [
+        {
+          "type": "goblin",
+          "count": 6
+        }
+      ],
+      "route": [
+        [
+          71,
+          262
+        ],
+        [
+          207,
+          177
+        ]
+      ],
+      "id": "s0"
+    },
+    {
+      "spawnDelay": 8,
+      "speed": 55,
+      "units": [
+        {
+          "type": "goblin",
+          "count": 6
+        }
+      ],
+      "route": [
+        [
+          649,
+          262
+        ],
+        [
+          513,
+          177
+        ]
+      ],
+      "id": "s1"
+    }
+  ],
+  "bonusSquadRoute": [
+    [
+      71,
+      500
+    ],
+    [
+      309,
+      177
+    ]
+  ],
+  "referenceSolution": [
+    [
+      [
+        207,
+        874
+      ],
+      [
+        296,
+        856
+      ],
+      [
+        128,
+        664
+      ],
+      [
+        88,
+        320
+      ],
+      [
+        120,
+        288
+      ],
+      [
+        176,
+        200
+      ]
+    ],
+    [
+      [
+        513,
+        874
+      ],
+      [
+        592,
+        664
+      ],
+      [
+        472,
+        528
+      ],
+      [
+        432,
+        384
+      ],
+      [
+        480,
+        200
+      ]
+    ]
+  ],
+  "tutorialHint": "Two kings, two squads. Share the ink wisely between the fronts.",
+  "field": {
+    "x": 54,
+    "y": 75,
+    "w": 612,
+    "h": 850
+  },
+  "design": {
+    "winInk": 1376,
+    "threeStarInk": 1587,
+    "threeStarBrush": "charcoal"
+  }
+}

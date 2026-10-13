@@ -1,0 +1,267 @@
+{
+  "id": "c8_s2",
+  "name": "Ferry Point",
+  "chapter": 8,
+  "baseInk": 1940,
+  "starts": [
+    {
+      "x": 180,
+      "y": 940
+    },
+    {
+      "x": 540,
+      "y": 940
+    }
+  ],
+  "bosses": [
+    {
+      "type": "shadow_mage",
+      "x": 180,
+      "y": 80,
+      "scale": 1.28
+    },
+    {
+      "type": "shadow_mage",
+      "x": 540,
+      "y": 80,
+      "scale": 1.28
+    }
+  ],
+  "obstacles": [
+    {
+      "type": "rect",
+      "x": 330,
+      "y": 100,
+      "w": 60,
+      "h": 700,
+      "kind": "water"
+    }
+  ],
+  "items": [
+    {
+      "type": "atk_up",
+      "x": 250,
+      "y": 250
+    },
+    {
+      "type": "hp_up",
+      "x": 470,
+      "y": 250
+    },
+    {
+      "type": "reinforce",
+      "x": 80,
+      "y": 800
+    },
+    {
+      "type": "range_up",
+      "x": 640,
+      "y": 800
+    }
+  ],
+  "goldZones": [],
+  "terrain": [
+    {
+      "kind": "sand",
+      "points": [
+        [
+          0,
+          380
+        ],
+        [
+          330,
+          380
+        ],
+        [
+          330,
+          560
+        ],
+        [
+          0,
+          560
+        ]
+      ]
+    },
+    {
+      "kind": "sand",
+      "points": [
+        [
+          390,
+          380
+        ],
+        [
+          720,
+          380
+        ],
+        [
+          720,
+          560
+        ],
+        [
+          390,
+          560
+        ]
+      ]
+    }
+  ],
+  "camps": [
+    {
+      "x": 80,
+      "y": 470,
+      "units": [
+        {
+          "type": "orc",
+          "count": 1
+        },
+        {
+          "type": "goblin",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "x": 640,
+      "y": 470,
+      "units": [
+        {
+          "type": "orc",
+          "count": 1
+        },
+        {
+          "type": "goblin",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "x": 360,
+      "y": 880,
+      "units": [
+        {
+          "type": "goblin",
+          "count": 4
+        },
+        {
+          "type": "goblin_archer",
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "enemySquads": [
+    {
+      "spawnDelay": 5,
+      "speed": 45,
+      "units": [
+        {
+          "type": "orc",
+          "count": 1
+        },
+        {
+          "type": "goblin",
+          "count": 3
+        }
+      ],
+      "route": [
+        [
+          20,
+          200
+        ],
+        [
+          180,
+          110
+        ]
+      ],
+      "id": "s0"
+    },
+    {
+      "spawnDelay": 5,
+      "speed": 45,
+      "units": [
+        {
+          "type": "orc",
+          "count": 1
+        },
+        {
+          "type": "goblin",
+          "count": 3
+        }
+      ],
+      "route": [
+        [
+          700,
+          200
+        ],
+        [
+          540,
+          110
+        ]
+      ],
+      "id": "s1"
+    }
+  ],
+  "bonusSquadRoute": [
+    [
+      20,
+      500
+    ],
+    [
+      300,
+      120
+    ]
+  ],
+  "referenceSolution": [
+    [
+      [
+        180,
+        940
+      ],
+      [
+        296,
+        896
+      ],
+      [
+        96,
+        536
+      ],
+      [
+        168,
+        144
+      ]
+    ],
+    [
+      [
+        540,
+        940
+      ],
+      [
+        632,
+        832
+      ],
+      [
+        632,
+        536
+      ],
+      [
+        488,
+        272
+      ],
+      [
+        528,
+        144
+      ]
+    ]
+  ],
+  "tutorialHint": "Two squads, two mages, one river between them.",
+  "field": {
+    "x": 0,
+    "y": 0,
+    "w": 720,
+    "h": 1000
+  },
+  "design": {
+    "winInk": 1825,
+    "threeStarInk": 2036,
+    "threeStarBrush": "golden"
+  }
+}

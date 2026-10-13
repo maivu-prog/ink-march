@@ -1,0 +1,362 @@
+{
+  "id": "c10_s3",
+  "name": "Hall of Gates",
+  "chapter": 10,
+  "baseInk": 4030,
+  "starts": [
+    {
+      "x": 360,
+      "y": 940
+    }
+  ],
+  "bosses": [
+    {
+      "type": "shadow_mage",
+      "x": 360,
+      "y": 80,
+      "scale": 1.17
+    }
+  ],
+  "obstacles": [
+    {
+      "type": "rect",
+      "x": 0,
+      "y": 640,
+      "w": 520,
+      "h": 50
+    },
+    {
+      "type": "rect",
+      "x": 620,
+      "y": 640,
+      "w": 100,
+      "h": 50
+    },
+    {
+      "type": "rect",
+      "x": 0,
+      "y": 330,
+      "w": 100,
+      "h": 50
+    },
+    {
+      "type": "rect",
+      "x": 200,
+      "y": 330,
+      "w": 520,
+      "h": 50
+    }
+  ],
+  "items": [
+    {
+      "type": "key",
+      "x": 90,
+      "y": 820,
+      "color": "red"
+    },
+    {
+      "type": "gate",
+      "color": "red",
+      "rect": {
+        "x": 520,
+        "y": 640,
+        "w": 100,
+        "h": 50
+      }
+    },
+    {
+      "type": "key",
+      "x": 640,
+      "y": 480,
+      "color": "blue"
+    },
+    {
+      "type": "gate",
+      "color": "blue",
+      "rect": {
+        "x": 100,
+        "y": 330,
+        "w": 100,
+        "h": 50
+      }
+    },
+    {
+      "type": "atk_up",
+      "x": 90,
+      "y": 500
+    },
+    {
+      "type": "hp_up",
+      "x": 360,
+      "y": 180
+    },
+    {
+      "type": "reinforce",
+      "x": 430,
+      "y": 800
+    }
+  ],
+  "goldZones": [],
+  "terrain": [
+    {
+      "kind": "sand",
+      "points": [
+        [
+          0,
+          690
+        ],
+        [
+          520,
+          690
+        ],
+        [
+          520,
+          910
+        ],
+        [
+          0,
+          910
+        ]
+      ]
+    },
+    {
+      "kind": "swamp",
+      "points": [
+        [
+          200,
+          380
+        ],
+        [
+          720,
+          380
+        ],
+        [
+          720,
+          640
+        ],
+        [
+          200,
+          640
+        ]
+      ]
+    }
+  ],
+  "camps": [
+    {
+      "x": 360,
+      "y": 500,
+      "units": [
+        {
+          "type": "orc",
+          "count": 2
+        },
+        {
+          "type": "goblin",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "x": 600,
+      "y": 180,
+      "units": [
+        {
+          "type": "orc",
+          "count": 2
+        },
+        {
+          "type": "goblin_archer",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "x": 620,
+      "y": 830,
+      "units": [
+        {
+          "type": "orc",
+          "count": 1
+        },
+        {
+          "type": "goblin",
+          "count": 3
+        },
+        {
+          "type": "goblin_archer",
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "enemySquads": [
+    {
+      "spawnDelay": 5,
+      "speed": 45,
+      "units": [
+        {
+          "type": "orc",
+          "count": 1
+        },
+        {
+          "type": "goblin",
+          "count": 4
+        }
+      ],
+      "route": [
+        [
+          700,
+          560
+        ],
+        [
+          150,
+          520
+        ],
+        [
+          150,
+          250
+        ],
+        [
+          330,
+          110
+        ]
+      ],
+      "id": "s0"
+    },
+    {
+      "spawnDelay": 0,
+      "speed": 55,
+      "units": [
+        {
+          "type": "goblin_archer",
+          "count": 5
+        }
+      ],
+      "route": [
+        [
+          700,
+          250
+        ],
+        [
+          390,
+          110
+        ]
+      ],
+      "id": "s1"
+    }
+  ],
+  "bonusSquadRoute": [
+    [
+      20,
+      500
+    ],
+    [
+      300,
+      120
+    ]
+  ],
+  "referenceSolution": [
+    [
+      [
+        360,
+        940
+      ],
+      [
+        176,
+        904
+      ],
+      [
+        112,
+        840
+      ],
+      [
+        176,
+        904
+      ],
+      [
+        184,
+        912
+      ],
+      [
+        528,
+        912
+      ],
+      [
+        568,
+        872
+      ],
+      [
+        624,
+        504
+      ],
+      [
+        184,
+        384
+      ],
+      [
+        192,
+        320
+      ],
+      [
+        536,
+        200
+      ],
+      [
+        184,
+        328
+      ],
+      [
+        192,
+        392
+      ],
+      [
+        296,
+        480
+      ],
+      [
+        536,
+        640
+      ],
+      [
+        520,
+        720
+      ],
+      [
+        456,
+        784
+      ],
+      [
+        536,
+        696
+      ],
+      [
+        528,
+        624
+      ],
+      [
+        184,
+        376
+      ],
+      [
+        200,
+        288
+      ],
+      [
+        344,
+        144
+      ]
+    ]
+  ],
+  "tutorialHint": "Two gates over sand and swamp. Orcs patrol the halls.",
+  "field": {
+    "x": 0,
+    "y": 0,
+    "w": 720,
+    "h": 1000
+  },
+  "design": {
+    "winInk": 2730,
+    "threeStarInk": 5913,
+    "threeStarBrush": "marsh"
+  }
+}

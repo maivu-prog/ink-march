@@ -1,0 +1,264 @@
+{
+  "id": "c7_s5",
+  "name": "Iron Warlord",
+  "chapter": 7,
+  "baseInk": 1320,
+  "starts": [
+    {
+      "x": 360,
+      "y": 922
+    }
+  ],
+  "bosses": [
+    {
+      "type": "goblin_king",
+      "x": 360,
+      "y": 97,
+      "scale": 0.5
+    }
+  ],
+  "obstacles": [
+    {
+      "type": "rect",
+      "x": 254,
+      "y": 308,
+      "w": 58,
+      "h": 384
+    },
+    {
+      "type": "rect",
+      "x": 408,
+      "y": 308,
+      "w": 58,
+      "h": 384
+    }
+  ],
+  "items": [
+    {
+      "type": "reinforce",
+      "x": 110,
+      "y": 711
+    },
+    {
+      "type": "atk_up",
+      "x": 610,
+      "y": 500
+    },
+    {
+      "type": "hp_up",
+      "x": 110,
+      "y": 471
+    }
+  ],
+  "goldZones": [],
+  "terrain": [
+    {
+      "kind": "sand",
+      "points": [
+        [
+          14,
+          116
+        ],
+        [
+          706,
+          116
+        ],
+        [
+          706,
+          884
+        ],
+        [
+          14,
+          884
+        ]
+      ]
+    },
+    {
+      "kind": "road",
+      "points": [
+        [
+          331,
+          116
+        ],
+        [
+          389,
+          116
+        ],
+        [
+          389,
+          884
+        ],
+        [
+          331,
+          884
+        ]
+      ]
+    }
+  ],
+  "camps": [
+    {
+      "x": 110,
+      "y": 260,
+      "units": [
+        {
+          "type": "orc",
+          "count": 2
+        },
+        {
+          "type": "goblin",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "x": 610,
+      "y": 260,
+      "units": [
+        {
+          "type": "orc",
+          "count": 2
+        },
+        {
+          "type": "goblin",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "x": 590,
+      "y": 711,
+      "units": [
+        {
+          "type": "orc",
+          "count": 1
+        },
+        {
+          "type": "goblin",
+          "count": 3
+        },
+        {
+          "type": "goblin_archer",
+          "count": 2
+        }
+      ]
+    }
+  ],
+  "enemySquads": [
+    {
+      "spawnDelay": 4,
+      "speed": 45,
+      "units": [
+        {
+          "type": "orc",
+          "count": 2
+        },
+        {
+          "type": "goblin",
+          "count": 3
+        }
+      ],
+      "route": [
+        [
+          34,
+          596
+        ],
+        [
+          197,
+          596
+        ],
+        [
+          197,
+          260
+        ],
+        [
+          331,
+          135
+        ]
+      ],
+      "id": "s0"
+    },
+    {
+      "spawnDelay": 5,
+      "speed": 45,
+      "units": [
+        {
+          "type": "orc",
+          "count": 2
+        }
+      ],
+      "route": [
+        [
+          686,
+          596
+        ],
+        [
+          523,
+          596
+        ],
+        [
+          523,
+          260
+        ],
+        [
+          389,
+          135
+        ]
+      ],
+      "id": "s1"
+    }
+  ],
+  "bonusSquadRoute": [
+    [
+      34,
+      500
+    ],
+    [
+      302,
+      135
+    ]
+  ],
+  "referenceSolution": [
+    [
+      [
+        360,
+        922
+      ],
+      [
+        544,
+        760
+      ],
+      [
+        584,
+        320
+      ],
+      [
+        368,
+        288
+      ],
+      [
+        176,
+        272
+      ],
+      [
+        120,
+        440
+      ],
+      [
+        344,
+        160
+      ]
+    ]
+  ],
+  "tutorialHint": "A royal road runs straight to the warlord. Everything else is sand.",
+  "field": {
+    "x": 14,
+    "y": 20,
+    "w": 691,
+    "h": 960
+  },
+  "design": {
+    "winInk": 1195,
+    "threeStarInk": 2581,
+    "threeStarBrush": "reed"
+  }
+}

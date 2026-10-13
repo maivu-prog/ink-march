@@ -1,0 +1,327 @@
+{
+  "id": "c9_s3",
+  "name": "Cursed Crossroads",
+  "chapter": 9,
+  "baseInk": 1910,
+  "starts": [
+    {
+      "x": 360,
+      "y": 940
+    }
+  ],
+  "bosses": [
+    {
+      "type": "shadow_mage",
+      "x": 360,
+      "y": 80,
+      "scale": 1.11
+    }
+  ],
+  "obstacles": [
+    {
+      "type": "circle",
+      "x": 360,
+      "y": 500,
+      "r": 75
+    }
+  ],
+  "items": [
+    {
+      "type": "atk_up",
+      "x": 525,
+      "y": 700
+    },
+    {
+      "type": "hp_up",
+      "x": 360,
+      "y": 200
+    }
+  ],
+  "goldZones": [],
+  "terrain": [
+    {
+      "kind": "road",
+      "points": [
+        [
+          330,
+          100
+        ],
+        [
+          390,
+          100
+        ],
+        [
+          390,
+          900
+        ],
+        [
+          330,
+          900
+        ]
+      ]
+    },
+    {
+      "kind": "road",
+      "points": [
+        [
+          60,
+          470
+        ],
+        [
+          660,
+          470
+        ],
+        [
+          660,
+          530
+        ],
+        [
+          60,
+          530
+        ]
+      ]
+    },
+    {
+      "kind": "sand",
+      "points": [
+        [
+          60,
+          100
+        ],
+        [
+          330,
+          100
+        ],
+        [
+          330,
+          470
+        ],
+        [
+          60,
+          470
+        ]
+      ]
+    },
+    {
+      "kind": "swamp",
+      "points": [
+        [
+          390,
+          100
+        ],
+        [
+          660,
+          100
+        ],
+        [
+          660,
+          470
+        ],
+        [
+          390,
+          470
+        ]
+      ]
+    },
+    {
+      "kind": "swamp",
+      "points": [
+        [
+          60,
+          530
+        ],
+        [
+          330,
+          530
+        ],
+        [
+          330,
+          860
+        ],
+        [
+          60,
+          860
+        ]
+      ]
+    },
+    {
+      "kind": "sand",
+      "points": [
+        [
+          390,
+          530
+        ],
+        [
+          660,
+          530
+        ],
+        [
+          660,
+          860
+        ],
+        [
+          390,
+          860
+        ]
+      ]
+    }
+  ],
+  "camps": [
+    {
+      "x": 195,
+      "y": 285,
+      "units": [
+        {
+          "type": "orc",
+          "count": 1
+        },
+        {
+          "type": "goblin",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "x": 525,
+      "y": 285,
+      "units": [
+        {
+          "type": "shaman",
+          "count": 1
+        },
+        {
+          "type": "goblin",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "x": 195,
+      "y": 700,
+      "units": [
+        {
+          "type": "goblin",
+          "count": 3
+        },
+        {
+          "type": "goblin_archer",
+          "count": 2
+        }
+      ]
+    }
+  ],
+  "enemySquads": [
+    {
+      "spawnDelay": 4,
+      "speed": 55,
+      "units": [
+        {
+          "type": "goblin",
+          "count": 6
+        }
+      ],
+      "route": [
+        [
+          20,
+          500
+        ],
+        [
+          250,
+          420
+        ],
+        [
+          330,
+          110
+        ]
+      ],
+      "id": "s0"
+    },
+    {
+      "spawnDelay": 8,
+      "speed": 45,
+      "units": [
+        {
+          "type": "orc",
+          "count": 2
+        }
+      ],
+      "route": [
+        [
+          700,
+          500
+        ],
+        [
+          470,
+          420
+        ],
+        [
+          390,
+          110
+        ]
+      ],
+      "id": "s1"
+    }
+  ],
+  "bonusSquadRoute": [
+    [
+      20,
+      500
+    ],
+    [
+      300,
+      120
+    ]
+  ],
+  "referenceSolution": [
+    [
+      [
+        360,
+        940
+      ],
+      [
+        336,
+        736
+      ],
+      [
+        256,
+        728
+      ],
+      [
+        200,
+        352
+      ],
+      [
+        464,
+        312
+      ],
+      [
+        512,
+        672
+      ],
+      [
+        424,
+        440
+      ],
+      [
+        384,
+        400
+      ],
+      [
+        376,
+        144
+      ]
+    ]
+  ],
+  "tutorialHint": "A cursed stone blocks the crossroads. Every way around costs something.",
+  "field": {
+    "x": 0,
+    "y": 0,
+    "w": 720,
+    "h": 1000
+  },
+  "design": {
+    "winInk": 803,
+    "threeStarInk": 2688,
+    "threeStarBrush": "marsh"
+  }
+}

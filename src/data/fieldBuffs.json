@@ -1,0 +1,50 @@
+{
+  "atk_up": {
+    "name": "Attack Charm",
+    "icon": "⚔",
+    "color": "#f09b65",
+    "value": 0.2
+  },
+  "hp_up": {
+    "name": "Heart Charm",
+    "icon": "♥",
+    "color": "#70ccab",
+    "value": 0.25
+  },
+  "reinforce": {
+    "name": "Reinforcements",
+    "icon": "⚑",
+    "color": "#77bcff",
+    "value": 2
+  },
+  "range_up": {
+    "name": "Spyglass",
+    "icon": "◎",
+    "color": "#aaa4ee",
+    "value": 0.2
+  },
+  "shield": {
+    "name": "Shield Charm",
+    "icon": "⬟",
+    "color": "#f5cc6b",
+    "value": 40
+  },
+  "haste": {
+    "name": "Wind Boots",
+    "icon": "»",
+    "color": "#b0e4c9",
+    "value": 0.25
+  },
+  "ink_bottle": {
+    "name": "Ink Bottle",
+    "icon": "◕",
+    "color": "#52becb",
+    "value": 300
+  },
+  "skull": {
+    "name": "Skull Trap",
+    "icon": "☠",
+    "color": "#a74453",
+    "value": 1
+  }
+}

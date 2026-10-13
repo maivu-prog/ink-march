@@ -1,0 +1,216 @@
+{
+  "id": "c3_s1",
+  "name": "Bog Crossing",
+  "chapter": 3,
+  "baseInk": 930,
+  "starts": [
+    {
+      "x": 360,
+      "y": 852
+    }
+  ],
+  "bosses": [
+    {
+      "type": "goblin_chief",
+      "x": 360,
+      "y": 164,
+      "scale": 0.4
+    }
+  ],
+  "obstacles": [],
+  "items": [
+    {
+      "type": "hp_up",
+      "x": 160,
+      "y": 500
+    },
+    {
+      "type": "atk_up",
+      "x": 584,
+      "y": 516
+    }
+  ],
+  "goldZones": [],
+  "terrain": [
+    {
+      "kind": "swamp",
+      "points": [
+        [
+          72,
+          420
+        ],
+        [
+          448,
+          420
+        ],
+        [
+          448,
+          596
+        ],
+        [
+          72,
+          596
+        ]
+      ]
+    },
+    {
+      "kind": "swamp",
+      "points": [
+        [
+          512,
+          420
+        ],
+        [
+          648,
+          420
+        ],
+        [
+          648,
+          596
+        ],
+        [
+          512,
+          596
+        ]
+      ]
+    },
+    {
+      "kind": "road",
+      "points": [
+        [
+          448,
+          420
+        ],
+        [
+          512,
+          420
+        ],
+        [
+          512,
+          596
+        ],
+        [
+          448,
+          596
+        ]
+      ]
+    }
+  ],
+  "camps": [
+    {
+      "x": 480,
+      "y": 356,
+      "units": [
+        {
+          "type": "goblin",
+          "count": 2
+        },
+        {
+          "type": "goblin_archer",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "x": 152,
+      "y": 676,
+      "units": [
+        {
+          "type": "goblin",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "x": 232,
+      "y": 300,
+      "units": [
+        {
+          "type": "goblin",
+          "count": 3
+        }
+      ]
+    }
+  ],
+  "enemySquads": [
+    {
+      "spawnDelay": 5,
+      "speed": 55,
+      "units": [
+        {
+          "type": "goblin",
+          "count": 5
+        }
+      ],
+      "route": [
+        [
+          632,
+          676
+        ],
+        [
+          480,
+          628
+        ],
+        [
+          480,
+          404
+        ],
+        [
+          376,
+          188
+        ]
+      ],
+      "id": "s0"
+    }
+  ],
+  "bonusSquadRoute": [
+    [
+      88,
+      500
+    ],
+    [
+      312,
+      196
+    ]
+  ],
+  "referenceSolution": [
+    [
+      [
+        360,
+        852
+      ],
+      [
+        208,
+        712
+      ],
+      [
+        448,
+        584
+      ],
+      [
+        448,
+        416
+      ],
+      [
+        296,
+        320
+      ],
+      [
+        336,
+        224
+      ]
+    ]
+  ],
+  "tutorialHint": "The causeway is the only cheap way over the bog, and a camp watches it.",
+  "field": {
+    "x": 72,
+    "y": 100,
+    "w": 576,
+    "h": 800
+  },
+  "design": {
+    "winInk": 827,
+    "threeStarInk": 909,
+    "threeStarBrush": "quill"
+  }
+}

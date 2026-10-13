@@ -1,0 +1,292 @@
+{
+  "id": "c6_s1",
+  "name": "Fen Paths",
+  "chapter": 6,
+  "baseInk": 1710,
+  "starts": [
+    {
+      "x": 194,
+      "y": 905
+    },
+    {
+      "x": 526,
+      "y": 905
+    }
+  ],
+  "bosses": [
+    {
+      "type": "goblin_chief",
+      "x": 360,
+      "y": 114,
+      "scale": 1.91
+    }
+  ],
+  "obstacles": [],
+  "items": [
+    {
+      "type": "atk_up",
+      "x": 93,
+      "y": 684
+    },
+    {
+      "type": "hp_up",
+      "x": 627,
+      "y": 684
+    }
+  ],
+  "goldZones": [],
+  "terrain": [
+    {
+      "kind": "swamp",
+      "points": [
+        [
+          29,
+          362
+        ],
+        [
+          167,
+          362
+        ],
+        [
+          167,
+          684
+        ],
+        [
+          29,
+          684
+        ]
+      ]
+    },
+    {
+      "kind": "swamp",
+      "points": [
+        [
+          222,
+          362
+        ],
+        [
+          498,
+          362
+        ],
+        [
+          498,
+          684
+        ],
+        [
+          222,
+          684
+        ]
+      ]
+    },
+    {
+      "kind": "swamp",
+      "points": [
+        [
+          553,
+          362
+        ],
+        [
+          691,
+          362
+        ],
+        [
+          691,
+          684
+        ],
+        [
+          553,
+          684
+        ]
+      ]
+    },
+    {
+      "kind": "road",
+      "points": [
+        [
+          167,
+          362
+        ],
+        [
+          222,
+          362
+        ],
+        [
+          222,
+          684
+        ],
+        [
+          167,
+          684
+        ]
+      ]
+    },
+    {
+      "kind": "road",
+      "points": [
+        [
+          498,
+          362
+        ],
+        [
+          553,
+          362
+        ],
+        [
+          553,
+          684
+        ],
+        [
+          498,
+          684
+        ]
+      ]
+    }
+  ],
+  "camps": [
+    {
+      "x": 360,
+      "y": 518,
+      "units": [
+        {
+          "type": "shaman",
+          "count": 1
+        },
+        {
+          "type": "goblin",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "x": 84,
+      "y": 224,
+      "units": [
+        {
+          "type": "goblin",
+          "count": 3
+        },
+        {
+          "type": "goblin_archer",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "x": 636,
+      "y": 224,
+      "units": [
+        {
+          "type": "goblin",
+          "count": 3
+        },
+        {
+          "type": "goblin_archer",
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "enemySquads": [
+    {
+      "spawnDelay": 6,
+      "speed": 50,
+      "units": [
+        {
+          "type": "shaman",
+          "count": 1
+        },
+        {
+          "type": "goblin",
+          "count": 3
+        }
+      ],
+      "route": [
+        [
+          47,
+          270
+        ],
+        [
+          360,
+          270
+        ],
+        [
+          360,
+          141
+        ]
+      ],
+      "id": "s0"
+    }
+  ],
+  "bonusSquadRoute": [
+    [
+      47,
+      500
+    ],
+    [
+      305,
+      150
+    ]
+  ],
+  "referenceSolution": [
+    [
+      [
+        194,
+        905
+      ],
+      [
+        216,
+        544
+      ],
+      [
+        296,
+        536
+      ],
+      [
+        216,
+        472
+      ],
+      [
+        152,
+        336
+      ],
+      [
+        104,
+        288
+      ],
+      [
+        296,
+        128
+      ]
+    ],
+    [
+      [
+        526,
+        905
+      ],
+      [
+        552,
+        352
+      ],
+      [
+        616,
+        288
+      ],
+      [
+        424,
+        128
+      ]
+    ]
+  ],
+  "tutorialHint": "Two squads cross the fen on wooden paths. The healer camp sits in the middle.",
+  "field": {
+    "x": 29,
+    "y": 40,
+    "w": 662,
+    "h": 920
+  },
+  "design": {
+    "winInk": 1423,
+    "threeStarInk": 1928,
+    "threeStarBrush": "atlas"
+  }
+}

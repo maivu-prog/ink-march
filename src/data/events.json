@@ -1,0 +1,22 @@
+{
+  "ev_ink_forge": {
+    "name": "The Ink Forge",
+    "desc": "Trade 40 journey XP for 250 golden ink. Use it on the golden bridge ahead.",
+    "action": "Forge ink · 40 XP"
+  },
+  "ev_shrine": {
+    "name": "The Quiet Shrine",
+    "desc": "Receive a random blessing. Start the next battle at 80% HP.",
+    "action": "Accept the blessing"
+  },
+  "ev_mercenary": {
+    "name": "Wandering Mercenaries",
+    "desc": "Pay 60 coins to add 2 soldiers to the selected slot for this journey.",
+    "action": "Recruit · 60 coins"
+  },
+  "ev_mystery_chest": {
+    "name": "The Mystery Chest",
+    "desc": "60%: choose a blessing. 40%: an extra goblin squad joins your next battle.",
+    "action": "Open the chest"
+  }
+}

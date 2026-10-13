@@ -1,0 +1,274 @@
+{
+  "id": "c10_s2",
+  "name": "Ink Moat",
+  "chapter": 10,
+  "baseInk": 2290,
+  "starts": [
+    {
+      "x": 180,
+      "y": 940
+    },
+    {
+      "x": 540,
+      "y": 940
+    }
+  ],
+  "bosses": [
+    {
+      "type": "shadow_mage",
+      "x": 180,
+      "y": 80,
+      "scale": 1.58
+    },
+    {
+      "type": "shadow_mage",
+      "x": 540,
+      "y": 80,
+      "scale": 1.58
+    }
+  ],
+  "obstacles": [
+    {
+      "type": "rect",
+      "x": 0,
+      "y": 350,
+      "w": 100,
+      "h": 60,
+      "kind": "water"
+    },
+    {
+      "type": "rect",
+      "x": 160,
+      "y": 350,
+      "w": 400,
+      "h": 60,
+      "kind": "water"
+    },
+    {
+      "type": "rect",
+      "x": 620,
+      "y": 350,
+      "w": 100,
+      "h": 60,
+      "kind": "water"
+    }
+  ],
+  "items": [
+    {
+      "type": "atk_up",
+      "x": 260,
+      "y": 800
+    },
+    {
+      "type": "hp_up",
+      "x": 460,
+      "y": 800
+    },
+    {
+      "type": "reinforce",
+      "x": 130,
+      "y": 250
+    },
+    {
+      "type": "shield",
+      "x": 590,
+      "y": 250
+    }
+  ],
+  "goldZones": [],
+  "terrain": [
+    {
+      "kind": "swamp",
+      "points": [
+        [
+          0,
+          410
+        ],
+        [
+          720,
+          410
+        ],
+        [
+          720,
+          610
+        ],
+        [
+          0,
+          610
+        ]
+      ]
+    }
+  ],
+  "camps": [
+    {
+      "x": 360,
+      "y": 230,
+      "units": [
+        {
+          "type": "orc",
+          "count": 2
+        },
+        {
+          "type": "shaman",
+          "count": 1
+        },
+        {
+          "type": "goblin",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "x": 80,
+      "y": 720,
+      "units": [
+        {
+          "type": "orc",
+          "count": 1
+        },
+        {
+          "type": "goblin",
+          "count": 3
+        },
+        {
+          "type": "goblin_archer",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "x": 640,
+      "y": 720,
+      "units": [
+        {
+          "type": "orc",
+          "count": 1
+        },
+        {
+          "type": "goblin",
+          "count": 3
+        },
+        {
+          "type": "goblin_archer",
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "enemySquads": [
+    {
+      "spawnDelay": 3,
+      "speed": 55,
+      "units": [
+        {
+          "type": "goblin",
+          "count": 6
+        }
+      ],
+      "route": [
+        [
+          20,
+          200
+        ],
+        [
+          180,
+          110
+        ]
+      ],
+      "id": "s0"
+    },
+    {
+      "spawnDelay": 3,
+      "speed": 55,
+      "units": [
+        {
+          "type": "goblin",
+          "count": 6
+        }
+      ],
+      "route": [
+        [
+          700,
+          200
+        ],
+        [
+          540,
+          110
+        ]
+      ],
+      "id": "s1"
+    }
+  ],
+  "bonusSquadRoute": [
+    [
+      20,
+      500
+    ],
+    [
+      300,
+      120
+    ]
+  ],
+  "referenceSolution": [
+    [
+      [
+        180,
+        940
+      ],
+      [
+        256,
+        832
+      ],
+      [
+        144,
+        736
+      ],
+      [
+        152,
+        336
+      ],
+      [
+        296,
+        248
+      ],
+      [
+        192,
+        144
+      ]
+    ],
+    [
+      [
+        540,
+        940
+      ],
+      [
+        464,
+        832
+      ],
+      [
+        576,
+        736
+      ],
+      [
+        576,
+        280
+      ],
+      [
+        552,
+        144
+      ]
+    ]
+  ],
+  "tutorialHint": "A moat with two bridges guards both mages.",
+  "field": {
+    "x": 0,
+    "y": 0,
+    "w": 720,
+    "h": 1000
+  },
+  "design": {
+    "winInk": 2152,
+    "threeStarInk": 2354,
+    "threeStarBrush": "marsh"
+  }
+}

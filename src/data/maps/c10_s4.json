@@ -1,0 +1,326 @@
+{
+  "id": "c10_s4",
+  "name": "Last Stand",
+  "chapter": 10,
+  "baseInk": 1770,
+  "starts": [
+    {
+      "x": 180,
+      "y": 940
+    },
+    {
+      "x": 540,
+      "y": 940
+    }
+  ],
+  "bosses": [
+    {
+      "type": "shadow_mage",
+      "x": 360,
+      "y": 80,
+      "scale": 2.73
+    }
+  ],
+  "obstacles": [
+    {
+      "type": "rect",
+      "x": 330,
+      "y": 300,
+      "w": 60,
+      "h": 500
+    }
+  ],
+  "items": [
+    {
+      "type": "atk_up",
+      "x": 200,
+      "y": 600
+    },
+    {
+      "type": "hp_up",
+      "x": 520,
+      "y": 600
+    },
+    {
+      "type": "reinforce",
+      "x": 60,
+      "y": 820
+    },
+    {
+      "type": "shield",
+      "x": 660,
+      "y": 820
+    }
+  ],
+  "goldZones": [],
+  "terrain": [
+    {
+      "kind": "sand",
+      "points": [
+        [
+          90,
+          300
+        ],
+        [
+          330,
+          300
+        ],
+        [
+          330,
+          800
+        ],
+        [
+          90,
+          800
+        ]
+      ]
+    },
+    {
+      "kind": "swamp",
+      "points": [
+        [
+          390,
+          300
+        ],
+        [
+          630,
+          300
+        ],
+        [
+          630,
+          800
+        ],
+        [
+          390,
+          800
+        ]
+      ]
+    },
+    {
+      "kind": "road",
+      "points": [
+        [
+          30,
+          100
+        ],
+        [
+          90,
+          100
+        ],
+        [
+          90,
+          900
+        ],
+        [
+          30,
+          900
+        ]
+      ]
+    },
+    {
+      "kind": "road",
+      "points": [
+        [
+          630,
+          100
+        ],
+        [
+          690,
+          100
+        ],
+        [
+          690,
+          900
+        ],
+        [
+          630,
+          900
+        ]
+      ]
+    }
+  ],
+  "camps": [
+    {
+      "x": 200,
+      "y": 250,
+      "units": [
+        {
+          "type": "orc",
+          "count": 2
+        },
+        {
+          "type": "goblin_archer",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "x": 520,
+      "y": 250,
+      "units": [
+        {
+          "type": "orc",
+          "count": 2
+        },
+        {
+          "type": "shaman",
+          "count": 1
+        },
+        {
+          "type": "goblin_archer",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "x": 360,
+      "y": 900,
+      "units": [
+        {
+          "type": "orc",
+          "count": 1
+        },
+        {
+          "type": "goblin",
+          "count": 4
+        }
+      ]
+    }
+  ],
+  "enemySquads": [
+    {
+      "spawnDelay": 5,
+      "speed": 45,
+      "units": [
+        {
+          "type": "orc",
+          "count": 2
+        },
+        {
+          "type": "goblin",
+          "count": 3
+        }
+      ],
+      "route": [
+        [
+          20,
+          150
+        ],
+        [
+          330,
+          110
+        ]
+      ],
+      "id": "s0"
+    },
+    {
+      "spawnDelay": 5,
+      "speed": 50,
+      "units": [
+        {
+          "type": "shaman",
+          "count": 2
+        },
+        {
+          "type": "orc",
+          "count": 1
+        }
+      ],
+      "route": [
+        [
+          700,
+          150
+        ],
+        [
+          390,
+          110
+        ]
+      ],
+      "id": "s1"
+    }
+  ],
+  "bonusSquadRoute": [
+    [
+      20,
+      500
+    ],
+    [
+      300,
+      120
+    ]
+  ],
+  "referenceSolution": [
+    [
+      [
+        180,
+        940
+      ],
+      [
+        296,
+        920
+      ],
+      [
+        88,
+        832
+      ],
+      [
+        88,
+        296
+      ],
+      [
+        136,
+        272
+      ],
+      [
+        304,
+        112
+      ]
+    ],
+    [
+      [
+        540,
+        940
+      ],
+      [
+        632,
+        832
+      ],
+      [
+        632,
+        608
+      ],
+      [
+        552,
+        608
+      ],
+      [
+        632,
+        552
+      ],
+      [
+        632,
+        296
+      ],
+      [
+        584,
+        272
+      ],
+      [
+        416,
+        112
+      ]
+    ]
+  ],
+  "tutorialHint": "Roads hug the walls. Sand and swamp fill everything between.",
+  "field": {
+    "x": 0,
+    "y": 0,
+    "w": 720,
+    "h": 1000
+  },
+  "design": {
+    "winInk": 1606,
+    "threeStarInk": 2159,
+    "threeStarBrush": "golden"
+  }
+}

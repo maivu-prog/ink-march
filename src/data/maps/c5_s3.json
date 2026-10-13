@@ -1,0 +1,262 @@
+{
+  "id": "c5_s3",
+  "name": "Dust Devils",
+  "chapter": 5,
+  "baseInk": 1320,
+  "starts": [
+    {
+      "x": 360,
+      "y": 887
+    }
+  ],
+  "bosses": [
+    {
+      "type": "goblin_chief",
+      "x": 360,
+      "y": 130,
+      "scale": 1.14
+    }
+  ],
+  "obstacles": [],
+  "items": [
+    {
+      "type": "atk_up",
+      "x": 360,
+      "y": 676
+    },
+    {
+      "type": "reinforce",
+      "x": 562,
+      "y": 324
+    }
+  ],
+  "goldZones": [],
+  "terrain": [
+    {
+      "kind": "sand",
+      "points": [
+        [
+          43,
+          166
+        ],
+        [
+          677,
+          166
+        ],
+        [
+          677,
+          852
+        ],
+        [
+          43,
+          852
+        ]
+      ]
+    },
+    {
+      "kind": "road",
+      "points": [
+        [
+          131,
+          166
+        ],
+        [
+          184,
+          166
+        ],
+        [
+          184,
+          852
+        ],
+        [
+          131,
+          852
+        ]
+      ]
+    },
+    {
+      "kind": "road",
+      "points": [
+        [
+          536,
+          166
+        ],
+        [
+          589,
+          166
+        ],
+        [
+          589,
+          852
+        ],
+        [
+          536,
+          852
+        ]
+      ]
+    },
+    {
+      "kind": "road",
+      "points": [
+        [
+          131,
+          482
+        ],
+        [
+          589,
+          482
+        ],
+        [
+          589,
+          535
+        ],
+        [
+          131,
+          535
+        ]
+      ]
+    }
+  ],
+  "camps": [
+    {
+      "x": 360,
+      "y": 324,
+      "units": [
+        {
+          "type": "goblin",
+          "count": 3
+        },
+        {
+          "type": "goblin_archer",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "x": 158,
+      "y": 324,
+      "units": [
+        {
+          "type": "goblin",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "x": 562,
+      "y": 729,
+      "units": [
+        {
+          "type": "goblin",
+          "count": 3
+        },
+        {
+          "type": "goblin_archer",
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "enemySquads": [
+    {
+      "spawnDelay": 4,
+      "speed": 55,
+      "units": [
+        {
+          "type": "goblin",
+          "count": 6
+        }
+      ],
+      "route": [
+        [
+          659,
+          456
+        ],
+        [
+          360,
+          456
+        ],
+        [
+          61,
+          456
+        ]
+      ],
+      "id": "s0"
+    },
+    {
+      "spawnDelay": 0,
+      "speed": 55,
+      "units": [
+        {
+          "type": "goblin_archer",
+          "count": 4
+        }
+      ],
+      "route": [
+        [
+          61,
+          192
+        ],
+        [
+          334,
+          157
+        ]
+      ],
+      "id": "s1"
+    }
+  ],
+  "bonusSquadRoute": [
+    [
+      61,
+      500
+    ],
+    [
+      307,
+      166
+    ]
+  ],
+  "referenceSolution": [
+    [
+      [
+        360,
+        887
+      ],
+      [
+        480,
+        832
+      ],
+      [
+        528,
+        784
+      ],
+      [
+        184,
+        384
+      ],
+      [
+        296,
+        344
+      ],
+      [
+        536,
+        344
+      ],
+      [
+        392,
+        184
+      ]
+    ]
+  ],
+  "tutorialHint": "A crossroads of roads in a sea of sand. A war party crosses the middle.",
+  "field": {
+    "x": 43,
+    "y": 60,
+    "w": 634,
+    "h": 880
+  },
+  "design": {
+    "winInk": 1244,
+    "threeStarInk": 2031,
+    "threeStarBrush": "reed"
+  }
+}

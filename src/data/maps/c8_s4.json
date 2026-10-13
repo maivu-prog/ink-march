@@ -1,0 +1,232 @@
+{
+  "id": "c8_s4",
+  "name": "Marsh Ferry",
+  "chapter": 8,
+  "baseInk": 2210,
+  "starts": [
+    {
+      "x": 360,
+      "y": 940
+    }
+  ],
+  "bosses": [
+    {
+      "type": "shadow_mage",
+      "x": 360,
+      "y": 80,
+      "scale": 1.33
+    }
+  ],
+  "obstacles": [
+    {
+      "type": "rect",
+      "x": 0,
+      "y": 550,
+      "w": 280,
+      "h": 80,
+      "kind": "water"
+    },
+    {
+      "type": "rect",
+      "x": 440,
+      "y": 550,
+      "w": 280,
+      "h": 80,
+      "kind": "water"
+    }
+  ],
+  "items": [
+    {
+      "type": "atk_up",
+      "x": 150,
+      "y": 800
+    },
+    {
+      "type": "hp_up",
+      "x": 570,
+      "y": 800
+    },
+    {
+      "type": "reinforce",
+      "x": 360,
+      "y": 300
+    }
+  ],
+  "goldZones": [],
+  "terrain": [
+    {
+      "kind": "swamp",
+      "points": [
+        [
+          0,
+          200
+        ],
+        [
+          720,
+          200
+        ],
+        [
+          720,
+          500
+        ],
+        [
+          0,
+          500
+        ]
+      ]
+    }
+  ],
+  "camps": [
+    {
+      "x": 100,
+      "y": 350,
+      "units": [
+        {
+          "type": "shaman",
+          "count": 1
+        },
+        {
+          "type": "goblin",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "x": 620,
+      "y": 350,
+      "units": [
+        {
+          "type": "shaman",
+          "count": 1
+        },
+        {
+          "type": "goblin",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "x": 360,
+      "y": 800,
+      "units": [
+        {
+          "type": "orc",
+          "count": 1
+        },
+        {
+          "type": "goblin",
+          "count": 3
+        }
+      ]
+    }
+  ],
+  "enemySquads": [
+    {
+      "spawnDelay": 6,
+      "speed": 50,
+      "units": [
+        {
+          "type": "shaman",
+          "count": 2
+        },
+        {
+          "type": "goblin",
+          "count": 3
+        }
+      ],
+      "route": [
+        [
+          20,
+          400
+        ],
+        [
+          360,
+          420
+        ],
+        [
+          360,
+          110
+        ]
+      ],
+      "id": "s0"
+    }
+  ],
+  "bonusSquadRoute": [
+    [
+      20,
+      500
+    ],
+    [
+      300,
+      120
+    ]
+  ],
+  "referenceSolution": [
+    [
+      [
+        360,
+        940
+      ],
+      [
+        360,
+        864
+      ],
+      [
+        432,
+        536
+      ],
+      [
+        512,
+        488
+      ],
+      [
+        592,
+        408
+      ],
+      [
+        488,
+        504
+      ],
+      [
+        224,
+        504
+      ],
+      [
+        128,
+        408
+      ],
+      [
+        296,
+        552
+      ],
+      [
+        288,
+        640
+      ],
+      [
+        160,
+        768
+      ],
+      [
+        296,
+        624
+      ],
+      [
+        344,
+        144
+      ]
+    ]
+  ],
+  "tutorialHint": "The ferry gap is narrow. Shamans heal their friends on the far bank.",
+  "field": {
+    "x": 0,
+    "y": 0,
+    "w": 720,
+    "h": 1000
+  },
+  "design": {
+    "winInk": 1151,
+    "threeStarInk": 3339,
+    "threeStarBrush": "marsh"
+  }
+}

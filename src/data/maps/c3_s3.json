@@ -1,0 +1,267 @@
+{
+  "id": "c3_s3",
+  "name": "Sunken Shrine",
+  "chapter": 3,
+  "baseInk": 1550,
+  "starts": [
+    {
+      "x": 360,
+      "y": 852
+    }
+  ],
+  "bosses": [
+    {
+      "type": "goblin_chief",
+      "x": 360,
+      "y": 164,
+      "scale": 0.42
+    }
+  ],
+  "obstacles": [],
+  "items": [
+    {
+      "type": "atk_up",
+      "x": 360,
+      "y": 340
+    },
+    {
+      "type": "hp_up",
+      "x": 160,
+      "y": 300
+    },
+    {
+      "type": "ink_bottle",
+      "x": 560,
+      "y": 660,
+      "value": 300
+    }
+  ],
+  "goldZones": [],
+  "terrain": [
+    {
+      "kind": "swamp",
+      "points": [
+        [
+          192,
+          300
+        ],
+        [
+          528,
+          300
+        ],
+        [
+          528,
+          660
+        ],
+        [
+          192,
+          660
+        ]
+      ]
+    },
+    {
+      "kind": "road",
+      "points": [
+        [
+          136,
+          220
+        ],
+        [
+          184,
+          220
+        ],
+        [
+          184,
+          780
+        ],
+        [
+          136,
+          780
+        ]
+      ]
+    },
+    {
+      "kind": "road",
+      "points": [
+        [
+          536,
+          220
+        ],
+        [
+          584,
+          220
+        ],
+        [
+          584,
+          780
+        ],
+        [
+          536,
+          780
+        ]
+      ]
+    }
+  ],
+  "camps": [
+    {
+      "x": 360,
+      "y": 484,
+      "units": [
+        {
+          "type": "goblin",
+          "count": 3
+        },
+        {
+          "type": "shaman",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "x": 160,
+      "y": 516,
+      "units": [
+        {
+          "type": "goblin",
+          "count": 2
+        },
+        {
+          "type": "goblin_archer",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "x": 560,
+      "y": 340,
+      "units": [
+        {
+          "type": "goblin",
+          "count": 3
+        }
+      ]
+    }
+  ],
+  "enemySquads": [
+    {
+      "spawnDelay": 3,
+      "speed": 55,
+      "units": [
+        {
+          "type": "goblin",
+          "count": 5
+        }
+      ],
+      "route": [
+        [
+          632,
+          780
+        ],
+        [
+          560,
+          580
+        ],
+        [
+          560,
+          260
+        ],
+        [
+          392,
+          180
+        ]
+      ],
+      "id": "s0"
+    },
+    {
+      "spawnDelay": 9,
+      "speed": 55,
+      "units": [
+        {
+          "type": "goblin_archer",
+          "count": 4
+        }
+      ],
+      "route": [
+        [
+          88,
+          780
+        ],
+        [
+          160,
+          580
+        ],
+        [
+          160,
+          260
+        ],
+        [
+          328,
+          180
+        ]
+      ],
+      "id": "s1"
+    }
+  ],
+  "bonusSquadRoute": [
+    [
+      88,
+      500
+    ],
+    [
+      312,
+      196
+    ]
+  ],
+  "referenceSolution": [
+    [
+      [
+        360,
+        852
+      ],
+      [
+        176,
+        640
+      ],
+      [
+        176,
+        576
+      ],
+      [
+        296,
+        504
+      ],
+      [
+        496,
+        360
+      ],
+      [
+        536,
+        384
+      ],
+      [
+        544,
+        632
+      ],
+      [
+        536,
+        304
+      ],
+      [
+        416,
+        192
+      ]
+    ]
+  ],
+  "tutorialHint": "Roads ring the drowned shrine. Its camp sits deep in the swamp.",
+  "field": {
+    "x": 72,
+    "y": 100,
+    "w": 576,
+    "h": 800
+  },
+  "design": {
+    "winInk": 373,
+    "threeStarInk": 1511,
+    "threeStarBrush": "quill"
+  }
+}

@@ -1,0 +1,203 @@
+{
+  "quill": {
+    "name": "Apprentice Quill",
+    "rarity": "common",
+    "desc": "A plain quill. No special effect.",
+    "fx": {},
+    "look": {
+      "shape": "quill",
+      "a": "#f4efe2",
+      "b": "#3a3a3a",
+      "c": "#f4efe2",
+      "p": "#3a7fd8"
+    }
+  },
+  "reed": {
+    "name": "Reed Brush",
+    "rarity": "common",
+    "desc": "Sand burns 40% less ink and slows troops less.",
+    "fx": {
+      "burnKinds": {
+        "sand": 0.6
+      },
+      "ease": {
+        "sand": 0.5
+      }
+    },
+    "look": {
+      "shape": "brush",
+      "a": "#8fc25a",
+      "b": "#c9b98a",
+      "c": "#f2e6c4",
+      "p": "#4fbf6d"
+    }
+  },
+  "charcoal": {
+    "name": "Charcoal Stick",
+    "rarity": "common",
+    "desc": "All ink burns 8% slower.",
+    "fx": {
+      "burn": 0.92
+    },
+    "look": {
+      "shape": "stick",
+      "a": "#2c2c30",
+      "b": "#4a4a50",
+      "c": "#1a1a1e",
+      "p": "#3a3a40"
+    }
+  },
+  "feather": {
+    "name": "Feather Pen",
+    "rarity": "common",
+    "desc": "Grab charms from a little farther away.",
+    "fx": {
+      "pickup": 12
+    },
+    "look": {
+      "shape": "quill",
+      "a": "#7fd3d0",
+      "b": "#2e6b8a",
+      "c": "#bff0ee",
+      "p": "#2e9ad0"
+    }
+  },
+  "marsh": {
+    "name": "Marsh Brush",
+    "rarity": "rare",
+    "desc": "Swamp burns half the ink and slows troops less.",
+    "fx": {
+      "burnKinds": {
+        "swamp": 0.5
+      },
+      "ease": {
+        "swamp": 0.5
+      }
+    },
+    "look": {
+      "shape": "brush",
+      "a": "#4f6f3a",
+      "b": "#8a7a5a",
+      "c": "#a8875a",
+      "p": "#7a5a2a"
+    }
+  },
+  "broad": {
+    "name": "Broad Brush",
+    "rarity": "rare",
+    "desc": "Grab charms from much farther away.",
+    "fx": {
+      "pickup": 24
+    },
+    "look": {
+      "shape": "flat",
+      "a": "#e98a6a",
+      "b": "#c0c4c8",
+      "c": "#f6f1e4",
+      "p": "#e8574c"
+    }
+  },
+  "swift": {
+    "name": "Swift Nib",
+    "rarity": "rare",
+    "desc": "Troops march 15% faster on your line.",
+    "fx": {
+      "march": 1.15
+    },
+    "look": {
+      "shape": "pen",
+      "a": "#3a7fd8",
+      "b": "#dfe6ee",
+      "c": "#dfe6ee",
+      "p": "#3a7fd8"
+    }
+  },
+  "atlas": {
+    "name": "Cartographer's Pen",
+    "rarity": "rare",
+    "desc": "Roads burn 60% less ink and speed troops up more.",
+    "fx": {
+      "burnKinds": {
+        "road": 0.4
+      },
+      "roadBoost": 0.2
+    },
+    "look": {
+      "shape": "pen",
+      "a": "#8a5a32",
+      "b": "#d9a440",
+      "c": "#c99a3a",
+      "p": "#d9a440"
+    }
+  },
+  "golden": {
+    "name": "Golden Quill",
+    "rarity": "epic",
+    "desc": "All ink burns 20% slower.",
+    "fx": {
+      "burn": 0.8
+    },
+    "look": {
+      "shape": "quill",
+      "a": "#ffd34d",
+      "b": "#d99a1c",
+      "c": "#fff1b0",
+      "glow": "#ffb000",
+      "p": "#ffcf3a"
+    }
+  },
+  "willow": {
+    "name": "Willow Brush",
+    "rarity": "epic",
+    "desc": "Troops heal 1.5% HP every second.",
+    "fx": {
+      "regen": 0.015
+    },
+    "look": {
+      "shape": "brush",
+      "a": "#e6c98a",
+      "b": "#9a8a5a",
+      "c": "#f6f1e4",
+      "glow": "#4fbf8f",
+      "p": "#4fbf8f"
+    }
+  },
+  "trail": {
+    "name": "Trailblazer",
+    "rarity": "epic",
+    "desc": "Halves every terrain penalty, for ink and for marching.",
+    "fx": {
+      "ease": {
+        "all": 0.5
+      }
+    },
+    "look": {
+      "shape": "brush",
+      "a": "#4a5868",
+      "b": "#2c2c30",
+      "c": "#ff9a3c",
+      "glow": "#ff6a3c",
+      "p": "#ff6a3c"
+    }
+  },
+  "phoenix": {
+    "name": "Phoenix Brush",
+    "rarity": "legendary",
+    "desc": "Ink burns 25% slower, terrain penalties halved, troops heal 1% per second.",
+    "fx": {
+      "burn": 0.75,
+      "ease": {
+        "all": 0.5
+      },
+      "regen": 0.01
+    },
+    "look": {
+      "shape": "quill",
+      "a": "#e8452c",
+      "b": "#ffd34d",
+      "c": "#ffd34d",
+      "glow": "#ff4a1c",
+      "p": "#ff4a1c"
+    }
+  }
+}

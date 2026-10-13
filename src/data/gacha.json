@@ -1,0 +1,33 @@
+{
+  "cost": 60,
+  "tenCost": 540,
+  "rates": {
+    "common": 0.65,
+    "rare": 0.28,
+    "epic": 0.07
+  },
+  "rarePity": 10,
+  "epicPity": 30,
+  "upgradeCardsPerLevel": 1,
+  "troopCap": 2,
+  "starterTroops": {
+    "sword": 2,
+    "archer": 2,
+    "shield": 2
+  },
+  "brush": {
+    "cost": 100,
+    "tenCost": 900,
+    "rates": {
+      "common": 0.6,
+      "rare": 0.3,
+      "epic": 0.085,
+      "legendary": 0.015
+    },
+    "epicPity": 20,
+    "legendaryPity": 60,
+    "startGems": 1000,
+    "maxStars": 5,
+    "starScale": 0.15
+  }
+}

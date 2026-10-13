@@ -1,0 +1,247 @@
+{
+  "id": "c8_s5",
+  "name": "The Drowned King",
+  "chapter": 8,
+  "baseInk": 1290,
+  "starts": [
+    {
+      "x": 360,
+      "y": 940
+    }
+  ],
+  "bosses": [
+    {
+      "type": "goblin_king",
+      "x": 360,
+      "y": 80,
+      "scale": 0.74
+    }
+  ],
+  "obstacles": [
+    {
+      "type": "rect",
+      "x": 0,
+      "y": 300,
+      "w": 330,
+      "h": 60,
+      "kind": "water"
+    },
+    {
+      "type": "rect",
+      "x": 390,
+      "y": 300,
+      "w": 330,
+      "h": 60,
+      "kind": "water"
+    },
+    {
+      "type": "rect",
+      "x": 0,
+      "y": 650,
+      "w": 100,
+      "h": 60,
+      "kind": "water"
+    },
+    {
+      "type": "rect",
+      "x": 160,
+      "y": 650,
+      "w": 400,
+      "h": 60,
+      "kind": "water"
+    },
+    {
+      "type": "rect",
+      "x": 620,
+      "y": 650,
+      "w": 100,
+      "h": 60,
+      "kind": "water"
+    }
+  ],
+  "items": [
+    {
+      "type": "reinforce",
+      "x": 360,
+      "y": 820
+    },
+    {
+      "type": "atk_up",
+      "x": 100,
+      "y": 500
+    },
+    {
+      "type": "hp_up",
+      "x": 620,
+      "y": 500
+    }
+  ],
+  "goldZones": [],
+  "terrain": [],
+  "camps": [
+    {
+      "x": 360,
+      "y": 500,
+      "units": [
+        {
+          "type": "orc",
+          "count": 2
+        },
+        {
+          "type": "goblin",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "x": 100,
+      "y": 180,
+      "units": [
+        {
+          "type": "orc",
+          "count": 1
+        },
+        {
+          "type": "goblin_archer",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "x": 620,
+      "y": 180,
+      "units": [
+        {
+          "type": "orc",
+          "count": 1
+        },
+        {
+          "type": "goblin_archer",
+          "count": 3
+        }
+      ]
+    }
+  ],
+  "enemySquads": [
+    {
+      "spawnDelay": 5,
+      "speed": 55,
+      "units": [
+        {
+          "type": "goblin",
+          "count": 6
+        }
+      ],
+      "route": [
+        [
+          20,
+          500
+        ],
+        [
+          360,
+          420
+        ],
+        [
+          360,
+          280
+        ],
+        [
+          360,
+          120
+        ]
+      ],
+      "id": "s0"
+    },
+    {
+      "spawnDelay": 10,
+      "speed": 45,
+      "units": [
+        {
+          "type": "orc",
+          "count": 2
+        },
+        {
+          "type": "goblin_archer",
+          "count": 3
+        }
+      ],
+      "route": [
+        [
+          700,
+          500
+        ],
+        [
+          360,
+          430
+        ],
+        [
+          360,
+          120
+        ]
+      ],
+      "id": "s1"
+    }
+  ],
+  "bonusSquadRoute": [
+    [
+      20,
+      500
+    ],
+    [
+      300,
+      120
+    ]
+  ],
+  "referenceSolution": [
+    [
+      [
+        360,
+        940
+      ],
+      [
+        144,
+        704
+      ],
+      [
+        152,
+        640
+      ],
+      [
+        296,
+        520
+      ],
+      [
+        344,
+        328
+      ],
+      [
+        336,
+        288
+      ],
+      [
+        160,
+        208
+      ],
+      [
+        560,
+        208
+      ],
+      [
+        424,
+        96
+      ]
+    ]
+  ],
+  "tutorialHint": "Three rivers, three crossings. The island camp waits in the middle.",
+  "field": {
+    "x": 0,
+    "y": 0,
+    "w": 720,
+    "h": 1000
+  },
+  "design": {
+    "winInk": 1001,
+    "threeStarInk": 1580,
+    "threeStarBrush": "golden"
+  }
+}

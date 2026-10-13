@@ -1,0 +1,45 @@
+{
+  "goblin_chief": {
+    "hp": 1500,
+    "atk": 25,
+    "range": 50,
+    "interval": 1.5,
+    "skill": "stomp",
+    "skillInterval": 6,
+    "skillDamage": 30,
+    "skillRange": 90,
+    "throwInterval": 2.5,
+    "throwDamage": 28,
+    "throwRange": 260,
+    "throwName": "ROCK!"
+  },
+  "goblin_king": {
+    "hp": 1500,
+    "atk": 25,
+    "range": 50,
+    "interval": 1.5,
+    "skill": "stomp",
+    "skillInterval": 6,
+    "skillDamage": 30,
+    "skillRange": 90,
+    "throwInterval": 2.2,
+    "throwDamage": 32,
+    "throwRange": 260,
+    "throwName": "ROCK!"
+  },
+  "shadow_mage": {
+    "hp": 3000,
+    "atk": 22,
+    "range": 150,
+    "interval": 1.8,
+    "skill": "summon",
+    "skillInterval": 12,
+    "shield": 600,
+    "shieldDuration": 8,
+    "summonCount": 3,
+    "throwInterval": 3,
+    "throwDamage": 30,
+    "throwRange": 280,
+    "throwName": "SHADOW BOLT"
+  }
+}
