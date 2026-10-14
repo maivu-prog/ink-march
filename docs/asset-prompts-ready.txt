@@ -1,0 +1,456 @@
+INK MARCH — PROMPT DÁN-LÀ-CHẠY
+
+Cách dùng: copy nguyên MỘT khối nằm giữa hai dòng ==== vào GPT Astra 6. Lưu kết quả đúng tên ở chỗ [FILE].
+Model 3D làm 2 bước: BƯỚC 1 gen ảnh concept (mục A), chọn ảnh đẹp. BƯỚC 2 đưa ảnh đó vào chế độ ảnh→3D kèm prompt mục B cùng tên.
+Nếu tool chỉ có text→3D thì bỏ bước 1, dùng thẳng mục B.
+Nên thử trước 2 khối: CONCEPT · sword và CONCEPT · goblin, gửi Claude xem độ rõ trên điện thoại rồi mới gen hết.
+
+######## A. ẢNH CONCEPT 2D (bước 1) ########
+
+============================================================
+[CONCEPT · sword]   [FILE] sword_concept.png
+============================================================
+Game concept art of a single character for a mobile strategy game. Stylized low-poly toy miniature, chibi proportions: big head (40% of height), oversized weapon, short stubby legs. Seen from a high three-quarter top-down angle (about 40 degrees). Flat cel-shaded colors, thick dark outline, large readable color blocks, no tiny details, no text, no logos. Soft even lighting, plain light-grey background, no ground shadow. Full body, centered, silhouette readable at 48 pixels tall.
+Subject: Friendly swordsman. Blue tunic over light silver armor, round helmet with a small blue plume, oversized straight sword held high, small round buckler.
+
+============================================================
+[CONCEPT · archer]   [FILE] archer_concept.png
+============================================================
+Game concept art of a single character for a mobile strategy game. Stylized low-poly toy miniature, chibi proportions: big head (40% of height), oversized weapon, short stubby legs. Seen from a high three-quarter top-down angle (about 40 degrees). Flat cel-shaded colors, thick dark outline, large readable color blocks, no tiny details, no text, no logos. Soft even lighting, plain light-grey background, no ground shadow. Full body, centered, silhouette readable at 48 pixels tall.
+Subject: Friendly archer. Teal-blue hooded cloak, light leather armor, a big curved longbow taller than the body, quiver of white-feathered arrows on the back.
+
+============================================================
+[CONCEPT · shield]   [FILE] shield_concept.png
+============================================================
+Game concept art of a single character for a mobile strategy game. Stylized low-poly toy miniature, chibi proportions: big head (40% of height), oversized weapon, short stubby legs. Seen from a high three-quarter top-down angle (about 40 degrees). Flat cel-shaded colors, thick dark outline, large readable color blocks, no tiny details, no text, no logos. Soft even lighting, plain light-grey background, no ground shadow. Full body, centered, silhouette readable at 48 pixels tall.
+Subject: Friendly knight shieldbearer. Blue and white armor with gold trim, round helmet, a huge round blue shield with a gold star covering half the body, short mace, wide sturdy stance.
+
+============================================================
+[CONCEPT · spear]   [FILE] spear_concept.png
+============================================================
+Game concept art of a single character for a mobile strategy game. Stylized low-poly toy miniature, chibi proportions: big head (40% of height), oversized weapon, short stubby legs. Seen from a high three-quarter top-down angle (about 40 degrees). Flat cel-shaded colors, thick dark outline, large readable color blocks, no tiny details, no text, no logos. Soft even lighting, plain light-grey background, no ground shadow. Full body, centered, silhouette readable at 48 pixels tall.
+Subject: Friendly spearman. Blue and white padded armor, conical helmet, a very long spear with a blue pennant held diagonally.
+
+============================================================
+[CONCEPT · mage]   [FILE] mage_concept.png
+============================================================
+Game concept art of a single character for a mobile strategy game. Stylized low-poly toy miniature, chibi proportions: big head (40% of height), oversized weapon, short stubby legs. Seen from a high three-quarter top-down angle (about 40 degrees). Flat cel-shaded colors, thick dark outline, large readable color blocks, no tiny details, no text, no logos. Soft even lighting, plain light-grey background, no ground shadow. Full body, centered, silhouette readable at 48 pixels tall.
+Subject: Friendly battle mage. Deep blue robe with gold stars, tall pointed hat, wooden staff topped with a glowing cyan crystal orb.
+
+============================================================
+[CONCEPT · healer]   [FILE] healer_concept.png
+============================================================
+Game concept art of a single character for a mobile strategy game. Stylized low-poly toy miniature, chibi proportions: big head (40% of height), oversized weapon, short stubby legs. Seen from a high three-quarter top-down angle (about 40 degrees). Flat cel-shaded colors, thick dark outline, large readable color blocks, no tiny details, no text, no logos. Soft even lighting, plain light-grey background, no ground shadow. Full body, centered, silhouette readable at 48 pixels tall.
+Subject: Friendly field healer. White and light-blue robe, green leaf circlet, satchel with a red cross, holding a glowing green potion flask.
+
+============================================================
+[CONCEPT · goblin]   [FILE] goblin_concept.png
+============================================================
+Game concept art of a single character for a mobile strategy game. Stylized low-poly toy miniature, chibi proportions: big head (40% of height), oversized weapon, short stubby legs. Seen from a high three-quarter top-down angle (about 40 degrees). Flat cel-shaded colors, thick dark outline, large readable color blocks, no tiny details, no text, no logos. Soft even lighting, plain light-grey background, no ground shadow. Full body, centered, silhouette readable at 48 pixels tall.
+Subject: Enemy goblin raider. Green skin, long pointy ears, red and black scrap armor with spikes, jagged cleaver, angry grin with fangs.
+
+============================================================
+[CONCEPT · goblin_archer]   [FILE] goblin_archer_concept.png
+============================================================
+Game concept art of a single character for a mobile strategy game. Stylized low-poly toy miniature, chibi proportions: big head (40% of height), oversized weapon, short stubby legs. Seen from a high three-quarter top-down angle (about 40 degrees). Flat cel-shaded colors, thick dark outline, large readable color blocks, no tiny details, no text, no logos. Soft even lighting, plain light-grey background, no ground shadow. Full body, centered, silhouette readable at 48 pixels tall.
+Subject: Enemy goblin archer. Green skin, pointy ears, red bandana, black leather with orange straps, crude bone bow, quiver of red arrows.
+
+============================================================
+[CONCEPT · orc]   [FILE] orc_concept.png
+============================================================
+Game concept art of a single character for a mobile strategy game. Stylized low-poly toy miniature, chibi proportions: big head (40% of height), oversized weapon, short stubby legs. Seen from a high three-quarter top-down angle (about 40 degrees). Flat cel-shaded colors, thick dark outline, large readable color blocks, no tiny details, no text, no logos. Soft even lighting, plain light-grey background, no ground shadow. Full body, centered, silhouette readable at 48 pixels tall.
+Subject: Enemy orc brute, 1.5x the size of a goblin. Dark-green skin, red war paint, spiked black shoulder pads, huge two-handed spiked club, tusks.
+
+============================================================
+[CONCEPT · shaman]   [FILE] shaman_concept.png
+============================================================
+Game concept art of a single character for a mobile strategy game. Stylized low-poly toy miniature, chibi proportions: big head (40% of height), oversized weapon, short stubby legs. Seen from a high three-quarter top-down angle (about 40 degrees). Flat cel-shaded colors, thick dark outline, large readable color blocks, no tiny details, no text, no logos. Soft even lighting, plain light-grey background, no ground shadow. Full body, centered, silhouette readable at 48 pixels tall.
+Subject: Enemy goblin shaman. Green skin, skull mask on the forehead, ragged red cloak with feathers, crooked staff with a glowing orange flame.
+
+============================================================
+[CONCEPT · goblin_king]   [FILE] goblin_king_concept.png
+============================================================
+Game concept art of a single character for a mobile strategy game. Stylized low-poly toy miniature, chibi proportions: big head (40% of height), oversized weapon, short stubby legs. Seen from a high three-quarter top-down angle (about 40 degrees). Flat cel-shaded colors, thick dark outline, large readable color blocks, no tiny details, no text, no logos. Soft even lighting, plain light-grey background, no ground shadow. Full body, centered, silhouette readable at 48 pixels tall.
+Subject: Enemy boss Goblin King, 2.5x the height of a soldier. Large fat goblin, golden spiked crown, red royal cape with black fur, huge spiked shield and war axe, menacing pose.
+
+============================================================
+[CONCEPT · shadow_mage]   [FILE] shadow_mage_concept.png
+============================================================
+Game concept art of a single character for a mobile strategy game. Stylized low-poly toy miniature, chibi proportions: big head (40% of height), oversized weapon, short stubby legs. Seen from a high three-quarter top-down angle (about 40 degrees). Flat cel-shaded colors, thick dark outline, large readable color blocks, no tiny details, no text, no logos. Soft even lighting, plain light-grey background, no ground shadow. Full body, centered, silhouette readable at 48 pixels tall.
+Subject: Enemy boss Shadow Mage, 2.5x the height of a soldier. Tall hooded sorcerer in black and deep purple robes with glowing violet runes, dark orbs floating around the hands, face hidden in shadow with two glowing eyes.
+
+============================================================
+[CONCEPT · tower]   [FILE] tower_concept.png
+============================================================
+Game concept art of a single character for a mobile strategy game. Stylized low-poly toy miniature, chibi proportions: big head (40% of height), oversized weapon, short stubby legs. Seen from a high three-quarter top-down angle (about 40 degrees). Flat cel-shaded colors, thick dark outline, large readable color blocks, no tiny details, no text, no logos. Soft even lighting, plain light-grey background, no ground shadow. Full body, centered, silhouette readable at 48 pixels tall.
+Subject: Enemy watchtower camp, 3x soldier height. Short round stone tower with a red pointed roof, red goblin war banner on top, wooden spikes around the base.
+
+============================================================
+[CONCEPT · rock]   [FILE] rock_concept.png
+============================================================
+Game concept art of a single character for a mobile strategy game. Stylized low-poly toy miniature, chibi proportions: big head (40% of height), oversized weapon, short stubby legs. Seen from a high three-quarter top-down angle (about 40 degrees). Flat cel-shaded colors, thick dark outline, large readable color blocks, no tiny details, no text, no logos. Soft even lighting, plain light-grey background, no ground shadow. Full body, centered, silhouette readable at 48 pixels tall.
+Subject: Large grey boulder, faceted, flat bottom, mossy top.
+
+============================================================
+[CONCEPT · tree]   [FILE] tree_concept.png
+============================================================
+Game concept art of a single character for a mobile strategy game. Stylized low-poly toy miniature, chibi proportions: big head (40% of height), oversized weapon, short stubby legs. Seen from a high three-quarter top-down angle (about 40 degrees). Flat cel-shaded colors, thick dark outline, large readable color blocks, no tiny details, no text, no logos. Soft even lighting, plain light-grey background, no ground shadow. Full body, centered, silhouette readable at 48 pixels tall.
+Subject: Stylized pine tree, three stacked cone layers, dark green, chunky trunk.
+
+============================================================
+[CONCEPT · flag_start]   [FILE] flag_start_concept.png
+============================================================
+Game concept art of a single character for a mobile strategy game. Stylized low-poly toy miniature, chibi proportions: big head (40% of height), oversized weapon, short stubby legs. Seen from a high three-quarter top-down angle (about 40 degrees). Flat cel-shaded colors, thick dark outline, large readable color blocks, no tiny details, no text, no logos. Soft even lighting, plain light-grey background, no ground shadow. Full body, centered, silhouette readable at 48 pixels tall.
+Subject: Tall blue rally flag on a wooden pole with a gold tip, banner with a white brush-stroke emblem.
+
+============================================================
+[CONCEPT · flag_clash]   [FILE] flag_clash_concept.png
+============================================================
+Game concept art of a single character for a mobile strategy game. Stylized low-poly toy miniature, chibi proportions: big head (40% of height), oversized weapon, short stubby legs. Seen from a high three-quarter top-down angle (about 40 degrees). Flat cel-shaded colors, thick dark outline, large readable color blocks, no tiny details, no text, no logos. Soft even lighting, plain light-grey background, no ground shadow. Full body, centered, silhouette readable at 48 pixels tall.
+Subject: Small blue battle flag stuck in the ground, crossed-swords emblem, slightly waving.
+
+============================================================
+[CONCEPT · brush quill]   [FILE] brush_quill_concept.png
+============================================================
+Game concept art of a single collectible cartoon paintbrush item. Thick black outline, glossy handle with a white highlight stroke, metal ferrule with two bands, bristles shaped like a teardrop flame, a few paint splashes floating around it. Diagonal pose, centered, plain light-grey background, no text.
+This brush: simple white feather quill with a black metal nib, no paint splashes
+
+============================================================
+[CONCEPT · brush reed]   [FILE] brush_reed_concept.png
+============================================================
+Game concept art of a single collectible cartoon paintbrush item. Thick black outline, glossy handle with a white highlight stroke, metal ferrule with two bands, bristles shaped like a teardrop flame, a few paint splashes floating around it. Diagonal pose, centered, plain light-grey background, no text.
+This brush: green bamboo reed handle, cream bristles dipped in sand-yellow paint
+
+============================================================
+[CONCEPT · brush charcoal]   [FILE] brush_charcoal_concept.png
+============================================================
+Game concept art of a single collectible cartoon paintbrush item. Thick black outline, glossy handle with a white highlight stroke, metal ferrule with two bands, bristles shaped like a teardrop flame, a few paint splashes floating around it. Diagonal pose, centered, plain light-grey background, no text.
+This brush: stubby black charcoal stick wrapped in grey cloth, no bristles
+
+============================================================
+[CONCEPT · brush feather]   [FILE] brush_feather_concept.png
+============================================================
+Game concept art of a single collectible cartoon paintbrush item. Thick black outline, glossy handle with a white highlight stroke, metal ferrule with two bands, bristles shaped like a teardrop flame, a few paint splashes floating around it. Diagonal pose, centered, plain light-grey background, no text.
+This brush: teal feather quill with a light blue ink drop on the tip
+
+============================================================
+[CONCEPT · brush marsh]   [FILE] brush_marsh_concept.png
+============================================================
+Game concept art of a single collectible cartoon paintbrush item. Thick black outline, glossy handle with a white highlight stroke, metal ferrule with two bands, bristles shaped like a teardrop flame, a few paint splashes floating around it. Diagonal pose, centered, plain light-grey background, no text.
+This brush: mossy dark-green handle, brown bristles dripping swamp-green paint, small lily pad charm
+
+============================================================
+[CONCEPT · brush broad]   [FILE] brush_broad_concept.png
+============================================================
+Game concept art of a single collectible cartoon paintbrush item. Thick black outline, glossy handle with a white highlight stroke, metal ferrule with two bands, bristles shaped like a teardrop flame, a few paint splashes floating around it. Diagonal pose, centered, plain light-grey background, no text.
+This brush: wide flat house-painter brush, coral handle, white bristles dipped in red paint
+
+============================================================
+[CONCEPT · brush swift]   [FILE] brush_swift_concept.png
+============================================================
+Game concept art of a single collectible cartoon paintbrush item. Thick black outline, glossy handle with a white highlight stroke, metal ferrule with two bands, bristles shaped like a teardrop flame, a few paint splashes floating around it. Diagonal pose, centered, plain light-grey background, no text.
+This brush: sleek blue fountain pen with a silver clip and motion streaks
+
+============================================================
+[CONCEPT · brush atlas]   [FILE] brush_atlas_concept.png
+============================================================
+Game concept art of a single collectible cartoon paintbrush item. Thick black outline, glossy handle with a white highlight stroke, metal ferrule with two bands, bristles shaped like a teardrop flame, a few paint splashes floating around it. Diagonal pose, centered, plain light-grey background, no text.
+This brush: brown leather-wrapped cartographer's pen with a gold compass on the cap
+
+============================================================
+[CONCEPT · brush golden]   [FILE] brush_golden_concept.png
+============================================================
+Game concept art of a single collectible cartoon paintbrush item. Thick black outline, glossy handle with a white highlight stroke, metal ferrule with two bands, bristles shaped like a teardrop flame, a few paint splashes floating around it. Diagonal pose, centered, plain light-grey background, no text.
+This brush: golden quill with a warm glow and gold paint splashes
+
+============================================================
+[CONCEPT · brush willow]   [FILE] brush_willow_concept.png
+============================================================
+Game concept art of a single collectible cartoon paintbrush item. Thick black outline, glossy handle with a white highlight stroke, metal ferrule with two bands, bristles shaped like a teardrop flame, a few paint splashes floating around it. Diagonal pose, centered, plain light-grey background, no text.
+This brush: cream willow-wood handle with small leaves, mint-green glowing paint, healing sparkles
+
+============================================================
+[CONCEPT · brush trail]   [FILE] brush_trail_concept.png
+============================================================
+Game concept art of a single collectible cartoon paintbrush item. Thick black outline, glossy handle with a white highlight stroke, metal ferrule with two bands, bristles shaped like a teardrop flame, a few paint splashes floating around it. Diagonal pose, centered, plain light-grey background, no text.
+This brush: dark slate handle, bright orange flame-shaped bristles, orange and blue paint splashes
+
+============================================================
+[CONCEPT · brush phoenix]   [FILE] brush_phoenix_concept.png
+============================================================
+Game concept art of a single collectible cartoon paintbrush item. Thick black outline, glossy handle with a white highlight stroke, metal ferrule with two bands, bristles shaped like a teardrop flame, a few paint splashes floating around it. Diagonal pose, centered, plain light-grey background, no text.
+This brush: phoenix feather brush, red-orange fiery bristles, golden handle, flame and ember splashes, strong glow
+
+######## B. MODEL 3D (bước 2, hoặc text→3D) ########
+
+============================================================
+[3D · sword]   [FILE] sword.glb
+============================================================
+Stylized low-poly 3D game character, toy miniature style, chibi proportions: big head (40% of height), oversized weapon, short stubby legs. Simple chunky shapes, large flat color areas, hand-painted texture look, no tiny details, no text. Neutral standing pose, feet flat on the ground, facing forward. Head, shoulders and weapon large and distinct so it reads from a high top-down camera. Clean topology, under 3000 triangles, single 512px texture.
+Subject: Friendly swordsman. Blue tunic over light silver armor, round helmet with a small blue plume, oversized straight sword held high, small round buckler.
+Export GLB. If animation is supported, include clips named Idle, Walk, Attack, Death.
+
+============================================================
+[3D · archer]   [FILE] archer.glb
+============================================================
+Stylized low-poly 3D game character, toy miniature style, chibi proportions: big head (40% of height), oversized weapon, short stubby legs. Simple chunky shapes, large flat color areas, hand-painted texture look, no tiny details, no text. Neutral standing pose, feet flat on the ground, facing forward. Head, shoulders and weapon large and distinct so it reads from a high top-down camera. Clean topology, under 3000 triangles, single 512px texture.
+Subject: Friendly archer. Teal-blue hooded cloak, light leather armor, a big curved longbow taller than the body, quiver of white-feathered arrows on the back.
+Export GLB. If animation is supported, include clips named Idle, Walk, Attack, Death.
+
+============================================================
+[3D · shield]   [FILE] shield.glb
+============================================================
+Stylized low-poly 3D game character, toy miniature style, chibi proportions: big head (40% of height), oversized weapon, short stubby legs. Simple chunky shapes, large flat color areas, hand-painted texture look, no tiny details, no text. Neutral standing pose, feet flat on the ground, facing forward. Head, shoulders and weapon large and distinct so it reads from a high top-down camera. Clean topology, under 3000 triangles, single 512px texture.
+Subject: Friendly knight shieldbearer. Blue and white armor with gold trim, round helmet, a huge round blue shield with a gold star covering half the body, short mace, wide sturdy stance.
+Export GLB. If animation is supported, include clips named Idle, Walk, Attack, Death.
+
+============================================================
+[3D · spear]   [FILE] spear.glb
+============================================================
+Stylized low-poly 3D game character, toy miniature style, chibi proportions: big head (40% of height), oversized weapon, short stubby legs. Simple chunky shapes, large flat color areas, hand-painted texture look, no tiny details, no text. Neutral standing pose, feet flat on the ground, facing forward. Head, shoulders and weapon large and distinct so it reads from a high top-down camera. Clean topology, under 3000 triangles, single 512px texture.
+Subject: Friendly spearman. Blue and white padded armor, conical helmet, a very long spear with a blue pennant held diagonally.
+Export GLB. If animation is supported, include clips named Idle, Walk, Attack, Death.
+
+============================================================
+[3D · mage]   [FILE] mage.glb
+============================================================
+Stylized low-poly 3D game character, toy miniature style, chibi proportions: big head (40% of height), oversized weapon, short stubby legs. Simple chunky shapes, large flat color areas, hand-painted texture look, no tiny details, no text. Neutral standing pose, feet flat on the ground, facing forward. Head, shoulders and weapon large and distinct so it reads from a high top-down camera. Clean topology, under 3000 triangles, single 512px texture.
+Subject: Friendly battle mage. Deep blue robe with gold stars, tall pointed hat, wooden staff topped with a glowing cyan crystal orb.
+Export GLB. If animation is supported, include clips named Idle, Walk, Attack, Death.
+
+============================================================
+[3D · healer]   [FILE] healer.glb
+============================================================
+Stylized low-poly 3D game character, toy miniature style, chibi proportions: big head (40% of height), oversized weapon, short stubby legs. Simple chunky shapes, large flat color areas, hand-painted texture look, no tiny details, no text. Neutral standing pose, feet flat on the ground, facing forward. Head, shoulders and weapon large and distinct so it reads from a high top-down camera. Clean topology, under 3000 triangles, single 512px texture.
+Subject: Friendly field healer. White and light-blue robe, green leaf circlet, satchel with a red cross, holding a glowing green potion flask.
+Export GLB. If animation is supported, include clips named Idle, Walk, Attack, Death.
+
+============================================================
+[3D · goblin]   [FILE] goblin.glb
+============================================================
+Stylized low-poly 3D game character, toy miniature style, chibi proportions: big head (40% of height), oversized weapon, short stubby legs. Simple chunky shapes, large flat color areas, hand-painted texture look, no tiny details, no text. Neutral standing pose, feet flat on the ground, facing forward. Head, shoulders and weapon large and distinct so it reads from a high top-down camera. Clean topology, under 3000 triangles, single 512px texture.
+Subject: Enemy goblin raider. Green skin, long pointy ears, red and black scrap armor with spikes, jagged cleaver, angry grin with fangs.
+Export GLB. If animation is supported, include clips named Idle, Walk, Attack, Death.
+
+============================================================
+[3D · goblin_archer]   [FILE] goblin_archer.glb
+============================================================
+Stylized low-poly 3D game character, toy miniature style, chibi proportions: big head (40% of height), oversized weapon, short stubby legs. Simple chunky shapes, large flat color areas, hand-painted texture look, no tiny details, no text. Neutral standing pose, feet flat on the ground, facing forward. Head, shoulders and weapon large and distinct so it reads from a high top-down camera. Clean topology, under 3000 triangles, single 512px texture.
+Subject: Enemy goblin archer. Green skin, pointy ears, red bandana, black leather with orange straps, crude bone bow, quiver of red arrows.
+Export GLB. If animation is supported, include clips named Idle, Walk, Attack, Death.
+
+============================================================
+[3D · orc]   [FILE] orc.glb
+============================================================
+Stylized low-poly 3D game character, toy miniature style, chibi proportions: big head (40% of height), oversized weapon, short stubby legs. Simple chunky shapes, large flat color areas, hand-painted texture look, no tiny details, no text. Neutral standing pose, feet flat on the ground, facing forward. Head, shoulders and weapon large and distinct so it reads from a high top-down camera. Clean topology, under 3000 triangles, single 512px texture.
+Subject: Enemy orc brute, 1.5x the size of a goblin. Dark-green skin, red war paint, spiked black shoulder pads, huge two-handed spiked club, tusks.
+Export GLB. If animation is supported, include clips named Idle, Walk, Attack, Death.
+
+============================================================
+[3D · shaman]   [FILE] shaman.glb
+============================================================
+Stylized low-poly 3D game character, toy miniature style, chibi proportions: big head (40% of height), oversized weapon, short stubby legs. Simple chunky shapes, large flat color areas, hand-painted texture look, no tiny details, no text. Neutral standing pose, feet flat on the ground, facing forward. Head, shoulders and weapon large and distinct so it reads from a high top-down camera. Clean topology, under 3000 triangles, single 512px texture.
+Subject: Enemy goblin shaman. Green skin, skull mask on the forehead, ragged red cloak with feathers, crooked staff with a glowing orange flame.
+Export GLB. If animation is supported, include clips named Idle, Walk, Attack, Death.
+
+============================================================
+[3D · goblin_king]   [FILE] goblin_king.glb
+============================================================
+Stylized low-poly 3D game character, toy miniature style, chibi proportions: big head (40% of height), oversized weapon, short stubby legs. Simple chunky shapes, large flat color areas, hand-painted texture look, no tiny details, no text. Neutral standing pose, feet flat on the ground, facing forward. Head, shoulders and weapon large and distinct so it reads from a high top-down camera. Clean topology, under 3000 triangles, single 512px texture.
+Subject: Enemy boss Goblin King, 2.5x the height of a soldier. Large fat goblin, golden spiked crown, red royal cape with black fur, huge spiked shield and war axe, menacing pose.
+Export GLB. If animation is supported, include clips named Idle, Walk, Attack, Death.
+
+============================================================
+[3D · shadow_mage]   [FILE] shadow_mage.glb
+============================================================
+Stylized low-poly 3D game character, toy miniature style, chibi proportions: big head (40% of height), oversized weapon, short stubby legs. Simple chunky shapes, large flat color areas, hand-painted texture look, no tiny details, no text. Neutral standing pose, feet flat on the ground, facing forward. Head, shoulders and weapon large and distinct so it reads from a high top-down camera. Clean topology, under 3000 triangles, single 512px texture.
+Subject: Enemy boss Shadow Mage, 2.5x the height of a soldier. Tall hooded sorcerer in black and deep purple robes with glowing violet runes, dark orbs floating around the hands, face hidden in shadow with two glowing eyes.
+Export GLB. If animation is supported, include clips named Idle, Walk, Attack, Death.
+
+============================================================
+[3D · tower]   [FILE] tower.glb
+============================================================
+Stylized low-poly 3D game character, toy miniature style, chibi proportions: big head (40% of height), oversized weapon, short stubby legs. Simple chunky shapes, large flat color areas, hand-painted texture look, no tiny details, no text. Neutral standing pose, feet flat on the ground, facing forward. Head, shoulders and weapon large and distinct so it reads from a high top-down camera. Clean topology, under 3000 triangles, single 512px texture.
+Subject: Enemy watchtower camp, 3x soldier height. Short round stone tower with a red pointed roof, red goblin war banner on top, wooden spikes around the base.
+Export GLB. If animation is supported, include clips named Idle, Walk, Attack, Death.
+
+============================================================
+[3D · rock]   [FILE] rock.glb
+============================================================
+Stylized low-poly 3D game character, toy miniature style, chibi proportions: big head (40% of height), oversized weapon, short stubby legs. Simple chunky shapes, large flat color areas, hand-painted texture look, no tiny details, no text. Neutral standing pose, feet flat on the ground, facing forward. Head, shoulders and weapon large and distinct so it reads from a high top-down camera. Clean topology, under 3000 triangles, single 512px texture.
+Subject: Large grey boulder, faceted, flat bottom, mossy top.
+Export GLB. If animation is supported, include clips named Idle, Walk, Attack, Death.
+
+============================================================
+[3D · tree]   [FILE] tree.glb
+============================================================
+Stylized low-poly 3D game character, toy miniature style, chibi proportions: big head (40% of height), oversized weapon, short stubby legs. Simple chunky shapes, large flat color areas, hand-painted texture look, no tiny details, no text. Neutral standing pose, feet flat on the ground, facing forward. Head, shoulders and weapon large and distinct so it reads from a high top-down camera. Clean topology, under 3000 triangles, single 512px texture.
+Subject: Stylized pine tree, three stacked cone layers, dark green, chunky trunk.
+Export GLB. If animation is supported, include clips named Idle, Walk, Attack, Death.
+
+============================================================
+[3D · flag_start]   [FILE] flag_start.glb
+============================================================
+Stylized low-poly 3D game character, toy miniature style, chibi proportions: big head (40% of height), oversized weapon, short stubby legs. Simple chunky shapes, large flat color areas, hand-painted texture look, no tiny details, no text. Neutral standing pose, feet flat on the ground, facing forward. Head, shoulders and weapon large and distinct so it reads from a high top-down camera. Clean topology, under 3000 triangles, single 512px texture.
+Subject: Tall blue rally flag on a wooden pole with a gold tip, banner with a white brush-stroke emblem.
+Export GLB. If animation is supported, include clips named Idle, Walk, Attack, Death.
+
+============================================================
+[3D · flag_clash]   [FILE] flag_clash.glb
+============================================================
+Stylized low-poly 3D game character, toy miniature style, chibi proportions: big head (40% of height), oversized weapon, short stubby legs. Simple chunky shapes, large flat color areas, hand-painted texture look, no tiny details, no text. Neutral standing pose, feet flat on the ground, facing forward. Head, shoulders and weapon large and distinct so it reads from a high top-down camera. Clean topology, under 3000 triangles, single 512px texture.
+Subject: Small blue battle flag stuck in the ground, crossed-swords emblem, slightly waving.
+Export GLB. If animation is supported, include clips named Idle, Walk, Attack, Death.
+
+============================================================
+[3D · brush quill]   [FILE] brush_quill.glb
+============================================================
+Stylized 3D game item: cartoon paintbrush, chunky toy-like proportions, glossy handle, metal ferrule with two bands, bristles shaped like a teardrop flame, a few paint-splash blobs floating around it as separate small meshes. Hand-painted texture look, under 2000 triangles, single 512px texture. Brush tip at the origin, handle pointing up.
+This brush: simple white feather quill with a black metal nib, no paint splashes
+Export GLB.
+
+============================================================
+[3D · brush reed]   [FILE] brush_reed.glb
+============================================================
+Stylized 3D game item: cartoon paintbrush, chunky toy-like proportions, glossy handle, metal ferrule with two bands, bristles shaped like a teardrop flame, a few paint-splash blobs floating around it as separate small meshes. Hand-painted texture look, under 2000 triangles, single 512px texture. Brush tip at the origin, handle pointing up.
+This brush: green bamboo reed handle, cream bristles dipped in sand-yellow paint
+Export GLB.
+
+============================================================
+[3D · brush charcoal]   [FILE] brush_charcoal.glb
+============================================================
+Stylized 3D game item: cartoon paintbrush, chunky toy-like proportions, glossy handle, metal ferrule with two bands, bristles shaped like a teardrop flame, a few paint-splash blobs floating around it as separate small meshes. Hand-painted texture look, under 2000 triangles, single 512px texture. Brush tip at the origin, handle pointing up.
+This brush: stubby black charcoal stick wrapped in grey cloth, no bristles
+Export GLB.
+
+============================================================
+[3D · brush feather]   [FILE] brush_feather.glb
+============================================================
+Stylized 3D game item: cartoon paintbrush, chunky toy-like proportions, glossy handle, metal ferrule with two bands, bristles shaped like a teardrop flame, a few paint-splash blobs floating around it as separate small meshes. Hand-painted texture look, under 2000 triangles, single 512px texture. Brush tip at the origin, handle pointing up.
+This brush: teal feather quill with a light blue ink drop on the tip
+Export GLB.
+
+============================================================
+[3D · brush marsh]   [FILE] brush_marsh.glb
+============================================================
+Stylized 3D game item: cartoon paintbrush, chunky toy-like proportions, glossy handle, metal ferrule with two bands, bristles shaped like a teardrop flame, a few paint-splash blobs floating around it as separate small meshes. Hand-painted texture look, under 2000 triangles, single 512px texture. Brush tip at the origin, handle pointing up.
+This brush: mossy dark-green handle, brown bristles dripping swamp-green paint, small lily pad charm
+Export GLB.
+
+============================================================
+[3D · brush broad]   [FILE] brush_broad.glb
+============================================================
+Stylized 3D game item: cartoon paintbrush, chunky toy-like proportions, glossy handle, metal ferrule with two bands, bristles shaped like a teardrop flame, a few paint-splash blobs floating around it as separate small meshes. Hand-painted texture look, under 2000 triangles, single 512px texture. Brush tip at the origin, handle pointing up.
+This brush: wide flat house-painter brush, coral handle, white bristles dipped in red paint
+Export GLB.
+
+============================================================
+[3D · brush swift]   [FILE] brush_swift.glb
+============================================================
+Stylized 3D game item: cartoon paintbrush, chunky toy-like proportions, glossy handle, metal ferrule with two bands, bristles shaped like a teardrop flame, a few paint-splash blobs floating around it as separate small meshes. Hand-painted texture look, under 2000 triangles, single 512px texture. Brush tip at the origin, handle pointing up.
+This brush: sleek blue fountain pen with a silver clip and motion streaks
+Export GLB.
+
+============================================================
+[3D · brush atlas]   [FILE] brush_atlas.glb
+============================================================
+Stylized 3D game item: cartoon paintbrush, chunky toy-like proportions, glossy handle, metal ferrule with two bands, bristles shaped like a teardrop flame, a few paint-splash blobs floating around it as separate small meshes. Hand-painted texture look, under 2000 triangles, single 512px texture. Brush tip at the origin, handle pointing up.
+This brush: brown leather-wrapped cartographer's pen with a gold compass on the cap
+Export GLB.
+
+============================================================
+[3D · brush golden]   [FILE] brush_golden.glb
+============================================================
+Stylized 3D game item: cartoon paintbrush, chunky toy-like proportions, glossy handle, metal ferrule with two bands, bristles shaped like a teardrop flame, a few paint-splash blobs floating around it as separate small meshes. Hand-painted texture look, under 2000 triangles, single 512px texture. Brush tip at the origin, handle pointing up.
+This brush: golden quill with a warm glow and gold paint splashes
+Export GLB.
+
+============================================================
+[3D · brush willow]   [FILE] brush_willow.glb
+============================================================
+Stylized 3D game item: cartoon paintbrush, chunky toy-like proportions, glossy handle, metal ferrule with two bands, bristles shaped like a teardrop flame, a few paint-splash blobs floating around it as separate small meshes. Hand-painted texture look, under 2000 triangles, single 512px texture. Brush tip at the origin, handle pointing up.
+This brush: cream willow-wood handle with small leaves, mint-green glowing paint, healing sparkles
+Export GLB.
+
+============================================================
+[3D · brush trail]   [FILE] brush_trail.glb
+============================================================
+Stylized 3D game item: cartoon paintbrush, chunky toy-like proportions, glossy handle, metal ferrule with two bands, bristles shaped like a teardrop flame, a few paint-splash blobs floating around it as separate small meshes. Hand-painted texture look, under 2000 triangles, single 512px texture. Brush tip at the origin, handle pointing up.
+This brush: dark slate handle, bright orange flame-shaped bristles, orange and blue paint splashes
+Export GLB.
+
+============================================================
+[3D · brush phoenix]   [FILE] brush_phoenix.glb
+============================================================
+Stylized 3D game item: cartoon paintbrush, chunky toy-like proportions, glossy handle, metal ferrule with two bands, bristles shaped like a teardrop flame, a few paint-splash blobs floating around it as separate small meshes. Hand-painted texture look, under 2000 triangles, single 512px texture. Brush tip at the origin, handle pointing up.
+This brush: phoenix feather brush, red-orange fiery bristles, golden handle, flame and ember splashes, strong glow
+Export GLB.
+
+######## C. ICON BÙA 2D (PNG 256×256 nền trong suốt) ########
+
+============================================================
+[ICON · atk]   [FILE] icon_atk.png
+============================================================
+Round mobile game pickup icon, glossy orange coin-like disc with a thick dark outline, bold white two crossed swords symbol in the center, flat cartoon style, transparent background, no text, 256x256.
+
+============================================================
+[ICON · hp]   [FILE] icon_hp.png
+============================================================
+Round mobile game pickup icon, glossy teal coin-like disc with a thick dark outline, bold white a heart symbol in the center, flat cartoon style, transparent background, no text, 256x256.
+
+============================================================
+[ICON · shield]   [FILE] icon_shield.png
+============================================================
+Round mobile game pickup icon, glossy yellow coin-like disc with a thick dark outline, bold white a shield symbol in the center, flat cartoon style, transparent background, no text, 256x256.
+
+============================================================
+[ICON · range]   [FILE] icon_range.png
+============================================================
+Round mobile game pickup icon, glossy light purple coin-like disc with a thick dark outline, bold white a crosshair symbol in the center, flat cartoon style, transparent background, no text, 256x256.
+
+============================================================
+[ICON · haste]   [FILE] icon_haste.png
+============================================================
+Round mobile game pickup icon, glossy light green coin-like disc with a thick dark outline, bold white a winged boot symbol in the center, flat cartoon style, transparent background, no text, 256x256.
+
+============================================================
+[ICON · reinforce]   [FILE] icon_reinforce.png
+============================================================
+Round mobile game pickup icon, glossy blue coin-like disc with a thick dark outline, bold white a flag with a plus sign symbol in the center, flat cartoon style, transparent background, no text, 256x256.
+
+============================================================
+[ICON · ink]   [FILE] icon_ink.png
+============================================================
+Round mobile game pickup icon, glossy cyan coin-like disc with a thick dark outline, bold white an ink bottle symbol in the center, flat cartoon style, transparent background, no text, 256x256.
+
+============================================================
+[ICON · skull]   [FILE] icon_skull.png
+============================================================
+Round mobile game pickup icon, glossy dark red coin-like disc with a thick dark outline, bold white a skull symbol in the center, flat cartoon style, transparent background, no text, 256x256.
+
+######## D. TEXTURE ĐỊA HÌNH (PNG 512×512 lặp liền mạch) ########
+
+============================================================
+[TEXTURE · grass]   [FILE] tex_grass.png
+============================================================
+Seamless tileable top-down texture, stylized grass, soft painted look, gentle light-green variation, no flowers. Viewed straight from above, even lighting, no shadows, no objects, 512x512.
+
+============================================================
+[TEXTURE · sand]   [FILE] tex_sand.png
+============================================================
+Seamless tileable top-down texture, stylized desert sand, warm yellow, soft ripples and a few pebbles. Viewed straight from above, even lighting, no shadows, no objects, 512x512.
+
+============================================================
+[TEXTURE · swamp]   [FILE] tex_swamp.png
+============================================================
+Seamless tileable top-down texture, stylized swamp, murky green water with mud patches and reeds. Viewed straight from above, even lighting, no shadows, no objects, 512x512.
+
+============================================================
+[TEXTURE · road]   [FILE] tex_road.png
+============================================================
+Seamless tileable top-down texture, stylized dirt road, light brown packed earth with cart tracks. Viewed straight from above, even lighting, no shadows, no objects, 512x512.
+
+============================================================
+[TEXTURE · water]   [FILE] tex_water.png
+============================================================
+Seamless tileable top-down texture, stylized river water, clear blue with soft white foam streaks. Viewed straight from above, even lighting, no shadows, no objects, 512x512.
