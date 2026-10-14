@@ -1,0 +1,165 @@
+{
+  "id": "c1_s5",
+  "name": "The Ravine",
+  "chapter": 1,
+  "baseInk": 820,
+  "starts": [
+    {
+      "x": 360,
+      "y": 808
+    }
+  ],
+  "bosses": [
+    {
+      "type": "goblin_chief",
+      "x": 360,
+      "y": 206,
+      "scale": 0.47
+    }
+  ],
+  "obstacles": [
+    {
+      "type": "rect",
+      "x": 108,
+      "y": 472,
+      "w": 126,
+      "h": 63,
+      "kind": "chasm"
+    },
+    {
+      "type": "rect",
+      "x": 304,
+      "y": 472,
+      "w": 308,
+      "h": 63,
+      "kind": "chasm"
+    }
+  ],
+  "items": [
+    {
+      "type": "hp_up",
+      "x": 500,
+      "y": 654
+    },
+    {
+      "type": "atk_up",
+      "x": 374,
+      "y": 360
+    }
+  ],
+  "goldZones": [],
+  "terrain": [],
+  "camps": [
+    {
+      "x": 185,
+      "y": 654,
+      "units": [
+        {
+          "type": "goblin",
+          "count": 1
+        }
+      ],
+      "loot": "coins"
+    },
+    {
+      "x": 500,
+      "y": 360,
+      "units": [
+        {
+          "type": "goblin",
+          "count": 1
+        }
+      ],
+      "loot": "ink"
+    },
+    {
+      "x": 269,
+      "y": 353,
+      "units": [
+        {
+          "type": "goblin",
+          "count": 2
+        }
+      ],
+      "loot": "hp_up"
+    }
+  ],
+  "enemySquads": [
+    {
+      "spawnDelay": 10,
+      "speed": 55,
+      "units": [
+        {
+          "type": "goblin",
+          "count": 4
+        }
+      ],
+      "route": [
+        [
+          269,
+          353
+        ],
+        [
+          336,
+          240
+        ]
+      ],
+      "id": "s0",
+      "camp": 2,
+      "origDelay": 2
+    }
+  ],
+  "bonusSquadRoute": [
+    [
+      122,
+      500
+    ],
+    [
+      318,
+      234
+    ]
+  ],
+  "referenceSolution": [
+    [
+      [
+        360,
+        808
+      ],
+      [
+        224,
+        688
+      ],
+      [
+        248,
+        464
+      ],
+      [
+        248,
+        400
+      ],
+      [
+        448,
+        368
+      ],
+      [
+        384,
+        264
+      ]
+    ]
+  ],
+  "tutorialHint": "A ravine splits the woods. Only the narrow gap lets you through.",
+  "teach": [
+    "chasm"
+  ],
+  "field": {
+    "x": 108,
+    "y": 150,
+    "w": 504,
+    "h": 700
+  },
+  "design": {
+    "winInk": 560,
+    "threeStarInk": 795,
+    "threeStarBrush": "quill"
+  }
+}

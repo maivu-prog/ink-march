@@ -1,0 +1,440 @@
+INK MARCH — PROMPT ENVIRONMENT (dán-là-chạy)
+
+Mục tiêu: làm lại toàn bộ environment theo phong cách bean squad + thêm đồi, dốc, vực, cầu.
+Cách dùng: copy nguyên MỘT khối giữa hai dòng ==== vào GPT Astra 6. Lưu đúng tên ở [FILE].
+Model 3D làm 2 bước như lính: A (concept 2D) → chọn ảnh → B (ảnh→3D, kèm prompt cùng tên). Có thể đính kèm ảnh bean squad làm style reference.
+Thư mục lưu: model → public/assets/models/env/, texture → public/assets/textures/, icon → public/assets/icons/.
+Kích thước quy ước: 1 unit = chiều cao một lính bean. Đồi/dốc phải THẤP (≤ 0.3 unit) để không che lính và nét vẽ.
+
+Nên làm trước 3 khối: CONCEPT · hill, CONCEPT · chasm, CONCEPT · tower.
+
+######## A. CONCEPT 2D (bước 1) ########
+
+============================================================
+[CONCEPT · tower]   [FILE] tower_concept.png
+============================================================
+Game environment concept art for a mobile strategy game, matching a cute 'bean squad' toy-miniature style: soft rounded chunky shapes, flat cel-shaded colors, thick dark outline, large readable color blocks, no tiny details, no text, no logos. Seen from a high three-quarter top-down angle (about 40 degrees), soft even lighting, plain light-grey background, single centered asset with comfortable margins.
+Style reference: use the approved bean-squad characters (round toy soldiers, thick outline, flat colors) so the environment looks like the same toy world.
+Subject: Enemy goblin watchtower camp, short round chunky stone tower with a bulgy red cone roof, a red war banner with a goblin face, wooden spike fence around the base. About 3x the height of a soldier, wider than tall, clearly an enemy target.
+
+============================================================
+[CONCEPT · rock]   [FILE] rock_concept.png
+============================================================
+Game environment concept art for a mobile strategy game, matching a cute 'bean squad' toy-miniature style: soft rounded chunky shapes, flat cel-shaded colors, thick dark outline, large readable color blocks, no tiny details, no text, no logos. Seen from a high three-quarter top-down angle (about 40 degrees), soft even lighting, plain light-grey background, single centered asset with comfortable margins.
+Style reference: use the approved bean-squad characters (round toy soldiers, thick outline, flat colors) so the environment looks like the same toy world.
+Subject: Round chunky grey boulder with soft faceted edges and a little moss cap on top.
+
+============================================================
+[CONCEPT · rock_cluster]   [FILE] rock_cluster_concept.png
+============================================================
+Game environment concept art for a mobile strategy game, matching a cute 'bean squad' toy-miniature style: soft rounded chunky shapes, flat cel-shaded colors, thick dark outline, large readable color blocks, no tiny details, no text, no logos. Seen from a high three-quarter top-down angle (about 40 degrees), soft even lighting, plain light-grey background, single centered asset with comfortable margins.
+Style reference: use the approved bean-squad characters (round toy soldiers, thick outline, flat colors) so the environment looks like the same toy world.
+Subject: Small cluster of three rounded grey boulders of different sizes, mossy tops.
+
+============================================================
+[CONCEPT · tree]   [FILE] tree_concept.png
+============================================================
+Game environment concept art for a mobile strategy game, matching a cute 'bean squad' toy-miniature style: soft rounded chunky shapes, flat cel-shaded colors, thick dark outline, large readable color blocks, no tiny details, no text, no logos. Seen from a high three-quarter top-down angle (about 40 degrees), soft even lighting, plain light-grey background, single centered asset with comfortable margins.
+Style reference: use the approved bean-squad characters (round toy soldiers, thick outline, flat colors) so the environment looks like the same toy world.
+Subject: Cute round pine tree made of three stacked soft cone layers, dark green, short chunky brown trunk.
+
+============================================================
+[CONCEPT · tree_round]   [FILE] tree_round_concept.png
+============================================================
+Game environment concept art for a mobile strategy game, matching a cute 'bean squad' toy-miniature style: soft rounded chunky shapes, flat cel-shaded colors, thick dark outline, large readable color blocks, no tiny details, no text, no logos. Seen from a high three-quarter top-down angle (about 40 degrees), soft even lighting, plain light-grey background, single centered asset with comfortable margins.
+Style reference: use the approved bean-squad characters (round toy soldiers, thick outline, flat colors) so the environment looks like the same toy world.
+Subject: Cute round leafy tree, lollipop shape, bright green puffy crown, short brown trunk.
+
+============================================================
+[CONCEPT · wall]   [FILE] wall_concept.png
+============================================================
+Game environment concept art for a mobile strategy game, matching a cute 'bean squad' toy-miniature style: soft rounded chunky shapes, flat cel-shaded colors, thick dark outline, large readable color blocks, no tiny details, no text, no logos. Seen from a high three-quarter top-down angle (about 40 degrees), soft even lighting, plain light-grey background, single centered asset with comfortable margins.
+Style reference: use the approved bean-squad characters (round toy soldiers, thick outline, flat colors) so the environment looks like the same toy world.
+Subject: Low stone wall segment, chunky rounded stones, mossy top, 1 unit long, tileable end to end.
+
+============================================================
+[CONCEPT · gate_red]   [FILE] gate_red_concept.png
+============================================================
+Game environment concept art for a mobile strategy game, matching a cute 'bean squad' toy-miniature style: soft rounded chunky shapes, flat cel-shaded colors, thick dark outline, large readable color blocks, no tiny details, no text, no logos. Seen from a high three-quarter top-down angle (about 40 degrees), soft even lighting, plain light-grey background, single centered asset with comfortable margins.
+Style reference: use the approved bean-squad characters (round toy soldiers, thick outline, flat colors) so the environment looks like the same toy world.
+Subject: Wooden fort gate between two chunky stone posts, red painted planks with a big keyhole, hinged to open upward.
+
+============================================================
+[CONCEPT · gate_blue]   [FILE] gate_blue_concept.png
+============================================================
+Game environment concept art for a mobile strategy game, matching a cute 'bean squad' toy-miniature style: soft rounded chunky shapes, flat cel-shaded colors, thick dark outline, large readable color blocks, no tiny details, no text, no logos. Seen from a high three-quarter top-down angle (about 40 degrees), soft even lighting, plain light-grey background, single centered asset with comfortable margins.
+Style reference: use the approved bean-squad characters (round toy soldiers, thick outline, flat colors) so the environment looks like the same toy world.
+Subject: Same wooden fort gate design with blue painted planks and a big keyhole.
+
+============================================================
+[CONCEPT · chest]   [FILE] chest_concept.png
+============================================================
+Game environment concept art for a mobile strategy game, matching a cute 'bean squad' toy-miniature style: soft rounded chunky shapes, flat cel-shaded colors, thick dark outline, large readable color blocks, no tiny details, no text, no logos. Seen from a high three-quarter top-down angle (about 40 degrees), soft even lighting, plain light-grey background, single centered asset with comfortable margins.
+Style reference: use the approved bean-squad characters (round toy soldiers, thick outline, flat colors) so the environment looks like the same toy world.
+Subject: Chunky treasure chest, rounded wooden lid, gold bands, big lock, slightly glowing gold coins peeking out.
+
+============================================================
+[CONCEPT · key_red]   [FILE] key_red_concept.png
+============================================================
+Game environment concept art for a mobile strategy game, matching a cute 'bean squad' toy-miniature style: soft rounded chunky shapes, flat cel-shaded colors, thick dark outline, large readable color blocks, no tiny details, no text, no logos. Seen from a high three-quarter top-down angle (about 40 degrees), soft even lighting, plain light-grey background, single centered asset with comfortable margins.
+Style reference: use the approved bean-squad characters (round toy soldiers, thick outline, flat colors) so the environment looks like the same toy world.
+Subject: Big cartoon key, red gem in the handle, gold body, chunky teeth.
+
+============================================================
+[CONCEPT · key_blue]   [FILE] key_blue_concept.png
+============================================================
+Game environment concept art for a mobile strategy game, matching a cute 'bean squad' toy-miniature style: soft rounded chunky shapes, flat cel-shaded colors, thick dark outline, large readable color blocks, no tiny details, no text, no logos. Seen from a high three-quarter top-down angle (about 40 degrees), soft even lighting, plain light-grey background, single centered asset with comfortable margins.
+Style reference: use the approved bean-squad characters (round toy soldiers, thick outline, flat colors) so the environment looks like the same toy world.
+Subject: Big cartoon key, blue gem in the handle, gold body, chunky teeth.
+
+============================================================
+[CONCEPT · flag_start]   [FILE] flag_start_concept.png
+============================================================
+Game environment concept art for a mobile strategy game, matching a cute 'bean squad' toy-miniature style: soft rounded chunky shapes, flat cel-shaded colors, thick dark outline, large readable color blocks, no tiny details, no text, no logos. Seen from a high three-quarter top-down angle (about 40 degrees), soft even lighting, plain light-grey background, single centered asset with comfortable margins.
+Style reference: use the approved bean-squad characters (round toy soldiers, thick outline, flat colors) so the environment looks like the same toy world.
+Subject: Tall blue rally flag on a wooden pole with a gold ball tip, banner with a white brush-stroke emblem, standing on a round blue stone pad.
+
+============================================================
+[CONCEPT · flag_start_orange]   [FILE] flag_start_orange_concept.png
+============================================================
+Game environment concept art for a mobile strategy game, matching a cute 'bean squad' toy-miniature style: soft rounded chunky shapes, flat cel-shaded colors, thick dark outline, large readable color blocks, no tiny details, no text, no logos. Seen from a high three-quarter top-down angle (about 40 degrees), soft even lighting, plain light-grey background, single centered asset with comfortable margins.
+Style reference: use the approved bean-squad characters (round toy soldiers, thick outline, flat colors) so the environment looks like the same toy world.
+Subject: Same rally flag in orange for the second squad, white brush-stroke emblem, round orange stone pad.
+
+============================================================
+[CONCEPT · flag_clash]   [FILE] flag_clash_concept.png
+============================================================
+Game environment concept art for a mobile strategy game, matching a cute 'bean squad' toy-miniature style: soft rounded chunky shapes, flat cel-shaded colors, thick dark outline, large readable color blocks, no tiny details, no text, no logos. Seen from a high three-quarter top-down angle (about 40 degrees), soft even lighting, plain light-grey background, single centered asset with comfortable margins.
+Style reference: use the approved bean-squad characters (round toy soldiers, thick outline, flat colors) so the environment looks like the same toy world.
+Subject: Small blue battle flag stuck in the ground with crossed-swords emblem, slightly waving.
+
+============================================================
+[CONCEPT · pedestal]   [FILE] pedestal_concept.png
+============================================================
+Game environment concept art for a mobile strategy game, matching a cute 'bean squad' toy-miniature style: soft rounded chunky shapes, flat cel-shaded colors, thick dark outline, large readable color blocks, no tiny details, no text, no logos. Seen from a high three-quarter top-down angle (about 40 degrees), soft even lighting, plain light-grey background, single centered asset with comfortable margins.
+Style reference: use the approved bean-squad characters (round toy soldiers, thick outline, flat colors) so the environment looks like the same toy world.
+Subject: Small round cream stone pedestal where a power-up floats, soft rounded edge.
+
+============================================================
+[CONCEPT · bridge_gold]   [FILE] bridge_gold_concept.png
+============================================================
+Game environment concept art for a mobile strategy game, matching a cute 'bean squad' toy-miniature style: soft rounded chunky shapes, flat cel-shaded colors, thick dark outline, large readable color blocks, no tiny details, no text, no logos. Seen from a high three-quarter top-down angle (about 40 degrees), soft even lighting, plain light-grey background, single centered asset with comfortable margins.
+Style reference: use the approved bean-squad characters (round toy soldiers, thick outline, flat colors) so the environment looks like the same toy world.
+Subject: Short glowing golden plank bridge with rope rails, magical warm glow, spans a 1-unit gap.
+
+============================================================
+[CONCEPT · hill]   [FILE] hill_concept.png
+============================================================
+Game environment concept art for a mobile strategy game, matching a cute 'bean squad' toy-miniature style: soft rounded chunky shapes, flat cel-shaded colors, thick dark outline, large readable color blocks, no tiny details, no text, no logos. Seen from a high three-quarter top-down angle (about 40 degrees), soft even lighting, plain light-grey background, single centered asset with comfortable margins.
+Style reference: use the approved bean-squad characters (round toy soldiers, thick outline, flat colors) so the environment looks like the same toy world.
+Subject: Low gentle grassy hill mound, very flat dome only 0.2 units tall but 3 units wide, soft rounded edges, a few tiny flowers and a small rock on top. Must stay low so units on it remain visible.
+
+============================================================
+[CONCEPT · hill_large]   [FILE] hill_large_concept.png
+============================================================
+Game environment concept art for a mobile strategy game, matching a cute 'bean squad' toy-miniature style: soft rounded chunky shapes, flat cel-shaded colors, thick dark outline, large readable color blocks, no tiny details, no text, no logos. Seen from a high three-quarter top-down angle (about 40 degrees), soft even lighting, plain light-grey background, single centered asset with comfortable margins.
+Style reference: use the approved bean-squad characters (round toy soldiers, thick outline, flat colors) so the environment looks like the same toy world.
+Subject: Wide low grassy plateau with soft terraced edges, 0.3 units tall, 5 units wide, gentle slopes on all sides.
+
+============================================================
+[CONCEPT · slope_ramp]   [FILE] slope_ramp_concept.png
+============================================================
+Game environment concept art for a mobile strategy game, matching a cute 'bean squad' toy-miniature style: soft rounded chunky shapes, flat cel-shaded colors, thick dark outline, large readable color blocks, no tiny details, no text, no logos. Seen from a high three-quarter top-down angle (about 40 degrees), soft even lighting, plain light-grey background, single centered asset with comfortable margins.
+Style reference: use the approved bean-squad characters (round toy soldiers, thick outline, flat colors) so the environment looks like the same toy world.
+Subject: Wide earthen ramp rising gently in one direction from 0 to 0.3 units, grassy edges, packed dirt surface with carved step lines and light arrow-shaped grooves pointing uphill.
+
+============================================================
+[CONCEPT · chasm]   [FILE] chasm_concept.png
+============================================================
+Game environment concept art for a mobile strategy game, matching a cute 'bean squad' toy-miniature style: soft rounded chunky shapes, flat cel-shaded colors, thick dark outline, large readable color blocks, no tiny details, no text, no logos. Seen from a high three-quarter top-down angle (about 40 degrees), soft even lighting, plain light-grey background, single centered asset with comfortable margins.
+Style reference: use the approved bean-squad characters (round toy soldiers, thick outline, flat colors) so the environment looks like the same toy world.
+Subject: Deep narrow ravine cut into grassy ground, 1 unit wide and 4 units long, dark blue-black depth fading down, jagged rocky lips with chunky stones, a few hanging roots. Top edges flush with y=0.
+
+============================================================
+[CONCEPT · chasm_corner]   [FILE] chasm_corner_concept.png
+============================================================
+Game environment concept art for a mobile strategy game, matching a cute 'bean squad' toy-miniature style: soft rounded chunky shapes, flat cel-shaded colors, thick dark outline, large readable color blocks, no tiny details, no text, no logos. Seen from a high three-quarter top-down angle (about 40 degrees), soft even lighting, plain light-grey background, single centered asset with comfortable margins.
+Style reference: use the approved bean-squad characters (round toy soldiers, thick outline, flat colors) so the environment looks like the same toy world.
+Subject: Corner piece of the same ravine turning 90 degrees, matching rocky lips.
+
+============================================================
+[CONCEPT · cliff_edge]   [FILE] cliff_edge_concept.png
+============================================================
+Game environment concept art for a mobile strategy game, matching a cute 'bean squad' toy-miniature style: soft rounded chunky shapes, flat cel-shaded colors, thick dark outline, large readable color blocks, no tiny details, no text, no logos. Seen from a high three-quarter top-down angle (about 40 degrees), soft even lighting, plain light-grey background, single centered asset with comfortable margins.
+Style reference: use the approved bean-squad characters (round toy soldiers, thick outline, flat colors) so the environment looks like the same toy world.
+Subject: Cliff edge strip where the ground drops away, chunky layered brown rock face, grass lip on top, 4 units long.
+
+============================================================
+[CONCEPT · field_border]   [FILE] field_border_concept.png
+============================================================
+Game environment concept art for a mobile strategy game, matching a cute 'bean squad' toy-miniature style: soft rounded chunky shapes, flat cel-shaded colors, thick dark outline, large readable color blocks, no tiny details, no text, no logos. Seen from a high three-quarter top-down angle (about 40 degrees), soft even lighting, plain light-grey background, single centered asset with comfortable margins.
+Style reference: use the approved bean-squad characters (round toy soldiers, thick outline, flat colors) so the environment looks like the same toy world.
+Subject: Raised wooden and stone border frame around a board-game field, chunky planks, rounded corners, 4 units long segment.
+
+######## B. MODEL 3D (bước 2, hoặc text→3D) ########
+
+============================================================
+[3D · tower]   [FILE] tower.glb
+============================================================
+Stylized low-poly 3D game environment asset, cute toy-miniature 'bean squad' style: soft rounded chunky shapes, large flat color areas, hand-painted texture look, no tiny details, no text. Flat bottom sitting on y=0, pivot at the base center, front facing +Z. Readable from a high top-down camera. Clean topology, single 512px texture. Keep it under 1500 triangles.
+Style reference: use the approved bean-squad characters (round toy soldiers, thick outline, flat colors) so the environment looks like the same toy world.
+Subject: Enemy goblin watchtower camp, short round chunky stone tower with a bulgy red cone roof, a red war banner with a goblin face, wooden spike fence around the base. About 3x the height of a soldier, wider than tall, clearly an enemy target.
+Export GLB, no animation needed.
+
+============================================================
+[3D · rock]   [FILE] rock.glb
+============================================================
+Stylized low-poly 3D game environment asset, cute toy-miniature 'bean squad' style: soft rounded chunky shapes, large flat color areas, hand-painted texture look, no tiny details, no text. Flat bottom sitting on y=0, pivot at the base center, front facing +Z. Readable from a high top-down camera. Clean topology, single 512px texture. Keep it under 400 triangles.
+Style reference: use the approved bean-squad characters (round toy soldiers, thick outline, flat colors) so the environment looks like the same toy world.
+Subject: Round chunky grey boulder with soft faceted edges and a little moss cap on top.
+Export GLB, no animation needed.
+
+============================================================
+[3D · rock_cluster]   [FILE] rock_cluster.glb
+============================================================
+Stylized low-poly 3D game environment asset, cute toy-miniature 'bean squad' style: soft rounded chunky shapes, large flat color areas, hand-painted texture look, no tiny details, no text. Flat bottom sitting on y=0, pivot at the base center, front facing +Z. Readable from a high top-down camera. Clean topology, single 512px texture. Keep it under 800 triangles.
+Style reference: use the approved bean-squad characters (round toy soldiers, thick outline, flat colors) so the environment looks like the same toy world.
+Subject: Small cluster of three rounded grey boulders of different sizes, mossy tops.
+Export GLB, no animation needed.
+
+============================================================
+[3D · tree]   [FILE] tree.glb
+============================================================
+Stylized low-poly 3D game environment asset, cute toy-miniature 'bean squad' style: soft rounded chunky shapes, large flat color areas, hand-painted texture look, no tiny details, no text. Flat bottom sitting on y=0, pivot at the base center, front facing +Z. Readable from a high top-down camera. Clean topology, single 512px texture. Keep it under 600 triangles.
+Style reference: use the approved bean-squad characters (round toy soldiers, thick outline, flat colors) so the environment looks like the same toy world.
+Subject: Cute round pine tree made of three stacked soft cone layers, dark green, short chunky brown trunk.
+Export GLB, no animation needed.
+
+============================================================
+[3D · tree_round]   [FILE] tree_round.glb
+============================================================
+Stylized low-poly 3D game environment asset, cute toy-miniature 'bean squad' style: soft rounded chunky shapes, large flat color areas, hand-painted texture look, no tiny details, no text. Flat bottom sitting on y=0, pivot at the base center, front facing +Z. Readable from a high top-down camera. Clean topology, single 512px texture. Keep it under 600 triangles.
+Style reference: use the approved bean-squad characters (round toy soldiers, thick outline, flat colors) so the environment looks like the same toy world.
+Subject: Cute round leafy tree, lollipop shape, bright green puffy crown, short brown trunk.
+Export GLB, no animation needed.
+
+============================================================
+[3D · wall]   [FILE] wall.glb
+============================================================
+Stylized low-poly 3D game environment asset, cute toy-miniature 'bean squad' style: soft rounded chunky shapes, large flat color areas, hand-painted texture look, no tiny details, no text. Flat bottom sitting on y=0, pivot at the base center, front facing +Z. Readable from a high top-down camera. Clean topology, single 512px texture. Keep it under 800 triangles.
+Style reference: use the approved bean-squad characters (round toy soldiers, thick outline, flat colors) so the environment looks like the same toy world.
+Subject: Low stone wall segment, chunky rounded stones, mossy top, 1 unit long, tileable end to end.
+Export GLB, no animation needed.
+
+============================================================
+[3D · gate_red]   [FILE] gate_red.glb
+============================================================
+Stylized low-poly 3D game environment asset, cute toy-miniature 'bean squad' style: soft rounded chunky shapes, large flat color areas, hand-painted texture look, no tiny details, no text. Flat bottom sitting on y=0, pivot at the base center, front facing +Z. Readable from a high top-down camera. Clean topology, single 512px texture. Keep it under 900 triangles.
+Style reference: use the approved bean-squad characters (round toy soldiers, thick outline, flat colors) so the environment looks like the same toy world.
+Subject: Wooden fort gate between two chunky stone posts, red painted planks with a big keyhole, hinged to open upward.
+Export GLB, no animation needed.
+
+============================================================
+[3D · gate_blue]   [FILE] gate_blue.glb
+============================================================
+Stylized low-poly 3D game environment asset, cute toy-miniature 'bean squad' style: soft rounded chunky shapes, large flat color areas, hand-painted texture look, no tiny details, no text. Flat bottom sitting on y=0, pivot at the base center, front facing +Z. Readable from a high top-down camera. Clean topology, single 512px texture. Keep it under 900 triangles.
+Style reference: use the approved bean-squad characters (round toy soldiers, thick outline, flat colors) so the environment looks like the same toy world.
+Subject: Same wooden fort gate design with blue painted planks and a big keyhole.
+Export GLB, no animation needed.
+
+============================================================
+[3D · chest]   [FILE] chest.glb
+============================================================
+Stylized low-poly 3D game environment asset, cute toy-miniature 'bean squad' style: soft rounded chunky shapes, large flat color areas, hand-painted texture look, no tiny details, no text. Flat bottom sitting on y=0, pivot at the base center, front facing +Z. Readable from a high top-down camera. Clean topology, single 512px texture. Keep it under 600 triangles.
+Style reference: use the approved bean-squad characters (round toy soldiers, thick outline, flat colors) so the environment looks like the same toy world.
+Subject: Chunky treasure chest, rounded wooden lid, gold bands, big lock, slightly glowing gold coins peeking out.
+Export GLB, no animation needed.
+
+============================================================
+[3D · key_red]   [FILE] key_red.glb
+============================================================
+Stylized low-poly 3D game environment asset, cute toy-miniature 'bean squad' style: soft rounded chunky shapes, large flat color areas, hand-painted texture look, no tiny details, no text. Flat bottom sitting on y=0, pivot at the base center, front facing +Z. Readable from a high top-down camera. Clean topology, single 512px texture. Keep it under 300 triangles.
+Style reference: use the approved bean-squad characters (round toy soldiers, thick outline, flat colors) so the environment looks like the same toy world.
+Subject: Big cartoon key, red gem in the handle, gold body, chunky teeth.
+Export GLB, no animation needed.
+
+============================================================
+[3D · key_blue]   [FILE] key_blue.glb
+============================================================
+Stylized low-poly 3D game environment asset, cute toy-miniature 'bean squad' style: soft rounded chunky shapes, large flat color areas, hand-painted texture look, no tiny details, no text. Flat bottom sitting on y=0, pivot at the base center, front facing +Z. Readable from a high top-down camera. Clean topology, single 512px texture. Keep it under 300 triangles.
+Style reference: use the approved bean-squad characters (round toy soldiers, thick outline, flat colors) so the environment looks like the same toy world.
+Subject: Big cartoon key, blue gem in the handle, gold body, chunky teeth.
+Export GLB, no animation needed.
+
+============================================================
+[3D · flag_start]   [FILE] flag_start.glb
+============================================================
+Stylized low-poly 3D game environment asset, cute toy-miniature 'bean squad' style: soft rounded chunky shapes, large flat color areas, hand-painted texture look, no tiny details, no text. Flat bottom sitting on y=0, pivot at the base center, front facing +Z. Readable from a high top-down camera. Clean topology, single 512px texture. Keep it under 500 triangles.
+Style reference: use the approved bean-squad characters (round toy soldiers, thick outline, flat colors) so the environment looks like the same toy world.
+Subject: Tall blue rally flag on a wooden pole with a gold ball tip, banner with a white brush-stroke emblem, standing on a round blue stone pad.
+Export GLB, no animation needed.
+
+============================================================
+[3D · flag_start_orange]   [FILE] flag_start_orange.glb
+============================================================
+Stylized low-poly 3D game environment asset, cute toy-miniature 'bean squad' style: soft rounded chunky shapes, large flat color areas, hand-painted texture look, no tiny details, no text. Flat bottom sitting on y=0, pivot at the base center, front facing +Z. Readable from a high top-down camera. Clean topology, single 512px texture. Keep it under 500 triangles.
+Style reference: use the approved bean-squad characters (round toy soldiers, thick outline, flat colors) so the environment looks like the same toy world.
+Subject: Same rally flag in orange for the second squad, white brush-stroke emblem, round orange stone pad.
+Export GLB, no animation needed.
+
+============================================================
+[3D · flag_clash]   [FILE] flag_clash.glb
+============================================================
+Stylized low-poly 3D game environment asset, cute toy-miniature 'bean squad' style: soft rounded chunky shapes, large flat color areas, hand-painted texture look, no tiny details, no text. Flat bottom sitting on y=0, pivot at the base center, front facing +Z. Readable from a high top-down camera. Clean topology, single 512px texture. Keep it under 300 triangles.
+Style reference: use the approved bean-squad characters (round toy soldiers, thick outline, flat colors) so the environment looks like the same toy world.
+Subject: Small blue battle flag stuck in the ground with crossed-swords emblem, slightly waving.
+Export GLB, no animation needed.
+
+============================================================
+[3D · pedestal]   [FILE] pedestal.glb
+============================================================
+Stylized low-poly 3D game environment asset, cute toy-miniature 'bean squad' style: soft rounded chunky shapes, large flat color areas, hand-painted texture look, no tiny details, no text. Flat bottom sitting on y=0, pivot at the base center, front facing +Z. Readable from a high top-down camera. Clean topology, single 512px texture. Keep it under 300 triangles.
+Style reference: use the approved bean-squad characters (round toy soldiers, thick outline, flat colors) so the environment looks like the same toy world.
+Subject: Small round cream stone pedestal where a power-up floats, soft rounded edge.
+Export GLB, no animation needed.
+
+============================================================
+[3D · bridge_gold]   [FILE] bridge_gold.glb
+============================================================
+Stylized low-poly 3D game environment asset, cute toy-miniature 'bean squad' style: soft rounded chunky shapes, large flat color areas, hand-painted texture look, no tiny details, no text. Flat bottom sitting on y=0, pivot at the base center, front facing +Z. Readable from a high top-down camera. Clean topology, single 512px texture. Keep it under 900 triangles.
+Style reference: use the approved bean-squad characters (round toy soldiers, thick outline, flat colors) so the environment looks like the same toy world.
+Subject: Short glowing golden plank bridge with rope rails, magical warm glow, spans a 1-unit gap.
+Export GLB, no animation needed.
+
+============================================================
+[3D · hill]   [FILE] hill.glb
+============================================================
+Stylized low-poly 3D game environment asset, cute toy-miniature 'bean squad' style: soft rounded chunky shapes, large flat color areas, hand-painted texture look, no tiny details, no text. Flat bottom sitting on y=0, pivot at the base center, front facing +Z. Readable from a high top-down camera. Clean topology, single 512px texture. Keep it under 1200 triangles.
+Style reference: use the approved bean-squad characters (round toy soldiers, thick outline, flat colors) so the environment looks like the same toy world.
+Subject: Low gentle grassy hill mound, very flat dome only 0.2 units tall but 3 units wide, soft rounded edges, a few tiny flowers and a small rock on top. Must stay low so units on it remain visible.
+Export GLB, no animation needed.
+
+============================================================
+[3D · hill_large]   [FILE] hill_large.glb
+============================================================
+Stylized low-poly 3D game environment asset, cute toy-miniature 'bean squad' style: soft rounded chunky shapes, large flat color areas, hand-painted texture look, no tiny details, no text. Flat bottom sitting on y=0, pivot at the base center, front facing +Z. Readable from a high top-down camera. Clean topology, single 512px texture. Keep it under 1600 triangles.
+Style reference: use the approved bean-squad characters (round toy soldiers, thick outline, flat colors) so the environment looks like the same toy world.
+Subject: Wide low grassy plateau with soft terraced edges, 0.3 units tall, 5 units wide, gentle slopes on all sides.
+Export GLB, no animation needed.
+
+============================================================
+[3D · slope_ramp]   [FILE] slope_ramp.glb
+============================================================
+Stylized low-poly 3D game environment asset, cute toy-miniature 'bean squad' style: soft rounded chunky shapes, large flat color areas, hand-painted texture look, no tiny details, no text. Flat bottom sitting on y=0, pivot at the base center, front facing +Z. Readable from a high top-down camera. Clean topology, single 512px texture. Keep it under 1000 triangles.
+Style reference: use the approved bean-squad characters (round toy soldiers, thick outline, flat colors) so the environment looks like the same toy world.
+Subject: Wide earthen ramp rising gently in one direction from 0 to 0.3 units, grassy edges, packed dirt surface with carved step lines and light arrow-shaped grooves pointing uphill.
+Export GLB, no animation needed.
+
+============================================================
+[3D · chasm]   [FILE] chasm.glb
+============================================================
+Stylized low-poly 3D game environment asset, cute toy-miniature 'bean squad' style: soft rounded chunky shapes, large flat color areas, hand-painted texture look, no tiny details, no text. Flat bottom sitting on y=0, pivot at the base center, front facing +Z. Readable from a high top-down camera. Clean topology, single 512px texture. Keep it under 1500 triangles.
+Style reference: use the approved bean-squad characters (round toy soldiers, thick outline, flat colors) so the environment looks like the same toy world.
+Subject: Deep narrow ravine cut into grassy ground, 1 unit wide and 4 units long, dark blue-black depth fading down, jagged rocky lips with chunky stones, a few hanging roots. Top edges flush with y=0.
+Export GLB, no animation needed.
+
+============================================================
+[3D · chasm_corner]   [FILE] chasm_corner.glb
+============================================================
+Stylized low-poly 3D game environment asset, cute toy-miniature 'bean squad' style: soft rounded chunky shapes, large flat color areas, hand-painted texture look, no tiny details, no text. Flat bottom sitting on y=0, pivot at the base center, front facing +Z. Readable from a high top-down camera. Clean topology, single 512px texture. Keep it under 1200 triangles.
+Style reference: use the approved bean-squad characters (round toy soldiers, thick outline, flat colors) so the environment looks like the same toy world.
+Subject: Corner piece of the same ravine turning 90 degrees, matching rocky lips.
+Export GLB, no animation needed.
+
+============================================================
+[3D · cliff_edge]   [FILE] cliff_edge.glb
+============================================================
+Stylized low-poly 3D game environment asset, cute toy-miniature 'bean squad' style: soft rounded chunky shapes, large flat color areas, hand-painted texture look, no tiny details, no text. Flat bottom sitting on y=0, pivot at the base center, front facing +Z. Readable from a high top-down camera. Clean topology, single 512px texture. Keep it under 1200 triangles.
+Style reference: use the approved bean-squad characters (round toy soldiers, thick outline, flat colors) so the environment looks like the same toy world.
+Subject: Cliff edge strip where the ground drops away, chunky layered brown rock face, grass lip on top, 4 units long.
+Export GLB, no animation needed.
+
+============================================================
+[3D · field_border]   [FILE] field_border.glb
+============================================================
+Stylized low-poly 3D game environment asset, cute toy-miniature 'bean squad' style: soft rounded chunky shapes, large flat color areas, hand-painted texture look, no tiny details, no text. Flat bottom sitting on y=0, pivot at the base center, front facing +Z. Readable from a high top-down camera. Clean topology, single 512px texture. Keep it under 1500 triangles.
+Style reference: use the approved bean-squad characters (round toy soldiers, thick outline, flat colors) so the environment looks like the same toy world.
+Subject: Raised wooden and stone border frame around a board-game field, chunky planks, rounded corners, 4 units long segment.
+Export GLB, no animation needed.
+
+######## C. TEXTURE MẶT ĐẤT (PNG 512×512 lặp liền mạch) ########
+
+============================================================
+[TEXTURE · grass]   [FILE] tex_grass.png
+============================================================
+Seamless tileable top-down ground texture for a cute stylized mobile game, hand-painted, soft simple shapes, low detail, flat lighting, no shadows, no objects that break tiling, viewed straight from above, 512x512.
+Surface: soft green grass with gentle light/dark patches and tiny clover dots.
+
+============================================================
+[TEXTURE · sand]   [FILE] tex_sand.png
+============================================================
+Seamless tileable top-down ground texture for a cute stylized mobile game, hand-painted, soft simple shapes, low detail, flat lighting, no shadows, no objects that break tiling, viewed straight from above, 512x512.
+Surface: warm yellow desert sand with soft wind ripples and a few pebbles.
+
+============================================================
+[TEXTURE · swamp]   [FILE] tex_swamp.png
+============================================================
+Seamless tileable top-down ground texture for a cute stylized mobile game, hand-painted, soft simple shapes, low detail, flat lighting, no shadows, no objects that break tiling, viewed straight from above, 512x512.
+Surface: murky green-brown swamp water with lily pads and mud patches.
+
+============================================================
+[TEXTURE · road]   [FILE] tex_road.png
+============================================================
+Seamless tileable top-down ground texture for a cute stylized mobile game, hand-painted, soft simple shapes, low detail, flat lighting, no shadows, no objects that break tiling, viewed straight from above, 512x512.
+Surface: light brown packed dirt road with faint cart tracks and small stones.
+
+============================================================
+[TEXTURE · water]   [FILE] tex_water.png
+============================================================
+Seamless tileable top-down ground texture for a cute stylized mobile game, hand-painted, soft simple shapes, low detail, flat lighting, no shadows, no objects that break tiling, viewed straight from above, 512x512.
+Surface: clear blue river water with soft white foam streaks.
+
+============================================================
+[TEXTURE · hill]   [FILE] tex_hill.png
+============================================================
+Seamless tileable top-down ground texture for a cute stylized mobile game, hand-painted, soft simple shapes, low detail, flat lighting, no shadows, no objects that break tiling, viewed straight from above, 512x512.
+Surface: lighter yellow-green hilltop grass with tiny flowers, slightly brighter than normal grass.
+
+============================================================
+[TEXTURE · slope]   [FILE] tex_slope.png
+============================================================
+Seamless tileable top-down ground texture for a cute stylized mobile game, hand-painted, soft simple shapes, low detail, flat lighting, no shadows, no objects that break tiling, viewed straight from above, 512x512.
+Surface: packed earth with carved horizontal step lines, brownish green.
+
+============================================================
+[TEXTURE · chasm]   [FILE] tex_chasm.png
+============================================================
+Seamless tileable top-down ground texture for a cute stylized mobile game, hand-painted, soft simple shapes, low detail, flat lighting, no shadows, no objects that break tiling, viewed straight from above, 512x512.
+Surface: dark blue-black void with faint mist, to fill the bottom of a ravine.
+
+######## D. ICON ĐỊA HÌNH cho nhãn trên sân (PNG 128×128 nền trong suốt) ########
+
+============================================================
+[ICON · terrain_hill]   [FILE] icon_terrain_hill.png
+============================================================
+Small round mobile game badge icon, dark navy disc with a thick light outline, bold simple white symbol of a small green hill in the center, flat cartoon style, transparent background, no text, 128x128.
+
+============================================================
+[ICON · terrain_slope]   [FILE] icon_terrain_slope.png
+============================================================
+Small round mobile game badge icon, dark navy disc with a thick light outline, bold simple white symbol of an arrow climbing a ramp in the center, flat cartoon style, transparent background, no text, 128x128.
+
+============================================================
+[ICON · terrain_chasm]   [FILE] icon_terrain_chasm.png
+============================================================
+Small round mobile game badge icon, dark navy disc with a thick light outline, bold simple white symbol of a ravine crack in the center, flat cartoon style, transparent background, no text, 128x128.
+
+============================================================
+[ICON · terrain_sand]   [FILE] icon_terrain_sand.png
+============================================================
+Small round mobile game badge icon, dark navy disc with a thick light outline, bold simple white symbol of sand dunes in the center, flat cartoon style, transparent background, no text, 128x128.
+
+============================================================
+[ICON · terrain_swamp]   [FILE] icon_terrain_swamp.png
+============================================================
+Small round mobile game badge icon, dark navy disc with a thick light outline, bold simple white symbol of reeds in water in the center, flat cartoon style, transparent background, no text, 128x128.
+
+============================================================
+[ICON · terrain_road]   [FILE] icon_terrain_road.png
+============================================================
+Small round mobile game badge icon, dark navy disc with a thick light outline, bold simple white symbol of a dirt path in the center, flat cartoon style, transparent background, no text, 128x128.

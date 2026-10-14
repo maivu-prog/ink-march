@@ -19,7 +19,8 @@ let save=readSave(),screen='home',chapter=save.run?.chapter||Math.min(save.chapt
 const debug=new URLSearchParams(location.search).get('debug')==='1';
 const btn=(action:string,html:string,cls='',disabled=false,attrs='')=>`<button class="g-btn ${cls}" data-action="${action}" ${disabled?'disabled':''} ${attrs}>${html}</button>`;
 const beanPortraits=new Set(['sword','archer','shield','spear','mage','healer','goblin']);
-const portrait=(id:string)=>`./assets/portraits/${beanPortraits.has(id)?'bean-v2/':''}${id}.png?v=bean-v2`;
+const enemyPortraits=new Set(['goblin_archer','orc','shaman','goblin_king','shadow_mage']);
+const portrait=(id:string)=>`./assets/portraits/${beanPortraits.has(id)?'bean-v2/':enemyPortraits.has(id)?'bean-v3/':''}${id}.png?v=bean-v3`;
 const rar=(id:string)=>'rar-'+U[id].rarity,brar=(id:string)=>'rar-'+BR[id].rarity;
 const stars=(n:number,max=3)=>Array.from({length:max},(_,i)=>i<n?icon.star:icon.starOff).join('');
 function toast(text:string){ui.querySelector('.g-toast')?.remove();let d=document.createElement('div');d.className='g-toast g-o';d.textContent=text;ui.append(d);setTimeout(()=>d.remove(),2000);}
@@ -98,6 +99,9 @@ const TIPS:[string,(m:MapData)=>boolean,Page[]][]=[
  ['flags',m=>m.enemySquads.length>0,[['Can\'t reach a camp in time?','.camp-tag .muster'],['Cross the enemy route: a <b>⚑ flag</b> holds them 10s.','#stage'],'Get there and win the fight.']],
  ['thieves',m=>m.items.some(o=>o.type!=='ink_bottle')&&m.enemySquads.length>0,[['Squads <b>steal</b> charms marked ⚠.','.contested'],'Get there first!']],
  ['loot',m=>m.camps.some(c=>c.loot),[['Camps drop <b>loot</b> when destroyed.','.camp-tag .loot'],'Charms boost your squad. Ink becomes XP.']],
+ ['chasm',m=>m.obstacles.some((o:any)=>o.kind==='chasm'),[['A <b>ravine</b> blocks your line and your troops.','#stage'],'Find the gap, or bridge it with <b>golden ink</b>.']],
+ ['hill',m=>m.terrain.some(t=>t.kind==='hill'),[['<b>Hills</b> burn a little more ink.','.terrain-tag.hill'],'They also slow your march.']],
+ ['slope',m=>m.terrain.some(t=>t.kind==='slope'),[['<b>Slopes</b> have a direction.','.terrain-tag.slope'],'Drawing <b>uphill ▲</b> costs more ink. <b>Downhill ▼</b> is cheap.','Arrows on the ground point uphill.']],
  ['terrain',m=>m.terrain.length>0,[['<b>Sand</b> and <b>swamp</b> burn more ink.','.terrain-tag'],['Watch your ink here.','#g-ink'],'<b>Roads</b> are cheap and fast.']],
  ['twofront',m=>m.starts.length>1,[['<b>Two fronts!</b>','.start-label.team-1'],['Both squads share this ink pot.','#g-ink'],['Tap <b>A / B</b> to switch.','.g-teampick']]],
  ['keys',m=>m.items.some(o=>o.type==='key'),[['Draw through a <b>key</b> first.','#stage'],'Then its <b>gate</b> opens.']],
@@ -204,3 +208,4 @@ const lift=()=>{cursor=null;if(drawing&&pool&&!pool.paths[active].valid){drawing
 let previous=performance.now(),lastHud=0,stepBank=0;function frame(now:number){let dt=Math.min(.06,(now-previous)/1000);previous=now;if(screen==='battle'&&!paused){if(grace&&now>grace){grace=0;pool!.paths[active].reset();updateInk();}if(battle&&!coachHold){stepBank+=dt*speed*C.timeScale;let n=0;while(stepBank>=1/60&&n<40&&!battle.result){battle.step(1/60);stepBank-=1/60;n++;}if(battle.result)finish();else if(now-lastHud>200){lastHud=now;updateBattleHud();}}}
  if(screen==='home'||screen==='battle')stage.frame(paused?0:dt,screen==='battle'?battle:null,screen==='battle'?pool:null,active,drawing?cursor:null);requestAnimationFrame(frame);}
 window.addEventListener('pagehide',persist);render();requestAnimationFrame(frame);
+

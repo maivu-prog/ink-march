@@ -16,5 +16,25 @@
     "burn": 0.7,
     "speed": 1.3,
     "color": "#bfa070"
+  },
+  "hill": {
+    "name": "Hill",
+    "burn": 1.3,
+    "speed": 0.8,
+    "color": "#8fae5c"
+  },
+  "slope": {
+    "name": "Slope",
+    "burn": 1.0,
+    "speed": 1.0,
+    "color": "#a8b86a",
+    "up": {
+      "burn": 1.6,
+      "speed": 0.7
+    },
+    "down": {
+      "burn": 0.7,
+      "speed": 1.25
+    }
   }
 }

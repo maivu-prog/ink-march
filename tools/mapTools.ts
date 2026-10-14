@@ -9,7 +9,7 @@ function blockedAt(map:MapData,p:P,open:Set<string>,clear=CLEAR){
   return probes.some(q=>map.obstacles.some(o=>inside(q,o))||map.items.some(o=>o.type==='gate'&&!open.has(o.color)&&inside(q,o)));
 }
 // Chi phí mực của một đoạn thẳng (lấy mẫu theo địa hình)
-export function segCost(map:MapData,a:P,b:P,fx:BrushFx){const n=Math.max(1,Math.ceil(dist(a,b)/8));let c=0;for(let i=0;i<n;i++){const p=lerp(a,b,(i+.5)/n);c+=dist(a,b)/n*burnRate(map,p,fx);}return c;}
+export function segCost(map:MapData,a:P,b:P,fx:BrushFx){const n=Math.max(1,Math.ceil(dist(a,b)/8)),dir={x:b.x-a.x,y:b.y-a.y};let c=0;for(let i=0;i<n;i++){const p=lerp(a,b,(i+.5)/n);c+=dist(a,b)/n*burnRate(map,p,fx,dir);}return c;}
 export function pathCost(map:MapData,pts:P[],fx:BrushFx){let c=0;for(let i=1;i<pts.length;i++)c+=segCost(map,pts[i-1],pts[i],fx);return c;}
 function clearLine(map:MapData,a:P,b:P,open:Set<string>){const n=Math.ceil(dist(a,b)/4);for(let i=0;i<=n;i++){if(blockedAt(map,lerp(a,b,i/n),open,6))return false;}return true;}
 
@@ -30,7 +30,7 @@ export function route(map:MapData,from:P,to:P,open=new Set<string>(),goalRadius=
     for(const [di,dj] of [[1,0],[-1,0],[0,1],[0,-1],[1,1],[1,-1],[-1,1],[-1,-1]]){
       const ni=i+di,nj=j+dj;if(ni<0||nj<0||ni>=W||nj>=H)continue;const nk=key(ni,nj);if(closed[nk])continue;
       const q={x:ni*GRID,y:nj*GRID};if(k!==key(si,sj)&&blockedAt(map,q,open))continue;
-      const ng=g[k]+Math.hypot(di,dj)*GRID*burnRate(map,lerp(p,q,.5),fx);if(ng<g[nk]){g[nk]=ng;prev[nk]=k;push(ng+dist(q,to)*minRate,nk);}
+      const ng=g[k]+Math.hypot(di,dj)*GRID*burnRate(map,lerp(p,q,.5),fx,{x:di,y:dj});if(ng<g[nk]){g[nk]=ng;prev[nk]=k;push(ng+dist(q,to)*minRate,nk);}
     }
   }
   if(goal<0)return null;

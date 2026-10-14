@@ -1,0 +1,236 @@
+{
+  "id": "c3_s5",
+  "name": "Mudslide",
+  "chapter": 3,
+  "baseInk": 1420,
+  "starts": [
+    {
+      "x": 360,
+      "y": 852
+    }
+  ],
+  "bosses": [
+    {
+      "type": "goblin_chief",
+      "x": 360,
+      "y": 164,
+      "scale": 0.87
+    }
+  ],
+  "obstacles": [],
+  "items": [
+    {
+      "type": "atk_up",
+      "x": 360,
+      "y": 420
+    },
+    {
+      "type": "hp_up",
+      "x": 552,
+      "y": 340
+    }
+  ],
+  "goldZones": [],
+  "terrain": [
+    {
+      "kind": "slope",
+      "points": [
+        [
+          200,
+          292
+        ],
+        [
+          520,
+          292
+        ],
+        [
+          520,
+          628
+        ],
+        [
+          200,
+          628
+        ]
+      ],
+      "up": [
+        0,
+        -1
+      ]
+    },
+    {
+      "kind": "swamp",
+      "points": [
+        [
+          72,
+          516
+        ],
+        [
+          200,
+          516
+        ],
+        [
+          200,
+          676
+        ],
+        [
+          72,
+          676
+        ]
+      ]
+    },
+    {
+      "kind": "road",
+      "points": [
+        [
+          520,
+          260
+        ],
+        [
+          576,
+          260
+        ],
+        [
+          576,
+          780
+        ],
+        [
+          520,
+          780
+        ]
+      ]
+    }
+  ],
+  "camps": [
+    {
+      "x": 152,
+      "y": 340,
+      "units": [
+        {
+          "type": "goblin",
+          "count": 2
+        },
+        {
+          "type": "shaman",
+          "count": 1
+        }
+      ],
+      "loot": "hp_up"
+    },
+    {
+      "x": 568,
+      "y": 724,
+      "units": [
+        {
+          "type": "goblin",
+          "count": 3
+        }
+      ],
+      "loot": "shield"
+    },
+    {
+      "x": 360,
+      "y": 708,
+      "units": [
+        {
+          "type": "goblin",
+          "count": 2
+        }
+      ],
+      "loot": "coins"
+    }
+  ],
+  "enemySquads": [
+    {
+      "spawnDelay": 12,
+      "speed": 55,
+      "units": [
+        {
+          "type": "goblin",
+          "count": 5
+        }
+      ],
+      "route": [
+        [
+          568,
+          724
+        ],
+        [
+          520,
+          288
+        ],
+        [
+          424,
+          192
+        ]
+      ],
+      "id": "s0",
+      "camp": 1,
+      "origDelay": 4
+    }
+  ],
+  "bonusSquadRoute": [
+    [
+      88,
+      500
+    ],
+    [
+      312,
+      196
+    ]
+  ],
+  "referenceSolution": [
+    [
+      [
+        360,
+        852
+      ],
+      [
+        520,
+        744
+      ],
+      [
+        408,
+        728
+      ],
+      [
+        192,
+        480
+      ],
+      [
+        160,
+        392
+      ],
+      [
+        520,
+        368
+      ],
+      [
+        528,
+        360
+      ],
+      [
+        520,
+        288
+      ],
+      [
+        416,
+        192
+      ]
+    ]
+  ],
+  "tutorialHint": "Drawing uphill costs more ink. Downhill is cheap. Plan which way you climb.",
+  "teach": [
+    "slope"
+  ],
+  "field": {
+    "x": 72,
+    "y": 100,
+    "w": 576,
+    "h": 800
+  },
+  "design": {
+    "winInk": 685,
+    "threeStarInk": 1384,
+    "threeStarBrush": "quill"
+  }
+}

@@ -1,0 +1,203 @@
+{
+  "id": "c2_s4",
+  "name": "Windy Hills",
+  "chapter": 2,
+  "baseInk": 1500,
+  "starts": [
+    {
+      "x": 360,
+      "y": 830
+    }
+  ],
+  "bosses": [
+    {
+      "type": "goblin_chief",
+      "x": 360,
+      "y": 185,
+      "scale": 1.13
+    }
+  ],
+  "obstacles": [],
+  "items": [
+    {
+      "type": "atk_up",
+      "x": 540,
+      "y": 425
+    },
+    {
+      "type": "shield",
+      "x": 161,
+      "y": 545
+    }
+  ],
+  "goldZones": [],
+  "terrain": [
+    {
+      "kind": "hill",
+      "points": [
+        [
+          195,
+          312
+        ],
+        [
+          525,
+          312
+        ],
+        [
+          525,
+          672
+        ],
+        [
+          195,
+          672
+        ]
+      ]
+    },
+    {
+      "kind": "road",
+      "points": [
+        [
+          135,
+          275
+        ],
+        [
+          188,
+          275
+        ],
+        [
+          188,
+          800
+        ],
+        [
+          135,
+          800
+        ]
+      ]
+    }
+  ],
+  "camps": [
+    {
+      "x": 360,
+      "y": 485,
+      "units": [
+        {
+          "type": "goblin",
+          "count": 2
+        }
+      ],
+      "loot": "ink"
+    },
+    {
+      "x": 540,
+      "y": 695,
+      "units": [
+        {
+          "type": "goblin",
+          "count": 2
+        }
+      ],
+      "loot": "hp_up"
+    },
+    {
+      "x": 210,
+      "y": 320,
+      "units": [
+        {
+          "type": "goblin",
+          "count": 1
+        },
+        {
+          "type": "goblin_archer",
+          "count": 1
+        }
+      ],
+      "loot": "shield"
+    }
+  ],
+  "enemySquads": [
+    {
+      "spawnDelay": 11,
+      "speed": 55,
+      "units": [
+        {
+          "type": "goblin_archer",
+          "count": 4
+        }
+      ],
+      "route": [
+        [
+          540,
+          695
+        ],
+        [
+          528,
+          328
+        ],
+        [
+          408,
+          208
+        ]
+      ],
+      "id": "s0",
+      "camp": 1,
+      "origDelay": 3
+    }
+  ],
+  "bonusSquadRoute": [
+    [
+      105,
+      500
+    ],
+    [
+      315,
+      215
+    ]
+  ],
+  "referenceSolution": [
+    [
+      [
+        360,
+        830
+      ],
+      [
+        488,
+        704
+      ],
+      [
+        184,
+        664
+      ],
+      [
+        184,
+        360
+      ],
+      [
+        312,
+        464
+      ],
+      [
+        512,
+        440
+      ],
+      [
+        416,
+        216
+      ]
+    ]
+  ],
+  "tutorialHint": "Hills burn a bit more ink and slow your march. The valley road is cheap.",
+  "teach": [
+    "hill"
+  ],
+  "field": {
+    "x": 90,
+    "y": 125,
+    "w": 540,
+    "h": 750
+  },
+  "design": {
+    "winInk": 642,
+    "threeStarInk": 1469,
+    "threeStarBrush": "quill"
+  }
+}

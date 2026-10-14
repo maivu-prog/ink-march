@@ -1,0 +1,259 @@
+{
+  "id": "c4_s5",
+  "name": "Twin Ravines",
+  "chapter": 4,
+  "baseInk": 1590,
+  "starts": [
+    {
+      "x": 207,
+      "y": 874
+    },
+    {
+      "x": 513,
+      "y": 874
+    }
+  ],
+  "bosses": [
+    {
+      "type": "goblin_chief",
+      "x": 207,
+      "y": 143,
+      "scale": 0.76
+    },
+    {
+      "type": "goblin_chief",
+      "x": 513,
+      "y": 143,
+      "scale": 0.76
+    }
+  ],
+  "obstacles": [
+    {
+      "type": "rect",
+      "x": 326,
+      "y": 177,
+      "w": 68,
+      "h": 646,
+      "kind": "chasm"
+    }
+  ],
+  "items": [
+    {
+      "type": "atk_up",
+      "x": 190,
+      "y": 270
+    },
+    {
+      "type": "hp_up",
+      "x": 530,
+      "y": 270
+    },
+    {
+      "type": "reinforce",
+      "x": 266,
+      "y": 721
+    },
+    {
+      "type": "shield",
+      "x": 454,
+      "y": 721
+    }
+  ],
+  "goldZones": [],
+  "terrain": [
+    {
+      "kind": "hill",
+      "points": [
+        [
+          88,
+          330
+        ],
+        [
+          292,
+          330
+        ],
+        [
+          292,
+          585
+        ],
+        [
+          88,
+          585
+        ]
+      ]
+    },
+    {
+      "kind": "hill",
+      "points": [
+        [
+          428,
+          330
+        ],
+        [
+          632,
+          330
+        ],
+        [
+          632,
+          585
+        ],
+        [
+          428,
+          585
+        ]
+      ]
+    }
+  ],
+  "camps": [
+    {
+      "x": 156,
+      "y": 653,
+      "units": [
+        {
+          "type": "goblin",
+          "count": 3
+        }
+      ],
+      "loot": "shield"
+    },
+    {
+      "x": 564,
+      "y": 653,
+      "units": [
+        {
+          "type": "goblin",
+          "count": 3
+        }
+      ],
+      "loot": "coins"
+    },
+    {
+      "x": 360,
+      "y": 857,
+      "units": [
+        {
+          "type": "goblin",
+          "count": 2
+        },
+        {
+          "type": "goblin_archer",
+          "count": 1
+        }
+      ],
+      "loot": "atk_up"
+    }
+  ],
+  "enemySquads": [
+    {
+      "spawnDelay": 13,
+      "speed": 55,
+      "units": [
+        {
+          "type": "goblin",
+          "count": 5
+        }
+      ],
+      "route": [
+        [
+          156,
+          653
+        ],
+        [
+          200,
+          184
+        ]
+      ],
+      "id": "s0",
+      "camp": 0,
+      "origDelay": 5
+    },
+    {
+      "spawnDelay": 17,
+      "speed": 55,
+      "units": [
+        {
+          "type": "goblin_archer",
+          "count": 4
+        }
+      ],
+      "route": [
+        [
+          564,
+          653
+        ],
+        [
+          520,
+          184
+        ]
+      ],
+      "id": "s1",
+      "camp": 1,
+      "origDelay": 5
+    }
+  ],
+  "bonusSquadRoute": [
+    [
+      71,
+      500
+    ],
+    [
+      309,
+      177
+    ]
+  ],
+  "referenceSolution": [
+    [
+      [
+        207,
+        874
+      ],
+      [
+        312,
+        872
+      ],
+      [
+        168,
+        704
+      ],
+      [
+        176,
+        200
+      ]
+    ],
+    [
+      [
+        513,
+        874
+      ],
+      [
+        464,
+        752
+      ],
+      [
+        528,
+        688
+      ],
+      [
+        528,
+        296
+      ],
+      [
+        520,
+        208
+      ]
+    ]
+  ],
+  "tutorialHint": "A ravine splits the field. Each squad climbs its own hill.",
+  "teach": [],
+  "field": {
+    "x": 54,
+    "y": 75,
+    "w": 612,
+    "h": 850
+  },
+  "design": {
+    "winInk": 1450,
+    "threeStarInk": 1685,
+    "threeStarBrush": "charcoal"
+  }
+}

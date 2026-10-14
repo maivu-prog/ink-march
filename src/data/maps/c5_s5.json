@@ -1,0 +1,248 @@
+{
+  "id": "c5_s5",
+  "name": "Canyon Steps",
+  "chapter": 5,
+  "baseInk": 1770,
+  "starts": [
+    {
+      "x": 360,
+      "y": 887
+    }
+  ],
+  "bosses": [
+    {
+      "type": "goblin_chief",
+      "x": 360,
+      "y": 130,
+      "scale": 0.76
+    }
+  ],
+  "obstacles": [
+    {
+      "type": "rect",
+      "x": 43,
+      "y": 430,
+      "w": 264,
+      "h": 44
+    },
+    {
+      "type": "rect",
+      "x": 395,
+      "y": 430,
+      "w": 282,
+      "h": 44
+    }
+  ],
+  "items": [
+    {
+      "type": "key",
+      "x": 589,
+      "y": 782,
+      "color": "red"
+    },
+    {
+      "type": "gate",
+      "color": "red",
+      "rect": {
+        "x": 307,
+        "y": 430,
+        "w": 88,
+        "h": 44
+      }
+    },
+    {
+      "type": "atk_up",
+      "x": 360,
+      "y": 588
+    },
+    {
+      "type": "hp_up",
+      "x": 378,
+      "y": 289
+    }
+  ],
+  "goldZones": [],
+  "terrain": [
+    {
+      "kind": "slope",
+      "points": [
+        [
+          43,
+          474
+        ],
+        [
+          677,
+          474
+        ],
+        [
+          677,
+          702
+        ],
+        [
+          43,
+          702
+        ]
+      ],
+      "up": [
+        0,
+        -1
+      ]
+    },
+    {
+      "kind": "slope",
+      "points": [
+        [
+          43,
+          192
+        ],
+        [
+          677,
+          192
+        ],
+        [
+          677,
+          430
+        ],
+        [
+          43,
+          430
+        ]
+      ],
+      "up": [
+        -1,
+        0
+      ]
+    }
+  ],
+  "camps": [
+    {
+      "x": 131,
+      "y": 764,
+      "units": [
+        {
+          "type": "goblin",
+          "count": 3
+        }
+      ],
+      "loot": "coins"
+    },
+    {
+      "x": 589,
+      "y": 289,
+      "units": [
+        {
+          "type": "goblin",
+          "count": 3
+        },
+        {
+          "type": "goblin_archer",
+          "count": 1
+        }
+      ],
+      "loot": "atk_up"
+    },
+    {
+      "x": 149,
+      "y": 280,
+      "units": [
+        {
+          "type": "goblin",
+          "count": 2
+        },
+        {
+          "type": "goblin_archer",
+          "count": 1
+        }
+      ],
+      "loot": "coins"
+    }
+  ],
+  "enemySquads": [
+    {
+      "spawnDelay": 13,
+      "speed": 55,
+      "units": [
+        {
+          "type": "goblin_archer",
+          "count": 4
+        }
+      ],
+      "route": [
+        [
+          589,
+          289
+        ],
+        [
+          472,
+          184
+        ],
+        [
+          408,
+          168
+        ]
+      ],
+      "id": "s0",
+      "camp": 1,
+      "origDelay": 5
+    }
+  ],
+  "bonusSquadRoute": [
+    [
+      61,
+      500
+    ],
+    [
+      307,
+      166
+    ]
+  ],
+  "referenceSolution": [
+    [
+      [
+        360,
+        887
+      ],
+      [
+        560,
+        784
+      ],
+      [
+        176,
+        784
+      ],
+      [
+        320,
+        464
+      ],
+      [
+        312,
+        416
+      ],
+      [
+        192,
+        304
+      ],
+      [
+        544,
+        304
+      ],
+      [
+        424,
+        144
+      ]
+    ]
+  ],
+  "tutorialHint": "Steps climb toward the gate. Grab the key on the way down.",
+  "teach": [],
+  "field": {
+    "x": 43,
+    "y": 60,
+    "w": 634,
+    "h": 880
+  },
+  "design": {
+    "winInk": 1027,
+    "threeStarInk": 1884,
+    "threeStarBrush": "charcoal"
+  }
+}

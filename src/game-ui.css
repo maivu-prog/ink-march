@@ -268,3 +268,5 @@
 .g-advice{display:flex;flex-direction:column;gap:6px}.g-tipline{font-weight:800;font-size:13px;padding:8px 10px;border-radius:10px;background:#0c1828b3;color:#e6f1fa;line-height:1.3}.g-tipline b{color:#ffe46b}
 
 .g-forecast[hidden]{display:none!important}
+
+#labels .terrain-tag.hill{background:#4f6f2aaa}#labels .terrain-tag.slope{background:#7a6a2aaa}

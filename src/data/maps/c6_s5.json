@@ -1,0 +1,231 @@
+{
+  "id": "c6_s5",
+  "name": "Highland Fens",
+  "chapter": 6,
+  "baseInk": 1760,
+  "starts": [
+    {
+      "x": 360,
+      "y": 905
+    }
+  ],
+  "bosses": [
+    {
+      "type": "goblin_chief",
+      "x": 360,
+      "y": 114,
+      "scale": 0.65
+    }
+  ],
+  "obstacles": [],
+  "items": [
+    {
+      "type": "atk_up",
+      "x": 102,
+      "y": 684
+    },
+    {
+      "type": "hp_up",
+      "x": 618,
+      "y": 684
+    },
+    {
+      "type": "reinforce",
+      "x": 360,
+      "y": 454
+    }
+  ],
+  "goldZones": [],
+  "terrain": [
+    {
+      "kind": "swamp",
+      "points": [
+        [
+          29,
+          518
+        ],
+        [
+          691,
+          518
+        ],
+        [
+          691,
+          666
+        ],
+        [
+          29,
+          666
+        ]
+      ]
+    },
+    {
+      "kind": "hill",
+      "points": [
+        [
+          121,
+          224
+        ],
+        [
+          323,
+          224
+        ],
+        [
+          323,
+          454
+        ],
+        [
+          121,
+          454
+        ]
+      ]
+    },
+    {
+      "kind": "hill",
+      "points": [
+        [
+          397,
+          224
+        ],
+        [
+          599,
+          224
+        ],
+        [
+          599,
+          454
+        ],
+        [
+          397,
+          454
+        ]
+      ]
+    }
+  ],
+  "camps": [
+    {
+      "x": 222,
+      "y": 334,
+      "units": [
+        {
+          "type": "shaman",
+          "count": 1
+        },
+        {
+          "type": "goblin",
+          "count": 3
+        }
+      ],
+      "loot": "atk_up"
+    },
+    {
+      "x": 498,
+      "y": 334,
+      "units": [
+        {
+          "type": "shaman",
+          "count": 1
+        },
+        {
+          "type": "goblin",
+          "count": 2
+        },
+        {
+          "type": "goblin_archer",
+          "count": 1
+        }
+      ],
+      "loot": "coins"
+    },
+    {
+      "x": 360,
+      "y": 794,
+      "units": [
+        {
+          "type": "goblin",
+          "count": 3
+        }
+      ],
+      "loot": "ink"
+    }
+  ],
+  "enemySquads": [
+    {
+      "spawnDelay": 12,
+      "speed": 50,
+      "units": [
+        {
+          "type": "shaman",
+          "count": 1
+        },
+        {
+          "type": "goblin",
+          "count": 3
+        }
+      ],
+      "route": [
+        [
+          498,
+          334
+        ],
+        [
+          408,
+          152
+        ]
+      ],
+      "id": "s0",
+      "camp": 1,
+      "origDelay": 4
+    }
+  ],
+  "bonusSquadRoute": [
+    [
+      47,
+      500
+    ],
+    [
+      305,
+      150
+    ]
+  ],
+  "referenceSolution": [
+    [
+      [
+        360,
+        905
+      ],
+      [
+        360,
+        840
+      ],
+      [
+        232,
+        384
+      ],
+      [
+        448,
+        344
+      ],
+      [
+        600,
+        656
+      ],
+      [
+        376,
+        176
+      ]
+    ]
+  ],
+  "tutorialHint": "Fens below, hills above. Shamans heal from the high ground.",
+  "teach": [],
+  "field": {
+    "x": 29,
+    "y": 40,
+    "w": 662,
+    "h": 920
+  },
+  "design": {
+    "winInk": 1141,
+    "threeStarInk": 2355,
+    "threeStarBrush": "marsh"
+  }
+}

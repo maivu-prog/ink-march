@@ -1,0 +1,226 @@
+{
+  "id": "c2_s5",
+  "name": "Cliffside Pass",
+  "chapter": 2,
+  "baseInk": 970,
+  "starts": [
+    {
+      "x": 360,
+      "y": 830
+    }
+  ],
+  "bosses": [
+    {
+      "type": "goblin_chief",
+      "x": 360,
+      "y": 185,
+      "scale": 0.77
+    }
+  ],
+  "obstacles": [
+    {
+      "type": "rect",
+      "x": 180,
+      "y": 372,
+      "w": 360,
+      "h": 60,
+      "kind": "chasm"
+    },
+    {
+      "type": "rect",
+      "x": 90,
+      "y": 605,
+      "w": 195,
+      "h": 52,
+      "kind": "chasm"
+    }
+  ],
+  "items": [
+    {
+      "type": "hp_up",
+      "x": 150,
+      "y": 500
+    },
+    {
+      "type": "reinforce",
+      "x": 360,
+      "y": 290
+    }
+  ],
+  "goldZones": [],
+  "terrain": [
+    {
+      "kind": "road",
+      "points": [
+        [
+          540,
+          260
+        ],
+        [
+          592,
+          260
+        ],
+        [
+          592,
+          785
+        ],
+        [
+          540,
+          785
+        ]
+      ]
+    },
+    {
+      "kind": "sand",
+      "points": [
+        [
+          285,
+          545
+        ],
+        [
+          540,
+          545
+        ],
+        [
+          540,
+          680
+        ],
+        [
+          285,
+          680
+        ]
+      ]
+    }
+  ],
+  "camps": [
+    {
+      "x": 390,
+      "y": 695,
+      "units": [
+        {
+          "type": "goblin",
+          "count": 2
+        },
+        {
+          "type": "goblin_archer",
+          "count": 1
+        }
+      ],
+      "loot": "ink"
+    },
+    {
+      "x": 202,
+      "y": 298,
+      "units": [
+        {
+          "type": "goblin",
+          "count": 2
+        }
+      ],
+      "loot": "hp_up"
+    },
+    {
+      "x": 510,
+      "y": 298,
+      "units": [
+        {
+          "type": "goblin",
+          "count": 2
+        }
+      ],
+      "loot": "shield"
+    }
+  ],
+  "enemySquads": [
+    {
+      "spawnDelay": 12,
+      "speed": 55,
+      "units": [
+        {
+          "type": "goblin",
+          "count": 5
+        }
+      ],
+      "route": [
+        [
+          202,
+          298
+        ],
+        [
+          160,
+          408
+        ],
+        [
+          152,
+          528
+        ]
+      ],
+      "id": "s0",
+      "camp": 1,
+      "origDelay": 4
+    }
+  ],
+  "bonusSquadRoute": [
+    [
+      105,
+      500
+    ],
+    [
+      315,
+      215
+    ]
+  ],
+  "referenceSolution": [
+    [
+      [
+        360,
+        830
+      ],
+      [
+        376,
+        744
+      ],
+      [
+        544,
+        664
+      ],
+      [
+        552,
+        360
+      ],
+      [
+        544,
+        352
+      ],
+      [
+        536,
+        344
+      ],
+      [
+        248,
+        320
+      ],
+      [
+        328,
+        296
+      ],
+      [
+        344,
+        248
+      ]
+    ]
+  ],
+  "tutorialHint": "Cliffs on both sides. The ledge road is safe but long.",
+  "teach": [],
+  "field": {
+    "x": 90,
+    "y": 125,
+    "w": 540,
+    "h": 750
+  },
+  "design": {
+    "winInk": 798,
+    "threeStarInk": 943,
+    "threeStarBrush": "quill"
+  }
+}
