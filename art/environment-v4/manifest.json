@@ -1,0 +1,232 @@
+{
+  "tower": {
+    "triangles": 763,
+    "budget": 1500,
+    "meshes": 1,
+    "textureSize": [
+      512,
+      512
+    ],
+    "units": "one bean soldier height"
+  },
+  "rock": {
+    "triangles": 216,
+    "budget": 400,
+    "meshes": 1,
+    "textureSize": [
+      512,
+      512
+    ],
+    "units": "one bean soldier height"
+  },
+  "rock_cluster": {
+    "triangles": 648,
+    "budget": 800,
+    "meshes": 3,
+    "textureSize": [
+      512,
+      512
+    ],
+    "units": "one bean soldier height"
+  },
+  "tree": {
+    "triangles": 548,
+    "budget": 600,
+    "meshes": 1,
+    "textureSize": [
+      512,
+      512
+    ],
+    "units": "one bean soldier height"
+  },
+  "tree_round": {
+    "triangles": 548,
+    "budget": 600,
+    "meshes": 1,
+    "textureSize": [
+      512,
+      512
+    ],
+    "units": "one bean soldier height"
+  },
+  "wall": {
+    "triangles": 264,
+    "budget": 800,
+    "meshes": 1,
+    "textureSize": [
+      512,
+      512
+    ],
+    "units": "one bean soldier height"
+  },
+  "gate_red": {
+    "triangles": 632,
+    "budget": 900,
+    "meshes": 2,
+    "textureSize": [
+      512,
+      512
+    ],
+    "units": "one bean soldier height"
+  },
+  "gate_blue": {
+    "triangles": 632,
+    "budget": 900,
+    "meshes": 2,
+    "textureSize": [
+      512,
+      512
+    ],
+    "units": "one bean soldier height"
+  },
+  "chest": {
+    "triangles": 460,
+    "budget": 600,
+    "meshes": 1,
+    "textureSize": [
+      512,
+      512
+    ],
+    "units": "one bean soldier height"
+  },
+  "key_red": {
+    "triangles": 276,
+    "budget": 300,
+    "meshes": 1,
+    "textureSize": [
+      512,
+      512
+    ],
+    "units": "one bean soldier height"
+  },
+  "key_blue": {
+    "triangles": 276,
+    "budget": 300,
+    "meshes": 1,
+    "textureSize": [
+      512,
+      512
+    ],
+    "units": "one bean soldier height"
+  },
+  "flag_start": {
+    "triangles": 146,
+    "budget": 500,
+    "meshes": 1,
+    "textureSize": [
+      512,
+      512
+    ],
+    "units": "one bean soldier height"
+  },
+  "flag_start_orange": {
+    "triangles": 146,
+    "budget": 500,
+    "meshes": 1,
+    "textureSize": [
+      512,
+      512
+    ],
+    "units": "one bean soldier height"
+  },
+  "flag_clash": {
+    "triangles": 188,
+    "budget": 300,
+    "meshes": 1,
+    "textureSize": [
+      512,
+      512
+    ],
+    "units": "one bean soldier height"
+  },
+  "pedestal": {
+    "triangles": 92,
+    "budget": 300,
+    "meshes": 1,
+    "textureSize": [
+      512,
+      512
+    ],
+    "units": "one bean soldier height"
+  },
+  "bridge_gold": {
+    "triangles": 572,
+    "budget": 900,
+    "meshes": 1,
+    "textureSize": [
+      512,
+      512
+    ],
+    "units": "one bean soldier height"
+  },
+  "hill": {
+    "triangles": 552,
+    "budget": 1200,
+    "meshes": 3,
+    "textureSize": [
+      512,
+      512
+    ],
+    "units": "one bean soldier height"
+  },
+  "hill_large": {
+    "triangles": 240,
+    "budget": 1600,
+    "meshes": 1,
+    "textureSize": [
+      512,
+      512
+    ],
+    "units": "one bean soldier height"
+  },
+  "slope_ramp": {
+    "triangles": 116,
+    "budget": 1000,
+    "meshes": 2,
+    "textureSize": [
+      512,
+      512
+    ],
+    "units": "one bean soldier height"
+  },
+  "chasm": {
+    "triangles": 1026,
+    "budget": 1500,
+    "meshes": 1,
+    "textureSize": [
+      512,
+      512
+    ],
+    "units": "one bean soldier height"
+  },
+  "chasm_corner": {
+    "triangles": 1026,
+    "budget": 1200,
+    "meshes": 1,
+    "textureSize": [
+      512,
+      512
+    ],
+    "units": "one bean soldier height"
+  },
+  "cliff_edge": {
+    "triangles": 176,
+    "budget": 1200,
+    "meshes": 1,
+    "textureSize": [
+      512,
+      512
+    ],
+    "units": "one bean soldier height"
+  },
+  "field_border": {
+    "triangles": 220,
+    "budget": 1500,
+    "meshes": 1,
+    "textureSize": [
+      512,
+      512
+    ],
+    "units": "one bean soldier height"
+  }
+}
