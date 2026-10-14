@@ -1,0 +1,107 @@
+{
+  "sword": {
+    "triangles": 1556,
+    "meshes": 9,
+    "materialCount": 1,
+    "textureSize": [
+      512,
+      512
+    ],
+    "animations": [
+      "Idle",
+      "Walk",
+      "Death",
+      "Attack"
+    ]
+  },
+  "archer": {
+    "triangles": 1714,
+    "meshes": 7,
+    "materialCount": 1,
+    "textureSize": [
+      512,
+      512
+    ],
+    "animations": [
+      "Idle",
+      "Walk",
+      "Death",
+      "Attack"
+    ]
+  },
+  "shield": {
+    "triangles": 1560,
+    "meshes": 9,
+    "materialCount": 1,
+    "textureSize": [
+      512,
+      512
+    ],
+    "animations": [
+      "Idle",
+      "Walk",
+      "Death",
+      "Attack"
+    ]
+  },
+  "spear": {
+    "triangles": 1323,
+    "meshes": 7,
+    "materialCount": 1,
+    "textureSize": [
+      512,
+      512
+    ],
+    "animations": [
+      "Idle",
+      "Walk",
+      "Death",
+      "Attack"
+    ]
+  },
+  "mage": {
+    "triangles": 1426,
+    "meshes": 7,
+    "materialCount": 1,
+    "textureSize": [
+      512,
+      512
+    ],
+    "animations": [
+      "Idle",
+      "Walk",
+      "Death",
+      "Attack"
+    ]
+  },
+  "healer": {
+    "triangles": 1452,
+    "meshes": 8,
+    "materialCount": 1,
+    "textureSize": [
+      512,
+      512
+    ],
+    "animations": [
+      "Idle",
+      "Walk",
+      "Death",
+      "Attack"
+    ]
+  },
+  "goblin": {
+    "triangles": 1442,
+    "meshes": 7,
+    "materialCount": 1,
+    "textureSize": [
+      512,
+      512
+    ],
+    "animations": [
+      "Idle",
+      "Walk",
+      "Death",
+      "Attack"
+    ]
+  }
+}

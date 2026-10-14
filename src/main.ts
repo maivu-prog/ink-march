@@ -18,7 +18,8 @@ let stage:Stage;try{stage=new Stage(canvas,labels);}catch{ui.innerHTML='<div cla
 let save=readSave(),screen='home',chapter=save.run?.chapter||Math.min(save.chapter,chapters.length),pick={team:0,slot:0},pool:InkPool|null=null,battle:Battle|null=null,currentMap:MapData=Object.values(maps)[0],active=0,cursor:P|null=null,drawing=false,grace=0,paused=false,preparing=false,speed=save.speed||1,offers:string[]=[],eventId='ev_shrine',rerolls=0,lastResult:any=null,pulls:Pull[]=[],brushPulls:BrushPull[]=[],summonTab:'brush'|'troop'='brush',detail:string|null=null,brushDetail:string|null=null,confirm=false;
 const debug=new URLSearchParams(location.search).get('debug')==='1';
 const btn=(action:string,html:string,cls='',disabled=false,attrs='')=>`<button class="g-btn ${cls}" data-action="${action}" ${disabled?'disabled':''} ${attrs}>${html}</button>`;
-const portrait=(id:string)=>`./assets/portraits/${id}.png?v=3`;
+const beanPortraits=new Set(['sword','archer','shield','spear','mage','healer','goblin']);
+const portrait=(id:string)=>`./assets/portraits/${beanPortraits.has(id)?'bean-v2/':''}${id}.png?v=bean-v2`;
 const rar=(id:string)=>'rar-'+U[id].rarity,brar=(id:string)=>'rar-'+BR[id].rarity;
 const stars=(n:number,max=3)=>Array.from({length:max},(_,i)=>i<n?icon.star:icon.starOff).join('');
 function toast(text:string){ui.querySelector('.g-toast')?.remove();let d=document.createElement('div');d.className='g-toast g-o';d.textContent=text;ui.append(d);setTimeout(()=>d.remove(),2000);}

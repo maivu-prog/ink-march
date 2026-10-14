@@ -1,0 +1,14 @@
+Generated with the built-in imagegen tool. Two pilot concepts only.
+No model or game asset replacements were made.
+
+FILE: sword_concept.png
+Use case: stylized-concept. Asset type: sword_concept.png, character concept reference for Ink March mobile strategy game.
+Game concept art of a SINGLE character for a mobile strategy game. Stylized low-poly toy miniature, chibi proportions: big head (40% of height), oversized weapon, short stubby legs. Seen from a high three-quarter top-down angle (about 40 degrees). Flat cel-shaded colors, thick dark outline, large readable color blocks, no tiny details, no text, no logos. Soft even lighting, plain light-grey background, no ground shadow. Full body, centered, silhouette readable at 48 pixels tall.
+Subject: Friendly swordsman. Blue tunic over light silver armor, round helmet with a small blue plume, oversized straight sword held high, small round buckler.
+One standalone full-body character only, with comfortable empty margins around the sword, plume and boots. No contact sheet. Do not add any typography.
+
+FILE: goblin_concept.png
+Use case: stylized-concept. Asset type: goblin_concept.png, character concept reference for Ink March mobile strategy game.
+Game concept art of a SINGLE character for a mobile strategy game. Stylized low-poly toy miniature, chibi proportions: big head (40% of height), oversized weapon, short stubby legs. Seen from a high three-quarter top-down angle (about 40 degrees). Flat cel-shaded colors, thick dark outline, large readable color blocks, no tiny details, no text, no logos. Soft even lighting, plain light-grey background, no ground shadow. Full body, centered, silhouette readable at 48 pixels tall.
+Subject: Enemy goblin raider. Green skin, long pointy ears, red and black scrap armor with spikes, jagged cleaver, angry grin with fangs.
+One standalone full-body character only, with comfortable empty margins around ears, cleaver, shoulder spikes and boots. No contact sheet. Do not add any typography. Cartoon toy enemy for the same mobile game visual language as a blue-and-silver chibi swordsman, not realistic or horror.

@@ -266,3 +266,5 @@
 .g-power{align-self:center;font-weight:900;font-size:13px;padding:4px 12px;border-radius:12px;background:#0c1828b3;border:2px solid #36536f;color:#b9d2e6}.g-power b{font-family:var(--fd);font-weight:400;font-size:16px}
 .g-power.ok b{color:#5cff7a}.g-power.mid b{color:#ffe46b}.g-power.low b{color:#ff8a7a}
 .g-advice{display:flex;flex-direction:column;gap:6px}.g-tipline{font-weight:800;font-size:13px;padding:8px 10px;border-radius:10px;background:#0c1828b3;color:#e6f1fa;line-height:1.3}.g-tipline b{color:#ffe46b}
+
+.g-forecast[hidden]{display:none!important}
