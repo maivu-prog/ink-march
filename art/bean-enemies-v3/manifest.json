@@ -1,0 +1,107 @@
+{
+  "goblin_king": {
+    "triangles": 1962,
+    "meshes": 9,
+    "materialCount": 1,
+    "textureSize": [
+      512,
+      512
+    ],
+    "animations": [
+      "Idle",
+      "Walk",
+      "Death",
+      "Attack"
+    ]
+  },
+  "goblin_archer": {
+    "triangles": 1652,
+    "meshes": 7,
+    "materialCount": 1,
+    "textureSize": [
+      512,
+      512
+    ],
+    "animations": [
+      "Idle",
+      "Walk",
+      "Death",
+      "Attack"
+    ]
+  },
+  "orc": {
+    "triangles": 1324,
+    "meshes": 7,
+    "materialCount": 1,
+    "textureSize": [
+      512,
+      512
+    ],
+    "animations": [
+      "Idle",
+      "Walk",
+      "Death",
+      "Attack"
+    ]
+  },
+  "shaman": {
+    "triangles": 1477,
+    "meshes": 8,
+    "materialCount": 1,
+    "textureSize": [
+      512,
+      512
+    ],
+    "animations": [
+      "Idle",
+      "Walk",
+      "Death",
+      "Attack"
+    ]
+  },
+  "shadow_mage": {
+    "triangles": 1336,
+    "meshes": 8,
+    "materialCount": 1,
+    "textureSize": [
+      512,
+      512
+    ],
+    "animations": [
+      "Idle",
+      "Walk",
+      "Death",
+      "Attack"
+    ]
+  },
+  "tower": {
+    "triangles": 655,
+    "meshes": 2,
+    "materialCount": 1,
+    "textureSize": [
+      512,
+      512
+    ],
+    "animations": []
+  },
+  "tree": {
+    "triangles": 548,
+    "meshes": 1,
+    "materialCount": 1,
+    "textureSize": [
+      512,
+      512
+    ],
+    "animations": []
+  },
+  "rock": {
+    "triangles": 216,
+    "meshes": 1,
+    "materialCount": 1,
+    "textureSize": [
+      512,
+      512
+    ],
+    "animations": []
+  }
+}
