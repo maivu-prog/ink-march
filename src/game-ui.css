@@ -259,3 +259,10 @@
 #labels .camp-star small{display:block;font-size:11px;font-family:var(--fd);color:#fff;background:#c9302a;border-radius:6px;padding:0 5px;text-shadow:none}
 #labels .clash-flag{font-size:26px;color:#3f9fe8;text-shadow:0 2px 0 #0b1626,0 0 8px #fff;transform:translate(-30%,-90%);display:flex;flex-direction:column;align-items:center;line-height:1}#labels .clash-flag.team-1{color:#e08a3c}#labels .clash-flag small{font-size:11px;font-family:var(--fd);color:#fff;background:#2f74c9;border-radius:6px;padding:1px 5px;text-shadow:none}
 .g-inkmeter b small{display:block;font-family:var(--fb);font-weight:900;font-size:11px;color:#9dff9d;text-align:right;line-height:1}
+
+.g-forecast{position:absolute;left:12px;right:12px;bottom:calc(max(15%,118px) + 10px);display:flex;align-items:center;gap:10px;padding:8px 14px;border-radius:14px;background:#0b1626e6;border:3px solid #36536f;color:#fff;z-index:6;pointer-events:none}
+.g-forecast b{font-family:var(--fd);font-weight:400;font-size:18px}.g-forecast span{font-weight:900;font-size:13px;color:#b9d2e6}.g-forecast .st{margin-left:auto;font-size:18px;display:flex}
+.g-forecast.win{border-color:#5cff7a}.g-forecast.win b{color:#5cff7a}.g-forecast.close{border-color:#ffe46b}.g-forecast.close b{color:#ffe46b}.g-forecast.loss{border-color:#ff5a4a}.g-forecast.loss b{color:#ff8a7a}.g-forecast.wait b{color:#b9d2e6}
+.g-power{align-self:center;font-weight:900;font-size:13px;padding:4px 12px;border-radius:12px;background:#0c1828b3;border:2px solid #36536f;color:#b9d2e6}.g-power b{font-family:var(--fd);font-weight:400;font-size:16px}
+.g-power.ok b{color:#5cff7a}.g-power.mid b{color:#ffe46b}.g-power.low b{color:#ff8a7a}
+.g-advice{display:flex;flex-direction:column;gap:6px}.g-tipline{font-weight:800;font-size:13px;padding:8px 10px;border-radius:10px;background:#0c1828b3;color:#e6f1fa;line-height:1.3}.g-tipline b{color:#ffe46b}

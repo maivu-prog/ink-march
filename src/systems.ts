@@ -132,5 +132,9 @@ export const aggroOf=(ranges:number[])=>Math.max(0,...ranges)*C.aggroScale+C.agg
 export type Flag={squad:number,d:number,p:P,team:number};
 function cross(a:P,b:P,c:P,d:P):number|null{const r={x:b.x-a.x,y:b.y-a.y},s={x:d.x-c.x,y:d.y-c.y},den=r.x*s.y-r.y*s.x;if(!den)return null;const t=((c.x-a.x)*s.y-(c.y-a.y)*s.x)/den,u=((c.x-a.x)*r.y-(c.y-a.y)*r.x)/den;return t>=0&&t<=1&&u>=0&&u<=1?u:null;}
 export function flagsFor(map:MapData,pool:InkPool):Flag[]{const out:Flag[]=[];map.enemySquads.forEach((sq:any,k:number)=>{const r=pts(sq.route);let best:Flag|null=null,acc=0;for(let i=1;i<r.length&&!best;i++){const seg=dist(r[i-1],r[i]);let hit:{u:number,team:number}|null=null;pool.paths.forEach((path,team)=>{const q=path.points;for(let j=1;j<q.length;j++){const u=cross(q[j-1],q[j],r[i-1],r[i]);if(u!==null&&(!hit||u<hit.u))hit={u,team};}});if(hit){const h=hit as {u:number,team:number};best={squad:k,d:acc+seg*h.u,p:lerp(r[i-1],r[i],h.u),team:h.team};}acc+=seg;}if(best&&best.d>8)out.push(best);});return out;}
+// Power: chỉ số tổng quát của đội, dùng để so với mức đề xuất của màn
+export const recLevel=(m:MapData)=>1+Math.floor((m.chapter-1)*.8);
+export function armyPower(levels:Record<string,number>,teams:string[][],squads=1){let p=0;teams.slice(0,squads).forEach(t=>t.forEach(id=>{const u=U[id],k=1+((levels[id]||1)-1)*C.levelStatPct/100;p+=u.count*(u.hp*k/10+u.atk*k/u.interval*2);}));return Math.round(p);}
+export const recommendedPower=(m:MapData)=>armyPower(Object.fromEntries(Object.keys(U).map(k=>[k,recLevel(m)])),[['shield','sword','archer'],['shield','sword','archer']],m.starts.length);
 export const stealable=(o:any)=>!!F[o.type]&&o.type!=='ink_bottle';
 export function runValue(run:Run,id:string){return (run.buffs[id]||0)*(R[id]?.value||0);}
