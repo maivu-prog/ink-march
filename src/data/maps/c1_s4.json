@@ -1,0 +1,242 @@
+{
+  "id": "c1_s4",
+  "name": "Goblin King's Gate",
+  "chapter": 1,
+  "baseInk": 1010,
+  "starts": [
+    {
+      "x": 360,
+      "y": 808
+    }
+  ],
+  "bosses": [
+    {
+      "type": "goblin_king",
+      "x": 360,
+      "y": 206,
+      "scale": 0.34
+    }
+  ],
+  "obstacles": [
+    {
+      "type": "rect",
+      "x": 227,
+      "y": 171,
+      "w": 28,
+      "h": 133
+    },
+    {
+      "type": "rect",
+      "x": 465,
+      "y": 171,
+      "w": 28,
+      "h": 133
+    },
+    {
+      "type": "rect",
+      "x": 227,
+      "y": 283,
+      "w": 84,
+      "h": 28
+    },
+    {
+      "type": "rect",
+      "x": 409,
+      "y": 283,
+      "w": 84,
+      "h": 28
+    },
+    {
+      "type": "rect",
+      "x": 206,
+      "y": 479,
+      "w": 308,
+      "h": 42
+    }
+  ],
+  "items": [
+    {
+      "type": "reinforce",
+      "x": 157,
+      "y": 598
+    },
+    {
+      "type": "atk_up",
+      "x": 563,
+      "y": 598
+    },
+    {
+      "type": "hp_up",
+      "x": 360,
+      "y": 381
+    }
+  ],
+  "goldZones": [],
+  "terrain": [],
+  "camps": [
+    {
+      "x": 157,
+      "y": 381,
+      "units": [
+        {
+          "type": "goblin",
+          "count": 2
+        },
+        {
+          "type": "goblin_archer",
+          "count": 1
+        }
+      ],
+      "loot": "coins"
+    },
+    {
+      "x": 563,
+      "y": 381,
+      "units": [
+        {
+          "type": "goblin",
+          "count": 2
+        },
+        {
+          "type": "goblin_archer",
+          "count": 1
+        }
+      ],
+      "loot": "ink"
+    },
+    {
+      "x": 360,
+      "y": 640,
+      "units": [
+        {
+          "type": "goblin",
+          "count": 2
+        }
+      ],
+      "loot": "hp_up"
+    }
+  ],
+  "enemySquads": [
+    {
+      "spawnDelay": 12,
+      "speed": 55,
+      "units": [
+        {
+          "type": "goblin",
+          "count": 5
+        }
+      ],
+      "route": [
+        [
+          360,
+          640
+        ],
+        [
+          528,
+          520
+        ],
+        [
+          512,
+          424
+        ],
+        [
+          392,
+          304
+        ],
+        [
+          368,
+          256
+        ]
+      ],
+      "id": "s0",
+      "camp": 2,
+      "origDelay": 4
+    },
+    {
+      "spawnDelay": 20,
+      "speed": 55,
+      "units": [
+        {
+          "type": "goblin_archer",
+          "count": 4
+        }
+      ],
+      "route": [
+        [
+          563,
+          381
+        ],
+        [
+          408,
+          320
+        ],
+        [
+          368,
+          256
+        ]
+      ],
+      "id": "s1",
+      "camp": 1,
+      "origDelay": 8
+    }
+  ],
+  "bonusSquadRoute": [
+    [
+      122,
+      500
+    ],
+    [
+      318,
+      234
+    ]
+  ],
+  "referenceSolution": [
+    [
+      [
+        360,
+        808
+      ],
+      [
+        360,
+        688
+      ],
+      [
+        192,
+        520
+      ],
+      [
+        168,
+        432
+      ],
+      [
+        512,
+        392
+      ],
+      [
+        392,
+        304
+      ],
+      [
+        384,
+        264
+      ]
+    ]
+  ],
+  "tutorialHint": "Two warbands march on the King. They steal charms on the way. Check the forecast before you march.",
+  "teach": [
+    "thieves",
+    "loot",
+    "forecast"
+  ],
+  "field": {
+    "x": 108,
+    "y": 150,
+    "w": 504,
+    "h": 700
+  },
+  "design": {
+    "winInk": 638,
+    "threeStarInk": 985,
+    "threeStarBrush": "quill"
+  }
+}

@@ -59,7 +59,7 @@ export const bossFor=(map:MapData,t:number)=>map.bosses.length>1?map.bosses[t]:m
 // Tuyến của một đội: đi qua danh sách mục tiêu theo thứ tự rồi tới boss
 export function teamRoute(map:MapData,t:number,targets:any[],fx:BrushFx=NO_BRUSH){
   const open=new Set<string>();let cur:P=map.starts[t];const pts:P[]=[cur];
-  for(const o of targets){const radius=o.camp?60:o.type==='key'||o.type==='chest'?C.pickupRadius-14:C.pickupRadius-10;const leg=route(map,cur,o,open,radius,fx);if(!leg)return null;pts.push(...leg.slice(1));cur=leg.at(-1)!;if(o.type==='key')open.add(o.color);}
+  for(const o of targets){const radius=o.camp?45:o.type==='key'||o.type==='chest'?C.pickupRadius-14:C.pickupRadius-10;const leg=route(map,cur,o,open,radius,fx);if(!leg)return null;pts.push(...leg.slice(1));cur=leg.at(-1)!;if(o.type==='key')open.add(o.color);}
   const leg=route(map,cur,bossFor(map,t),open,C.bossSnapRadius-12,fx);if(!leg)return null;pts.push(...leg.slice(1));return pts;
 }
 export function lazyPool(map:MapData,fx:BrushFx=NO_BRUSH){const keys=map.items.filter(o=>o.type==='key');const paths=map.starts.map((_,t)=>teamRoute(map,t,[],fx)||teamRoute(map,t,keys,fx));if(paths.some(p=>!p))return null;return drawPool(map,paths as P[][],fx);}

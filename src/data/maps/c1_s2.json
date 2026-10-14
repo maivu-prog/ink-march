@@ -1,8 +1,8 @@
 {
   "id": "c1_s2",
-  "name": "Forest Fork",
+  "name": "Camp Muster",
   "chapter": 1,
-  "baseInk": 990,
+  "baseInk": 760,
   "starts": [
     {
       "x": 360,
@@ -14,63 +14,51 @@
       "type": "goblin_chief",
       "x": 360,
       "y": 206,
-      "scale": 0.38
+      "scale": 0.47
     }
   ],
   "obstacles": [
     {
-      "type": "rect",
-      "x": 283,
-      "y": 381,
-      "w": 154,
-      "h": 252
+      "type": "circle",
+      "x": 374,
+      "y": 479,
+      "r": 49
     }
   ],
   "items": [
     {
-      "type": "hp_up",
-      "x": 535,
-      "y": 360
-    },
-    {
       "type": "atk_up",
-      "x": 185,
-      "y": 514
-    },
-    {
-      "type": "ink_bottle",
-      "x": 528,
-      "y": 731,
-      "value": 200
+      "x": 486,
+      "y": 654
     }
   ],
   "goldZones": [],
   "terrain": [],
   "camps": [
     {
-      "x": 185,
-      "y": 703,
+      "x": 262,
+      "y": 598,
       "units": [
         {
           "type": "goblin",
-          "count": 2
+          "count": 3
         }
       ],
       "loot": "coins"
     },
     {
-      "x": 535,
-      "y": 514,
+      "x": 486,
+      "y": 402,
       "units": [
         {
           "type": "goblin",
-          "count": 2
+          "count": 1
         }
       ],
       "loot": "ink"
     },
     {
-      "x": 192,
+      "x": 255,
       "y": 332,
       "units": [
         {
@@ -83,7 +71,7 @@
   ],
   "enemySquads": [
     {
-      "spawnDelay": 14,
+      "spawnDelay": 10,
       "speed": 55,
       "units": [
         {
@@ -93,17 +81,17 @@
       ],
       "route": [
         [
-          192,
-          332
+          262,
+          598
         ],
         [
-          320,
+          336,
           240
         ]
       ],
       "id": "s0",
-      "camp": 2,
-      "origDelay": 6
+      "camp": 0,
+      "origDelay": 2
     }
   ],
   "bonusSquadRoute": [
@@ -123,23 +111,19 @@
         808
       ],
       [
-        248,
-        728
+        272,
+        648
       ],
       [
-        456,
-        632
+        432,
+        504
       ],
       [
-        512,
-        576
+        464,
+        448
       ],
       [
-        440,
-        368
-      ],
-      [
-        256,
+        304,
         352
       ],
       [
@@ -148,7 +132,10 @@
       ]
     ]
   ],
-  "tutorialHint": "Goblins on the west road will steal the Attack charm unless you get there first.",
+  "tutorialHint": "The left camp sends a squad when its timer ends. Destroy it first and the boss stays weak.",
+  "teach": [
+    "muster"
+  ],
   "field": {
     "x": 108,
     "y": 150,
@@ -156,8 +143,8 @@
     "h": 700
   },
   "design": {
-    "winInk": 453,
-    "threeStarInk": 970,
+    "winInk": 549,
+    "threeStarInk": 743,
     "threeStarBrush": "quill"
   }
 }

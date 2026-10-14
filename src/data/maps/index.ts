@@ -1,6 +1,7 @@
 import c1_s1 from './c1_s1.json';
 import c1_s2 from './c1_s2.json';
 import c1_s3 from './c1_s3.json';
+import c1_s4 from './c1_s4.json';
 import c2_s1 from './c2_s1.json';
 import c2_s2 from './c2_s2.json';
 import c2_s3 from './c2_s3.json';
@@ -40,4 +41,4 @@ import c10_s2 from './c10_s2.json';
 import c10_s3 from './c10_s3.json';
 import c10_s4 from './c10_s4.json';
 import c10_s5 from './c10_s5.json';
-export default {c1_s1,c1_s2,c1_s3,c2_s1,c2_s2,c2_s3,c3_s1,c3_s2,c3_s3,c3_s4,c4_s1,c4_s2,c4_s3,c4_s4,c5_s1,c5_s2,c5_s3,c5_s4,c6_s1,c6_s2,c6_s3,c6_s4,c7_s1,c7_s2,c7_s3,c7_s4,c7_s5,c8_s1,c8_s2,c8_s3,c8_s4,c8_s5,c9_s1,c9_s2,c9_s3,c9_s4,c9_s5,c10_s1,c10_s2,c10_s3,c10_s4,c10_s5};
+export default {c1_s1,c1_s2,c1_s3,c1_s4,c2_s1,c2_s2,c2_s3,c3_s1,c3_s2,c3_s3,c3_s4,c4_s1,c4_s2,c4_s3,c4_s4,c5_s1,c5_s2,c5_s3,c5_s4,c6_s1,c6_s2,c6_s3,c6_s4,c7_s1,c7_s2,c7_s3,c7_s4,c7_s5,c8_s1,c8_s2,c8_s3,c8_s4,c8_s5,c9_s1,c9_s2,c9_s3,c9_s4,c9_s5,c10_s1,c10_s2,c10_s3,c10_s4,c10_s5};

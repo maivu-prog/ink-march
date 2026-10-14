@@ -16,7 +16,7 @@ const objects=[...base.camps.map(c=>({...c,camp:true})),...base.items.filter(o=>
 const sideOf=(o:P)=>base.starts.length<2?0:dist(o,base.starts[0])+dist(o,bossFor(base,0))<=dist(o,base.starts[1])+dist(o,bossFor(base,1))?0:1;
 type Cand={seq:any[],points:P[],cost:number,camps:number};
 function candidates(t:number){const mine=objects.filter(o=>sideOf(o)===t),camps=mine.filter((o:any)=>o.camp),out:Cand[]=[],best=new Map<string,Cand>();
- const add=(seq:any[])=>{if(seq.filter(o=>o.type==='chest').some(c=>!seq.slice(0,seq.indexOf(c)).some(k=>k.type==='key'&&k.color===c.color)))return;let pts=teamRoute(base,t,seq);if(!pts)return;let cost=pathCost(base,pts,NO_BRUSH)-seq.filter(o=>o.type==='ink_bottle').reduce((n,o)=>n+o.value,0);let key=seq.map(o=>objects.indexOf(o)).sort().join(','),c={seq,points:pts,cost,camps:seq.filter((o:any)=>o.camp).length};let old=best.get(key);if(!old||old.cost>c.cost)best.set(key,c);};
+ const add=(seq:any[])=>{if(seq.filter(o=>o.type==='chest').some(c=>!seq.slice(0,seq.indexOf(c)).some(k=>k.type==='key'&&k.color===c.color)))return;let pts=teamRoute(base,t,seq);if(!pts)return;let cost=pathCost(base,pts,NO_BRUSH)-seq.filter(o=>o.type==='ink_bottle').reduce((n,o)=>n+o.value,0);let key=seq.map(o=>objects.indexOf(o)).join(','),c={seq,points:pts,cost,camps:seq.filter((o:any)=>o.camp).length};let old=best.get(key);if(!old||old.cost>c.cost)best.set(key,c);};
  const perm=(rest:any[],seq:any[],depth:number)=>{add(seq);if(!depth)return;for(const o of rest)perm(rest.filter(x=>x!==o),[...seq,o],depth-1);};
  perm(mine,[],Math.min(3,mine.length));
  // tour phá hết trại của phía này, có thể ghé thêm 1 vật phẩm
@@ -24,7 +24,7 @@ function candidates(t:number){const mine=objects.filter(o=>sideOf(o)===t),camps=
  return [...best.values()].sort((a,b)=>a.cost-b.cost);}
 const perTeam=base.starts.map((_,t)=>candidates(t));
 // ghép tuyến hai đội: lấy top theo số trại và theo chi phí
-function combos(){if(perTeam.length===1)return perTeam[0].slice(0,60).map(c=>[c]);const pickTop=(list:Cand[])=>{let byCamps=[...list].sort((a,b)=>b.camps-a.camps||a.cost-b.cost).slice(0,5),cheap=list.slice(0,5);return [...new Set([...byCamps,...cheap])];};let A=pickTop(perTeam[0]),B=pickTop(perTeam[1]),out:Cand[][]=[];for(const a of A)for(const b of B)out.push([a,b]);return out;}
+function combos(){if(perTeam.length===1){const L=perTeam[0],most=Math.max(...L.map(c=>c.camps));return [...new Set([...L.slice(0,45),...L.filter(c=>c.camps===most).slice(0,20)])].map(c=>[c]);}const pickTop=(list:Cand[])=>{let byCamps=[...list].sort((a,b)=>b.camps-a.camps||a.cost-b.cost).slice(0,5),cheap=list.slice(0,5);return [...new Set([...byCamps,...cheap])];};let A=pickTop(perTeam[0]),B=pickTop(perTeam[1]),out:Cand[][]=[];for(const a of A)for(const b of B)out.push([a,b]);return out;}
 const lazy=lazyPool(free(base));
 const all=combos(),totalCamps=base.camps.length;
 const tours=all.filter(c=>c.reduce((n,x)=>n+x.camps,0)>=totalCamps).sort((a,b)=>a.reduce((n,x)=>n+x.cost,0)-b.reduce((n,x)=>n+x.cost,0)).slice(0,40);

@@ -28,25 +28,30 @@ def bosses2(a, b): return [boss(a, 180), boss(b, 540)]
 CH = []
 def chapter(name, stages, interlude):
     CH.append((name, stages, interlude))
-def st(name, hint, starts=ONE, bosses=None, obstacles=(), terrain=(), camps=(), items=(), squads=(), gold=(), bonus=None):
-    return dict(name=name, hint=hint, starts=starts, bosses=bosses, obstacles=list(obstacles), terrain=list(terrain), camps=list(camps), items=list(items), squads=list(squads), gold=list(gold), bonus=bonus)
+def st(name, hint, starts=ONE, bosses=None, obstacles=(), terrain=(), camps=(), items=(), squads=(), gold=(), bonus=None, teach=None):
+    return dict(name=name, hint=hint, starts=starts, bosses=bosses, obstacles=list(obstacles), terrain=list(terrain), camps=list(camps), items=list(items), squads=list(squads), gold=list(gold), bonus=bonus, teach=teach)
 
 KING, CHIEF, MAGE = "goblin_king", "goblin_chief", "shadow_mage"
 
 chapter("The Waking Woods", [
   st("First Lines", "Draw from START to the boss. Pass close to a camp to attack it: every camp destroyed is a star.",
      bosses=[boss(CHIEF)], obstacles=[Rk(360, 520, 60)],
-     camps=[camp(150, 620, g=1), camp(570, 430, g=1), camp(210, 260, g=1)], items=[it("atk_up", 480, 720)]),
-  st("Forest Fork", "Goblins on the west road will steal the Attack charm unless you get there first.",
-     bosses=[boss(CHIEF)], obstacles=[R(250, 330, 220, 360)],
-     camps=[camp(110, 790, g=2), camp(610, 520, g=2), camp(120, 260, g=1)],
-     items=[it("hp_up", 610, 300), it("atk_up", 110, 520), it("ink_bottle", 600, 830, value=200)],
-     squads=[sq(6, [[30, 420], [110, 520], [120, 220], [320, 110]], g=5)]),
-  st("Goblin King's Gate", "Two warbands march on the King. Every squad that arrives makes him stronger.",
+     camps=[camp(150, 620, g=1), camp(570, 430, g=1), camp(210, 260, g=1)], items=[it("atk_up", 480, 720)], teach=[]),
+  st("Camp Muster", "The left camp sends a squad when its timer ends. Destroy it first and the boss stays weak.",
+     bosses=[boss(CHIEF)], obstacles=[Rk(380, 470, 70)],
+     camps=[camp(220, 640, g=3), camp(540, 360, g=1), camp(210, 260, g=1)],
+     items=[it("atk_up", 540, 720)],
+     squads=[sq(2, [[220, 640], [250, 300], [340, 110]], g=5)], teach=["muster"]),
+  st("The Crossing", "That camp is too far. Cross its squad's route instead: a flag holds them until you arrive.",
+     bosses=[boss(CHIEF)], obstacles=[R(80, 640, 170, 40), R(250, 640, 40, 360), W(290, 500, 430, 60)],
+     camps=[camp(110, 840, g=1), camp(600, 300, g=1), camp(560, 760, g=1)],
+     items=[it("hp_up", 470, 620), it("atk_up", 200, 300)],
+     squads=[sq(2, [[110, 840], [60, 600], [200, 420], [360, 360], [360, 110]], g=4)], teach=["flags"]),
+  st("Goblin King's Gate", "Two warbands march on the King. They steal charms on the way. Check the forecast before you march.",
      bosses=[boss(KING)], obstacles=[R(170, 30, 40, 190), R(510, 30, 40, 190), R(170, 190, 120, 40), R(430, 190, 120, 40), R(140, 470, 440, 60)],
      camps=[camp(70, 330, g=2, ga=1), camp(650, 330, g=2, ga=1), camp(360, 700, g=2)],
      items=[it("reinforce", 70, 640), it("atk_up", 650, 640), it("hp_up", 360, 330)],
-     squads=[sq(4, [[20, 720], [70, 400], [250, 280], [360, 260], [360, 130]], g=5), sq(8, [[700, 720], [650, 400], [470, 280], [360, 260], [360, 130]], ga=4)]),
+     squads=[sq(4, [[20, 720], [70, 400], [250, 280], [360, 260], [360, 130]], g=5), sq(8, [[700, 720], [650, 400], [470, 280], [360, 260], [360, 130]], ga=4)], teach=["thieves", "loot", "forecast"]),
 ], "shop")
 
 chapter("Dusty Trail", [
@@ -306,6 +311,7 @@ for ci, (name, stages, interlude) in enumerate(CH, 1):
              "obstacles": s["obstacles"], "items": s["items"], "goldZones": s["gold"], "terrain": s["terrain"], "camps": s["camps"],
              "enemySquads": [dict(q, id=f"s{i}") for i, q in enumerate(s["squads"])], "bonusSquadRoute": bonus,
              "referenceSolution": [[[p["x"], p["y"]], [b["x"], b["y"]]] for p, b in zip(s["starts"], s["bosses"] * 2)], "tutorialHint": s["hint"]}
+        if s["teach"] is not None: m["teach"] = s["teach"]
         m = shrink(json.loads(json.dumps(m)), SIZE[ci - 1])
         json.dump(m, open(os.path.join(MAPS, mid + ".json"), "w", encoding="utf8"), indent=2, ensure_ascii=False)
     if interlude and len(stage_ids) >= 3: stage_ids.insert(2, interlude)

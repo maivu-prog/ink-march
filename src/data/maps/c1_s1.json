@@ -2,7 +2,7 @@
   "id": "c1_s1",
   "name": "First Lines",
   "chapter": 1,
-  "baseInk": 810,
+  "baseInk": 830,
   "starts": [
     {
       "x": 360,
@@ -88,19 +88,19 @@
       ],
       [
         232,
-        648
+        632
       ],
       [
-        432,
-        528
+        424,
+        536
       ],
       [
-        464,
-        496
+        472,
+        488
       ],
       [
-        312,
-        368
+        304,
+        352
       ],
       [
         336,
@@ -109,6 +109,7 @@
     ]
   ],
   "tutorialHint": "Draw from START to the boss. Pass close to a camp to attack it: every camp destroyed is a star.",
+  "teach": [],
   "field": {
     "x": 108,
     "y": 150,
@@ -117,7 +118,7 @@
   },
   "design": {
     "winInk": 551,
-    "threeStarInk": 789,
+    "threeStarInk": 810,
     "threeStarBrush": "quill"
   }
 }
