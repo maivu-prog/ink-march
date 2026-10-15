@@ -2,7 +2,7 @@
   "id": "c4_s5",
   "name": "Twin Ravines",
   "chapter": 4,
-  "baseInk": 1590,
+  "baseInk": 2080,
   "starts": [
     {
       "x": 207,
@@ -18,13 +18,13 @@
       "type": "goblin_chief",
       "x": 207,
       "y": 143,
-      "scale": 0.76
+      "scale": 0.72
     },
     {
       "type": "goblin_chief",
       "x": 513,
       "y": 143,
-      "scale": 0.76
+      "scale": 0.72
     }
   ],
   "obstacles": [
@@ -254,6 +254,9 @@
   "design": {
     "winInk": 1450,
     "threeStarInk": 1685,
-    "threeStarBrush": "charcoal"
+    "threeStarBrush": "charcoal",
+    "ease": 0.85,
+    "winShare": 0.7,
+    "threeShare": 0.81
   }
 }

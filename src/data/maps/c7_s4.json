@@ -2,7 +2,7 @@
   "id": "c7_s4",
   "name": "Gatehouse",
   "chapter": 7,
-  "baseInk": 2040,
+  "baseInk": 2660,
   "starts": [
     {
       "x": 360,
@@ -14,7 +14,7 @@
       "type": "goblin_chief",
       "x": 360,
       "y": 97,
-      "scale": 0.69
+      "scale": 0.68
     }
   ],
   "obstacles": [
@@ -106,6 +106,31 @@
   "goldZones": [],
   "terrain": [
     {
+      "kind": "slope",
+      "points": [
+        [
+          14,
+          682
+        ],
+        [
+          312,
+          682
+        ],
+        [
+          312,
+          894
+        ],
+        [
+          14,
+          894
+        ]
+      ],
+      "up": [
+        0,
+        -1
+      ]
+    },
+    {
       "kind": "sand",
       "points": [
         [
@@ -190,8 +215,8 @@
           183
         ],
         [
-          440,
-          136
+          456,
+          144
         ]
       ],
       "id": "s0",
@@ -253,32 +278,36 @@
         922
       ],
       [
-        544,
+        552,
         896
       ],
       [
-        552,
+        560,
         888
       ],
       [
-        576,
-        864
+        592,
+        856
       ],
       [
-        552,
+        560,
         888
       ],
       [
-        544,
+        552,
         896
       ],
       [
-        232,
+        400,
         896
       ],
       [
-        120,
-        792
+        304,
+        808
+      ],
+      [
+        112,
+        808
       ],
       [
         328,
@@ -293,7 +322,7 @@
         480
       ],
       [
-        296,
+        312,
         480
       ],
       [
@@ -302,7 +331,7 @@
       ],
       [
         616,
-        248
+        232
       ],
       [
         256,
@@ -314,7 +343,7 @@
       ]
     ]
   ],
-  "tutorialHint": "Two gates, three keys. The second red key opens the treasure.",
+  "tutorialHint": "Two gates, three keys, and a steep western yard.",
   "field": {
     "x": 14,
     "y": 20,
@@ -322,8 +351,12 @@
     "h": 960
   },
   "design": {
-    "winInk": 1721,
-    "threeStarInk": 2495,
-    "threeStarBrush": "golden"
-  }
+    "winInk": 1859,
+    "threeStarInk": 2651,
+    "threeStarBrush": "golden",
+    "ease": 0.91,
+    "winShare": 0.7,
+    "threeShare": 1
+  },
+  "redesign": "1015"
 }

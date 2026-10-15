@@ -2,7 +2,7 @@
   "id": "c5_s3",
   "name": "Dust Devils",
   "chapter": 5,
-  "baseInk": 2160,
+  "baseInk": 1920,
   "starts": [
     {
       "x": 360,
@@ -14,10 +14,19 @@
       "type": "goblin_chief",
       "x": 360,
       "y": 130,
-      "scale": 1.62
+      "scale": 1.14
     }
   ],
-  "obstacles": [],
+  "obstacles": [
+    {
+      "type": "rect",
+      "x": 219,
+      "y": 394,
+      "w": 282,
+      "h": 35,
+      "kind": "chasm"
+    }
+  ],
   "items": [
     {
       "type": "atk_up",
@@ -25,13 +34,76 @@
       "y": 676
     },
     {
-      "type": "reinforce",
+      "type": "haste",
       "x": 562,
       "y": 324
     }
   ],
   "goldZones": [],
   "terrain": [
+    {
+      "kind": "road",
+      "points": [
+        [
+          131,
+          166
+        ],
+        [
+          184,
+          166
+        ],
+        [
+          184,
+          852
+        ],
+        [
+          131,
+          852
+        ]
+      ]
+    },
+    {
+      "kind": "road",
+      "points": [
+        [
+          536,
+          166
+        ],
+        [
+          589,
+          166
+        ],
+        [
+          589,
+          852
+        ],
+        [
+          536,
+          852
+        ]
+      ]
+    },
+    {
+      "kind": "road",
+      "points": [
+        [
+          131,
+          482
+        ],
+        [
+          589,
+          482
+        ],
+        [
+          589,
+          535
+        ],
+        [
+          131,
+          535
+        ]
+      ]
+    },
     {
       "kind": "sand",
       "points": [
@@ -50,69 +122,6 @@
         [
           43,
           852
-        ]
-      ]
-    },
-    {
-      "kind": "road",
-      "points": [
-        [
-          131,
-          166
-        ],
-        [
-          184,
-          166
-        ],
-        [
-          184,
-          852
-        ],
-        [
-          131,
-          852
-        ]
-      ]
-    },
-    {
-      "kind": "road",
-      "points": [
-        [
-          536,
-          166
-        ],
-        [
-          589,
-          166
-        ],
-        [
-          589,
-          852
-        ],
-        [
-          536,
-          852
-        ]
-      ]
-    },
-    {
-      "kind": "road",
-      "points": [
-        [
-          131,
-          482
-        ],
-        [
-          589,
-          482
-        ],
-        [
-          589,
-          535
-        ],
-        [
-          131,
-          535
         ]
       ]
     }
@@ -158,6 +167,21 @@
         }
       ],
       "loot": "coins"
+    },
+    {
+      "x": 158,
+      "y": 729,
+      "units": [
+        {
+          "type": "goblin",
+          "count": 3
+        },
+        {
+          "type": "goblin_archer",
+          "count": 1
+        }
+      ],
+      "loot": "ink"
     }
   ],
   "enemySquads": [
@@ -176,8 +200,12 @@
           729
         ],
         [
-          72,
-          464
+          536,
+          536
+        ],
+        [
+          104,
+          480
         ]
       ],
       "id": "s0",
@@ -199,7 +227,19 @@
           324
         ],
         [
-          320,
+          184,
+          168
+        ],
+        [
+          216,
+          160
+        ],
+        [
+          280,
+          160
+        ],
+        [
+          288,
           168
         ]
       ],
@@ -225,32 +265,48 @@
         887
       ],
       [
-        480,
-        832
+        184,
+        848
       ],
       [
-        528,
-        784
+        168,
+        376
       ],
       [
         184,
-        384
+        480
       ],
       [
-        296,
-        344
+        192,
+        488
       ],
       [
         536,
+        536
+      ],
+      [
+        544,
+        680
+      ],
+      [
+        536,
+        416
+      ],
+      [
+        488,
+        376
+      ],
+      [
+        408,
         344
       ],
       [
-        392,
-        184
+        376,
+        192
       ]
     ]
   ],
-  "tutorialHint": "A crossroads of roads in a sea of sand. A war party crosses the middle.",
+  "tutorialHint": "A ravine cuts the crossroads. Four camps: any three earn every star.",
   "field": {
     "x": 43,
     "y": 60,
@@ -258,8 +314,12 @@
     "h": 880
   },
   "design": {
-    "winInk": 2031,
-    "threeStarInk": 2031,
-    "threeStarBrush": "reed"
-  }
+    "winInk": 978,
+    "threeStarInk": 1624,
+    "threeStarBrush": "quill",
+    "ease": 0.84,
+    "winShare": 0.51,
+    "threeShare": 0.85
+  },
+  "redesign": "1015"
 }

@@ -2,7 +2,7 @@
   "id": "c4_s2",
   "name": "Crossing Fords",
   "chapter": 4,
-  "baseInk": 1030,
+  "baseInk": 1540,
   "starts": [
     {
       "x": 360,
@@ -14,7 +14,7 @@
       "type": "goblin_chief",
       "x": 360,
       "y": 143,
-      "scale": 1.64
+      "scale": 1.45
     }
   ],
   "obstacles": [
@@ -129,6 +129,21 @@
         }
       ],
       "loot": "atk_up"
+    },
+    {
+      "x": 598,
+      "y": 806,
+      "units": [
+        {
+          "type": "goblin",
+          "count": 2
+        },
+        {
+          "type": "goblin_archer",
+          "count": 1
+        }
+      ],
+      "loot": "coins"
     }
   ],
   "enemySquads": [
@@ -147,8 +162,8 @@
           330
         ],
         [
-          376,
-          168
+          392,
+          176
         ]
       ],
       "id": "s0",
@@ -174,7 +189,7 @@
       ],
       [
         360,
-        752
+        736
       ],
       [
         544,
@@ -182,15 +197,11 @@
       ],
       [
         544,
-        392
+        376
       ],
       [
-        224,
-        360
-      ],
-      [
-        328,
-        296
+        216,
+        336
       ],
       [
         328,
@@ -198,7 +209,7 @@
       ]
     ]
   ],
-  "tutorialHint": "The river has two fords. Sand guards the western one.",
+  "tutorialHint": "Four camps guard the fords. Pick the three on your way.",
   "field": {
     "x": 54,
     "y": 75,
@@ -206,8 +217,12 @@
     "h": 850
   },
   "design": {
-    "winInk": 930,
-    "threeStarInk": 1088,
-    "threeStarBrush": "charcoal"
-  }
+    "winInk": 919,
+    "threeStarInk": 1074,
+    "threeStarBrush": "quill",
+    "ease": 0.79,
+    "winShare": 0.6,
+    "threeShare": 0.7
+  },
+  "redesign": "1015"
 }

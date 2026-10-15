@@ -2,7 +2,7 @@
   "id": "c10_s2",
   "name": "Ink Moat",
   "chapter": 10,
-  "baseInk": 2210,
+  "baseInk": 3460,
   "starts": [
     {
       "x": 180,
@@ -18,13 +18,13 @@
       "type": "shadow_mage",
       "x": 180,
       "y": 80,
-      "scale": 1.71
+      "scale": 1.58
     },
     {
       "type": "shadow_mage",
       "x": 540,
       "y": 80,
-      "scale": 1.71
+      "scale": 1.58
     }
   ],
   "obstacles": [
@@ -75,7 +75,28 @@
       "y": 250
     }
   ],
-  "goldZones": [],
+  "goldZones": [
+    {
+      "points": [
+        [
+          300,
+          345
+        ],
+        [
+          420,
+          345
+        ],
+        [
+          420,
+          415
+        ],
+        [
+          300,
+          415
+        ]
+      ]
+    }
+  ],
   "terrain": [
     {
       "kind": "swamp",
@@ -174,8 +195,8 @@
           230
         ],
         [
-          192,
-          120
+          208,
+          128
         ]
       ],
       "id": "s0",
@@ -197,8 +218,8 @@
           720
         ],
         [
-          552,
-          120
+          560,
+          136
         ]
       ],
       "id": "s1",
@@ -223,24 +244,20 @@
         940
       ],
       [
-        256,
-        832
+        96,
+        768
       ],
       [
-        144,
-        736
+        120,
+        280
       ],
       [
-        152,
-        336
-      ],
-      [
-        296,
+        312,
         248
       ],
       [
-        192,
-        144
+        208,
+        136
       ]
     ],
     [
@@ -250,7 +267,7 @@
       ],
       [
         624,
-        784
+        768
       ],
       [
         552,
@@ -258,7 +275,7 @@
       ]
     ]
   ],
-  "tutorialHint": "A moat with two bridges guards both mages.",
+  "tutorialHint": "A moat with two bridges. Golden ink can make a third.",
   "field": {
     "x": 0,
     "y": 0,
@@ -267,7 +284,11 @@
   },
   "design": {
     "winInk": 2076,
-    "threeStarInk": 2300,
-    "threeStarBrush": "marsh"
-  }
+    "threeStarInk": 2322,
+    "threeStarBrush": "quill",
+    "ease": 0.89,
+    "winShare": 0.6,
+    "threeShare": 0.67
+  },
+  "redesign": "1015"
 }

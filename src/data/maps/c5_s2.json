@@ -2,7 +2,7 @@
   "id": "c5_s2",
   "name": "Twin Locks",
   "chapter": 5,
-  "baseInk": 1930,
+  "baseInk": 2730,
   "starts": [
     {
       "x": 360,
@@ -14,7 +14,7 @@
       "type": "goblin_chief",
       "x": 360,
       "y": 130,
-      "scale": 0.65
+      "scale": 0.85
     }
   ],
   "obstacles": [
@@ -81,7 +81,7 @@
       }
     },
     {
-      "type": "atk_up",
+      "type": "haste",
       "x": 122,
       "y": 500
     },
@@ -93,6 +93,31 @@
   ],
   "goldZones": [],
   "terrain": [
+    {
+      "kind": "slope",
+      "points": [
+        [
+          131,
+          394
+        ],
+        [
+          677,
+          394
+        ],
+        [
+          677,
+          623
+        ],
+        [
+          131,
+          623
+        ]
+      ],
+      "up": [
+        1,
+        0
+      ]
+    },
     {
       "kind": "sand",
       "points": [
@@ -222,24 +247,28 @@
         800
       ],
       [
-        248,
-        848
-      ],
-      [
-        528,
-        848
-      ],
-      [
         536,
-        840
+        664
       ],
       [
-        592,
-        504
+        576,
+        624
       ],
       [
-        424,
-        504
+        584,
+        496
+      ],
+      [
+        576,
+        736
+      ],
+      [
+        504,
+        608
+      ],
+      [
+        408,
+        520
       ],
       [
         200,
@@ -250,20 +279,16 @@
         336
       ],
       [
-        512,
-        264
+        520,
+        248
       ],
       [
-        392,
-        240
-      ],
-      [
-        376,
-        192
+        416,
+        160
       ]
     ]
   ],
-  "tutorialHint": "Red key, red gate, blue key, blue gate. The orc band steals on its way.",
+  "tutorialHint": "The middle terrace rises to the east. Keys, gates, and a thief band.",
   "field": {
     "x": 43,
     "y": 60,
@@ -271,8 +296,12 @@
     "h": 880
   },
   "design": {
-    "winInk": 1674,
-    "threeStarInk": 2066,
-    "threeStarBrush": "reed"
-  }
+    "winInk": 1586,
+    "threeStarInk": 2315,
+    "threeStarBrush": "quill",
+    "ease": 0.81,
+    "winShare": 0.58,
+    "threeShare": 0.85
+  },
+  "redesign": "1015"
 }

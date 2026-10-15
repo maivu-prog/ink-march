@@ -2,7 +2,7 @@
   "id": "c2_s4",
   "name": "Windy Hills",
   "chapter": 2,
-  "baseInk": 1500,
+  "baseInk": 1730,
   "starts": [
     {
       "x": 360,
@@ -14,7 +14,7 @@
       "type": "goblin_chief",
       "x": 360,
       "y": 185,
-      "scale": 1.13
+      "scale": 1.02
     }
   ],
   "obstacles": [],
@@ -198,6 +198,9 @@
   "design": {
     "winInk": 642,
     "threeStarInk": 1469,
-    "threeStarBrush": "quill"
+    "threeStarBrush": "quill",
+    "ease": 0.72,
+    "winShare": 0.37,
+    "threeShare": 0.85
   }
 }

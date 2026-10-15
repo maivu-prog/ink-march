@@ -2,7 +2,7 @@
   "id": "c6_s1",
   "name": "Fen Paths",
   "chapter": 6,
-  "baseInk": 1710,
+  "baseInk": 3300,
   "starts": [
     {
       "x": 194,
@@ -18,7 +18,7 @@
       "type": "goblin_chief",
       "x": 360,
       "y": 114,
-      "scale": 1.62
+      "scale": 1.85
     }
   ],
   "obstacles": [],
@@ -36,6 +36,48 @@
   ],
   "goldZones": [],
   "terrain": [
+    {
+      "kind": "hill",
+      "points": [
+        [
+          29,
+          150
+        ],
+        [
+          158,
+          150
+        ],
+        [
+          158,
+          307
+        ],
+        [
+          29,
+          307
+        ]
+      ]
+    },
+    {
+      "kind": "hill",
+      "points": [
+        [
+          562,
+          150
+        ],
+        [
+          691,
+          150
+        ],
+        [
+          691,
+          307
+        ],
+        [
+          562,
+          307
+        ]
+      ]
+    },
     {
       "kind": "swamp",
       "points": [
@@ -209,8 +251,8 @@
           224
         ],
         [
-          344,
-          144
+          328,
+          152
         ]
       ],
       "id": "s0",
@@ -235,28 +277,36 @@
         905
       ],
       [
-        216,
-        544
+        112,
+        712
       ],
       [
-        296,
+        168,
+        680
+      ],
+      [
+        224,
+        536
+      ],
+      [
+        312,
         536
       ],
       [
         216,
-        472
+        464
       ],
       [
-        152,
-        336
+        168,
+        360
       ],
       [
         104,
-        288
+        272
       ],
       [
-        296,
-        128
+        304,
+        144
       ]
     ],
     [
@@ -266,19 +316,47 @@
       ],
       [
         552,
-        352
+        360
       ],
       [
         616,
+        272
+      ],
+      [
+        552,
+        360
+      ],
+      [
+        552,
+        680
+      ],
+      [
+        568,
+        688
+      ],
+      [
+        600,
+        688
+      ],
+      [
+        560,
+        688
+      ],
+      [
+        552,
+        680
+      ],
+      [
+        488,
         288
       ],
       [
-        424,
-        128
+        376,
+        176
       ]
     ]
   ],
-  "tutorialHint": "Two squads cross the fen on wooden paths. The healer camp sits in the middle.",
+  "tutorialHint": "Two squads cross the fen. The flank camps hold the hills.",
   "field": {
     "x": 29,
     "y": 40,
@@ -287,7 +365,11 @@
   },
   "design": {
     "winInk": 1364,
-    "threeStarInk": 1928,
-    "threeStarBrush": "atlas"
-  }
+    "threeStarInk": 2799,
+    "threeStarBrush": "quill",
+    "ease": 0.8,
+    "winShare": 0.41,
+    "threeShare": 0.85
+  },
+  "redesign": "1015"
 }

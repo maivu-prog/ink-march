@@ -2,7 +2,7 @@
   "id": "c6_s2",
   "name": "Healers' Hollow",
   "chapter": 6,
-  "baseInk": 1550,
+  "baseInk": 2890,
   "starts": [
     {
       "x": 360,
@@ -14,7 +14,7 @@
       "type": "goblin_chief",
       "x": 360,
       "y": 114,
-      "scale": 0.88
+      "scale": 1.57
     }
   ],
   "obstacles": [
@@ -111,17 +111,6 @@
         }
       ],
       "loot": "coins"
-    },
-    {
-      "x": 378,
-      "y": 344,
-      "units": [
-        {
-          "type": "goblin",
-          "count": 2
-        }
-      ],
-      "loot": "ink"
     }
   ],
   "enemySquads": [
@@ -148,8 +137,8 @@
           232
         ],
         [
-          344,
-          152
+          360,
+          160
         ]
       ],
       "id": "s0",
@@ -178,28 +167,20 @@
         664
       ],
       [
-        168,
-        560
+        144,
+        552
       ],
       [
         240,
-        240
+        744
       ],
       [
-        296,
-        248
+        528,
+        736
       ],
       [
-        336,
-        296
-      ],
-      [
-        512,
-        232
-      ],
-      [
-        568,
-        440
+        592,
+        552
       ],
       [
         592,
@@ -215,7 +196,7 @@
       ]
     ]
   ],
-  "tutorialHint": "A shaman patrol loops the hollow. Meet it head-on or let it reach the boss.",
+  "tutorialHint": "Only two camps, but the shaman patrol never stops. Clear both for every star.",
   "field": {
     "x": 29,
     "y": 40,
@@ -223,8 +204,12 @@
     "h": 920
   },
   "design": {
-    "winInk": 880,
-    "threeStarInk": 2212,
-    "threeStarBrush": "marsh"
-  }
+    "winInk": 1733,
+    "threeStarInk": 2061,
+    "threeStarBrush": "quill",
+    "ease": 0.83,
+    "winShare": 0.6,
+    "threeShare": 0.71
+  },
+  "redesign": "1015"
 }

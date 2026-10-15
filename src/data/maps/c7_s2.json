@@ -2,7 +2,7 @@
   "id": "c7_s2",
   "name": "Iron Switchback",
   "chapter": 7,
-  "baseInk": 2800,
+  "baseInk": 4750,
   "starts": [
     {
       "x": 360,
@@ -14,7 +14,7 @@
       "type": "goblin_chief",
       "x": 360,
       "y": 97,
-      "scale": 1.06
+      "scale": 0.96
     }
   ],
   "obstacles": [
@@ -52,6 +52,56 @@
   ],
   "goldZones": [],
   "terrain": [
+    {
+      "kind": "slope",
+      "points": [
+        [
+          14,
+          702
+        ],
+        [
+          706,
+          702
+        ],
+        [
+          706,
+          894
+        ],
+        [
+          14,
+          894
+        ]
+      ],
+      "up": [
+        0,
+        -1
+      ]
+    },
+    {
+      "kind": "slope",
+      "points": [
+        [
+          14,
+          154
+        ],
+        [
+          706,
+          154
+        ],
+        [
+          706,
+          356
+        ],
+        [
+          14,
+          356
+        ]
+      ],
+      "up": [
+        0,
+        -1
+      ]
+    },
     {
       "kind": "sand",
       "points": [
@@ -145,12 +195,12 @@
           408
         ],
         [
-          248,
-          256
+          256,
+          208
         ],
         [
-          320,
-          136
+          312,
+          152
         ]
       ],
       "id": "s0",
@@ -175,24 +225,24 @@
         922
       ],
       [
-        544,
-        800
+        576,
+        824
       ],
       [
-        480,
-        632
+        472,
+        624
       ],
       [
         232,
         416
       ],
       [
-        160,
-        272
+        136,
+        264
       ],
       [
         128,
-        456
+        472
       ],
       [
         488,
@@ -203,8 +253,8 @@
         704
       ],
       [
-        248,
-        768
+        432,
+        720
       ],
       [
         120,
@@ -232,7 +282,7 @@
       ]
     ]
   ],
-  "tutorialHint": "Enemy archers hold the sandy corridor between the walls.",
+  "tutorialHint": "Switchbacks: climb, cross the archers' corridor, climb again.",
   "field": {
     "x": 14,
     "y": 20,
@@ -240,8 +290,12 @@
     "h": 960
   },
   "design": {
-    "winInk": 1144,
-    "threeStarInk": 3664,
-    "threeStarBrush": "reed"
-  }
+    "winInk": 1388,
+    "threeStarInk": 4032,
+    "threeStarBrush": "quill",
+    "ease": 0.85,
+    "winShare": 0.29,
+    "threeShare": 0.85
+  },
+  "redesign": "1015"
 }

@@ -2,7 +2,7 @@
   "id": "c8_s2",
   "name": "Ferry Point",
   "chapter": 8,
-  "baseInk": 1950,
+  "baseInk": 3010,
   "starts": [
     {
       "x": 180,
@@ -18,13 +18,13 @@
       "type": "shadow_mage",
       "x": 180,
       "y": 80,
-      "scale": 1.55
+      "scale": 1.49
     },
     {
       "type": "shadow_mage",
       "x": 540,
       "y": 80,
-      "scale": 1.55
+      "scale": 1.49
     }
   ],
   "obstacles": [
@@ -59,7 +59,28 @@
       "y": 800
     }
   ],
-  "goldZones": [],
+  "goldZones": [
+    {
+      "points": [
+        [
+          325,
+          560
+        ],
+        [
+          395,
+          560
+        ],
+        [
+          395,
+          650
+        ],
+        [
+          325,
+          650
+        ]
+      ]
+    }
+  ],
   "terrain": [
     {
       "kind": "sand",
@@ -171,8 +192,8 @@
           470
         ],
         [
-          168,
-          120
+          160,
+          136
         ]
       ],
       "id": "s0",
@@ -198,8 +219,8 @@
           470
         ],
         [
-          552,
-          120
+          560,
+          136
         ]
       ],
       "id": "s1",
@@ -224,19 +245,19 @@
         940
       ],
       [
-        296,
+        312,
         896
       ],
       [
-        112,
-        808
-      ],
-      [
         96,
-        536
+        520
       ],
       [
-        168,
+        232,
+        272
+      ],
+      [
+        192,
         144
       ]
     ],
@@ -247,7 +268,7 @@
       ],
       [
         624,
-        536
+        520
       ],
       [
         552,
@@ -255,7 +276,7 @@
       ]
     ]
   ],
-  "tutorialHint": "Two squads, two mages, one river between them.",
+  "tutorialHint": "Two squads, one river. A golden crossing joins the banks.",
   "field": {
     "x": 0,
     "y": 0,
@@ -263,8 +284,12 @@
     "h": 1000
   },
   "design": {
-    "winInk": 1833,
-    "threeStarInk": 2030,
-    "threeStarBrush": "golden"
-  }
+    "winInk": 1802,
+    "threeStarInk": 2033,
+    "threeStarBrush": "quill",
+    "ease": 0.87,
+    "winShare": 0.6,
+    "threeShare": 0.68
+  },
+  "redesign": "1015"
 }

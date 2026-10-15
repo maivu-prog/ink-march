@@ -2,7 +2,7 @@
   "id": "c9_s4",
   "name": "Witch Hunt",
   "chapter": 9,
-  "baseInk": 1830,
+  "baseInk": 2400,
   "starts": [
     {
       "x": 180,
@@ -18,7 +18,7 @@
       "type": "shadow_mage",
       "x": 360,
       "y": 80,
-      "scale": 3.87
+      "scale": 3.79
     }
   ],
   "obstacles": [
@@ -62,7 +62,50 @@
     }
   ],
   "goldZones": [],
-  "terrain": [],
+  "terrain": [
+    {
+      "kind": "hill",
+      "points": [
+        [
+          20,
+          410
+        ],
+        [
+          170,
+          410
+        ],
+        [
+          170,
+          590
+        ],
+        [
+          20,
+          590
+        ]
+      ]
+    },
+    {
+      "kind": "hill",
+      "points": [
+        [
+          550,
+          410
+        ],
+        [
+          700,
+          410
+        ],
+        [
+          700,
+          590
+        ],
+        [
+          550,
+          590
+        ]
+      ]
+    }
+  ],
   "camps": [
     {
       "x": 90,
@@ -131,11 +174,11 @@
         ],
         [
           168,
-          272
+          280
         ],
         [
-          320,
-          120
+          312,
+          136
         ]
       ],
       "id": "s0",
@@ -162,11 +205,11 @@
         ],
         [
           552,
-          272
+          280
         ],
         [
-          400,
-          120
+          408,
+          136
         ]
       ],
       "id": "s1",
@@ -191,8 +234,8 @@
         940
       ],
       [
-        120,
-        560
+        96,
+        552
       ],
       [
         344,
@@ -200,7 +243,7 @@
       ],
       [
         344,
-        312
+        296
       ],
       [
         344,
@@ -213,12 +256,12 @@
         940
       ],
       [
-        600,
-        560
+        624,
+        552
       ],
       [
-        576,
-        320
+        568,
+        312
       ],
       [
         392,
@@ -226,7 +269,7 @@
       ]
     ]
   ],
-  "tutorialHint": "Two squads hunt one mage. Healer camps guard both flanks.",
+  "tutorialHint": "Two squads hunt one mage. Healer camps hold the flank hills.",
   "field": {
     "x": 0,
     "y": 0,
@@ -234,8 +277,12 @@
     "h": 1000
   },
   "design": {
-    "winInk": 1721,
-    "threeStarInk": 1799,
-    "threeStarBrush": "golden"
-  }
+    "winInk": 1678,
+    "threeStarInk": 1926,
+    "threeStarBrush": "golden",
+    "ease": 0.95,
+    "winShare": 0.7,
+    "threeShare": 0.8
+  },
+  "redesign": "1015"
 }

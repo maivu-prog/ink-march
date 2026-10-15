@@ -2,7 +2,7 @@
   "id": "c5_s4",
   "name": "Warlord's Keep",
   "chapter": 5,
-  "baseInk": 1380,
+  "baseInk": 2150,
   "starts": [
     {
       "x": 360,
@@ -14,7 +14,7 @@
       "type": "goblin_king",
       "x": 360,
       "y": 130,
-      "scale": 0.7
+      "scale": 1.34
     }
   ],
   "obstacles": [
@@ -82,6 +82,31 @@
   ],
   "goldZones": [],
   "terrain": [
+    {
+      "kind": "slope",
+      "points": [
+        [
+          43,
+          324
+        ],
+        [
+          677,
+          324
+        ],
+        [
+          677,
+          465
+        ],
+        [
+          43,
+          465
+        ]
+      ],
+      "up": [
+        0,
+        -1
+      ]
+    },
     {
       "kind": "sand",
       "points": [
@@ -175,8 +200,8 @@
           344
         ],
         [
-          344,
-          352
+          328,
+          344
         ]
       ],
       "id": "s0",
@@ -202,8 +227,8 @@
           344
         ],
         [
-          376,
-          352
+          392,
+          344
         ]
       ],
       "id": "s1",
@@ -229,31 +254,47 @@
       ],
       [
         360,
-        656
+        640
       ],
       [
-        120,
-        344
+        592,
+        680
       ],
       [
-        560,
-        336
-      ],
-      [
-        568,
+        600,
         328
       ],
       [
-        552,
-        80
+        176,
+        344
       ],
       [
-        416,
-        96
+        152,
+        320
+      ],
+      [
+        144,
+        312
+      ],
+      [
+        200,
+        344
+      ],
+      [
+        328,
+        336
+      ],
+      [
+        344,
+        256
+      ],
+      [
+        344,
+        192
       ]
     ]
   ],
-  "tutorialHint": "The keep has one gate. Its key is out on the eastern sands.",
+  "tutorialHint": "The keep sits on high ground. Every climb costs ink.",
   "field": {
     "x": 43,
     "y": 60,
@@ -261,8 +302,12 @@
     "h": 880
   },
   "design": {
-    "winInk": 1059,
-    "threeStarInk": 1461,
-    "threeStarBrush": "charcoal"
-  }
+    "winInk": 1143,
+    "threeStarInk": 1886,
+    "threeStarBrush": "quill",
+    "ease": 0.9,
+    "winShare": 0.53,
+    "threeShare": 0.88
+  },
+  "redesign": "1015"
 }

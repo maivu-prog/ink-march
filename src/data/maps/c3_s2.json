@@ -2,7 +2,7 @@
   "id": "c3_s2",
   "name": "Reed Maze",
   "chapter": 3,
-  "baseInk": 3120,
+  "baseInk": 2300,
   "starts": [
     {
       "x": 360,
@@ -14,7 +14,7 @@
       "type": "goblin_chief",
       "x": 360,
       "y": 164,
-      "scale": 0.92
+      "scale": 0.77
     }
   ],
   "obstacles": [
@@ -136,6 +136,17 @@
         }
       ],
       "loot": "coins"
+    },
+    {
+      "x": 360,
+      "y": 756,
+      "units": [
+        {
+          "type": "goblin",
+          "count": 3
+        }
+      ],
+      "loot": "atk_up"
     }
   ],
   "enemySquads": [
@@ -162,12 +173,12 @@
           440
         ],
         [
-          288,
-          240
+          280,
+          256
         ],
         [
-          328,
-          200
+          320,
+          216
         ]
       ],
       "id": "s0",
@@ -200,40 +211,24 @@
         576
       ],
       [
-        232,
-        440
+        216,
+        536
       ],
       [
-        248,
-        384
+        504,
+        536
       ],
       [
-        488,
-        320
+        472,
+        648
       ],
       [
-        232,
-        400
-      ],
-      [
-        200,
-        456
-      ],
-      [
-        488,
-        496
-      ],
-      [
-        480,
-        640
-      ],
-      [
-        192,
+        392,
         720
       ],
       [
         488,
-        632
+        624
       ],
       [
         472,
@@ -253,7 +248,7 @@
       ]
     ]
   ],
-  "tutorialHint": "The shaman's band loops through the maze and will steal what it passes.",
+  "tutorialHint": "Four camps in the maze. Any three earn every star.",
   "field": {
     "x": 72,
     "y": 100,
@@ -262,7 +257,14 @@
   },
   "design": {
     "winInk": 873,
-    "threeStarInk": 3054,
-    "threeStarBrush": "quill"
-  }
+    "threeStarInk": 1953,
+    "threeStarBrush": "quill",
+    "ease": 0.75,
+    "winShare": 0.38,
+    "threeShare": 0.85
+  },
+  "redesign": "1015",
+  "teach": [
+    "choice"
+  ]
 }

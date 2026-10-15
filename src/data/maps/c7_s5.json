@@ -2,7 +2,7 @@
   "id": "c7_s5",
   "name": "Iron Warlord",
   "chapter": 7,
-  "baseInk": 1320,
+  "baseInk": 2220,
   "starts": [
     {
       "x": 360,
@@ -14,7 +14,7 @@
       "type": "goblin_king",
       "x": 360,
       "y": 97,
-      "scale": 0.58
+      "scale": 0.66
     }
   ],
   "obstacles": [
@@ -31,6 +31,22 @@
       "y": 308,
       "w": 58,
       "h": 384
+    },
+    {
+      "type": "rect",
+      "x": 14,
+      "y": 462,
+      "w": 240,
+      "h": 48,
+      "kind": "chasm"
+    },
+    {
+      "type": "rect",
+      "x": 466,
+      "y": 462,
+      "w": 240,
+      "h": 48,
+      "kind": "chasm"
     }
   ],
   "items": [
@@ -53,6 +69,48 @@
   "goldZones": [],
   "terrain": [
     {
+      "kind": "road",
+      "points": [
+        [
+          331,
+          116
+        ],
+        [
+          389,
+          116
+        ],
+        [
+          389,
+          308
+        ],
+        [
+          331,
+          308
+        ]
+      ]
+    },
+    {
+      "kind": "road",
+      "points": [
+        [
+          331,
+          692
+        ],
+        [
+          389,
+          692
+        ],
+        [
+          389,
+          884
+        ],
+        [
+          331,
+          884
+        ]
+      ]
+    },
+    {
       "kind": "sand",
       "points": [
         [
@@ -69,27 +127,6 @@
         ],
         [
           14,
-          884
-        ]
-      ]
-    },
-    {
-      "kind": "road",
-      "points": [
-        [
-          331,
-          116
-        ],
-        [
-          389,
-          116
-        ],
-        [
-          389,
-          884
-        ],
-        [
-          331,
           884
         ]
       ]
@@ -144,6 +181,21 @@
         }
       ],
       "loot": "hp_up"
+    },
+    {
+      "x": 360,
+      "y": 807,
+      "units": [
+        {
+          "type": "orc",
+          "count": 1
+        },
+        {
+          "type": "goblin",
+          "count": 2
+        }
+      ],
+      "loot": "shield"
     }
   ],
   "enemySquads": [
@@ -166,8 +218,8 @@
           260
         ],
         [
-          320,
-          144
+          304,
+          152
         ]
       ],
       "id": "s0",
@@ -189,12 +241,12 @@
           711
         ],
         [
-          440,
-          200
+          400,
+          704
         ],
         [
           392,
-          152
+          168
         ]
       ],
       "id": "s1",
@@ -219,32 +271,36 @@
         922
       ],
       [
-        544,
+        552,
         760
       ],
       [
-        584,
-        320
+        560,
+        752
       ],
       [
-        368,
-        288
+        408,
+        792
       ],
       [
-        176,
+        384,
+        768
+      ],
+      [
+        400,
+        296
+      ],
+      [
+        560,
         272
       ],
       [
-        120,
-        440
-      ],
-      [
-        344,
-        160
+        416,
+        128
       ]
     ]
   ],
-  "tutorialHint": "A royal road runs straight to the warlord. Everything else is sand.",
+  "tutorialHint": "The royal road stops at the walls. Between them is only sand, and ravines cut the flanks. Four camps: any three earn every star.",
   "field": {
     "x": 14,
     "y": 20,
@@ -252,8 +308,12 @@
     "h": 960
   },
   "design": {
-    "winInk": 1195,
-    "threeStarInk": 2581,
-    "threeStarBrush": "reed"
-  }
+    "winInk": 888,
+    "threeStarInk": 1952,
+    "threeStarBrush": "quill",
+    "ease": 0.94,
+    "winShare": 0.4,
+    "threeShare": 0.88
+  },
+  "redesign": "1015"
 }

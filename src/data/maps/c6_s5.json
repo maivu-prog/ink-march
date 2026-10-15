@@ -2,7 +2,7 @@
   "id": "c6_s5",
   "name": "Highland Fens",
   "chapter": 6,
-  "baseInk": 1760,
+  "baseInk": 1480,
   "starts": [
     {
       "x": 360,
@@ -14,7 +14,7 @@
       "type": "goblin_chief",
       "x": 360,
       "y": 114,
-      "scale": 0.65
+      "scale": 0.64
     }
   ],
   "obstacles": [],
@@ -206,10 +206,6 @@
         344
       ],
       [
-        600,
-        656
-      ],
-      [
         376,
         176
       ]
@@ -224,8 +220,11 @@
     "h": 920
   },
   "design": {
-    "winInk": 1141,
-    "threeStarInk": 2355,
-    "threeStarBrush": "marsh"
+    "winInk": 1030,
+    "threeStarInk": 1225,
+    "threeStarBrush": "marsh",
+    "ease": 0.89,
+    "winShare": 0.7,
+    "threeShare": 0.83
   }
 }

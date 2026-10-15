@@ -2,7 +2,7 @@
   "id": "c4_s4",
   "name": "Twin Fortress",
   "chapter": 4,
-  "baseInk": 1540,
+  "baseInk": 1890,
   "starts": [
     {
       "x": 207,
@@ -18,13 +18,13 @@
       "type": "goblin_king",
       "x": 207,
       "y": 143,
-      "scale": 0.57
+      "scale": 0.56
     },
     {
       "type": "goblin_king",
       "x": 513,
       "y": 143,
-      "scale": 0.57
+      "scale": 0.56
     }
   ],
   "obstacles": [
@@ -191,12 +191,12 @@
         874
       ],
       [
-        296,
+        312,
         856
       ],
       [
         128,
-        664
+        648
       ],
       [
         88,
@@ -218,7 +218,7 @@
       ],
       [
         592,
-        664
+        648
       ],
       [
         472,
@@ -251,7 +251,10 @@
   },
   "design": {
     "winInk": 1375,
-    "threeStarInk": 1636,
-    "threeStarBrush": "charcoal"
+    "threeStarInk": 1662,
+    "threeStarBrush": "quill",
+    "ease": 0.88,
+    "winShare": 0.73,
+    "threeShare": 0.88
   }
 }

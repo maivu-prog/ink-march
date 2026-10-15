@@ -13,7 +13,9 @@ class Batch{
 /** Chunky terrain pieces follow the exact playable polygon and share its height profile. */
 export function addTerrainSolid(parent:T.Group,t:Region,map?:MapData){
  const p=palette[t.kind];if(!p)return;
- const cuts:TerrainCut[]=(map?.obstacles||[]).filter((o:any)=>o.type==='rect'&&['chasm','water'].includes(o.kind)).map((o:any)=>({x:o.x,y:o.y,w:o.w,h:o.h}));
+ const cuts:TerrainCut[]=(map?.obstacles||[]).filter((o:any)=>o.type==='rect'&&['chasm','water'].includes(o.kind)).map((o:any)=>({x:o.x,y:o.y,w:o.w,h:o.h}))
+ // Đường lát nằm trên cát/đầm thì logic tính theo đường: khoét cát/đầm chỗ đó để đường lộ ra
+ if(['sand','swamp'].includes(t.kind))for(const r of (map?.terrain||[]).filter(r=>r.kind==='road')){const q=regionBounds(r.points);cuts.push({x:q.x,y:q.z,w:q.w,h:q.d});};
  const group=new T.Group();group.name='Terrain '+t.kind;group.userData.terrainKind=t.kind;parent.add(group);
  const top=new Batch(),sides=new Batch(),rim=new Batch(),detail=new Batch(),b=regionBounds(t.points),edges=terrainEdges(t,cuts);
  const at=(a:TerrainPoint,offset=0):V=>[a.x,terrainHeight(t,a)+offset,a.y];

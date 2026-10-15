@@ -2,7 +2,7 @@
   "id": "c9_s3",
   "name": "Cursed Crossroads",
   "chapter": 9,
-  "baseInk": 1190,
+  "baseInk": 3470,
   "starts": [
     {
       "x": 360,
@@ -14,7 +14,7 @@
       "type": "shadow_mage",
       "x": 360,
       "y": 80,
-      "scale": 1.58
+      "scale": 2.48
     }
   ],
   "obstacles": [
@@ -35,6 +35,11 @@
       "type": "hp_up",
       "x": 360,
       "y": 200
+    },
+    {
+      "type": "skull",
+      "x": 250,
+      "y": 500
     }
   ],
   "goldZones": [],
@@ -211,6 +216,21 @@
         }
       ],
       "loot": "coins"
+    },
+    {
+      "x": 560,
+      "y": 760,
+      "units": [
+        {
+          "type": "orc",
+          "count": 1
+        },
+        {
+          "type": "goblin",
+          "count": 2
+        }
+      ],
+      "loot": "atk_up"
     }
   ],
   "enemySquads": [
@@ -242,7 +262,7 @@
         ],
         [
           336,
-          120
+          136
         ]
       ],
       "id": "s0",
@@ -269,7 +289,7 @@
         ],
         [
           384,
-          120
+          136
         ]
       ],
       "id": "s1",
@@ -294,32 +314,44 @@
         940
       ],
       [
-        336,
-        736
+        384,
+        600
       ],
       [
-        256,
-        728
+        512,
+        440
       ],
       [
-        200,
-        352
+        512,
+        336
       ],
       [
-        464,
+        272,
         312
       ],
       [
-        368,
-        232
+        240,
+        312
       ],
       [
-        368,
+        440,
+        456
+      ],
+      [
+        544,
+        712
+      ],
+      [
+        384,
+        352
+      ],
+      [
+        376,
         144
       ]
     ]
   ],
-  "tutorialHint": "A cursed stone blocks the crossroads. Every way around costs something.",
+  "tutorialHint": "Four camps around the cursed stone. Any three earn every star. Mind the trap.",
   "field": {
     "x": 0,
     "y": 0,
@@ -327,8 +359,12 @@
     "h": 1000
   },
   "design": {
-    "winInk": 1116,
-    "threeStarInk": 1706,
-    "threeStarBrush": "marsh"
-  }
+    "winInk": 2251,
+    "threeStarInk": 2736,
+    "threeStarBrush": "quill",
+    "ease": 0.92,
+    "winShare": 0.65,
+    "threeShare": 0.79
+  },
+  "redesign": "1015"
 }

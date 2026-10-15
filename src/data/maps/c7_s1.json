@@ -2,7 +2,7 @@
   "id": "c7_s1",
   "name": "Orc Outpost",
   "chapter": 7,
-  "baseInk": 1930,
+  "baseInk": 1970,
   "starts": [
     {
       "x": 360,
@@ -14,7 +14,7 @@
       "type": "goblin_chief",
       "x": 360,
       "y": 97,
-      "scale": 0.79
+      "scale": 0.78
     }
   ],
   "obstacles": [
@@ -23,6 +23,14 @@
       "x": 302,
       "y": 519,
       "r": 144
+    },
+    {
+      "type": "rect",
+      "x": 168,
+      "y": 673,
+      "w": 250,
+      "h": 48,
+      "kind": "chasm"
     }
   ],
   "items": [
@@ -44,6 +52,31 @@
   ],
   "goldZones": [],
   "terrain": [
+    {
+      "kind": "slope",
+      "points": [
+        [
+          168,
+          154
+        ],
+        [
+          552,
+          154
+        ],
+        [
+          552,
+          366
+        ],
+        [
+          168,
+          366
+        ]
+      ],
+      "up": [
+        0,
+        -1
+      ]
+    },
     {
       "kind": "road",
       "points": [
@@ -155,11 +188,11 @@
         ],
         [
           552,
-          248
+          152
         ],
         [
-          440,
-          136
+          456,
+          144
         ]
       ],
       "id": "s0",
@@ -184,60 +217,24 @@
         922
       ],
       [
-        464,
-        832
+        472,
+        816
       ],
       [
         552,
-        720
+        712
       ],
       [
-        584,
-        320
+        600,
+        312
       ],
       [
         224,
         376
       ],
       [
-        136,
-        472
-      ],
-      [
-        168,
-        624
-      ],
-      [
-        168,
-        784
-      ],
-      [
-        152,
-        792
-      ],
-      [
-        128,
-        792
-      ],
-      [
-        160,
-        792
-      ],
-      [
-        168,
-        784
-      ],
-      [
-        168,
-        600
-      ],
-      [
-        144,
-        512
-      ],
-      [
-        240,
-        264
+        120,
+        480
       ],
       [
         344,
@@ -245,7 +242,7 @@
       ]
     ]
   ],
-  "tutorialHint": "Orcs march up the eastern road. Meet them with Attack, or slip through the western sands.",
+  "tutorialHint": "A ravine splits the west. The last climb to the outpost is steep.",
   "field": {
     "x": 14,
     "y": 20,
@@ -254,7 +251,11 @@
   },
   "design": {
     "winInk": 814,
-    "threeStarInk": 2355,
-    "threeStarBrush": "golden"
-  }
+    "threeStarInk": 1674,
+    "threeStarBrush": "quill",
+    "ease": 0.82,
+    "winShare": 0.41,
+    "threeShare": 0.85
+  },
+  "redesign": "1015"
 }

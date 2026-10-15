@@ -2,7 +2,7 @@
   "id": "c1_s5",
   "name": "The Ravine",
   "chapter": 1,
-  "baseInk": 820,
+  "baseInk": 940,
   "starts": [
     {
       "x": 360,
@@ -14,7 +14,7 @@
       "type": "goblin_chief",
       "x": 360,
       "y": 206,
-      "scale": 0.47
+      "scale": 0.44
     }
   ],
   "obstacles": [
@@ -160,6 +160,9 @@
   "design": {
     "winInk": 560,
     "threeStarInk": 795,
-    "threeStarBrush": "quill"
+    "threeStarBrush": "quill",
+    "ease": 0.65,
+    "winShare": 0.6,
+    "threeShare": 0.85
   }
 }

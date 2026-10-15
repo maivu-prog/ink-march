@@ -2,7 +2,7 @@
   "id": "c9_s5",
   "name": "Heart of Shadow",
   "chapter": 9,
-  "baseInk": 2660,
+  "baseInk": 3560,
   "starts": [
     {
       "x": 180,
@@ -18,13 +18,13 @@
       "type": "goblin_king",
       "x": 180,
       "y": 80,
-      "scale": 0.67
+      "scale": 0.87
     },
     {
       "type": "shadow_mage",
       "x": 540,
       "y": 80,
-      "scale": 0.67
+      "scale": 0.87
     }
   ],
   "obstacles": [
@@ -60,6 +60,56 @@
   ],
   "goldZones": [],
   "terrain": [
+    {
+      "kind": "slope",
+      "points": [
+        [
+          0,
+          700
+        ],
+        [
+          330,
+          700
+        ],
+        [
+          330,
+          820
+        ],
+        [
+          0,
+          820
+        ]
+      ],
+      "up": [
+        0,
+        -1
+      ]
+    },
+    {
+      "kind": "slope",
+      "points": [
+        [
+          390,
+          700
+        ],
+        [
+          720,
+          700
+        ],
+        [
+          720,
+          820
+        ],
+        [
+          390,
+          820
+        ]
+      ],
+      "up": [
+        0,
+        -1
+      ]
+    },
     {
       "kind": "sand",
       "points": [
@@ -174,8 +224,8 @@
           420
         ],
         [
-          168,
-          120
+          160,
+          136
         ]
       ],
       "id": "s0",
@@ -201,8 +251,8 @@
           420
         ],
         [
-          552,
-          120
+          560,
+          136
         ]
       ],
       "id": "s1",
@@ -227,20 +277,20 @@
         940
       ],
       [
-        296,
+        312,
         880
       ],
       [
-        128,
-        776
+        120,
+        784
       ],
       [
-        128,
-        480
+        104,
+        472
       ],
       [
-        168,
-        144
+        152,
+        136
       ]
     ],
     [
@@ -249,16 +299,16 @@
         940
       ],
       [
-        592,
-        480
+        616,
+        472
       ],
       [
-        552,
-        144
+        568,
+        136
       ]
     ]
   ],
-  "tutorialHint": "A goblin king and the Shadow Mage. Two fronts, one ink pot.",
+  "tutorialHint": "A king and the Shadow Mage. Both fronts start with a climb.",
   "field": {
     "x": 0,
     "y": 0,
@@ -266,8 +316,12 @@
     "h": 1000
   },
   "design": {
-    "winInk": 2503,
-    "threeStarInk": 2672,
-    "threeStarBrush": "marsh"
-  }
+    "winInk": 2670,
+    "threeStarInk": 2881,
+    "threeStarBrush": "quill",
+    "ease": 0.98,
+    "winShare": 0.75,
+    "threeShare": 0.81
+  },
+  "redesign": "1015"
 }

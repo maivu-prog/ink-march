@@ -2,7 +2,7 @@
   "id": "c8_s1",
   "name": "River Run",
   "chapter": 8,
-  "baseInk": 3280,
+  "baseInk": 2420,
   "starts": [
     {
       "x": 360,
@@ -14,7 +14,7 @@
       "type": "shadow_mage",
       "x": 360,
       "y": 80,
-      "scale": 1.81
+      "scale": 1.54
     }
   ],
   "obstacles": [
@@ -39,7 +39,28 @@
       "y": 300
     }
   ],
-  "goldZones": [],
+  "goldZones": [
+    {
+      "points": [
+        [
+          150,
+          495
+        ],
+        [
+          260,
+          495
+        ],
+        [
+          260,
+          595
+        ],
+        [
+          150,
+          595
+        ]
+      ]
+    }
+  ],
   "terrain": [
     {
       "kind": "sand",
@@ -80,21 +101,6 @@
       "loot": "ink"
     },
     {
-      "x": 360,
-      "y": 760,
-      "units": [
-        {
-          "type": "orc",
-          "count": 1
-        },
-        {
-          "type": "goblin",
-          "count": 2
-        }
-      ],
-      "loot": "hp_up"
-    },
-    {
       "x": 620,
       "y": 250,
       "units": [
@@ -107,7 +113,7 @@
           "count": 2
         }
       ],
-      "loot": "shield"
+      "loot": "hp_up"
     }
   ],
   "enemySquads": [
@@ -126,8 +132,8 @@
           300
         ],
         [
-          320,
-          120
+          304,
+          128
         ]
       ],
       "id": "s0",
@@ -160,44 +166,24 @@
         488
       ],
       [
-        160,
+        144,
         328
       ],
       [
-        560,
-        280
-      ],
-      [
-        656,
-        520
-      ],
-      [
-        648,
-        600
-      ],
-      [
-        424,
-        744
-      ],
-      [
-        128,
-        744
-      ],
-      [
-        656,
-        592
-      ],
-      [
-        640,
-        392
+        568,
+        256
       ],
       [
         392,
-        136
+        296
+      ],
+      [
+        376,
+        144
       ]
     ]
   ],
-  "tutorialHint": "The river only has a ford on the far east, behind the sand.",
+  "tutorialHint": "Two camps. Golden ink can bridge the river in the west; otherwise take the far ford.",
   "field": {
     "x": 0,
     "y": 0,
@@ -205,8 +191,12 @@
     "h": 1000
   },
   "design": {
-    "winInk": 1698,
-    "threeStarInk": 4014,
-    "threeStarBrush": "golden"
-  }
+    "winInk": 1327,
+    "threeStarInk": 2043,
+    "threeStarBrush": "quill",
+    "ease": 0.84,
+    "winShare": 0.55,
+    "threeShare": 0.84
+  },
+  "redesign": "1015"
 }

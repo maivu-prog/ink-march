@@ -2,7 +2,7 @@
   "id": "c8_s4",
   "name": "Marsh Ferry",
   "chapter": 8,
-  "baseInk": 2210,
+  "baseInk": 2480,
   "starts": [
     {
       "x": 360,
@@ -14,7 +14,7 @@
       "type": "shadow_mage",
       "x": 360,
       "y": 80,
-      "scale": 1.87
+      "scale": 1.62
     }
   ],
   "obstacles": [
@@ -47,12 +47,53 @@
       "y": 800
     },
     {
-      "type": "reinforce",
+      "type": "range_up",
       "x": 360,
       "y": 300
     }
   ],
-  "goldZones": [],
+  "goldZones": [
+    {
+      "points": [
+        [
+          80,
+          545
+        ],
+        [
+          200,
+          545
+        ],
+        [
+          200,
+          635
+        ],
+        [
+          80,
+          635
+        ]
+      ]
+    },
+    {
+      "points": [
+        [
+          520,
+          545
+        ],
+        [
+          640,
+          545
+        ],
+        [
+          640,
+          635
+        ],
+        [
+          520,
+          635
+        ]
+      ]
+    }
+  ],
   "terrain": [
     {
       "kind": "swamp",
@@ -143,8 +184,8 @@
           350
         ],
         [
-          344,
-          112
+          328,
+          120
         ]
       ],
       "id": "s0",
@@ -170,55 +211,59 @@
       ],
       [
         360,
-        864
+        848
       ],
       [
-        432,
+        288,
         536
       ],
       [
-        512,
+        200,
         488
       ],
       [
-        592,
-        408
-      ],
-      [
-        488,
-        504
+        112,
+        400
       ],
       [
         224,
         504
       ],
       [
-        128,
-        408
+        504,
+        504
       ],
       [
-        296,
+        608,
+        400
+      ],
+      [
+        496,
+        504
+      ],
+      [
+        424,
         552
       ],
       [
-        288,
+        432,
         640
       ],
       [
-        160,
+        560,
         768
       ],
       [
-        296,
+        424,
         624
       ],
       [
-        344,
+        376,
         144
       ]
     ]
   ],
-  "tutorialHint": "The ferry gap is narrow. Shamans heal their friends on the far bank.",
+  "tutorialHint": "The ferry gap is narrow. Golden ink opens two more crossings.",
   "field": {
     "x": 0,
     "y": 0,
@@ -227,7 +272,11 @@
   },
   "design": {
     "winInk": 1151,
-    "threeStarInk": 3339,
-    "threeStarBrush": "marsh"
-  }
+    "threeStarInk": 3459,
+    "threeStarBrush": "marsh",
+    "ease": 0.93,
+    "winShare": 0.46,
+    "threeShare": 1.39
+  },
+  "redesign": "1015"
 }

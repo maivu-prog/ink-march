@@ -2,7 +2,7 @@
   "id": "c8_s3",
   "name": "The Golden Bridge",
   "chapter": 8,
-  "baseInk": 1530,
+  "baseInk": 3460,
   "starts": [
     {
       "x": 360,
@@ -14,7 +14,7 @@
       "type": "shadow_mage",
       "x": 360,
       "y": 80,
-      "scale": 1.4
+      "scale": 1.57
     }
   ],
   "obstacles": [
@@ -186,32 +186,36 @@
         940
       ],
       [
-        160,
-        792
+        656,
+        536
       ],
       [
-        336,
-        712
+        640,
+        296
       ],
       [
         656,
         552
       ],
       [
-        640,
-        312
+        152,
+        752
       ],
       [
-        160,
-        280
+        656,
+        552
       ],
       [
-        336,
-        312
+        648,
+        440
       ],
       [
-        344,
-        144
+        152,
+        256
+      ],
+      [
+        304,
+        112
       ]
     ]
   ],
@@ -223,8 +227,11 @@
     "h": 1000
   },
   "design": {
-    "winInk": 1006,
-    "threeStarInk": 1869,
-    "threeStarBrush": "golden"
+    "winInk": 1398,
+    "threeStarInk": 2933,
+    "threeStarBrush": "quill",
+    "ease": 0.9,
+    "winShare": 0.4,
+    "threeShare": 0.85
   }
 }

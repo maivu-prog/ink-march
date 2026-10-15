@@ -2,7 +2,7 @@
   "id": "c2_s1",
   "name": "Dune Sea",
   "chapter": 2,
-  "baseInk": 1100,
+  "baseInk": 1300,
   "starts": [
     {
       "x": 360,
@@ -14,7 +14,7 @@
       "type": "goblin_chief",
       "x": 360,
       "y": 185,
-      "scale": 0.71
+      "scale": 0.59
     }
   ],
   "obstacles": [],
@@ -156,20 +156,20 @@
         830
       ],
       [
-        488,
+        504,
         720
       ],
       [
-        256,
+        272,
         624
       ],
       [
         208,
-        576
+        560
       ],
       [
-        320,
-        328
+        328,
+        312
       ],
       [
         344,
@@ -185,8 +185,11 @@
     "h": 750
   },
   "design": {
-    "winInk": 631,
-    "threeStarInk": 1076,
-    "threeStarBrush": "quill"
+    "winInk": 635,
+    "threeStarInk": 1103,
+    "threeStarBrush": "quill",
+    "ease": 0.66,
+    "winShare": 0.49,
+    "threeShare": 0.85
   }
 }

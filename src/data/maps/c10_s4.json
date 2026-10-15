@@ -2,7 +2,7 @@
   "id": "c10_s4",
   "name": "Last Stand",
   "chapter": 10,
-  "baseInk": 1770,
+  "baseInk": 2330,
   "starts": [
     {
       "x": 180,
@@ -18,7 +18,7 @@
       "type": "shadow_mage",
       "x": 360,
       "y": 80,
-      "scale": 3.87
+      "scale": 3.79
     }
   ],
   "obstacles": [
@@ -28,6 +28,22 @@
       "y": 300,
       "w": 60,
       "h": 500
+    },
+    {
+      "type": "rect",
+      "x": 150,
+      "y": 180,
+      "w": 120,
+      "h": 40,
+      "kind": "chasm"
+    },
+    {
+      "type": "rect",
+      "x": 450,
+      "y": 180,
+      "w": 120,
+      "h": 40,
+      "kind": "chasm"
     }
   ],
   "items": [
@@ -54,6 +70,27 @@
   ],
   "goldZones": [],
   "terrain": [
+    {
+      "kind": "hill",
+      "points": [
+        [
+          270,
+          820
+        ],
+        [
+          450,
+          820
+        ],
+        [
+          450,
+          940
+        ],
+        [
+          270,
+          940
+        ]
+      ]
+    },
     {
       "kind": "sand",
       "points": [
@@ -210,8 +247,12 @@
           250
         ],
         [
-          320,
-          120
+          280,
+          224
+        ],
+        [
+          312,
+          136
         ]
       ],
       "id": "s0",
@@ -237,8 +278,12 @@
           250
         ],
         [
-          400,
-          120
+          440,
+          224
+        ],
+        [
+          408,
+          136
         ]
       ],
       "id": "s1",
@@ -263,7 +308,7 @@
         940
       ],
       [
-        296,
+        312,
         920
       ],
       [
@@ -275,12 +320,16 @@
         296
       ],
       [
-        136,
+        152,
         272
       ],
       [
-        304,
-        112
+        280,
+        224
+      ],
+      [
+        344,
+        144
       ]
     ],
     [
@@ -294,31 +343,23 @@
       ],
       [
         632,
-        608
-      ],
-      [
-        552,
-        608
-      ],
-      [
-        632,
-        552
-      ],
-      [
-        632,
         296
       ],
       [
-        584,
+        568,
         272
       ],
       [
-        416,
-        112
+        440,
+        224
+      ],
+      [
+        376,
+        144
       ]
     ]
   ],
-  "tutorialHint": "Roads hug the walls. Sand and swamp fill everything between.",
+  "tutorialHint": "Roads hug the walls. Ravines guard the mage's door.",
   "field": {
     "x": 0,
     "y": 0,
@@ -326,8 +367,12 @@
     "h": 1000
   },
   "design": {
-    "winInk": 1606,
-    "threeStarInk": 2159,
-    "threeStarBrush": "golden"
-  }
+    "winInk": 1629,
+    "threeStarInk": 1907,
+    "threeStarBrush": "atlas",
+    "ease": 0.95,
+    "winShare": 0.7,
+    "threeShare": 0.82
+  },
+  "redesign": "1015"
 }

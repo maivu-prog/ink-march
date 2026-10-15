@@ -2,7 +2,7 @@
   "id": "c6_s4",
   "name": "Shadow of the Fens",
   "chapter": 6,
-  "baseInk": 1870,
+  "baseInk": 2670,
   "starts": [
     {
       "x": 360,
@@ -14,7 +14,7 @@
       "type": "shadow_mage",
       "x": 360,
       "y": 114,
-      "scale": 1.52
+      "scale": 1.55
     }
   ],
   "obstacles": [
@@ -41,10 +41,36 @@
       "type": "hp_up",
       "x": 360,
       "y": 518
+    },
+    {
+      "type": "skull",
+      "x": 360,
+      "y": 629
     }
   ],
   "goldZones": [],
   "terrain": [
+    {
+      "kind": "hill",
+      "points": [
+        [
+          268,
+          684
+        ],
+        [
+          452,
+          684
+        ],
+        [
+          452,
+          840
+        ],
+        [
+          268,
+          840
+        ]
+      ]
+    },
     {
       "kind": "swamp",
       "points": [
@@ -184,8 +210,8 @@
           390
         ],
         [
-          320,
-          184
+          304,
+          192
         ]
       ],
       "id": "s0",
@@ -211,8 +237,8 @@
           390
         ],
         [
-          400,
-          184
+          416,
+          192
         ]
       ],
       "id": "s1",
@@ -238,7 +264,7 @@
       ],
       [
         360,
-        824
+        808
       ],
       [
         568,
@@ -246,10 +272,10 @@
       ],
       [
         584,
-        456
+        440
       ],
       [
-        536,
+        520,
         504
       ],
       [
@@ -265,12 +291,12 @@
         504
       ],
       [
-        184,
+        200,
         504
       ],
       [
         136,
-        456
+        440
       ],
       [
         136,
@@ -290,7 +316,7 @@
       ]
     ]
   ],
-  "tutorialHint": "The Shadow Mage waits beyond the fen. One causeway, two flanks.",
+  "tutorialHint": "The Shadow Mage waits beyond the fen. A trap sits on the short way.",
   "field": {
     "x": 29,
     "y": 40,
@@ -298,8 +324,12 @@
     "h": 920
   },
   "design": {
-    "winInk": 912,
-    "threeStarInk": 2155,
-    "threeStarBrush": "marsh"
-  }
+    "winInk": 1232,
+    "threeStarInk": 2342,
+    "threeStarBrush": "quill",
+    "ease": 0.92,
+    "winShare": 0.46,
+    "threeShare": 0.88
+  },
+  "redesign": "1015"
 }

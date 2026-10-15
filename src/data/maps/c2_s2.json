@@ -2,7 +2,7 @@
   "id": "c2_s2",
   "name": "Sun-baked Road",
   "chapter": 2,
-  "baseInk": 1170,
+  "baseInk": 1830,
   "starts": [
     {
       "x": 360,
@@ -14,7 +14,7 @@
       "type": "goblin_chief",
       "x": 360,
       "y": 185,
-      "scale": 0.46
+      "scale": 0.52
     }
   ],
   "obstacles": [
@@ -196,20 +196,20 @@
         830
       ],
       [
-        488,
-        768
+        504,
+        760
       ],
       [
         528,
-        528
+        512
       ],
       [
-        344,
-        432
+        368,
+        448
       ],
       [
-        328,
-        416
+        320,
+        400
       ],
       [
         344,
@@ -225,8 +225,11 @@
     "h": 750
   },
   "design": {
-    "winInk": 975,
-    "threeStarInk": 1137,
-    "threeStarBrush": "quill"
+    "winInk": 1097,
+    "threeStarInk": 1166,
+    "threeStarBrush": "quill",
+    "ease": 0.69,
+    "winShare": 0.6,
+    "threeShare": 0.64
   }
 }

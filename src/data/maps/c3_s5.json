@@ -2,7 +2,7 @@
   "id": "c3_s5",
   "name": "Mudslide",
   "chapter": 3,
-  "baseInk": 1420,
+  "baseInk": 1270,
   "starts": [
     {
       "x": 360,
@@ -14,7 +14,7 @@
       "type": "goblin_chief",
       "x": 360,
       "y": 164,
-      "scale": 0.87
+      "scale": 0.83
     }
   ],
   "obstacles": [],
@@ -201,19 +201,11 @@
         392
       ],
       [
-        520,
-        368
+        232,
+        264
       ],
       [
-        528,
-        360
-      ],
-      [
-        520,
-        288
-      ],
-      [
-        416,
+        304,
         192
       ]
     ]
@@ -229,8 +221,11 @@
     "h": 800
   },
   "design": {
-    "winInk": 685,
-    "threeStarInk": 1384,
-    "threeStarBrush": "quill"
+    "winInk": 654,
+    "threeStarInk": 1075,
+    "threeStarBrush": "quill",
+    "ease": 0.81,
+    "winShare": 0.51,
+    "threeShare": 0.85
   }
 }

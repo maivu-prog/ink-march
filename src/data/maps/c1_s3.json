@@ -2,7 +2,7 @@
   "id": "c1_s3",
   "name": "The Crossing",
   "chapter": 1,
-  "baseInk": 1570,
+  "baseInk": 1810,
   "starts": [
     {
       "x": 360,
@@ -14,7 +14,7 @@
       "type": "goblin_chief",
       "x": 360,
       "y": 206,
-      "scale": 0.48
+      "scale": 0.43
     }
   ],
   "obstacles": [
@@ -194,6 +194,9 @@
   "design": {
     "winInk": 554,
     "threeStarInk": 1534,
-    "threeStarBrush": "quill"
+    "threeStarBrush": "quill",
+    "ease": 0.62,
+    "winShare": 0.31,
+    "threeShare": 0.85
   }
 }

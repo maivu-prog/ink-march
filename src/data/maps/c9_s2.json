@@ -2,7 +2,7 @@
   "id": "c9_s2",
   "name": "Twin Shadows",
   "chapter": 9,
-  "baseInk": 2350,
+  "baseInk": 3060,
   "starts": [
     {
       "x": 180,
@@ -18,13 +18,13 @@
       "type": "shadow_mage",
       "x": 180,
       "y": 80,
-      "scale": 2.2
+      "scale": 2.02
     },
     {
       "type": "shadow_mage",
       "x": 540,
       "y": 80,
-      "scale": 2.2
+      "scale": 2.02
     }
   ],
   "obstacles": [
@@ -219,23 +219,19 @@
         940
       ],
       [
-        296,
+        312,
         920
       ],
       [
         312,
-        720
-      ],
-      [
-        312,
-        600
+        616
       ],
       [
         304,
-        592
+        608
       ],
       [
-        240,
+        224,
         528
       ],
       [
@@ -262,23 +258,23 @@
       ],
       [
         696,
-        624
+        640
       ],
       [
         688,
-        616
+        632
       ],
       [
-        600,
+        584,
         528
       ],
       [
         688,
-        440
+        424
       ],
       [
         696,
-        432
+        416
       ],
       [
         696,
@@ -302,8 +298,11 @@
     "h": 1000
   },
   "design": {
-    "winInk": 2217,
-    "threeStarInk": 2512,
-    "threeStarBrush": "golden"
+    "winInk": 1831,
+    "threeStarInk": 2601,
+    "threeStarBrush": "quill",
+    "ease": 0.89,
+    "winShare": 0.6,
+    "threeShare": 0.85
   }
 }

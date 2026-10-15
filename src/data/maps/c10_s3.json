@@ -2,7 +2,7 @@
   "id": "c10_s3",
   "name": "Hall of Gates",
   "chapter": 10,
-  "baseInk": 4030,
+  "baseInk": 4270,
   "starts": [
     {
       "x": 360,
@@ -14,7 +14,7 @@
       "type": "shadow_mage",
       "x": 360,
       "y": 80,
-      "scale": 1.41
+      "scale": 1.42
     }
   ],
   "obstacles": [
@@ -91,9 +91,14 @@
       "y": 180
     },
     {
-      "type": "reinforce",
+      "type": "haste",
       "x": 430,
       "y": 800
+    },
+    {
+      "type": "skull",
+      "x": 360,
+      "y": 760
     }
   ],
   "goldZones": [],
@@ -241,8 +246,8 @@
           180
         ],
         [
-          400,
-          120
+          416,
+          128
         ]
       ],
       "id": "s1",
@@ -283,16 +288,24 @@
         912
       ],
       [
-        528,
+        520,
         912
       ],
       [
-        568,
-        872
+        576,
+        856
       ],
       [
-        624,
-        504
+        528,
+        624
+      ],
+      [
+        408,
+        520
+      ],
+      [
+        616,
+        496
       ],
       [
         184,
@@ -303,56 +316,20 @@
         320
       ],
       [
-        536,
+        552,
         200
       ],
       [
-        184,
-        328
+        392,
+        184
       ],
       [
-        192,
-        392
-      ],
-      [
-        296,
-        480
-      ],
-      [
-        536,
-        640
-      ],
-      [
-        520,
-        720
-      ],
-      [
-        456,
-        784
-      ],
-      [
-        536,
-        696
-      ],
-      [
-        528,
-        624
-      ],
-      [
-        184,
-        376
-      ],
-      [
-        200,
-        288
-      ],
-      [
-        344,
+        376,
         144
       ]
     ]
   ],
-  "tutorialHint": "Two gates over sand and swamp. Orcs patrol the halls.",
+  "tutorialHint": "Two gates over sand and swamp. Orcs patrol the halls, and a trap guards the short cut.",
   "field": {
     "x": 0,
     "y": 0,
@@ -360,8 +337,12 @@
     "h": 1000
   },
   "design": {
-    "winInk": 2730,
-    "threeStarInk": 5913,
-    "threeStarBrush": "marsh"
-  }
+    "winInk": 2774,
+    "threeStarInk": 3602,
+    "threeStarBrush": "quill",
+    "ease": 0.92,
+    "winShare": 0.65,
+    "threeShare": 0.84
+  },
+  "redesign": "1015"
 }

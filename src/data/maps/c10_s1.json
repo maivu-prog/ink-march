@@ -2,7 +2,7 @@
   "id": "c10_s1",
   "name": "Citadel Approach",
   "chapter": 10,
-  "baseInk": 2820,
+  "baseInk": 4020,
   "starts": [
     {
       "x": 360,
@@ -14,7 +14,7 @@
       "type": "shadow_mage",
       "x": 360,
       "y": 80,
-      "scale": 1.37
+      "scale": 1.22
     }
   ],
   "obstacles": [
@@ -63,6 +63,31 @@
   ],
   "goldZones": [],
   "terrain": [
+    {
+      "kind": "slope",
+      "points": [
+        [
+          0,
+          550
+        ],
+        [
+          310,
+          550
+        ],
+        [
+          310,
+          880
+        ],
+        [
+          0,
+          880
+        ]
+      ],
+      "up": [
+        0,
+        -1
+      ]
+    },
     {
       "kind": "swamp",
       "points": [
@@ -219,8 +244,8 @@
           144
         ],
         [
-          320,
-          120
+          304,
+          128
         ]
       ],
       "id": "s0",
@@ -250,8 +275,8 @@
           144
         ],
         [
-          400,
-          120
+          416,
+          128
         ]
       ],
       "id": "s1",
@@ -289,39 +314,43 @@
       ],
       [
         384,
-        456
+        440
       ],
       [
-        560,
-        280
+        568,
+        256
       ],
       [
-        160,
-        280
+        328,
+        520
       ],
       [
-        336,
-        456
+        312,
+        560
+      ],
+      [
+        120,
+        752
       ],
       [
         328,
         544
       ],
       [
-        136,
-        744
+        336,
+        440
       ],
       [
-        328,
-        744
+        152,
+        256
       ],
       [
-        344,
-        144
+        304,
+        112
       ]
     ]
   ],
-  "tutorialHint": "The red key waits in the swamp. The road through the sand is the only cheap way.",
+  "tutorialHint": "Climb the western yard or wade the eastern swamp for the red key.",
   "field": {
     "x": 0,
     "y": 0,
@@ -329,8 +358,12 @@
     "h": 1000
   },
   "design": {
-    "winInk": 1607,
-    "threeStarInk": 3445,
-    "threeStarBrush": "golden"
-  }
+    "winInk": 1305,
+    "threeStarInk": 3417,
+    "threeStarBrush": "quill",
+    "ease": 0.86,
+    "winShare": 0.32,
+    "threeShare": 0.85
+  },
+  "redesign": "1015"
 }

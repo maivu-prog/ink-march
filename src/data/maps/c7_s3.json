@@ -2,7 +2,7 @@
   "id": "c7_s3",
   "name": "Hammer and Anvil",
   "chapter": 7,
-  "baseInk": 1630,
+  "baseInk": 2680,
   "starts": [
     {
       "x": 187,
@@ -18,7 +18,7 @@
       "type": "goblin_chief",
       "x": 360,
       "y": 97,
-      "scale": 1.87
+      "scale": 1.97
     }
   ],
   "obstacles": [
@@ -28,6 +28,22 @@
       "y": 260,
       "w": 77,
       "h": 576
+    },
+    {
+      "type": "rect",
+      "x": 149,
+      "y": 577,
+      "w": 173,
+      "h": 38,
+      "kind": "chasm"
+    },
+    {
+      "type": "rect",
+      "x": 398,
+      "y": 519,
+      "w": 48,
+      "h": 38,
+      "kind": "chasm"
     }
   ],
   "items": [
@@ -151,8 +167,8 @@
           308
         ],
         [
-          320,
-          136
+          312,
+          152
         ]
       ],
       "id": "s0",
@@ -174,8 +190,8 @@
           308
         ],
         [
-          400,
-          136
+          416,
+          144
         ]
       ],
       "id": "s1",
@@ -200,20 +216,24 @@
         922
       ],
       [
-        296,
+        312,
         920
       ],
       [
         144,
-        720
+        696
       ],
       [
-        112,
-        552
+        136,
+        376
       ],
       [
         160,
         352
+      ],
+      [
+        168,
+        344
       ],
       [
         344,
@@ -226,32 +246,32 @@
         922
       ],
       [
-        576,
-        816
+        688,
+        736
       ],
       [
-        440,
-        720
+        688,
+        544
       ],
       [
-        440,
-        376
+        680,
+        536
       ],
       [
-        488,
-        328
+        616,
+        472
       ],
       [
-        440,
-        280
+        560,
+        360
       ],
       [
-        376,
-        160
+        416,
+        128
       ]
     ]
   ],
-  "tutorialHint": "A ridge splits the pass. Road on the west, swamp on the east.",
+  "tutorialHint": "Ravines narrow both lanes. The road on the west is the safe way.",
   "field": {
     "x": 14,
     "y": 20,
@@ -259,8 +279,12 @@
     "h": 960
   },
   "design": {
-    "winInk": 1534,
-    "threeStarInk": 1972,
-    "threeStarBrush": "golden"
-  }
+    "winInk": 1645,
+    "threeStarInk": 2270,
+    "threeStarBrush": "quill",
+    "ease": 0.88,
+    "winShare": 0.61,
+    "threeShare": 0.85
+  },
+  "redesign": "1015"
 }

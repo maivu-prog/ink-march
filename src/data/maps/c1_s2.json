@@ -2,7 +2,7 @@
   "id": "c1_s2",
   "name": "Camp Muster",
   "chapter": 1,
-  "baseInk": 760,
+  "baseInk": 920,
   "starts": [
     {
       "x": 360,
@@ -14,7 +14,7 @@
       "type": "goblin_chief",
       "x": 360,
       "y": 206,
-      "scale": 0.47
+      "scale": 0.4
     }
   ],
   "obstacles": [
@@ -145,6 +145,9 @@
   "design": {
     "winInk": 549,
     "threeStarInk": 743,
-    "threeStarBrush": "quill"
+    "threeStarBrush": "quill",
+    "ease": 0.59,
+    "winShare": 0.6,
+    "threeShare": 0.81
   }
 }

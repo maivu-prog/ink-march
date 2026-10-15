@@ -2,7 +2,7 @@
   "id": "c1_s1",
   "name": "First Lines",
   "chapter": 1,
-  "baseInk": 830,
+  "baseInk": 1010,
   "starts": [
     {
       "x": 360,
@@ -119,6 +119,9 @@
   "design": {
     "winInk": 551,
     "threeStarInk": 810,
-    "threeStarBrush": "quill"
+    "threeStarBrush": "quill",
+    "ease": 0.55,
+    "winShare": 0.55,
+    "threeShare": 0.8
   }
 }

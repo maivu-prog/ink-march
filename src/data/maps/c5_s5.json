@@ -2,7 +2,7 @@
   "id": "c5_s5",
   "name": "Canyon Steps",
   "chapter": 5,
-  "baseInk": 1770,
+  "baseInk": 1930,
   "starts": [
     {
       "x": 360,
@@ -14,7 +14,7 @@
       "type": "goblin_chief",
       "x": 360,
       "y": 130,
-      "scale": 0.76
+      "scale": 0.73
     }
   ],
   "obstacles": [
@@ -243,6 +243,9 @@
   "design": {
     "winInk": 1027,
     "threeStarInk": 1884,
-    "threeStarBrush": "charcoal"
+    "threeStarBrush": "charcoal",
+    "ease": 0.87,
+    "winShare": 0.53,
+    "threeShare": 0.98
   }
 }

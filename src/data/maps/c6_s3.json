@@ -2,7 +2,7 @@
   "id": "c6_s3",
   "name": "Mirror Marsh",
   "chapter": 6,
-  "baseInk": 1740,
+  "baseInk": 2410,
   "starts": [
     {
       "x": 194,
@@ -18,13 +18,13 @@
       "type": "goblin_chief",
       "x": 194,
       "y": 114,
-      "scale": 0.85
+      "scale": 0.81
     },
     {
       "type": "goblin_chief",
       "x": 526,
       "y": 114,
-      "scale": 0.85
+      "scale": 0.81
     }
   ],
   "obstacles": [
@@ -67,6 +67,27 @@
   ],
   "goldZones": [],
   "terrain": [
+    {
+      "kind": "hill",
+      "points": [
+        [
+          277,
+          776
+        ],
+        [
+          443,
+          776
+        ],
+        [
+          443,
+          905
+        ],
+        [
+          277,
+          905
+        ]
+      ]
+    },
     {
       "kind": "swamp",
       "points": [
@@ -152,8 +173,8 @@
           316
         ],
         [
-          184,
-          160
+          176,
+          176
         ]
       ],
       "id": "s0",
@@ -175,8 +196,8 @@
           316
         ],
         [
-          536,
-          160
+          544,
+          176
         ]
       ],
       "id": "s1",
@@ -201,7 +222,7 @@
         905
       ],
       [
-        296,
+        312,
         856
       ],
       [
@@ -217,8 +238,8 @@
         456
       ],
       [
-        144,
-        368
+        128,
+        360
       ],
       [
         176,
@@ -231,20 +252,16 @@
         905
       ],
       [
-        608,
-        768
+        528,
+        664
       ],
       [
         456,
-        520
+        512
       ],
       [
-        512,
-        432
-      ],
-      [
-        576,
-        368
+        592,
+        360
       ],
       [
         544,
@@ -252,7 +269,7 @@
       ]
     ]
   ],
-  "tutorialHint": "Two bosses mirror each other across the marsh.",
+  "tutorialHint": "Two bosses mirror each other. The healer camp holds the southern hill.",
   "field": {
     "x": 29,
     "y": 40,
@@ -261,7 +278,11 @@
   },
   "design": {
     "winInk": 1565,
-    "threeStarInk": 1848,
-    "threeStarBrush": "charcoal"
-  }
+    "threeStarInk": 1886,
+    "threeStarBrush": "quill",
+    "ease": 0.86,
+    "winShare": 0.65,
+    "threeShare": 0.78
+  },
+  "redesign": "1015"
 }

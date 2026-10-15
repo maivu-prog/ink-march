@@ -2,7 +2,7 @@
   "id": "c5_s1",
   "name": "Canyon Gate",
   "chapter": 5,
-  "baseInk": 1570,
+  "baseInk": 2360,
   "starts": [
     {
       "x": 360,
@@ -14,7 +14,7 @@
       "type": "goblin_chief",
       "x": 360,
       "y": 130,
-      "scale": 1.53
+      "scale": 1.21
     }
   ],
   "obstacles": [
@@ -63,6 +63,31 @@
   ],
   "goldZones": [],
   "terrain": [
+    {
+      "kind": "slope",
+      "points": [
+        [
+          272,
+          500
+        ],
+        [
+          677,
+          500
+        ],
+        [
+          677,
+          852
+        ],
+        [
+          272,
+          852
+        ]
+      ],
+      "up": [
+        0,
+        -1
+      ]
+    },
     {
       "kind": "sand",
       "points": [
@@ -148,8 +173,8 @@
           280
         ],
         [
-          344,
-          160
+          328,
+          168
         ]
       ],
       "id": "s0",
@@ -174,8 +199,8 @@
         887
       ],
       [
-        528,
-        776
+        560,
+        784
       ],
       [
         168,
@@ -186,24 +211,24 @@
         480
       ],
       [
-        320,
-        440
+        304,
+        424
       ],
       [
-        192,
-        320
+        184,
+        304
       ],
       [
-        520,
-        312
+        528,
+        288
       ],
       [
-        392,
-        184
+        408,
+        168
       ]
     ]
   ],
-  "tutorialHint": "The wall is sealed. The red key lies in the sand.",
+  "tutorialHint": "The canyon floor climbs toward the gate. Fetch the key on the cheap low ground first.",
   "field": {
     "x": 43,
     "y": 60,
@@ -211,8 +236,12 @@
     "h": 880
   },
   "design": {
-    "winInk": 1229,
-    "threeStarInk": 1767,
-    "threeStarBrush": "reed"
-  }
+    "winInk": 1297,
+    "threeStarInk": 1953,
+    "threeStarBrush": "quill",
+    "ease": 0.78,
+    "winShare": 0.55,
+    "threeShare": 0.83
+  },
+  "redesign": "1015"
 }

@@ -2,7 +2,7 @@
   "id": "c8_s5",
   "name": "The Drowned King",
   "chapter": 8,
-  "baseInk": 1290,
+  "baseInk": 1880,
   "starts": [
     {
       "x": 360,
@@ -14,7 +14,7 @@
       "type": "goblin_king",
       "x": 360,
       "y": 80,
-      "scale": 0.61
+      "scale": 0.72
     }
   ],
   "obstacles": [
@@ -57,6 +57,22 @@
       "w": 100,
       "h": 60,
       "kind": "water"
+    },
+    {
+      "type": "rect",
+      "x": 0,
+      "y": 480,
+      "w": 230,
+      "h": 40,
+      "kind": "chasm"
+    },
+    {
+      "type": "rect",
+      "x": 490,
+      "y": 480,
+      "w": 230,
+      "h": 40,
+      "kind": "chasm"
     }
   ],
   "items": [
@@ -76,7 +92,48 @@
       "y": 500
     }
   ],
-  "goldZones": [],
+  "goldZones": [
+    {
+      "points": [
+        [
+          160,
+          645
+        ],
+        [
+          260,
+          645
+        ],
+        [
+          260,
+          715
+        ],
+        [
+          160,
+          715
+        ]
+      ]
+    },
+    {
+      "points": [
+        [
+          0,
+          475
+        ],
+        [
+          230,
+          475
+        ],
+        [
+          230,
+          525
+        ],
+        [
+          0,
+          525
+        ]
+      ]
+    }
+  ],
   "terrain": [],
   "camps": [
     {
@@ -141,8 +198,8 @@
           180
         ],
         [
-          344,
-          128
+          328,
+          136
         ]
       ],
       "id": "s0",
@@ -168,8 +225,8 @@
           180
         ],
         [
-          376,
-          128
+          392,
+          136
         ]
       ],
       "id": "s1",
@@ -194,40 +251,40 @@
         940
       ],
       [
-        144,
+        576,
         704
       ],
       [
-        152,
+        568,
         640
       ],
       [
-        296,
+        408,
         520
       ],
       [
-        344,
-        328
+        376,
+        312
       ],
       [
-        336,
-        288
+        392,
+        280
       ],
       [
-        160,
+        576,
         208
       ],
       [
-        560,
+        144,
         208
       ],
       [
-        424,
+        296,
         96
       ]
     ]
   ],
-  "tutorialHint": "Three rivers, three crossings. The island camp waits in the middle.",
+  "tutorialHint": "Rivers and a ravine ring the island. Golden ink shortens every crossing.",
   "field": {
     "x": 0,
     "y": 0,
@@ -235,8 +292,12 @@
     "h": 1000
   },
   "design": {
-    "winInk": 950,
-    "threeStarInk": 1580,
-    "threeStarBrush": "golden"
-  }
+    "winInk": 942,
+    "threeStarInk": 1649,
+    "threeStarBrush": "quill",
+    "ease": 0.96,
+    "winShare": 0.5,
+    "threeShare": 0.88
+  },
+  "redesign": "1015"
 }

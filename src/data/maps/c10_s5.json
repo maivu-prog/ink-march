@@ -2,7 +2,7 @@
   "id": "c10_s5",
   "name": "The Ink Citadel",
   "chapter": 10,
-  "baseInk": 2600,
+  "baseInk": 3290,
   "starts": [
     {
       "x": 180,
@@ -18,13 +18,13 @@
       "type": "goblin_king",
       "x": 180,
       "y": 80,
-      "scale": 0.77
+      "scale": 0.78
     },
     {
       "type": "shadow_mage",
       "x": 540,
       "y": 80,
-      "scale": 0.77
+      "scale": 0.78
     }
   ],
   "obstacles": [
@@ -48,6 +48,22 @@
       "y": 300,
       "w": 60,
       "h": 500
+    },
+    {
+      "type": "rect",
+      "x": 0,
+      "y": 820,
+      "w": 120,
+      "h": 40,
+      "kind": "chasm"
+    },
+    {
+      "type": "rect",
+      "x": 600,
+      "y": 820,
+      "w": 120,
+      "h": 40,
+      "kind": "chasm"
     }
   ],
   "items": [
@@ -74,6 +90,48 @@
   ],
   "goldZones": [],
   "terrain": [
+    {
+      "kind": "hill",
+      "points": [
+        [
+          0,
+          120
+        ],
+        [
+          140,
+          120
+        ],
+        [
+          140,
+          240
+        ],
+        [
+          0,
+          240
+        ]
+      ]
+    },
+    {
+      "kind": "hill",
+      "points": [
+        [
+          580,
+          120
+        ],
+        [
+          720,
+          120
+        ],
+        [
+          720,
+          240
+        ],
+        [
+          580,
+          240
+        ]
+      ]
+    },
     {
       "kind": "sand",
       "points": [
@@ -188,8 +246,8 @@
           160
         ],
         [
-          168,
-          120
+          152,
+          128
         ]
       ],
       "id": "s0",
@@ -219,8 +277,8 @@
           160
         ],
         [
-          552,
-          120
+          568,
+          112
         ]
       ],
       "id": "s1",
@@ -245,7 +303,7 @@
         940
       ],
       [
-        296,
+        312,
         896
       ],
       [
@@ -254,7 +312,7 @@
       ],
       [
         80,
-        224
+        208
       ],
       [
         152,
@@ -268,7 +326,7 @@
       ],
       [
         640,
-        224
+        208
       ],
       [
         568,
@@ -276,7 +334,7 @@
       ]
     ]
   ],
-  "tutorialHint": "The king and the mage defend the citadel together. Everything you learned, all at once.",
+  "tutorialHint": "The king and the mage, on their hills. Everything you learned, all at once.",
   "field": {
     "x": 0,
     "y": 0,
@@ -284,8 +342,12 @@
     "h": 1000
   },
   "design": {
-    "winInk": 2452,
-    "threeStarInk": 2706,
-    "threeStarBrush": "marsh"
-  }
+    "winInk": 2467,
+    "threeStarInk": 2811,
+    "threeStarBrush": "quill",
+    "ease": 0.98,
+    "winShare": 0.75,
+    "threeShare": 0.85
+  },
+  "redesign": "1015"
 }

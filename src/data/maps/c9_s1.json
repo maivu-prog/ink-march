@@ -2,7 +2,7 @@
   "id": "c9_s1",
   "name": "Thorn Lanes",
   "chapter": 9,
-  "baseInk": 2980,
+  "baseInk": 3880,
   "starts": [
     {
       "x": 360,
@@ -14,7 +14,7 @@
       "type": "shadow_mage",
       "x": 360,
       "y": 80,
-      "scale": 2.46
+      "scale": 1.73
     }
   ],
   "obstacles": [
@@ -45,13 +45,63 @@
       "y": 790
     },
     {
-      "type": "reinforce",
+      "type": "haste",
       "x": 360,
       "y": 250
     }
   ],
   "goldZones": [],
   "terrain": [
+    {
+      "kind": "slope",
+      "points": [
+        [
+          0,
+          200
+        ],
+        [
+          170,
+          200
+        ],
+        [
+          170,
+          800
+        ],
+        [
+          0,
+          800
+        ]
+      ],
+      "up": [
+        0,
+        -1
+      ]
+    },
+    {
+      "kind": "slope",
+      "points": [
+        [
+          550,
+          200
+        ],
+        [
+          720,
+          200
+        ],
+        [
+          720,
+          800
+        ],
+        [
+          550,
+          800
+        ]
+      ],
+      "up": [
+        0,
+        -1
+      ]
+    },
     {
       "kind": "swamp",
       "points": [
@@ -149,8 +199,8 @@
           184
         ],
         [
-          320,
-          120
+          304,
+          128
         ]
       ],
       "id": "s0",
@@ -176,8 +226,8 @@
           184
         ],
         [
-          400,
-          120
+          416,
+          128
         ]
       ],
       "id": "s1",
@@ -202,48 +252,48 @@
         940
       ],
       [
-        152,
+        568,
         800
       ],
       [
-        112,
-        464
-      ],
-      [
-        160,
-        192
-      ],
-      [
-        560,
-        192
-      ],
-      [
         608,
-        336
+        448
       ],
       [
         552,
         184
       ],
       [
-        496,
+        160,
         192
       ],
       [
-        392,
-        440
+        112,
+        352
       ],
       [
-        376,
+        168,
+        184
+      ],
+      [
+        224,
+        192
+      ],
+      [
+        352,
+        448
+      ],
+      [
+        352,
         280
       ],
       [
-        376,
+        352,
         144
       ]
     ]
   ],
-  "tutorialHint": "Three lanes. The middle one is a swamp with a healer camp.",
+  "tutorialHint": "Three lanes. The outer lanes climb; the middle swamp hides a healer camp.",
   "field": {
     "x": 0,
     "y": 0,
@@ -251,8 +301,12 @@
     "h": 1000
   },
   "design": {
-    "winInk": 2804,
-    "threeStarInk": 2804,
-    "threeStarBrush": "marsh"
-  }
+    "winInk": 1415,
+    "threeStarInk": 3296,
+    "threeStarBrush": "quill",
+    "ease": 0.86,
+    "winShare": 0.36,
+    "threeShare": 0.85
+  },
+  "redesign": "1015"
 }
