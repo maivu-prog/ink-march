@@ -13,7 +13,7 @@ export function terrainHeight(t:Region,p:XY){
   let edge=Infinity;for(let i=0;i<t.points.length;i++){const a=t.points[i],c=t.points[(i+1)%t.points.length],dx=c[0]-a[0],dz=c[1]-a[1],f=Math.max(0,Math.min(1,((p.x-a[0])*dx+(p.y-a[1])*dz)/(dx*dx+dz*dz||1)));edge=Math.min(edge,Math.hypot(p.x-a[0]-dx*f,p.y-a[1]-dz*f));}
   const v=Math.min(1,edge/Math.min(34,b.w*.22,b.d*.22)),smooth=v*v*(3-2*v);return 6+(b.height-6)*smooth;
  }
- if(t.kind==='slope'){const up=t.up||[0,-1],n=Math.hypot(...up)||1,ux=up[0]/n,uz=up[1]/n,extent=Math.abs(ux)*b.w/2+Math.abs(uz)*b.d/2;return b.height*Math.max(0,Math.min(1,.5+((p.x-b.cx)*ux+(p.y-b.cz)*uz)/(extent*2)));}
+ if(t.kind==='slope'){const up=t.up||[0,-1],n=Math.hypot(...up)||1,ux=up[0]/n,uz=up[1]/n,extent=Math.abs(ux)*b.w/2+Math.abs(uz)*b.d/2;return 6+(b.height-6)*Math.max(0,Math.min(1,.5+((p.x-b.cx)*ux+(p.y-b.cz)*uz)/(extent*2)));}
  return 0;
 }
 export function terrainElevation(terrain:Region[],p:XY){let elevation=0;for(const t of terrain)if(inRegion(p,t.points))elevation=Math.max(elevation,terrainHeight(t,p));return elevation;}

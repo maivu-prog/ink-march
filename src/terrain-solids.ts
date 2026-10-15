@@ -1,4 +1,5 @@
 import * as T from 'three';
+import {mergeVertices} from 'three/addons/utils/BufferGeometryUtils.js';
 import {regionBounds,terrainHeight,terrainSpec,type Region} from './environment-layout';
 import {terrainTriangles,terrainEdges,terrainContains,type TerrainCut,type TerrainPoint} from './terrain-geometry';
 import type {MapData} from './systems';
@@ -6,8 +7,8 @@ type V=[number,number,number];
 const palette:Record<string,{top:string;side:string;rim:string}>={sand:{top:'#e9c474',side:'#b58343',rim:'#f5d894'},swamp:{top:'#386f69',side:'#66563f',rim:'#8d8050'},road:{top:'#84785e',side:'#75654b',rim:'#b1a887'},hill:{top:'#7b9c54',side:'#876245',rim:'#b4c979'},slope:{top:'#b4ab69',side:'#956d48',rim:'#e1d193'}};
 class Batch{
  positions:number[]=[];colors:number[]=[];
- polygon(points:V[],color:string){const c=new T.Color(color);for(let i=1;i<points.length-1;i++)for(const p of [points[0],points[i],points[i+1]]){this.positions.push(...p);this.colors.push(c.r,c.g,c.b);}}
- mesh(parent:T.Group,name:string,roughness=1,shadow=false){if(!this.positions.length)return;const g=new T.BufferGeometry();g.setAttribute('position',new T.Float32BufferAttribute(this.positions,3));g.setAttribute('color',new T.Float32BufferAttribute(this.colors,3));g.computeVertexNormals();const m=new T.Mesh(g,new T.MeshStandardMaterial({vertexColors:true,roughness,side:T.DoubleSide}));m.name=name;m.receiveShadow=true;m.castShadow=shadow;parent.add(m);return m;}
+ polygon(points:V[],color:string){if(points.length>=3){const a=points[0],b=points[1],c=points[2];if((b[2]-a[2])*(c[0]-a[0])-(b[0]-a[0])*(c[2]-a[2])<0)points=[...points].reverse();}const c=new T.Color(color);for(let i=1;i<points.length-1;i++)for(const p of [points[0],points[i],points[i+1]]){this.positions.push(...p);this.colors.push(c.r,c.g,c.b);}}
+ mesh(parent:T.Group,name:string,roughness=1,shadow=false){if(!this.positions.length)return;let g=new T.BufferGeometry();g.setAttribute('position',new T.Float32BufferAttribute(this.positions,3));g.setAttribute('color',new T.Float32BufferAttribute(this.colors,3));g=mergeVertices(g,1e-4);g.computeVertexNormals();const m=new T.Mesh(g,new T.MeshStandardMaterial({vertexColors:true,roughness,side:T.DoubleSide}));m.name=name;m.receiveShadow=true;m.castShadow=shadow;parent.add(m);return m;}
 }
 /** Chunky terrain pieces follow the exact playable polygon and share its height profile. */
 export function addTerrainSolid(parent:T.Group,t:Region,map?:MapData){
@@ -17,10 +18,9 @@ export function addTerrainSolid(parent:T.Group,t:Region,map?:MapData){
  const top=new Batch(),sides=new Batch(),rim=new Batch(),detail=new Batch(),b=regionBounds(t.points),edges=terrainEdges(t,cuts);
  const at=(a:TerrainPoint,offset=0):V=>[a.x,terrainHeight(t,a)+offset,a.y];
  const valid=(poly:TerrainPoint[])=>poly.every(a=>terrainContains(t,cuts,a));
- const groundPoly=(poly:TerrainPoint[],color:string,offset=.4)=>{if(valid(poly))detail.polygon(poly.map(a=>at(a,offset)),color);};
+ const groundPoly=(poly:TerrainPoint[],color:string,offset=.4)=>{if(valid(poly))for(const tri of T.ShapeUtils.triangulateShape(poly.map(a=>new T.Vector2(a.x,a.y)),[]))detail.polygon(tri.map(i=>at(poly[i],offset)),color);};
  for(const tri of terrainTriangles(t,cuts)){
-  let color=p.top;if(t.kind==='hill'){const center={x:tri.reduce((s,a)=>s+a.x,0)/3,y:tri.reduce((s,a)=>s+a.y,0)/3},f=terrainHeight(t,center)/terrainSpec(t).height;color='#'+new T.Color('#a89c62').lerp(new T.Color(p.top),f).getHexString();}
-  top.polygon(tri.map(a=>at(a,t.kind==='road'?-.2:0)),color);
+  top.polygon(tri.map(a=>at(a,t.kind==='road'?-.2:0)),p.top);
  }
  for(const e of edges){const dx=e.b.x-e.a.x,dy=e.b.y-e.a.y,n=Math.max(1,Math.ceil(Math.hypot(dx,dy)/28));
   for(let i=0;i<n;i++){const a={x:e.a.x+dx*i/n,y:e.a.y+dy*i/n},c={x:e.a.x+dx*(i+1)/n,y:e.a.y+dy*(i+1)/n},ha=terrainHeight(t,a),hc=terrainHeight(t,c);
@@ -46,6 +46,6 @@ export function addTerrainSolid(parent:T.Group,t:Region,map?:MapData){
  }else if(t.kind==='hill'){
   for(let z=b.z+55;z<b.z+b.d-20;z+=108)for(let x=b.x+52;x<b.x+b.w-20;x+=126)groundPoly([{x:x-7,y:z},{x:x-2,y:z-4},{x:x+6,y:z-1},{x:x+8,y:z+3},{x:x+1,y:z+5}],'#b3c380',.35);
  }
- sides.mesh(group,'Terrain cut walls',1,true);top.mesh(group,'Terrain walk surface',t.kind==='swamp'?.48:1,true);rim.mesh(group,'Terrain sculpted border',1,true);detail.mesh(group,'Terrain material details',t.kind==='swamp'?.65:1);
+ sides.mesh(group,'Terrain cut walls',1,true);const surface=top.mesh(group,'Terrain walk surface',t.kind==='swamp'?.48:1,true);if(surface)surface.userData.terrainWalkSurface=true;rim.mesh(group,'Terrain sculpted border',1,true);detail.mesh(group,'Terrain material details',t.kind==='swamp'?.65:1);
  return group;
 }
