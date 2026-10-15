@@ -1,0 +1,38 @@
+{
+  "tree": {
+    "triangles": 1196,
+    "bytes": 33856
+  },
+  "tree_round": {
+    "triangles": 1196,
+    "bytes": 33872
+  },
+  "rock": {
+    "triangles": 944,
+    "bytes": 28252
+  },
+  "rock_cluster": {
+    "triangles": 2832,
+    "bytes": 70344
+  },
+  "tower": {
+    "triangles": 3576,
+    "bytes": 88160
+  },
+  "wall": {
+    "triangles": 1228,
+    "bytes": 34600
+  },
+  "bush": {
+    "triangles": 864,
+    "bytes": 26432
+  },
+  "mushroom": {
+    "triangles": 1816,
+    "bytes": 47708
+  },
+  "flower": {
+    "triangles": 1772,
+    "bytes": 46676
+  }
+}

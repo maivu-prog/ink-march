@@ -1,0 +1,10 @@
+import {test} from 'node:test';
+import assert from 'node:assert/strict';
+import {firstLesson,contextLesson} from '../src/onboarding';
+import {maps} from '../src/systems';
+const state={screen:'battle',seen:{},preparing:false,hasPool:true,valid:false,battling:false};
+test('home has no mandatory welcome or summon tour',()=>assert.equal(firstLesson({...state,screen:'home'}),null));
+test('drawing and ready hints are single-page and never hold combat',()=>{for(const valid of [false,true]){const hint=firstLesson({...state,valid})!;assert.equal(hint.pages.length,1);assert.equal(hint.passive,true);assert.ok(!hint.hold);assert.ok(!hint.ok);}assert.equal(firstLesson(state)?.guide,true);});
+test('combat starts immediately; dismissing its hint is optional',()=>{const hint=firstLesson({...state,battling:true})!;assert.equal(hint.id,'ftueBattle');assert.ok(!hint.hold);assert.ok(hint.autoHide);assert.equal(firstLesson({...state,battling:true,seen:{ftueBattle:true}}),null);});
+test('a dismissed draw hint stays dismissed while march hint remains available',()=>{assert.equal(firstLesson({...state,seen:{'f-draw':true}}),null);assert.equal(firstLesson({...state,seen:{'f-draw':true},valid:true})?.id,'f-march');});
+test('stage teaching metadata controls contextual lessons, including an empty list',()=>{assert.equal(contextLesson(maps.c1_s1,{}),null);assert.equal(contextLesson(maps.c1_s5,{})?.id,'chasm');assert.equal(contextLesson(maps.c1_s5,{chasm:true}),null);assert.equal(contextLesson(maps.c1_s2,{})?.id,'muster');});
