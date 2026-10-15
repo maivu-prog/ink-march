@@ -13,3 +13,16 @@ test('event history stays bounded over a long fight',()=>{const b=fixture(),targ
 test('display separation cannot push a soldier through a closed gate',()=>{const gate={type:'gate',color:'red',x:390,y:500,rect:{x:375,y:470,w:40,h:60}},b=fixture({items:[gate]});b.soldiers.filter(s=>!s.team).forEach(s=>{s.x=360;s.y=500;});const layout=battleLayout(b);for(const s of b.soldiers.filter(s=>!s.team))assert.equal(inside(layout.get(s.id)!,gate),false);});
 
 test('forecast can disable presentation cues without changing a battle outcome',()=>{const shown=fixture(),forecast=fixture();forecast.captureCues=false;for(let i=0;i<1800;i++){shown.step(1/60);forecast.step(1/60);}assert.equal(forecast.cues.length,0);assert.ok(shown.cues.length>0);assert.deepEqual(forecast.soldiers,shown.soldiers);assert.equal(forecast.result,shown.result);assert.equal(forecast.time,shown.time);});
+
+test('reinforcement feedback reports actual stat gains once and expires',()=>{
+ const b=fixture(),atk=b.boss.atk,hp=b.boss.hp,max=b.boss.maxHp;
+ b.enrage(0);
+ const pops=b.effects.filter(e=>e.kind==='reinforcement');
+ assert.equal(pops.length,1);
+ assert.equal(pops[0].text,'+'+Math.round(b.boss.atk-atk)+' ATK · +'+Math.round(b.boss.maxHp-max)+' HP');
+ assert.ok(b.boss.atk>atk);assert.equal(b.boss.hp-hp,b.boss.maxHp-max);
+ assert.equal(b.effects.some(e=>e.text.includes('ENRAGED')),false);
+ for(let i=0;i<150;i++)b.step(1/60);
+ assert.equal(b.effects.filter(e=>e.kind==='reinforcement').length,0);
+});
+test('a fallen boss cannot receive a reinforcement stat popup',()=>{const b=fixture();b.boss.hp=0;b.enrage(0);assert.equal(b.effects.filter(e=>e.kind==='reinforcement').length,0);});

@@ -1,3 +1,4 @@
+import {brushStrokeStyle,drawBrushInk} from './brush-ink';
 import {icon} from './icons';
 import {subdividePath} from './environment-layout';
 import {C,dist,BR,brushFx,burnRate,marchRate,maps,type MapData,type P,type BrushFx} from './systems';
@@ -13,20 +14,25 @@ export function brushAccent(id:string){return BR[id]?.look.p||'#349fe0';}
 export function brushTrait(id:string,stars:number){const f=brushFx(id,stars);if(id==='quill')return 'A clean, steady line';if(f.regen)return (f.regen*100).toFixed(1)+'% healing / sec';if(f.burn<1)return Math.round((1-f.burn)*100)+'% less ink';if(f.march>1)return Math.round((f.march-1)*100)+'% faster march';if(f.pickup)return '+'+Math.round(f.pickup)+' charm reach';return brushStories[id]?.[1]||'Special brush';}
 export function brushHero(id:string,stars:number,owned:boolean,equipped:boolean){const b=BR[id],story=brushStories[id],accent=brushAccent(id);return `<div class="ink-artifact rarity-${b.rarity}" style="--paint:${accent}"><div class="artifact-stamp">${b.rarity.toUpperCase()} <span>${owned?'★'.repeat(stars):'PREVIEW'}</span></div><span class="artifact-flourish" aria-hidden="true"></span><img class="artifact-brush" src="${brushImage(id)}" alt="${b.name}"><div class="artifact-caption"><small>${story[1]}</small><h2>${b.name}</h2><p>${story[0]}</p></div>${equipped?'<span class="artifact-equipped">✓ EQUIPPED</span>':''}</div>`;}
 export function brushRack(selected:string,inventory:Record<string,number>,equipped:string){return `<div class="ink-section-heading"><b>THE BRUSH RACK</b><small>${Object.keys(BR).filter(id=>inventory[id]).length} / ${Object.keys(BR).length} collected</small></div><div class="brush-rack" aria-label="Brush collection">${Object.keys(BR).map(id=>`<button class="rack-brush ${selected===id?'selected':''} ${inventory[id]?'owned':'discover'}" data-action="brush-focus" data-id="${id}" aria-label="Preview ${BR[id].name}" aria-pressed="${selected===id}" style="--paint:${brushAccent(id)}"><span>${inventory[id]?(equipped===id?'EQUIPPED':'★'+inventory[id]):'DISCOVER'}</span><img src="${brushImage(id)}" alt=""><b>${BR[id].name}</b><i class="rarity-dot ${BR[id].rarity}"></i></button>`).join('')}</div>`;}
-export function brushPadMarkup(id:string,stars:number,terrain:TestTerrain){const c=brushComparison(id,stars,terrain);return `<div class="ink-test" id="ink-test"><div class="ink-section-heading"><b>THE INK TEST</b><button id="clear-brush-test" aria-label="Clear test stroke">${icon.reset}</button></div><p>Draw freely. No ink limit.</p><div class="test-terrains" role="group" aria-label="Test surface">${(Object.keys(terrainNames) as TestTerrain[]).map(kind=>`<button data-action="brush-terrain" data-id="${kind}" aria-pressed="${terrain===kind}" class="${terrain===kind?'on':''}">${terrainNames[kind]}</button>`).join('')}</div><div class="test-paper test-${terrain}"><canvas id="brush-test-pad" aria-label="Draw a test stroke" style="touch-action:none"></canvas><span id="test-pad-prompt">Draw here</span><span id="test-pad-ink">∞ Unlimited ink</span></div><div class="test-comparison"><span>Same line, same surface<small>Apprentice Quill <b>${c.baseline}</b> → this brush <b>${c.ink}</b> ink</small></span><strong>${c.ink<c.baseline?'−'+Math.round((1-c.ink/c.baseline)*100)+'%':'EVEN'}</strong></div><div class="test-effects"><span>March <b>${c.march.toFixed(2)}×</b></span>${c.reach?`<span>Reach <b>+${c.reach}</b></span>`:''}${c.regen?`<span>Healing <b>${(c.regen*100).toFixed(1)}%/s</b></span>`:''}</div><small class="test-note">Unlimited practice. Battle ink costs are compared above.</small></div>`;}
-/** Free drawing is independent of battle budgets and player inventory. */
+export function brushPadMarkup(id:string,stars:number,terrain:TestTerrain){const c=brushComparison(id,stars,terrain);return `<div class="ink-test" id="ink-test"><div class="ink-section-heading"><b>THE INK TEST</b><button id="clear-brush-test" aria-label="Clear test stroke">${icon.reset}</button></div><div class="test-paper test-${terrain}"><canvas id="brush-test-pad" aria-label="Draw a test stroke" style="touch-action:none"></canvas><span id="test-pad-prompt">Draw here</span><span id="test-pad-ink">∞ Unlimited ink</span></div><details class="test-details"><summary>Surface & brush stats</summary><div class="test-terrains" role="group" aria-label="Test surface">${(Object.keys(terrainNames) as TestTerrain[]).map(kind=>`<button data-action="brush-terrain" data-id="${kind}" aria-pressed="${terrain===kind}" class="${terrain===kind?'on':''}">${terrainNames[kind]}</button>`).join('')}</div><div class="test-comparison"><span>Same line, same surface<small>Apprentice Quill <b>${c.baseline}</b> → this brush <b>${c.ink}</b> ink</small></span><strong>${c.ink<c.baseline?'−'+Math.round((1-c.ink/c.baseline)*100)+'%':'EVEN'}</strong></div><div class="test-effects"><span>March <b>${c.march.toFixed(2)}×</b></span>${c.reach?`<span>Reach <b>+${c.reach}</b></span>`:''}${c.regen?`<span>Healing <b>${(c.regen*100).toFixed(1)}%/s</b></span>`:''}</div></details></div>`;}
+/** Unlimited practice with the same artwork and rarity rules as battlefield ink. */
 export function bindBrushPad(id:string,_stars:number,_terrain:TestTerrain){
  const canvas=document.querySelector<HTMLCanvasElement>('#brush-test-pad');if(!canvas)return;
  const ctx=canvas.getContext('2d')!,ratio=Math.min(devicePixelRatio,2),r=canvas.getBoundingClientRect();
- canvas.width=r.width*ratio;canvas.height=r.height*ratio;ctx.scale(ratio,ratio);
- ctx.lineCap=ctx.lineJoin='round';ctx.strokeStyle=ctx.fillStyle=brushInkColor(id);
- const prompt=document.querySelector<HTMLElement>('#test-pad-prompt')!;
- let pointer:number|null=null,last:P|null=null,segments=0;
- const reset=()=>{ctx.clearRect(0,0,r.width,r.height);pointer=null;last=null;segments=0;prompt.hidden=false;};
+ canvas.width=r.width*ratio;canvas.height=r.height*ratio;ctx.scale(ratio,ratio);ctx.lineCap=ctx.lineJoin='round';
+ const prompt=document.querySelector<HTMLElement>('#test-pad-prompt')!,animated=brushStrokeStyle(id).animated,reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;
+ let pointer:number|null=null,last:P|null=null,strokes:P[][]=[],pending=false;
+ const paint=(ms:number)=>{
+  pending=false;if(!canvas.isConnected)return;ctx.clearRect(0,0,r.width,r.height);
+  for(const points of strokes)drawBrushInk(ctx,id,points,8,ms/1000,reduced);
+  if(animated&&!reduced&&strokes.length){pending=true;requestAnimationFrame(paint);}
+ };
+ const redraw=()=>{if(!pending){pending=true;requestAnimationFrame(paint);}};
+ const reset=()=>{strokes=[];pointer=null;last=null;prompt.hidden=false;ctx.clearRect(0,0,r.width,r.height);};
  document.querySelector<HTMLButtonElement>('#clear-brush-test')!.onclick=reset;
  const position=(e:PointerEvent)=>{const rect=canvas.getBoundingClientRect();return{x:Math.max(0,Math.min(r.width,(e.clientX-rect.left)/rect.width*r.width)),y:Math.max(0,Math.min(r.height,(e.clientY-rect.top)/rect.height*r.height))};};
- canvas.onpointerdown=e=>{if(pointer!==null)return;e.preventDefault();pointer=e.pointerId;last=position(e);prompt.hidden=true;canvas.setPointerCapture(e.pointerId);ctx.beginPath();ctx.arc(last.x,last.y,4,0,Math.PI*2);ctx.fill();};
- canvas.onpointermove=e=>{if(e.pointerId!==pointer||!last)return;e.preventDefault();const p=position(e);ctx.lineWidth=8+Math.sin(++segments*.3)*.5;ctx.beginPath();ctx.moveTo(last.x,last.y);ctx.lineTo(p.x,p.y);ctx.stroke();last=p;};
+ canvas.onpointerdown=e=>{if(pointer!==null)return;e.preventDefault();pointer=e.pointerId;last=position(e);strokes.push([last]);prompt.hidden=true;canvas.setPointerCapture(e.pointerId);redraw();};
+ canvas.onpointermove=e=>{if(e.pointerId!==pointer||!last)return;e.preventDefault();const p=position(e);if(dist(last,p)<1)return;strokes.at(-1)!.push(p);last=p;redraw();};
  const stop=(e:PointerEvent)=>{if(e.pointerId===pointer){pointer=null;last=null;}};
  canvas.onpointerup=canvas.onpointercancel=canvas.onlostpointercapture=stop;
 }

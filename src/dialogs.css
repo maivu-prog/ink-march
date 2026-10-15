@@ -1,0 +1,104 @@
+/* Dialog hierarchy: featured artwork, concise copy, fixed primary actions. */
+#app .g-popup{padding:16px 12px}
+#app .g-popup .g-modal{display:flex;flex-direction:column;max-width:440px;max-height:calc(100% - 20px);overflow:visible;gap:12px;padding:16px 14px 14px;border-radius:23px;min-height:0}
+#app .g-popup .g-modal>*{flex-shrink:0}
+#app .g-popup .g-modal>.g-ribbon{position:static;transform:none;align-self:center;max-width:100%;margin:0;padding:8px 16px;font-size:27px;line-height:1.05;white-space:normal;overflow-wrap:normal}
+#app .g-popup .g-modal:has(.g-x)>.g-ribbon{margin-right:44px}
+#app .g-popup .modal-content{display:flex;flex-direction:column;gap:12px;min-height:0;overflow-y:auto;overflow-x:hidden;touch-action:pan-y;padding:3px 2px 5px;flex:1 1 auto;scrollbar-width:thin;scrollbar-color:#8caa86 transparent}
+#app .g-popup .modal-content>*{flex-shrink:0}
+#app .g-popup .g-modal .g-scroll{display:flex;flex-direction:column;gap:10px;overflow:visible;flex:none}
+#app .g-popup .g-modal .g-sub,#app .g-popup .g-modal .brush-effect-line{font-family:var(--fb);font-size:17px!important;line-height:1.4!important;font-weight:800;color:#4d6c5e;margin:0;text-align:center}
+#app .g-popup .g-modal .g-btn{font-size:20px;min-height:48px;padding:9px 12px;line-height:1.15}
+#app .g-popup .g-modal .g-btn.big{font-size:27px;min-height:58px;padding:11px 12px}
+#app .g-popup .g-modal .g-btn small{font-size:16px!important;line-height:1.4}
+#app .g-popup .modal-actions{display:flex;flex-direction:column;gap:8px;flex:none;border-top:1px solid #b0b89555;padding-top:10px;margin-top:0}
+#app .g-popup .modal-actions>.g-btn{width:100%}
+#app .g-popup .modal-actions .g-row{gap:8px}
+#app .g-popup .g-modal .g-round{width:44px;min-width:44px;height:44px;min-height:44px;padding:9px}
+#app .g-popup .g-modal .g-x{position:absolute;top:9px;right:9px;z-index:3}
+#app .g-popup .g-modal .g-hero{padding:3px 0;background:radial-gradient(ellipse at 50% 70%,#b7d2a899,transparent 68%);gap:6px}
+#app .g-popup .g-modal .g-hero>img{height:170px;max-width:100%;object-fit:contain;flex:none}
+#app .g-popup .g-modal .brush-hero>img{height:190px}
+#app .g-popup .g-modal .g-rates{flex-wrap:wrap}
+#app .g-popup .g-modal .g-rates span{font-size:14px;padding:4px 8px}
+#app .g-popup .g-modal .g-stats{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+#app .g-popup .g-modal .g-stat{min-width:0;flex-wrap:wrap;gap:4px;padding:9px;line-height:1.2}
+#app .g-popup .g-modal .g-stat span{font-size:16px}
+#app .g-popup .g-modal .g-stat b{font-size:21px}
+#app .g-popup .g-modal .g-stat em{font-size:17px;white-space:nowrap}
+#app .g-popup .g-modal .g-lvl{font-size:16px;gap:8px}
+#app .g-popup .g-modal .g-fx{gap:6px}
+#app .g-popup .g-modal .g-fx span{font-size:16px;line-height:1.35;padding:6px 9px}
+#app .g-popup .g-modal .g-buff{flex-wrap:nowrap;align-items:center;gap:10px;padding:12px 10px}
+#app .g-popup .g-modal .g-buff-ico{width:66px;height:66px;flex:none;padding:9px}
+#app .g-popup .g-modal .g-buff-ico>.g-ico{font-size:45px}
+#app .g-popup .g-modal .g-buff>div{flex:1;min-width:0}
+#app .g-popup .g-modal .g-buff strong{font-size:23px;line-height:1.1}
+#app .g-popup .g-modal .g-buff p{font-size:16px!important;line-height:1.35!important;margin-top:5px}
+#app .g-popup .g-modal .g-buff .price{font-size:18px;align-self:center}
+#app .g-popup .g-modal .g-owned .g-buff-ico{width:38px;height:38px;padding:5px}
+#app .g-popup .g-modal .g-owned .g-buff-ico>.g-ico{font-size:25px}
+#app .g-popup .g-modal .g-owned .g-buff-ico i{font-size:14px}
+#app .g-popup .g-modal .g-event-art{font-size:104px;line-height:1.1;padding:8px 0}
+#app .g-popup .g-modal .g-event-art .g-ico{width:1em;height:1em}
+#app .g-popup .g-modal .g-stars{font-size:54px;min-height:68px;align-items:center;margin:8px 0}
+#app .g-popup .g-modal .g-stars .g-ico:nth-child(2){font-size:66px;margin-top:-7px}
+#app .g-popup .g-modal .g-stars.small{font-size:26px;min-height:32px;margin:0}
+#app .g-popup .g-modal .g-stars.small .g-ico:nth-child(2){font-size:30px;margin-top:0}
+#app .g-popup .g-modal .g-chips{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+#app .g-popup .g-modal .g-chip{font-size:25px;min-width:0;gap:7px;padding:10px 8px;align-items:center;justify-content:center}
+#app .g-popup .g-modal .g-chip small{font-size:14px;line-height:1.35}
+#app .g-popup .g-modal .g-tipline{font-size:16px;line-height:1.4}
+#app .g-popup .g-modal .g-pulls{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;padding:6px}
+#app .g-popup .g-modal .g-pulls .g-card{padding:10px 6px;min-width:0}
+#app .g-popup .g-modal .g-pulls .g-card>img{height:115px;width:100%;object-fit:contain}
+#app .g-popup .g-modal .g-pulls .g-card .nm{font-size:20px;line-height:1.1}
+#app .g-popup .g-modal .ink-artifact{height:225px;flex:none}
+#app .g-popup .g-modal .artifact-brush{height:207px;width:68%;top:0;right:0}
+#app .g-popup .g-modal .artifact-caption{max-width:63%;bottom:17px}
+#app .g-popup .g-modal .artifact-caption h2{font-size:27px;line-height:1.05}
+#app .g-popup .g-modal .artifact-caption small{font-size:12px;line-height:1.3}
+#app .g-popup .g-modal .artifact-caption p{font-size:15px;line-height:1.3}
+#app .g-popup .g-modal .artifact-stamp{font-size:14px;letter-spacing:.4px}
+#app .g-popup .g-modal .artifact-stamp span{font-size:14px}
+#app .g-popup .g-modal .artifact-equipped{font-size:12px}
+#app .prepare-dialog .modal-content{gap:12px}
+#app .prepare-dialog .prep-goal{margin:0;text-align:center;font-size:16px;line-height:1.35;font-weight:800;color:#64806a}
+#app .prepare-dialog .prep-goal>.g-ico{font-size:20px;vertical-align:middle}
+#app .prepare-dialog .prep-section-head{display:flex;align-items:center;justify-content:space-between;gap:8px;min-height:30px}
+#app .prepare-dialog .prep-section-head>b{font-family:var(--fb);font-size:15px;font-weight:900;letter-spacing:.5px;color:#557361}
+#app .prepare-dialog .g-btn.prep-edit{min-height:36px;padding:5px 16px;font-size:17px}
+#app .prepare-dialog .prep-squad{padding:0 0 10px;border-bottom:1px solid #b4bd9855}
+#app .prepare-dialog .prep-soldiers{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-top:5px}
+#app .prepare-dialog .prep-soldier{position:relative;display:flex;flex-direction:column;align-items:center;min-width:0;border-radius:15px;background:radial-gradient(ellipse at 50% 65%,#c6d7af,#e5e8cd 73%);padding:4px 4px 8px}
+#app .prepare-dialog .prep-soldier>img{width:100%;height:106px;object-fit:contain;filter:drop-shadow(0 4px 2px #2a493633)}
+#app .prepare-dialog .prep-soldier>b{font-family:var(--fd);font-size:18px;font-weight:400;line-height:1.1;text-align:center;overflow-wrap:anywhere;max-width:100%;min-height:21px;color:#31594f}
+#app .prepare-dialog .prep-soldier>span{position:absolute;right:5px;top:4px;font-family:var(--fd);font-size:17px;line-height:1;background:#42685d;color:#fff0c8;border-radius:7px;padding:4px 5px}
+#app .prepare-dialog .prep-brush{background:#e1e3c7;border:1px solid #c5d0ae;border-radius:18px;padding:9px 10px}
+#app .prepare-dialog .prep-brush-nav{display:flex;gap:8px}
+#app .prepare-dialog .prep-brush-main{display:grid;grid-template-columns:minmax(90px,.85fr) minmax(0,1.3fr);align-items:center;gap:8px}
+#app .prepare-dialog .prep-brush-main>img{height:145px;max-width:100%;width:100%;object-fit:contain;filter:drop-shadow(0 5px 2px #3e56352a)}
+#app .prepare-dialog .prep-brush-main h2{font-family:var(--fd);font-size:25px;font-weight:400;line-height:1.05;letter-spacing:0;color:#31584e;margin:0 0 5px}
+#app .prepare-dialog .prep-brush-stars{font-size:17px;color:#ac7b35;letter-spacing:2px}
+#app .prepare-dialog .prep-traits{display:flex;flex-wrap:wrap;gap:5px;margin-top:7px}
+#app .prepare-dialog .prep-traits>span{font-size:16px;line-height:1.2;font-weight:900;background:#f5edd1;color:#506b54;border-radius:7px;padding:4px 6px}
+#app .prepare-dialog .modal-actions .g-btn{min-height:60px;font-size:29px}
+@media(max-width:350px){#app .g-popup .g-modal{padding:14px 11px 12px;gap:10px}#app .g-popup .g-modal>.g-ribbon{font-size:25px}#app .prepare-dialog .prep-soldier>img{height:92px}#app .prepare-dialog .prep-soldier>b{font-size:17px}#app .prepare-dialog .prep-brush-main>img{height:132px}#app .prepare-dialog .prep-brush-main h2{font-size:23px}#app .prepare-dialog .prep-traits>span{font-size:15px}#app .g-popup .g-modal .g-buff-ico{width:54px;height:54px}#app .g-popup .g-modal .g-buff-ico>.g-ico{font-size:36px}#app .g-popup .g-modal .g-buff strong{font-size:21px}}
+@media(max-height:700px){#app .g-popup{padding:12px 10px}#app .g-popup .g-modal{max-height:calc(100% - 10px)}#app .prepare-dialog .prep-soldier>img{height:90px}#app .prepare-dialog .prep-brush-main>img{height:124px}}
+
+#app .g-popup .g-modal h1,#app .g-popup .g-modal h2,#app .g-popup .g-modal h3{text-shadow:none;letter-spacing:0}
+#app .prepare-dialog .g-modal>.g-ribbon{font-size:26px;line-height:1.1}
+#app .prepare-dialog .prep-goal{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:6px 14px}
+#app .prepare-dialog .prep-goal>span{white-space:nowrap;display:flex;align-items:center;gap:5px}
+#app .prepare-dialog .prep-goal .g-ico{font-size:19px}
+#app .prepare-dialog .prep-soldier>b{font-size:16px;line-height:1.15;min-height:36px;overflow-wrap:normal;display:flex;align-items:center;justify-content:center}
+#app .prepare-dialog .prep-soldier>img{height:96px}
+#app .prepare-dialog .prep-brush-main h2{font-size:24px;line-height:1.1;overflow-wrap:normal}
+#app .prepare-dialog .prep-traits>span{font-size:16px;line-height:1.15;padding:4px 6px}
+
+#app .g-popup .g-modal .g-chips:has(.g-chip:only-child){grid-template-columns:1fr;align-self:center;min-width:132px;max-width:220px}
+
+@media(max-height:700px){#app .prepare-dialog .prep-goal{display:none}#app .g-popup .g-modal .g-hero>img{height:145px}#app .g-popup .g-modal .brush-hero>img{height:170px}}
+
+#app .g-popup .g-modal .g-avatars{display:grid;grid-template-columns:repeat(3,68px);justify-content:center;gap:10px}
+#app .g-popup .g-modal .g-avatars .g-av{width:68px;height:68px}

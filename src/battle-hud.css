@@ -1,0 +1,60 @@
+/* Battle HUD occupies its own bands; projected labels stay inside the play area. */
+#app[data-screen=battle]{--battle-head:88px;--battle-foot:148px}
+#app[data-screen=battle][data-phase=combat]{--battle-foot:104px}
+#app[data-screen=battle] .g-hud{height:88px;inset:0 0 auto;display:flex;align-items:flex-start;padding:10px;gap:10px;background:#214b51;z-index:8;box-shadow:none}
+#app[data-screen=battle] .g-hud>.g-round{height:48px;width:48px;min-width:48px;padding:10px;margin:0}
+#app[data-screen=battle] .g-inkmeter{height:48px;min-width:0;flex:1}
+#app[data-screen=battle] .g-inkmeter b{font-size:24px}
+#app[data-screen=battle] .g-inkmeter b small{font-size:14px}
+#app[data-screen=battle] .g-stagepill{position:absolute;top:65px;left:12px;right:12px;padding:0;background:none;border:0;box-shadow:none;transform:none;font-family:var(--fb);font-size:16px;font-weight:900;line-height:20px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#app[data-screen=battle] .g-boss{min-width:0;gap:7px;padding:0 0 5px;align-self:center}
+#app[data-screen=battle] .g-boss .row{font-family:var(--fd);font-size:24px;line-height:1.05;gap:6px;min-width:0;color:#fff0cc}
+#app[data-screen=battle] .g-boss .row>span{min-width:0;overflow-wrap:normal}
+#app[data-screen=battle] .g-boss .row>.g-ico{font-size:24px}
+#app[data-screen=battle] .g-boss .g-bar{height:12px;flex:none;border-radius:8px;background:#12383f;box-shadow:inset 0 2px #072c3355}
+#app[data-screen=battle] .g-bottom{height:calc(var(--battle-foot) + env(safe-area-inset-bottom,0px));min-height:0;padding:10px 10px calc(10px + env(safe-area-inset-bottom,0px));background:linear-gradient(#2c585b,#1e454c);border:0;border-radius:0;box-shadow:0 -2px #7c9a8255;gap:8px}
+#app[data-screen=battle] .g-bottom .battle-loadout{min-height:54px;justify-content:center;position:relative}
+#app[data-screen=battle] .g-bottom .battle-brush{position:absolute;left:0;top:0;width:44px;height:52px;min-height:52px;padding:0;border-radius:12px;background:#446f69;box-shadow:none}
+#app[data-screen=battle] .g-bottom .battle-brush img{width:44px;height:50px}
+#app[data-screen=battle] .g-bottom .g-avatars{margin:0;gap:5px}
+#app[data-screen=battle] .g-bottom .g-avteam{padding:2px;gap:6px;background:none}
+#app[data-screen=battle] .g-bottom .g-avteam .g-av{width:48px;height:48px;border-width:2px}
+#app[data-screen=battle] .g-bottom .g-actions{height:56px;gap:8px}
+#app[data-screen=battle] .g-bottom .g-actions .g-btn.big{min-height:56px;font-size:30px;padding:8px}
+#app[data-screen=battle] .g-bottom .g-actions .g-round{width:48px;min-width:48px;height:48px;min-height:48px}
+#app[data-screen=battle][data-phase=combat] .g-bottom{display:grid;grid-template-columns:54px minmax(0,1fr) 62px;align-items:center;gap:6px}
+#app[data-screen=battle][data-phase=combat] .g-speed{width:54px!important;min-width:54px;min-height:48px;padding:6px;font-size:24px!important;align-self:center}
+#app[data-screen=battle][data-phase=combat] .g-avatars{justify-self:center;justify-content:center;align-items:center;gap:0;min-width:0}
+#app[data-screen=battle][data-phase=combat] .g-avteam{gap:5px;padding:2px}
+#app[data-screen=battle][data-phase=combat] .g-avteam .g-av{width:clamp(50px,16vw,66px);height:clamp(50px,16vw,66px);border-width:3px;box-shadow:0 3px #102f36}
+#app[data-screen=battle][data-phase=combat] .g-av .hp{height:7px}
+#app[data-screen=battle][data-phase=combat] .g-av.dead{filter:grayscale(1);opacity:.45}
+#app[data-screen=battle][data-phase=combat] #g-time{font-family:var(--fd);font-size:24px;color:#fff0c5;line-height:1;padding:0 0 5px;align-self:end;justify-self:end;white-space:nowrap}
+#app[data-screen=battle][data-phase=combat] .g-avatars.two-front{display:flex;flex-direction:column;gap:3px}
+#app[data-screen=battle][data-phase=combat] .two-front .g-avteam{gap:4px;padding:0}
+#app[data-screen=battle][data-phase=combat] .two-front .g-avteam .g-av{width:38px;height:38px;border-width:2px}
+#app[data-screen=battle][data-phase=combat] .two-front .g-avteam.team-1{background:#dba86b22}
+#app[data-screen=battle] .g-hint,#app[data-screen=battle] .lesson-card,#app[data-screen=battle] .g-forecast{bottom:calc(160px + env(safe-area-inset-bottom,0px))}
+#app[data-screen=battle] .g-hint{font-size:18px;line-height:1.3;padding:8px 12px;max-width:85%}
+#app[data-screen=battle] .g-teampick{top:96px!important}
+#app[data-screen=battle] .g-forecast{left:10px;right:10px;font-size:16px;gap:6px;padding:7px}
+#app[data-screen=battle] .g-forecast b{font-size:20px}
+#app[data-screen=battle] .g-forecast span{font-size:16px}
+#app[data-screen=battle] .paused-brush{display:flex;align-items:center;gap:12px;background:#dce2c4;padding:8px;border-radius:14px;color:#315b53}
+#app[data-screen=battle] .paused-brush img{width:65px;height:65px;object-fit:contain}
+#app[data-screen=battle] .paused-brush span{display:flex;flex-direction:column;gap:4px}
+#app[data-screen=battle] .paused-brush small{font-size:14px;font-weight:900}
+#app[data-screen=battle] .paused-brush b{font-family:var(--fd);font-size:24px}
+#app[data-screen=battle] #labels .boss-reinforcement{pointer-events:none;font-family:var(--fd);font-size:24px;line-height:1.2;color:#fff1b2;text-align:center;white-space:nowrap;z-index:5;text-shadow:0 2px #6e3d26,2px 0 #6e3d26,-2px 0 #6e3d26,0 -1px #6e3d26}
+#app[data-screen=battle] #labels .boss-reinforcement>span{display:block;background:#9b563cdd;border:1px solid #f8d18799;border-radius:12px;padding:7px 10px;box-shadow:0 3px #583b2e44}
+#app[data-screen=battle][data-phase=combat] #labels .camp-star{font-size:30px;line-height:1}
+#app[data-screen=battle][data-phase=combat] #labels .damage{font-size:20px}
+@media(max-width:350px){#app[data-screen=battle] .g-boss .row{font-size:22px}#app[data-screen=battle][data-phase=combat] .g-bottom{grid-template-columns:48px minmax(0,1fr) 54px;gap:4px}#app[data-screen=battle][data-phase=combat] .g-speed{width:48px!important;min-width:48px}#app[data-screen=battle][data-phase=combat] #g-time{font-size:22px}#app[data-screen=battle][data-phase=combat] .g-avteam{gap:3px}#app[data-screen=battle][data-phase=combat] .g-avteam .g-av{width:50px;height:50px}}
+@media(prefers-reduced-motion:reduce){#app[data-screen=battle] #labels .boss-reinforcement{transition:none}}
+
+#app[data-screen=battle][data-phase=draw] .battle-loadout.two-front .g-avatars{margin-left:38px;gap:5px}
+#app[data-screen=battle][data-phase=draw] .battle-loadout.two-front .g-avteam{gap:3px}
+#app[data-screen=battle][data-phase=draw] .battle-loadout.two-front .g-avteam .g-av{width:34px;height:34px}
+#app[data-screen=battle][data-phase=draw] .battle-loadout.two-front .battle-brush{width:36px}
+#app[data-screen=battle][data-phase=draw] .battle-loadout.two-front .battle-brush img{width:36px}
+#app[data-screen=battle][data-phase=draw]:has(.tut-passive) .g-forecast{display:none}

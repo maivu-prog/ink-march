@@ -1,0 +1,55 @@
+/* Summon: featured art and purchase actions share the first screen. */
+#app .g-body.ink-summon{overflow:hidden;padding:10px 14px 16px;gap:0}
+#app .summon-scene{height:100%;min-height:0;display:grid;grid-template-rows:36px 50px minmax(0,1fr) 88px 42px;gap:12px}
+#app .summon-scene .ink-page-head{justify-content:center;margin:0}
+#app .summon-scene .ink-page-head h1{font-size:30px;line-height:1.1}
+#app .summon-scene .g-seg{margin:0;gap:6px;padding:3px}
+#app .summon-scene .g-seg .g-btn{min-height:44px;padding:7px 10px;font-size:23px}
+#app .summon-showcase{min-height:0;display:grid;grid-template-rows:minmax(0,1fr) 23px;gap:10px}
+#app .summon-scene .g-banner{height:100%;min-height:0;margin:0;padding:0;border-radius:20px}
+#app .summon-scene .brushes3{top:0!important;bottom:0!important;left:0;width:100%;height:100%;transform:none;align-items:center;justify-content:center}
+#app .summon-scene .brushes3 img{height:82%;width:38%;margin:0 -4%;object-fit:contain}
+#app .summon-scene .brushes3 img:nth-child(2){height:100%;width:42%;margin-top:0}
+#app .summon-scene .recruit-lineup{inset:0;align-items:center;justify-content:center}
+#app .summon-scene .recruit-lineup img{height:84%;width:39%;margin:0 -5%;object-fit:contain}
+#app .summon-scene .recruit-lineup img:nth-child(2){height:100%;z-index:1}
+#app .summon-pity{margin:0;font-size:16px;line-height:23px;font-weight:800;color:#b8cdbc;text-align:center;white-space:nowrap}
+#app .summon-actions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;align-items:stretch}
+#app .summon-actions .g-btn{font-size:27px;min-height:0;padding:10px 5px;line-height:1.1;letter-spacing:0;gap:6px;border-radius:17px}
+#app .summon-actions .g-btn small{display:flex;align-items:center;gap:6px;justify-content:center;font-size:21px!important;line-height:1.2}
+#app .summon-actions .g-btn .g-ico{font-size:24px}
+#app .summon-info{display:flex;align-items:center;justify-content:center;gap:8px;background:transparent;border:0;border-top:1px solid #85a59044;color:#bed1bf;font:800 17px var(--fb);min-height:42px;padding:7px 5px}
+#app .summon-info>span{font-size:19px}
+#app .g-popup .summon-rates-list{display:grid;grid-template-columns:1fr;gap:8px}
+#app .g-popup .summon-rates-list>div{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:10px 12px;background:#e2e2c7;border-radius:11px;font-size:18px;color:#466555}
+#app .g-popup .summon-rates-list b{font-family:var(--fd);font-size:24px;font-weight:400;color:#2e5950}
+#app .g-popup .summon-guarantees{padding:12px;background:#e9e3c9;border-radius:12px;color:#4b6957}
+#app .g-popup .summon-guarantees h3{font-family:var(--fd);font-size:22px;font-weight:400;color:#315a50;margin:0 0 7px}
+#app .g-popup .summon-guarantees p{font-size:17px;line-height:1.6;color:#4b6957}
+@media(max-width:350px){#app .summon-scene{grid-template-rows:32px 48px minmax(0,1fr) 80px 42px;gap:9px}#app .summon-scene .ink-page-head h1{font-size:28px}#app .summon-actions .g-btn{font-size:24px}#app .summon-pity{font-size:14px}#app .summon-scene .g-seg .g-btn{font-size:22px}}
+@media(max-height:700px){#app .summon-scene{grid-template-rows:30px 46px minmax(0,1fr) 76px 38px;gap:9px}#app .summon-info{min-height:38px}#app .summon-showcase{gap:6px}#app .summon-actions .g-btn{font-size:24px;gap:4px}}
+
+/* The featured brush owns the center; name and effect stay outside its art. */
+#app .summon-carousel{position:absolute;inset:0;display:grid;grid-template-rows:44px minmax(0,1fr) 44px;padding:8px 0;isolation:isolate;touch-action:pan-y}
+#app .summon-brush-name{z-index:4;align-self:center;margin:0;padding:0 16px;text-align:center;font:400 29px/1.05 var(--fd);color:#264f50;text-shadow:0 2px #fff4;overflow-wrap:normal}
+#app .summon-brush-track{position:relative;min-height:0;width:100%}
+#app .summon-brush-slide{position:absolute;left:calc(50% + var(--slot)*34%);top:50%;width:52%;height:100%;margin:0;padding:0;border:0;background:transparent;transform:translate(-50%,-50%) scale(var(--scale));transition:left .75s cubic-bezier(.22,.8,.25,1),transform .75s cubic-bezier(.22,.8,.25,1),opacity .6s;cursor:pointer;-webkit-tap-highlight-color:transparent;filter:drop-shadow(0 7px 2px #30524d35)}
+#app .summon-brush-slide[aria-hidden="true"]{pointer-events:none}
+#app .summon-brush-slide:focus-visible{outline:3px solid #fff6be;border-radius:24px}
+#app .summon-brush-slide img{display:block;width:100%;height:100%;object-fit:contain;user-select:none;pointer-events:none}
+#app .summon-brush-effect{z-index:4;align-self:center;justify-self:center;max-width:94%;margin:0;padding:5px 12px;text-align:center;font:800 18px/1.25 var(--fb);color:#285753;text-wrap:balance}
+@media(max-width:350px){#app .summon-brush-name{font-size:24px}#app .summon-brush-effect{font-size:16px}#app .summon-carousel{grid-template-rows:38px minmax(0,1fr) 40px;padding-top:6px}}
+@media(max-height:700px){#app .summon-carousel{grid-template-rows:34px minmax(0,1fr) 38px;padding:4px 0}#app .summon-brush-name{font-size:24px}#app .summon-brush-effect{font-size:16px}}
+@media(prefers-reduced-motion:reduce){#app .summon-brush-slide{transition:none}#app .summon-scene .g-rays{animation:none}}
+
+#app .summon-carousel .summon-brush-name,#app .summon-carousel .summon-brush-effect{transition:opacity .14s}
+#app .summon-carousel.is-sliding .summon-brush-name,#app .summon-carousel.is-sliding .summon-brush-effect{opacity:0}
+@media(prefers-reduced-motion:reduce){#app .summon-carousel .summon-brush-name,#app .summon-carousel .summon-brush-effect{transition:none}}
+
+/* Actual brush pigment is drawn beneath the featured nib, within the art area. */
+#app .summon-ink-swatch{position:absolute;inset:0;display:block;width:100%;height:100%;z-index:1;pointer-events:none;opacity:1;transition:opacity .12s}
+#app .summon-carousel.is-sliding .summon-ink-swatch{opacity:0}
+@media(prefers-reduced-motion:reduce){#app .summon-ink-swatch{transition:none}}
+
+/* Off-screen carousel cards must never scroll the banner when receiving focus. */
+#app .summon-scene .g-banner,#app .summon-carousel{overflow:clip}
