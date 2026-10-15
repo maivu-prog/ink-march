@@ -270,3 +270,6 @@
 .g-forecast[hidden]{display:none!important}
 
 #labels .terrain-tag.hill{background:#4f6f2aaa}#labels .terrain-tag.slope{background:#7a6a2aaa}
+
+/* icon cướp buff nằm bên trái nhãn, không che chữ */
+#labels .item-label .contested{left:auto;right:calc(100% + 4px);top:50%;margin-top:-13px}
