@@ -1,0 +1,6 @@
+{
+  "appId": "io.github.maivuprog.inkmarch",
+  "appName": "Ink March",
+  "webDir": "dist",
+  "android": { "backgroundColor": "#1d3a40" }
+}
