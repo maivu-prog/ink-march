@@ -58,3 +58,9 @@
 #app[data-screen=battle][data-phase=draw] .battle-loadout.two-front .battle-brush{width:36px}
 #app[data-screen=battle][data-phase=draw] .battle-loadout.two-front .battle-brush img{width:36px}
 #app[data-screen=battle][data-phase=draw]:has(.tut-passive) .g-forecast{display:none}
+
+/* Lúc vẽ: thẻ hướng dẫn và gợi ý lên mép trên sân, không che START ở đáy (máy dài bị đè) */
+#app[data-screen=battle][data-phase=draw] .lesson-card,#app[data-screen=battle][data-phase=draw] .g-hint{top:calc(96px + env(safe-area-inset-top,0px));bottom:auto}
+#app[data-screen=battle][data-phase=draw] .lesson-card{padding:6px 8px;gap:6px}
+#app[data-screen=battle][data-phase=draw] .lesson-card p,#app[data-screen=battle][data-phase=draw] .g-hint{font-size:15px;line-height:1.3}
+#app[data-screen=battle][data-phase=draw] .lesson-card button{width:34px;height:34px;padding:8px}
