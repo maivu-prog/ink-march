@@ -2,7 +2,7 @@
   "id": "c7_s4",
   "name": "Gatehouse",
   "chapter": 7,
-  "baseInk": 2660,
+  "baseInk": 2390,
   "starts": [
     {
       "x": 360,
@@ -14,7 +14,7 @@
       "type": "goblin_chief",
       "x": 360,
       "y": 97,
-      "scale": 0.68
+      "scale": 1.62
     }
   ],
   "obstacles": [
@@ -215,8 +215,8 @@
           183
         ],
         [
-          456,
-          144
+          472,
+          152
         ]
       ],
       "id": "s0",
@@ -242,20 +242,20 @@
           471
         ],
         [
-          187,
-          471
+          160,
+          472
         ],
         [
-          600,
-          423
+          568,
+          432
         ],
         [
           600,
           260
         ],
         [
-          427,
-          126
+          456,
+          144
         ]
       ],
       "id": "s1"
@@ -354,9 +354,9 @@
     "winInk": 1859,
     "threeStarInk": 2651,
     "threeStarBrush": "golden",
-    "ease": 0.91,
-    "winShare": 0.7,
-    "threeShare": 1
+    "ease": 0.94,
+    "winShare": 0.78,
+    "threeShare": 1.11
   },
   "redesign": "1015"
 }

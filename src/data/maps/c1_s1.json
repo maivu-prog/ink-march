@@ -2,7 +2,7 @@
   "id": "c1_s1",
   "name": "First Lines",
   "chapter": 1,
-  "baseInk": 1010,
+  "baseInk": 920,
   "starts": [
     {
       "x": 360,
@@ -14,7 +14,7 @@
       "type": "goblin_chief",
       "x": 360,
       "y": 206,
-      "scale": 0.37
+      "scale": 1.09
     }
   ],
   "obstacles": [
@@ -120,8 +120,8 @@
     "winInk": 551,
     "threeStarInk": 810,
     "threeStarBrush": "quill",
-    "ease": 0.55,
-    "winShare": 0.55,
-    "threeShare": 0.8
+    "ease": 0.62,
+    "winShare": 0.6,
+    "threeShare": 0.88
   }
 }

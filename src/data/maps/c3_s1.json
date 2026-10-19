@@ -2,7 +2,7 @@
   "id": "c3_s1",
   "name": "Bog Crossing",
   "chapter": 3,
-  "baseInk": 1790,
+  "baseInk": 1490,
   "starts": [
     {
       "x": 360,
@@ -14,10 +14,51 @@
       "type": "goblin_chief",
       "x": 360,
       "y": 164,
-      "scale": 0.62
+      "scale": 1.52
     }
   ],
-  "obstacles": [],
+  "obstacles": [
+    {
+      "type": "rect",
+      "x": 216,
+      "y": 615,
+      "w": 432,
+      "h": 26,
+      "maze": true
+    },
+    {
+      "type": "rect",
+      "x": 72,
+      "y": 495,
+      "w": 48,
+      "h": 26,
+      "maze": true
+    },
+    {
+      "type": "rect",
+      "x": 200,
+      "y": 495,
+      "w": 344,
+      "h": 26,
+      "maze": true
+    },
+    {
+      "type": "rect",
+      "x": 176,
+      "y": 379,
+      "w": 240,
+      "h": 26,
+      "maze": true
+    },
+    {
+      "type": "rect",
+      "x": 544,
+      "y": 379,
+      "w": 104,
+      "h": 26,
+      "maze": true
+    }
+  ],
   "items": [
     {
       "type": "hp_up",
@@ -151,8 +192,8 @@
           356
         ],
         [
-          384,
-          200
+          392,
+          216
         ]
       ],
       "id": "s0",
@@ -177,27 +218,23 @@
         852
       ],
       [
-        448,
-        584
+        200,
+        696
       ],
       [
-        472,
-        408
-      ],
-      [
-        448,
-        592
+        160,
+        376
       ],
       [
         200,
-        656
+        336
       ],
       [
-        224,
-        352
+        432,
+        336
       ],
       [
-        336,
+        384,
         224
       ]
     ]
@@ -210,11 +247,11 @@
     "h": 800
   },
   "design": {
-    "winInk": 634,
-    "threeStarInk": 1521,
+    "winInk": 980,
+    "threeStarInk": 1164,
     "threeStarBrush": "quill",
-    "ease": 0.72,
-    "winShare": 0.35,
-    "threeShare": 0.85
+    "ease": 0.8,
+    "winShare": 0.66,
+    "threeShare": 0.78
   }
 }

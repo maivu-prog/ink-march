@@ -2,7 +2,7 @@
   "id": "c8_s1",
   "name": "River Run",
   "chapter": 8,
-  "baseInk": 2420,
+  "baseInk": 3240,
   "starts": [
     {
       "x": 360,
@@ -14,7 +14,7 @@
       "type": "shadow_mage",
       "x": 360,
       "y": 80,
-      "scale": 1.54
+      "scale": 1.49
     }
   ],
   "obstacles": [
@@ -25,6 +25,46 @@
       "w": 640,
       "h": 90,
       "kind": "water"
+    },
+    {
+      "type": "rect",
+      "x": 0,
+      "y": 659,
+      "w": 594,
+      "h": 26,
+      "maze": true
+    },
+    {
+      "type": "rect",
+      "x": 126,
+      "y": 423,
+      "w": 594,
+      "h": 26,
+      "maze": true
+    },
+    {
+      "type": "rect",
+      "x": 0,
+      "y": 319,
+      "w": 36,
+      "h": 26,
+      "maze": true
+    },
+    {
+      "type": "rect",
+      "x": 164,
+      "y": 319,
+      "w": 156,
+      "h": 26,
+      "maze": true
+    },
+    {
+      "type": "rect",
+      "x": 400,
+      "y": 319,
+      "w": 194,
+      "h": 26,
+      "maze": true
     }
   ],
   "items": [
@@ -132,8 +172,8 @@
           300
         ],
         [
-          304,
-          128
+          288,
+          136
         ]
       ],
       "id": "s0",
@@ -158,16 +198,28 @@
         940
       ],
       [
+        624,
+        664
+      ],
+      [
         656,
-        584
+        560
       ],
       [
         648,
         488
       ],
       [
-        144,
-        328
+        112,
+        456
+      ],
+      [
+        104,
+        352
+      ],
+      [
+        176,
+        304
       ],
       [
         568,
@@ -191,12 +243,12 @@
     "h": 1000
   },
   "design": {
-    "winInk": 1327,
-    "threeStarInk": 2043,
+    "winInk": 2134,
+    "threeStarInk": 2194,
     "threeStarBrush": "quill",
-    "ease": 0.84,
-    "winShare": 0.55,
-    "threeShare": 0.84
+    "ease": 0.87,
+    "winShare": 0.66,
+    "threeShare": 0.68
   },
   "redesign": "1015"
 }

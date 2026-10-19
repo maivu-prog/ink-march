@@ -1,8 +1,8 @@
 // Bộ giải map v2: npx tsx tools/solve-map.ts <mapId> [--write]
 // 1) scale boss thấp nhất mà đường lười thua
 // 2) ở mức đó phải có tuyến thắng, và có tuyến phá đủ trại (3 sao) mà vẫn thắng
-// 3) mực gốc theo đường cong (15/10): mực thắng = 55% → 75% mực gốc từ màn đầu tới màn boss của chương;
-//    3 sao bằng Quill = 85% (boss 88%). Từ chương 4, riêng màn ngay trước boss khoá 3 sao sau brush theo bậc chương.
+// 3) mực gốc theo đường cong (15/10): mực thắng = 66% → 82% mực gốc từ màn đầu tới màn boss của chương (19/10, Mai chê dễ);
+//    3 sao bằng Quill = 90% (boss 92%). Từ chương 4, riêng màn ngay trước boss khoá 3 sao sau brush theo bậc chương.
 import {readFileSync,writeFileSync} from 'node:fs';
 import chapters from '../src/data/chapters.json';
 import {maps,BR,dist,type MapData,type P} from '../src/systems';
@@ -38,7 +38,7 @@ if(!tours.length){console.log(id,'NO 3-CAMP ROUTE');process.exit(1);}
 let lo=.15,hi=4;if(!threeWins(lo)){console.log(`${id}: even at scale ${lo} no 3-camp route wins (camps too strong)`);process.exit(0);}
 for(let i=0;i<8;i++){const mid=(lo+hi)/2;if(threeWins(mid))lo=mid;else hi=mid;}
 // độ khó: nền theo chương + tăng dần trong chương (màn đầu dễ, màn boss là đỉnh)
-const ease=tutorial?.55:Math.min(.98,[.62,.72,.78,.82,.84,.86,.88,.9,.92,.92][base.chapter-1]-.06+.12*pos);let s=+(lo*ease).toFixed(2),three=threeWins(s)!;
+const ease=tutorial?.62:Math.min(.98,[.76,.82,.85,.87,.89,.9,.91,.92,.93,.94][base.chapter-1]-.05+.1*pos);let s=+(lo*ease).toFixed(2),three=threeWins(s)!;
 let win:any=null;for(const c of [...all].sort((a,b)=>a.reduce((n,x)=>n+x.cost,0)-b.reduce((n,x)=>n+x.cost,0))){const r=run(s,c);if(r.result==='win'){win={c,r};break;}}
 const lazyR=lazy?run(s,lazy.paths.map(p=>({points:p.points} as any))):null;
 console.log(`scale ${s} · 3★ route alive ${three.r.alive}/${three.r.total} · cheapest win alive ${win.r.alive}/${win.r.total} · lazy ${lazyR?.result}`);
@@ -48,7 +48,7 @@ const tier=base.chapter<=3?['quill']:base.chapter<=6?Object.keys(BR).filter(k=>[
 const costWith=(c:Cand[],fx:any)=>c.reduce((n,x)=>n+pathCost(base,x.points,fx)-x.seq.filter((o:any)=>o.type==='ink_bottle').reduce((s:number,o:any)=>s+o.value,0),0);
 const winCost=costWith(chosen.win.c,NO_BRUSH),threeRoute=chosen.three?.c;let threeBrush='quill',threeCost=threeRoute?costWith(threeRoute,NO_BRUSH):0;
 if(threeRoute&&gated)for(const b of tier){const c=costWith(threeRoute,brushFx(b,1));if(c<threeCost){threeCost=c;threeBrush=b;}}
-const rWin=.55+.2*pos,rThree=gated?.9:isBoss?.88:.85;
+const rWin=tutorial?.6:.66+.16*pos,rThree=gated?.93:isBoss?.92:.9;
 const baseInk=Math.ceil(Math.max(winCost/rWin,threeCost/rThree)/10)*10,quillThree=threeRoute?costWith(threeRoute,NO_BRUSH):0;
 console.log(`${id}: scale ${chosen.s.toFixed(2)} · win route ${Math.round(winCost)} ink (alive ${chosen.win.r.alive}/${chosen.win.r.total}) · 3★ ${threeRoute?Math.round(quillThree)+' with quill, '+Math.round(threeCost)+' with '+threeBrush:'n/a'} · baseInk ${baseInk}${threeRoute&&quillThree>baseInk?' → 3★ needs a better brush':''}`);
 if(write){const file=new URL(`../src/data/maps/${id}.json`,import.meta.url),json=JSON.parse(readFileSync(file,'utf8'));json.bosses.forEach((b:any)=>b.scale=+chosen!.s.toFixed(2));json.baseInk=baseInk;const ref=(threeRoute||chosen.win.c).map((c:Cand)=>c.points.map(p=>[Math.round(p.x),Math.round(p.y)]));json.referenceSolution=ref;json.design={winInk:Math.round(winCost),threeStarInk:Math.round(quillThree),threeStarBrush:threeBrush,ease:+ease.toFixed(2),winShare:+(winCost/baseInk).toFixed(2),threeShare:+(quillThree/baseInk).toFixed(2)};writeFileSync(file,JSON.stringify(json,null,2)+'\n');console.log('written');}

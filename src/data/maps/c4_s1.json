@@ -2,7 +2,7 @@
   "id": "c4_s1",
   "name": "Two Banks",
   "chapter": 4,
-  "baseInk": 2520,
+  "baseInk": 2510,
   "starts": [
     {
       "x": 207,
@@ -18,13 +18,13 @@
       "type": "goblin_chief",
       "x": 207,
       "y": 143,
-      "scale": 0.74
+      "scale": 1.65
     },
     {
       "type": "goblin_chief",
       "x": 513,
       "y": 143,
-      "scale": 0.74
+      "scale": 1.65
     }
   ],
   "obstacles": [
@@ -35,6 +35,54 @@
       "w": 51,
       "h": 595,
       "kind": "water"
+    },
+    {
+      "type": "rect",
+      "x": 164,
+      "y": 626,
+      "w": 166,
+      "h": 26,
+      "maze": true
+    },
+    {
+      "type": "rect",
+      "x": 470,
+      "y": 626,
+      "w": 196,
+      "h": 26,
+      "maze": true
+    },
+    {
+      "type": "rect",
+      "x": 186,
+      "y": 494,
+      "w": 64,
+      "h": 26,
+      "maze": true
+    },
+    {
+      "type": "rect",
+      "x": 389,
+      "y": 494,
+      "w": 145,
+      "h": 26,
+      "maze": true
+    },
+    {
+      "type": "rect",
+      "x": 164,
+      "y": 366,
+      "w": 166,
+      "h": 26,
+      "maze": true
+    },
+    {
+      "type": "rect",
+      "x": 470,
+      "y": 366,
+      "w": 196,
+      "h": 26,
+      "maze": true
     }
   ],
   "items": [
@@ -159,8 +207,8 @@
           500
         ],
         [
-          200,
-          216
+          192,
+          232
         ]
       ],
       "id": "s0",
@@ -182,8 +230,16 @@
           500
         ],
         [
-          520,
-          216
+          456,
+          392
+        ],
+        [
+          504,
+          240
+        ],
+        [
+          512,
+          232
         ]
       ],
       "id": "s1",
@@ -230,11 +286,23 @@
         874
       ],
       [
+        456,
+        624
+      ],
+      [
+        576,
+        568
+      ],
+      [
         592,
         552
       ],
       [
-        544,
+        456,
+        392
+      ],
+      [
+        480,
         200
       ]
     ]
@@ -247,11 +315,11 @@
     "h": 850
   },
   "design": {
-    "winInk": 1384,
-    "threeStarInk": 1512,
+    "winInk": 1652,
+    "threeStarInk": 1757,
     "threeStarBrush": "quill",
-    "ease": 0.76,
-    "winShare": 0.55,
-    "threeShare": 0.6
+    "ease": 0.82,
+    "winShare": 0.66,
+    "threeShare": 0.7
   }
 }

@@ -2,7 +2,7 @@
   "id": "c5_s1",
   "name": "Canyon Gate",
   "chapter": 5,
-  "baseInk": 2360,
+  "baseInk": 2310,
   "starts": [
     {
       "x": 360,
@@ -14,7 +14,7 @@
       "type": "goblin_chief",
       "x": 360,
       "y": 130,
-      "scale": 1.21
+      "scale": 1.67
     }
   ],
   "obstacles": [
@@ -173,8 +173,8 @@
           280
         ],
         [
-          328,
-          168
+          312,
+          176
         ]
       ],
       "id": "s0",
@@ -207,24 +207,28 @@
         736
       ],
       [
-        336,
+        296,
+        520
+      ],
+      [
+        352,
         480
       ],
       [
-        304,
-        424
-      ],
-      [
-        184,
+        536,
         304
       ],
       [
-        528,
+        192,
         288
       ],
       [
-        408,
-        168
+        328,
+        320
+      ],
+      [
+        344,
+        192
       ]
     ]
   ],
@@ -236,12 +240,12 @@
     "h": 880
   },
   "design": {
-    "winInk": 1297,
-    "threeStarInk": 1953,
+    "winInk": 1128,
+    "threeStarInk": 2072,
     "threeStarBrush": "quill",
-    "ease": 0.78,
-    "winShare": 0.55,
-    "threeShare": 0.83
+    "ease": 0.84,
+    "winShare": 0.49,
+    "threeShare": 0.9
   },
   "redesign": "1015"
 }

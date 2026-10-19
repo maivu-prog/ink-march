@@ -2,7 +2,7 @@
   "id": "c1_s2",
   "name": "Camp Muster",
   "chapter": 1,
-  "baseInk": 920,
+  "baseInk": 970,
   "starts": [
     {
       "x": 360,
@@ -14,7 +14,7 @@
       "type": "goblin_chief",
       "x": 360,
       "y": 206,
-      "scale": 0.4
+      "scale": 1.26
     }
   ],
   "obstacles": [
@@ -23,6 +23,22 @@
       "x": 374,
       "y": 479,
       "r": 49
+    },
+    {
+      "type": "rect",
+      "x": 108,
+      "y": 493,
+      "w": 213,
+      "h": 26,
+      "maze": true
+    },
+    {
+      "type": "rect",
+      "x": 427,
+      "y": 493,
+      "w": 91,
+      "h": 26,
+      "maze": true
     }
   ],
   "items": [
@@ -85,8 +101,16 @@
           598
         ],
         [
-          336,
-          240
+          520,
+          528
+        ],
+        [
+          536,
+          488
+        ],
+        [
+          344,
+          256
         ]
       ],
       "id": "s0",
@@ -115,11 +139,15 @@
         648
       ],
       [
-        432,
-        504
+        528,
+        520
       ],
       [
-        464,
+        520,
+        456
+      ],
+      [
+        512,
         448
       ],
       [
@@ -143,11 +171,11 @@
     "h": 700
   },
   "design": {
-    "winInk": 549,
-    "threeStarInk": 743,
+    "winInk": 636,
+    "threeStarInk": 867,
     "threeStarBrush": "quill",
-    "ease": 0.59,
-    "winShare": 0.6,
-    "threeShare": 0.81
+    "ease": 0.73,
+    "winShare": 0.66,
+    "threeShare": 0.89
   }
 }

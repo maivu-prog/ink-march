@@ -2,7 +2,7 @@
   "id": "c4_s2",
   "name": "Crossing Fords",
   "chapter": 4,
-  "baseInk": 1540,
+  "baseInk": 1610,
   "starts": [
     {
       "x": 360,
@@ -14,7 +14,7 @@
       "type": "goblin_chief",
       "x": 360,
       "y": 143,
-      "scale": 1.45
+      "scale": 1.8
     }
   ],
   "obstacles": [
@@ -41,6 +41,70 @@
       "w": 85,
       "h": 76,
       "kind": "water"
+    },
+    {
+      "type": "rect",
+      "x": 204,
+      "y": 626,
+      "w": 92,
+      "h": 26,
+      "maze": true
+    },
+    {
+      "type": "rect",
+      "x": 424,
+      "y": 626,
+      "w": 92,
+      "h": 26,
+      "maze": true
+    },
+    {
+      "type": "rect",
+      "x": 596,
+      "y": 626,
+      "w": 70,
+      "h": 26,
+      "maze": true
+    },
+    {
+      "type": "rect",
+      "x": 54,
+      "y": 382,
+      "w": 46,
+      "h": 26,
+      "maze": true
+    },
+    {
+      "type": "rect",
+      "x": 228,
+      "y": 382,
+      "w": 264,
+      "h": 26,
+      "maze": true
+    },
+    {
+      "type": "rect",
+      "x": 228,
+      "y": 278,
+      "w": 92,
+      "h": 26,
+      "maze": true
+    },
+    {
+      "type": "rect",
+      "x": 400,
+      "y": 278,
+      "w": 92,
+      "h": 26,
+      "maze": true
+    },
+    {
+      "type": "rect",
+      "x": 620,
+      "y": 278,
+      "w": 46,
+      "h": 26,
+      "maze": true
     }
   ],
   "items": [
@@ -162,8 +226,8 @@
           330
         ],
         [
-          392,
-          176
+          408,
+          184
         ]
       ],
       "id": "s0",
@@ -188,24 +252,32 @@
         874
       ],
       [
-        360,
-        736
+        552,
+        832
       ],
       [
-        544,
-        528
+        536,
+        408
       ],
       [
-        544,
-        376
+        488,
+        368
       ],
       [
         216,
         336
       ],
       [
-        328,
-        200
+        504,
+        336
+      ],
+      [
+        504,
+        272
+      ],
+      [
+        408,
+        184
       ]
     ]
   ],
@@ -217,12 +289,12 @@
     "h": 850
   },
   "design": {
-    "winInk": 919,
-    "threeStarInk": 1074,
+    "winInk": 1122,
+    "threeStarInk": 1439,
     "threeStarBrush": "quill",
-    "ease": 0.79,
-    "winShare": 0.6,
-    "threeShare": 0.7
+    "ease": 0.84,
+    "winShare": 0.7,
+    "threeShare": 0.89
   },
   "redesign": "1015"
 }

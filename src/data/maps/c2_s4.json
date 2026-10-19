@@ -2,7 +2,7 @@
   "id": "c2_s4",
   "name": "Windy Hills",
   "chapter": 2,
-  "baseInk": 1730,
+  "baseInk": 1480,
   "starts": [
     {
       "x": 360,
@@ -14,10 +14,59 @@
       "type": "goblin_chief",
       "x": 360,
       "y": 185,
-      "scale": 1.02
+      "scale": 1.71
     }
   ],
-  "obstacles": [],
+  "obstacles": [
+    {
+      "type": "rect",
+      "x": 189,
+      "y": 604,
+      "w": 441,
+      "h": 26,
+      "maze": true
+    },
+    {
+      "type": "rect",
+      "x": 90,
+      "y": 496,
+      "w": 31,
+      "h": 26,
+      "maze": true
+    },
+    {
+      "type": "rect",
+      "x": 201,
+      "y": 496,
+      "w": 95,
+      "h": 26,
+      "maze": true
+    },
+    {
+      "type": "rect",
+      "x": 424,
+      "y": 496,
+      "w": 107,
+      "h": 26,
+      "maze": true
+    },
+    {
+      "type": "rect",
+      "x": 189,
+      "y": 388,
+      "w": 311,
+      "h": 26,
+      "maze": true
+    },
+    {
+      "type": "rect",
+      "x": 580,
+      "y": 388,
+      "w": 50,
+      "h": 26,
+      "maze": true
+    }
+  ],
   "items": [
     {
       "type": "atk_up",
@@ -130,12 +179,20 @@
           695
         ],
         [
-          528,
-          328
+          192,
+          672
         ],
         [
-          408,
-          208
+          176,
+          608
+        ],
+        [
+          184,
+          320
+        ],
+        [
+          392,
+          216
         ]
       ],
       "id": "s0",
@@ -168,19 +225,31 @@
         664
       ],
       [
-        184,
+        176,
+        384
+      ],
+      [
+        176,
         360
+      ],
+      [
+        184,
+        424
       ],
       [
         312,
         464
       ],
       [
-        512,
-        440
+        176,
+        416
       ],
       [
-        416,
+        184,
+        320
+      ],
+      [
+        304,
         216
       ]
     ]
@@ -196,11 +265,11 @@
     "h": 750
   },
   "design": {
-    "winInk": 642,
-    "threeStarInk": 1469,
+    "winInk": 898,
+    "threeStarInk": 1328,
     "threeStarBrush": "quill",
-    "ease": 0.72,
-    "winShare": 0.37,
-    "threeShare": 0.85
+    "ease": 0.82,
+    "winShare": 0.61,
+    "threeShare": 0.9
   }
 }

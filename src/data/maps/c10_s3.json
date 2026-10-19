@@ -2,7 +2,7 @@
   "id": "c10_s3",
   "name": "Hall of Gates",
   "chapter": 10,
-  "baseInk": 4270,
+  "baseInk": 4870,
   "starts": [
     {
       "x": 360,
@@ -14,7 +14,7 @@
       "type": "shadow_mage",
       "x": 360,
       "y": 80,
-      "scale": 1.42
+      "scale": 1.44
     }
   ],
   "obstacles": [
@@ -217,16 +217,16 @@
           560
         ],
         [
-          150,
-          520
+          176,
+          536
         ],
         [
           150,
           250
         ],
         [
-          330,
-          110
+          304,
+          128
         ]
       ],
       "id": "s0"
@@ -246,8 +246,8 @@
           180
         ],
         [
-          416,
-          128
+          432,
+          136
         ]
       ],
       "id": "s1",
@@ -337,12 +337,12 @@
     "h": 1000
   },
   "design": {
-    "winInk": 2774,
+    "winInk": 3602,
     "threeStarInk": 3602,
     "threeStarBrush": "quill",
-    "ease": 0.92,
-    "winShare": 0.65,
-    "threeShare": 0.84
+    "ease": 0.94,
+    "winShare": 0.74,
+    "threeShare": 0.74
   },
   "redesign": "1015"
 }

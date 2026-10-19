@@ -2,7 +2,7 @@
   "id": "c2_s2",
   "name": "Sun-baked Road",
   "chapter": 2,
-  "baseInk": 1830,
+  "baseInk": 1360,
   "starts": [
     {
       "x": 360,
@@ -14,7 +14,7 @@
       "type": "goblin_chief",
       "x": 360,
       "y": 185,
-      "scale": 0.52
+      "scale": 1.36
     }
   ],
   "obstacles": [
@@ -29,6 +29,54 @@
       "x": 428,
       "y": 425,
       "r": 38
+    },
+    {
+      "type": "rect",
+      "x": 90,
+      "y": 568,
+      "w": 42,
+      "h": 26,
+      "maze": true
+    },
+    {
+      "type": "rect",
+      "x": 212,
+      "y": 568,
+      "w": 61,
+      "h": 26,
+      "maze": true
+    },
+    {
+      "type": "rect",
+      "x": 357,
+      "y": 568,
+      "w": 143,
+      "h": 26,
+      "maze": true
+    },
+    {
+      "type": "rect",
+      "x": 189,
+      "y": 424,
+      "w": 25,
+      "h": 26,
+      "maze": true
+    },
+    {
+      "type": "rect",
+      "x": 342,
+      "y": 424,
+      "w": 44,
+      "h": 26,
+      "maze": true
+    },
+    {
+      "type": "rect",
+      "x": 604,
+      "y": 424,
+      "w": 26,
+      "h": 26,
+      "maze": true
     }
   ],
   "items": [
@@ -170,8 +218,8 @@
           462
         ],
         [
-          368,
-          216
+          376,
+          232
         ]
       ],
       "id": "s0",
@@ -204,16 +252,16 @@
         512
       ],
       [
-        368,
-        448
+        328,
+        456
       ],
       [
-        320,
-        400
+        304,
+        416
       ],
       [
-        344,
-        248
+        328,
+        240
       ]
     ]
   ],
@@ -225,11 +273,11 @@
     "h": 750
   },
   "design": {
-    "winInk": 1097,
-    "threeStarInk": 1166,
+    "winInk": 545,
+    "threeStarInk": 1220,
     "threeStarBrush": "quill",
-    "ease": 0.69,
-    "winShare": 0.6,
-    "threeShare": 0.64
+    "ease": 0.79,
+    "winShare": 0.4,
+    "threeShare": 0.9
   }
 }

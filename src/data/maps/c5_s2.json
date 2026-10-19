@@ -2,7 +2,7 @@
   "id": "c5_s2",
   "name": "Twin Locks",
   "chapter": 5,
-  "baseInk": 2730,
+  "baseInk": 2640,
   "starts": [
     {
       "x": 360,
@@ -14,7 +14,7 @@
       "type": "goblin_chief",
       "x": 360,
       "y": 130,
-      "scale": 0.85
+      "scale": 1.76
     }
   ],
   "obstacles": [
@@ -207,16 +207,16 @@
           553
         ],
         [
-          175,
-          518
+          208,
+          528
         ],
         [
           175,
           280
         ],
         [
-          334,
-          157
+          304,
+          176
         ]
       ],
       "id": "s0"
@@ -296,12 +296,12 @@
     "h": 880
   },
   "design": {
-    "winInk": 1586,
+    "winInk": 1843,
     "threeStarInk": 2315,
     "threeStarBrush": "quill",
-    "ease": 0.81,
-    "winShare": 0.58,
-    "threeShare": 0.85
+    "ease": 0.86,
+    "winShare": 0.7,
+    "threeShare": 0.88
   },
   "redesign": "1015"
 }
