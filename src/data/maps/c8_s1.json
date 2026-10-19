@@ -2,71 +2,22 @@
   "id": "c8_s1",
   "name": "River Run",
   "chapter": 8,
-  "baseInk": 3240,
+  "baseInk": 1620,
   "starts": [
     {
-      "x": 360,
-      "y": 940
+      "x": 655,
+      "y": 620
     }
   ],
   "bosses": [
     {
       "type": "shadow_mage",
-      "x": 360,
-      "y": 80,
-      "scale": 1.49
+      "x": 72,
+      "y": 380,
+      "scale": 1.62
     }
   ],
-  "obstacles": [
-    {
-      "type": "rect",
-      "x": 0,
-      "y": 500,
-      "w": 640,
-      "h": 90,
-      "kind": "water"
-    },
-    {
-      "type": "rect",
-      "x": 0,
-      "y": 659,
-      "w": 594,
-      "h": 26,
-      "maze": true
-    },
-    {
-      "type": "rect",
-      "x": 126,
-      "y": 423,
-      "w": 594,
-      "h": 26,
-      "maze": true
-    },
-    {
-      "type": "rect",
-      "x": 0,
-      "y": 319,
-      "w": 36,
-      "h": 26,
-      "maze": true
-    },
-    {
-      "type": "rect",
-      "x": 164,
-      "y": 319,
-      "w": 156,
-      "h": 26,
-      "maze": true
-    },
-    {
-      "type": "rect",
-      "x": 400,
-      "y": 319,
-      "w": 194,
-      "h": 26,
-      "maze": true
-    }
-  ],
+  "obstacles": [],
   "items": [
     {
       "type": "atk_up",
@@ -126,8 +77,8 @@
   ],
   "camps": [
     {
-      "x": 100,
-      "y": 300,
+      "x": 388,
+      "y": 45,
       "units": [
         {
           "type": "goblin",
@@ -168,12 +119,12 @@
       ],
       "route": [
         [
-          100,
-          300
+          388,
+          45
         ],
         [
-          288,
-          136
+          96,
+          368
         ]
       ],
       "id": "s0",
@@ -194,44 +145,20 @@
   "referenceSolution": [
     [
       [
-        360,
-        940
+        655,
+        620
       ],
       [
-        624,
-        664
-      ],
-      [
-        656,
-        560
-      ],
-      [
-        648,
-        488
-      ],
-      [
-        112,
-        456
-      ],
-      [
-        104,
-        352
-      ],
-      [
-        176,
-        304
+        400,
+        96
       ],
       [
         568,
-        256
+        240
       ],
       [
-        392,
-        296
-      ],
-      [
-        376,
-        144
+        136,
+        368
       ]
     ]
   ],
@@ -243,12 +170,13 @@
     "h": 1000
   },
   "design": {
-    "winInk": 2134,
-    "threeStarInk": 2194,
+    "winInk": 1068,
+    "threeStarInk": 1384,
     "threeStarBrush": "quill",
     "ease": 0.87,
     "winShare": 0.66,
-    "threeShare": 0.68
+    "threeShare": 0.85
   },
-  "redesign": "1015"
+  "redesign": "1015",
+  "layout": "N"
 }

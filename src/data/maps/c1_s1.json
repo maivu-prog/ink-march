@@ -123,5 +123,6 @@
     "ease": 0.62,
     "winShare": 0.6,
     "threeShare": 0.88
-  }
+  },
+  "layout": "D"
 }

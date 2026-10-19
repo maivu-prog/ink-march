@@ -14,7 +14,7 @@
       "type": "goblin_chief",
       "x": 360,
       "y": 206,
-      "scale": 1.55
+      "scale": 1.49
     }
   ],
   "obstacles": [
@@ -116,8 +116,8 @@
           353
         ],
         [
-          328,
-          256
+          320,
+          272
         ]
       ],
       "id": "s0",
@@ -200,5 +200,6 @@
     "ease": 0.78,
     "winShare": 0.3,
     "threeShare": 0.9
-  }
+  },
+  "layout": "D"
 }

@@ -273,3 +273,7 @@
 
 /* icon cướp buff nằm bên trái nhãn, không che chữ */
 #labels .item-label .contested{left:auto;right:calc(100% + 4px);top:50%;margin-top:-13px}
+
+/* START ở nửa phải sân: nhãn nằm bên trái cờ để không tràn mép */
+#labels .start-label.left:not(.two){transform:translate(calc(-100% - 34px),-50%)!important}
+#labels .start-label.below:not(.two){transform:translate(-50%,40px)!important}

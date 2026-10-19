@@ -22,6 +22,7 @@ const lessons:{id:string;text:string;has:(m:MapData)=>boolean}[]=[
  {id:'hill',text:'Marked hills use more ink and slow your march.',has:m=>m.terrain.some(t=>t.kind==='hill')},
  {id:'terrain',text:'Only marked terrain changes ink cost. Sand and swamp cost more; roads cost less.',has:m=>m.terrain.some(t=>['sand','swamp','road'].includes(t.kind))},
  {id:'thieves',text:'Enemies can steal charms marked ⚠. Reach them first; camps also drop loot.',has:m=>m.items.some(o=>o.type!=='ink_bottle')&&m.enemySquads.length>0},
+ {id:'layout',text:'The boss is not always at the top. Walls hide the real way in: trace it before you draw.',has:m=>!!(m as any).layout&&!['D','2S'].includes((m as any).layout)},
  {id:'choice',text:'Four camps here: destroy any three for all the stars.',has:m=>m.camps.length>3},
  {id:'loot',text:'Camps drop loot when destroyed. Every camp cleared earns a star.',has:m=>m.camps.some(c=>c.loot)}
 ];
