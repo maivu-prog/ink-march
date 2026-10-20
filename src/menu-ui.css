@@ -9,3 +9,7 @@
 #app .g-tabs .g-tab:focus-visible{outline:3px solid #f4cf7c;outline-offset:-2px;border-radius:18px}
 @media(max-width:350px){#app .g-tabs .g-tab span{font-size:17px!important;letter-spacing:-.5px}}
 @media(prefers-reduced-motion:reduce){#app .g-tabs .menu-emblem{transition:none}}
+
+/* Rendered props need a little more screen area than the former line drawings. */
+#app .g-tabs .g-tab{height:90px}
+#app .g-tabs .g-tab img.menu-emblem{width:clamp(52px,15.5vw,62px);height:clamp(52px,15.5vw,62px);object-fit:contain}

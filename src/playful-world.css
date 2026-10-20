@@ -1,0 +1,139 @@
+/* Ink March: warm sand, toasted outlines and amber accents. Shared game chrome, not a page skin. */
+:root{--b-bg:#f0ddb7;--b-deep:#d8b983;--b-card:#fff3d7;--b-text:#513b26;--b-muted:#80684b;--b-accent:#efa63e;--b-ink:#49301e;--b-land:#bed592;--b-edge:#94ac68;--desk:#f0ddb7;--desk-deep:#d8b983;--paper:#fff3d7;--ink-copy:#513b26;--muted:#80684b;--fun-coral:#ff8a79;--fun-sky:#f6e4bc;--fun-mint:#d7e0ad}
+body{background:radial-gradient(ellipse at 20% 10%,#f7d8a9,#d9ccb0 55%,#c2b08d);color:#513b26}
+#app{background:radial-gradient(ellipse at 40% 10%,var(--b-card),var(--b-bg) 85%);border-color:#fff0ce;box-shadow:0 0 0 2px #aa8659,0 15px 60px #79603c35}
+#app:after{display:none}
+#app[data-screen]{background:radial-gradient(ellipse at 30% 20%,#e7e0c5,var(--b-bg) 85%)!important;box-shadow:0 12px 50px #79603c44!important}
+#app .g-shell{background:radial-gradient(ellipse at 25% 10%,var(--b-card),var(--b-bg) 85%)}
+#app .g-shell:before{content:'';position:absolute;inset:0;pointer-events:none;opacity:.35;background:radial-gradient(circle at 94% 19%,#fff4c2 0 19px,transparent 20px),radial-gradient(circle at 5% 49%,#ffcdbd 0 25px,transparent 26px),radial-gradient(circle at 88% 73%,#d8f5f9 0 13px,transparent 14px)}
+#app .g-body{color:var(--b-text);scrollbar-color:var(--b-deep) transparent}
+#app .g-top{background:none}
+#app .g-top .g-res{background:#fff1cb;border:1px solid #fff8e0;box-shadow:0 3px #bc9e6070;color:#534435}
+#app .g-top .g-res:nth-child(2){background:#f7e8bd;box-shadow:0 3px #b79b6070}
+#app .g-top .g-res:nth-child(3){background:#f4e7c9;box-shadow:0 3px #b79b6070}
+#app .g-top .g-res small{color:#80684b;letter-spacing:.5px}
+#app .g-top .g-res b{color:#513b26;text-shadow:none}
+#app .g-tabs{background:var(--b-deep);border:0;box-shadow:0 -2px #fff5,0 -7px 18px #a083582a}
+#app .g-tabs .g-tab{color:var(--b-text)!important}
+#app .g-tabs .g-tab.on{color:var(--b-ink)!important}
+#app .g-tabs .g-tab.on:before{background:var(--b-accent);box-shadow:inset 0 2px #fff5cf,0 4px #b38e5690}
+#app .g-tabs .g-dot{background:#ff776b;border-color:#fff0d3}
+#app .g-tabs .menu-emblem{filter:drop-shadow(0 3px 0 #7655342b)}
+#app .g-body h1,#app .ink-page-head h1,#app .g-title{color:var(--b-text);text-shadow:0 2px #fff5}
+#app .g-body h2,#app .g-body h3{color:var(--b-text);text-shadow:none}
+#app .g-body>.g-sub,#app .ink-page-head small,#app .brush-effect-line,#app .journey-note,#app .collection-note{color:var(--b-muted)}
+#app .g-btn{--c1:#ffcf79;--c2:#efa13b;--edge:#a77138;--o:transparent;border:0!important;color:#51371f!important;background:linear-gradient(var(--c1),var(--c2))!important;box-shadow:0 4px var(--edge),inset 0 2px #fff8!important;text-shadow:none!important;border-radius:17px;transition:transform .14s ease,filter .14s ease}
+#app .g-btn.blue{--c1:#fff0cb;--c2:#efd39a;--edge:#aa8754;color:#5b452b!important}
+#app .g-btn.green{--c1:#d6f39f;--c2:#b0e18c;--edge:#79a66b;color:#385844!important}
+#app .g-btn.red{--c1:#ffb5a4;--c2:#ff8b79;--edge:#be706e;color:#663a42!important}
+#app .g-btn.grey{--c1:#e7dbc0;--c2:#cbbd9f;--edge:#a69272;color:#78684c!important}
+#app .g-btn:disabled{background:#ded1b1!important;color:#8b7858!important;box-shadow:0 3px #b5a17e!important;filter:none;opacity:.8!important}
+#app .g-round{border-radius:14px}
+#app .g-toast{background:#fff0bc;color:#513b26;border:2px solid #fff9df;box-shadow:0 4px #ab9d74}
+/* Home keeps the island large and unobstructed. */
+#app[data-screen=home] .g-shell{background:linear-gradient(var(--b-bg) 0%,transparent 27%,transparent 72%,var(--b-bg) 95%)}
+#app[data-screen=home] .g-shell:before{display:none}
+#app .home-chapter-picker h1{color:var(--b-text);text-shadow:0 2px #fff6}
+#app .home-chapter-picker .g-round{background:var(--fun-sky)!important;color:#6d512f!important}
+#app .g-home .g-chapstars,#app .g-home .g-chapstars b{color:#6c4e2d;text-shadow:none}
+#app .g-home .g-stages>i{background:#d5be92;border-color:#b3996d}
+#app .g-home-bottom .g-power,#app .g-home-bottom .g-power b{color:var(--b-text)}
+#app .home-restart{background:#f1e0b8;border:1px solid #fff5;box-shadow:0 3px #b2996b;color:#765a36}
+/* Brush workshop: warm paper with colored ink, clear collected / locked states. */
+#app .ink-artifact{background:radial-gradient(ellipse at 70% 25%,#fffbe8,#ffe8b8);border-color:#fff7da;box-shadow:0 4px #bba07e;color:#513b26}
+#app .artifact-caption h2{color:#513b26}
+#app .artifact-caption small,#app .artifact-caption p,#app .artifact-stamp{color:#686347}
+#app .artifact-equipped{background:#a4d89c;color:#2f583d}
+#app .ink-section-heading,#app .ink-section-heading small{color:var(--b-text)}
+#app .workshop-actions .ink-secondary{background:var(--fun-sky)!important;color:#6b5130!important;box-shadow:0 3px #b6a071!important}
+#app .workshop-actions .g-btn:disabled{background:#d2e9b6!important;color:#49663e!important;box-shadow:0 3px #94b785!important}
+#app .workshop-collection .rack-brush.owned{background:linear-gradient(#fff9e6,#f6e4bf);color:#534257;box-shadow:0 4px #ad9673}
+#app .workshop-collection .rack-brush.owned.selected{background:linear-gradient(#fff0b9,#ffd875);outline-color:#fff7d8;box-shadow:0 4px #b18a5b}
+#app .ink-test{background:#fff3dc;box-shadow:0 4px #ad9673;color:#705a3d;border-color:#fff9e8}
+#app .ink-test .ink-section-heading,#app .test-details summary{color:#705a3d}
+#app .test-paper{background:#e1eed0}
+/* Summon: bright stage, art stays central and the purchase controls stay in view. */
+#app .summon-scene .g-seg{background:var(--b-deep);border-radius:16px}
+#app .summon-scene .g-seg .g-btn.grey{background:transparent!important;color:var(--b-text)!important;box-shadow:none!important}
+#app .summon-scene .g-banner{background:radial-gradient(ellipse at 50% 40%,#fff5bc,#d3eec9 54%,#a9d9ef)!important;border-color:#fff5d3!important;box-shadow:0 5px #b2986b!important}
+#app .summon-pity,#app .summon-info{color:var(--b-text);border-color:#9b815355}
+#app .summon-scene .carousel-name{color:#513b26;text-shadow:none}
+#app .summon-scene .carousel-trait{color:#735f41}
+#app .summon-scene .summon-brush-name{color:#513b26;text-shadow:0 2px #fff5}
+#app .summon-scene .summon-brush-effect{color:#735f41}
+#app .brush-rack{scrollbar-color:#b3935e #e2cea2}
+#app .brush-rack::-webkit-scrollbar-track{background:#e2cea2}
+#app .brush-rack::-webkit-scrollbar-thumb{background:#b3935e}
+#app .training-level{color:#826027}
+#app .training-preview-stats b>span{color:#365f42;background:#d8efbc;border-radius:7px;padding:2px 5px}
+#app .g-popup .g-buff:nth-child(3n+1){background:#fce5cf;border-color:#fff5df!important}
+#app .g-popup .g-buff:nth-child(3n+2){background:#dbeef9;border-color:#fff5df!important}
+#app .g-popup .g-buff:nth-child(3n){background:#e1efca;border-color:#fff5df!important}
+/* Paper dialogs share the same toy-like controls, with one readable text color. */
+#app .g-popup{background:#352d2380;backdrop-filter:blur(3px)}
+#app .g-popup .g-modal{background:radial-gradient(ellipse at 40% 0%,#fff9e9,#ffefcf);border-color:#fff9e4;box-shadow:0 6px #b89a6b,0 18px 45px #4b371e55;color:#5b452e}
+#app .g-popup .g-modal>.g-ribbon{background:#edbd64;color:#5a3b20;box-shadow:0 4px #a47a40;text-shadow:none}
+#app .g-popup .g-modal h2,#app .g-popup .g-modal h3,#app .g-popup .g-modal .g-sub,#app .g-popup .g-modal .g-fx{color:#735d3e;text-shadow:none}
+#app .g-popup .g-stat{background:#eee3c4;color:#735d3e}
+#app .g-popup .g-stat b{color:#5d4d30}
+#app .g-popup .g-stat em{color:#558955}
+#app .g-popup .modal-chapter-goal{color:#735d3e}
+/* Sky / mint bands frame the board; no decorative animation overlaps the field. */
+#app[data-screen=battle] .g-hud{background:#f4e6bf;color:#513b26}
+#app[data-screen=battle] .g-stagepill,#app[data-screen=battle] .g-boss .row{color:#513b26;text-shadow:none}
+#app[data-screen=battle] .g-inkmeter{background:#dfcca0;color:#6b5130}
+#app[data-screen=battle] .g-inkmeter b{color:#63482b;text-shadow:none}
+#app[data-screen=battle] .g-inkmeter b small{color:#376c4d}
+#app[data-screen=battle] .g-bottom{background:linear-gradient(#f8edce,#e6cda0);box-shadow:0 -2px #fff6;color:#513b26}
+#app[data-screen=battle] .g-bottom .battle-brush{background:#eee0ba}
+#app[data-screen=battle] .g-boss .g-bar{background:#cfbd91}
+#app[data-screen=battle][data-phase=combat] #g-time{color:#513b26}
+#app .g-forecast{background:#fff2ce;color:#6c5233;border-color:#c4a3d9}
+#app .start-label{transform:translate(-50%,-140%)!important;background:#ffdf83!important;border:2px solid #fff5d1!important;color:#513b26!important;border-radius:12px!important;padding:6px 10px!important;box-shadow:0 3px #bca16f!important;min-width:0!important;max-width:120px!important;text-shadow:none!important}
+#app .start-label span{font:400 21px/1 var(--fd)!important;white-space:nowrap}
+#app .start-label small,#app .start-label:before,#app .start-label:after{display:none!important}
+@keyframes happy-emblem{0%{transform:scale(.85) rotate(-7deg)}65%{transform:scale(1.13) rotate(4deg)}100%{transform:scale(1.06) rotate(0)}}
+@media(prefers-reduced-motion:no-preference){#app .g-tabs .g-tab.on .menu-emblem{animation:happy-emblem .32s ease-out both}#app .party-slot img,#app .party-recruit img,#app .training-pick img{transition:transform .16s ease}#app .party-recruit:not(:disabled):active img,#app .training-pick:active img{transform:scale(.94)}}
+@media(prefers-reduced-motion:reduce){#app .g-btn,#app .g-tabs .menu-emblem{transition:none;animation:none}}
+
+/* Warm frame: amber is reserved for actions, and strong chroma belongs to game art. */
+#app .g-btn{border:2px solid #8b6235!important;box-shadow:0 4px #a8793c,inset 0 2px #fff4c5!important}
+#app .g-btn.blue{border-color:#b09664!important}
+#app .g-btn:disabled{border-color:#baa680!important;box-shadow:0 3px #b4a17e!important}
+#app .g-tabs .g-tab.on:before{border:2px solid #a67a40;background:linear-gradient(#ffd789,#efa63e);box-shadow:0 3px #a67a40,inset 0 2px #fff1bf}
+#app .g-popup .g-modal{border:2px solid #b58b4e;box-shadow:0 5px #aa8655,0 15px 40px #3c2b1d44}
+#app .g-popup .g-modal>.g-ribbon{background:#efbd62;color:#593d21;box-shadow:0 3px #b58b4e}
+#app .training-action .g-btn.train-primary:not(:disabled){background:linear-gradient(#ffcd79,#efa13b)!important;color:#51371f!important}
+#app .home-chapter-picker .g-round{background:#f5e7c1!important;color:#77572e!important}
+#app .g-top .g-res{border:1px solid #bfa573;box-shadow:0 2px #b3996970}
+
+#app .g-home .g-stages>i.done{background:#e9ae48;border-color:#b9873e}
+#app .g-home .g-stages>i.now{background:#fff1bf;border-color:#b8843f}
+
+/* Home sky is below the WebGL island and entirely decorative. */
+#home-sky{display:none;position:absolute;inset:0;overflow:hidden;pointer-events:none;z-index:0}
+#app[data-screen=home]{background:linear-gradient(180deg,#91c9e3 0%,#b9dfe9 32%,#ded8b6 66%,#c9aa79 95%)!important}
+#app[data-screen=home] #home-sky{display:block}
+#app[data-screen=home] #stage{z-index:1}
+#app[data-screen=home] #labels{z-index:2}
+#app[data-screen=home] #ui{z-index:3}
+#app[data-screen=home] .g-shell{background:linear-gradient(#fff1d21c 0%,transparent 25%,transparent 76%,#c8a571d9 97%)}
+.cloud-lane{position:absolute;width:calc(100% + 230px);height:45px;left:-145px;animation:home-cloud-drift 48s linear infinite;will-change:transform}
+.cloud-lane i{display:block;position:relative;width:101px;height:27px;background:#fffbea;border-radius:50px;opacity:.82;box-shadow:0 3px 0 #f5f5e23d}
+.cloud-lane i:before,.cloud-lane i:after{content:'';position:absolute;background:inherit;border-radius:50%}
+.cloud-lane i:before{width:44px;height:42px;left:17px;top:-22px}
+.cloud-lane i:after{width:35px;height:34px;right:12px;top:-14px}
+.cloud-one{top:22%;animation-duration:51s;animation-delay:-10s}
+.cloud-two{top:12%;animation-duration:69s;animation-delay:-40s}
+.cloud-two i{transform:scale(.69);opacity:.65}
+.cloud-three{top:30%;animation-duration:82s;animation-delay:-66s}
+.cloud-three i{transform:scale(.48);opacity:.55}
+@keyframes home-cloud-drift{from{transform:translateX(0)}to{transform:translateX(100%)}}
+@media(prefers-reduced-motion:reduce){.cloud-lane{animation:none;will-change:auto;transform:translateX(36%)}.cloud-two{transform:translateX(73%)}.cloud-three{transform:translateX(96%)}}
+
+#app[data-screen=home] .g-tabs{background:#c5a676}
+
+/* Darker warm menu backing keeps the active amber tab distinct. */
+#app .g-tabs,#app .barracks-shell .g-tabs,#app[data-screen=home] .g-tabs{background:#42424e;box-shadow:0 -3px #b58c55,0 -7px 0 #e3c18c}
+#app .g-tabs .g-tab{color:#fff0d0!important}
+#app .g-tabs .g-tab.on{color:#49301e!important}
