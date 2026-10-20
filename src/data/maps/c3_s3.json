@@ -2,7 +2,7 @@
   "id": "c3_s3",
   "name": "Sunken Shrine",
   "chapter": 3,
-  "baseInk": 1900,
+  "baseInk": 1600,
   "starts": [
     {
       "x": 360,
@@ -11,10 +11,11 @@
   ],
   "bosses": [
     {
-      "type": "goblin_chief",
+      "type": "sealbreaker",
       "x": 360,
       "y": 468,
-      "scale": 1.92
+      "scale": 3.39,
+      "facing": 0
     }
   ],
   "obstacles": [
@@ -311,40 +312,28 @@
         844
       ],
       [
-        136,
+        584,
         672
       ],
       [
-        136,
-        584
+        584,
+        328
       ],
       [
-        144,
-        256
+        536,
+        232
       ],
       [
-        312,
+        408,
         200
       ],
       [
-        568,
+        144,
         256
       ],
       [
-        352,
-        248
-      ],
-      [
-        152,
-        248
-      ],
-      [
         136,
-        288
-      ],
-      [
-        144,
-        480
+        496
       ],
       [
         296,
@@ -360,11 +349,11 @@
     "h": 800
   },
   "design": {
-    "winInk": 1316,
-    "threeStarInk": 1800,
+    "winInk": 640,
+    "threeStarInk": 1516,
     "threeStarBrush": "quill",
     "ease": 0.85,
-    "winShare": 0.69,
+    "winShare": 0.4,
     "threeShare": 0.95
   },
   "layout": "P"

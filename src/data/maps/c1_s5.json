@@ -2,7 +2,7 @@
   "id": "c1_s5",
   "name": "The Ravine",
   "chapter": 1,
-  "baseInk": 1960,
+  "baseInk": 840,
   "starts": [
     {
       "x": 360,
@@ -11,10 +11,11 @@
   ],
   "bosses": [
     {
-      "type": "goblin_chief",
+      "type": "sealbreaker",
       "x": 360,
       "y": 206,
-      "scale": 1.49
+      "scale": 3.13,
+      "facing": -3.142
     }
   ],
   "obstacles": [
@@ -142,43 +143,23 @@
         808
       ],
       [
-        232,
-        592
+        224,
+        688
       ],
       [
-        304,
-        456
+        248,
+        464
+      ],
+      [
+        248,
+        400
       ],
       [
         448,
         368
       ],
       [
-        320,
-        360
-      ],
-      [
-        208,
-        608
-      ],
-      [
-        280,
-        624
-      ],
-      [
-        472,
-        640
-      ],
-      [
-        240,
-        616
-      ],
-      [
-        264,
-        336
-      ],
-      [
-        336,
+        384,
         264
       ]
     ]
@@ -194,11 +175,11 @@
     "h": 700
   },
   "design": {
-    "winInk": 631,
-    "threeStarInk": 1857,
+    "winInk": 595,
+    "threeStarInk": 795,
     "threeStarBrush": "quill",
     "ease": 0.78,
-    "winShare": 0.32,
+    "winShare": 0.71,
     "threeShare": 0.95
   },
   "layout": "D"

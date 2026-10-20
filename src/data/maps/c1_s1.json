@@ -11,10 +11,11 @@
   ],
   "bosses": [
     {
-      "type": "goblin_chief",
+      "type": "sealbreaker",
       "x": 360,
       "y": 206,
-      "scale": 1.09
+      "scale": 2.47,
+      "facing": -3.142
     }
   ],
   "obstacles": [

@@ -2,7 +2,7 @@
   "id": "c8_s2",
   "name": "Ferry Point",
   "chapter": 8,
-  "baseInk": 1350,
+  "baseInk": 1260,
   "starts": [
     {
       "x": 115,
@@ -15,16 +15,17 @@
   ],
   "bosses": [
     {
-      "type": "shadow_mage",
+      "type": "crimson_scribe",
       "x": 259,
       "y": 500,
-      "scale": 1.86
+      "scale": 2.09
     },
     {
-      "type": "shadow_mage",
+      "type": "sealbreaker",
       "x": 461,
       "y": 500,
-      "scale": 1.86
+      "scale": 2.09,
+      "facing": 2.818
     }
   ],
   "obstacles": [
@@ -265,10 +266,6 @@
         896
       ],
       [
-        176,
-        816
-      ],
-      [
         96,
         520
       ],
@@ -281,10 +278,6 @@
       [
         605,
         70
-      ],
-      [
-        488,
-        224
       ],
       [
         616,
@@ -304,8 +297,8 @@
     "h": 1000
   },
   "design": {
-    "winInk": 1236,
-    "threeStarInk": 1490,
+    "winInk": 1155,
+    "threeStarInk": 1383,
     "threeStarBrush": "golden",
     "ease": 0.9,
     "winShare": 0.92,

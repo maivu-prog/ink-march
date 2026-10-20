@@ -2,7 +2,7 @@
   "id": "c7_s2",
   "name": "Iron Switchback",
   "chapter": 7,
-  "baseInk": 1840,
+  "baseInk": 1960,
   "starts": [
     {
       "x": 553,
@@ -11,10 +11,10 @@
   ],
   "bosses": [
     {
-      "type": "goblin_chief",
+      "type": "crimson_scribe",
       "x": 166,
       "y": 846,
-      "scale": 1.88
+      "scale": 2.3
     }
   ],
   "obstacles": [
@@ -237,12 +237,8 @@
         913
       ],
       [
-        600,
-        840
-      ],
-      [
-        472,
-        624
+        480,
+        632
       ],
       [
         360,
@@ -266,7 +262,15 @@
       ],
       [
         488,
-        704
+        648
+      ],
+      [
+        576,
+        736
+      ],
+      [
+        584,
+        744
       ],
       [
         224,
@@ -283,11 +287,11 @@
   },
   "design": {
     "winInk": 1064,
-    "threeStarInk": 2415,
+    "threeStarInk": 2536,
     "threeStarBrush": "reed",
     "ease": 0.89,
-    "winShare": 0.58,
-    "threeShare": 1.31
+    "winShare": 0.54,
+    "threeShare": 1.29
   },
   "redesign": "1015",
   "layout": "K"

@@ -2,7 +2,7 @@
   "id": "c7_s3",
   "name": "Hammer and Anvil",
   "chapter": 7,
-  "baseInk": 1990,
+  "baseInk": 1650,
   "starts": [
     {
       "x": 125,
@@ -15,10 +15,10 @@
   ],
   "bosses": [
     {
-      "type": "goblin_chief",
+      "type": "crimson_scribe",
       "x": 360,
       "y": 500,
-      "scale": 3.07
+      "scale": 3.63
     }
   ],
   "obstacles": [
@@ -295,35 +295,23 @@
         87
       ],
       [
+        560,
+        256
+      ],
+      [
+        288,
+        264
+      ],
+      [
         256,
         296
       ],
       [
-        480,
-        256
+        264,
+        368
       ],
       [
-        520,
-        256
-      ],
-      [
-        528,
-        264
-      ],
-      [
-        520,
-        256
-      ],
-      [
-        448,
-        256
-      ],
-      [
-        392,
-        336
-      ],
-      [
-        384,
+        336,
         440
       ]
     ]
@@ -336,8 +324,8 @@
     "h": 960
   },
   "design": {
-    "winInk": 1086,
-    "threeStarInk": 1884,
+    "winInk": 912,
+    "threeStarInk": 1564,
     "threeStarBrush": "quill",
     "ease": 0.91,
     "winShare": 0.55,

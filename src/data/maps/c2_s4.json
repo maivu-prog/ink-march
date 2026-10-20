@@ -2,7 +2,7 @@
   "id": "c2_s4",
   "name": "Windy Hills",
   "chapter": 2,
-  "baseInk": 1600,
+  "baseInk": 1580,
   "starts": [
     {
       "x": 187,
@@ -11,10 +11,11 @@
   ],
   "bosses": [
     {
-      "type": "goblin_chief",
+      "type": "sealbreaker",
       "x": 522,
       "y": 185,
-      "scale": 1.71
+      "scale": 1.37,
+      "facing": -0.484
     }
   ],
   "obstacles": [
@@ -226,27 +227,27 @@
       ],
       [
         176,
-        360
+        592
       ],
       [
-        184,
-        424
+        320,
+        512
       ],
       [
-        312,
-        464
+        288,
+        472
       ],
       [
-        512,
+        176,
         416
       ],
       [
-        528,
-        392
+        176,
+        360
       ],
       [
-        528,
-        248
+        464,
+        216
       ]
     ]
   ],
@@ -261,8 +262,8 @@
     "h": 750
   },
   "design": {
-    "winInk": 675,
-    "threeStarInk": 1519,
+    "winInk": 661,
+    "threeStarInk": 1498,
     "threeStarBrush": "quill",
     "ease": 0.82,
     "winShare": 0.42,

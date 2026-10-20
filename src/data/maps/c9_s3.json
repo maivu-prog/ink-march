@@ -11,10 +11,10 @@
   ],
   "bosses": [
     {
-      "type": "shadow_mage",
+      "type": "crimson_scribe",
       "x": 360,
       "y": 460,
-      "scale": 2.25
+      "scale": 2.81
     }
   ],
   "obstacles": [

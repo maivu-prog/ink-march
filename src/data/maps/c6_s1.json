@@ -2,7 +2,7 @@
   "id": "c6_s1",
   "name": "Fen Paths",
   "chapter": 6,
-  "baseInk": 1790,
+  "baseInk": 2030,
   "starts": [
     {
       "x": 585,
@@ -15,10 +15,10 @@
   ],
   "bosses": [
     {
-      "type": "goblin_chief",
+      "type": "inkpot_ogre",
       "x": 360,
       "y": 500,
-      "scale": 3.11
+      "scale": 1.8
     }
   ],
   "obstacles": [
@@ -338,20 +338,16 @@
         896
       ],
       [
-        520,
-        896
-      ],
-      [
         608,
         712
       ],
       [
-        408,
-        688
+        488,
+        864
       ],
       [
-        392,
-        616
+        384,
+        632
       ],
       [
         384,
@@ -364,23 +360,19 @@
         104
       ],
       [
-        312,
-        112
-      ],
-      [
         584,
         216
       ],
       [
-        584,
-        264
+        408,
+        152
       ],
       [
-        392,
-        328
+        344,
+        248
       ],
       [
-        384,
+        344,
         440
       ]
     ]
@@ -394,10 +386,10 @@
   },
   "design": {
     "winInk": 1171,
-    "threeStarInk": 1698,
+    "threeStarInk": 1926,
     "threeStarBrush": "quill",
     "ease": 0.85,
-    "winShare": 0.65,
+    "winShare": 0.58,
     "threeShare": 0.95
   },
   "redesign": "1015",

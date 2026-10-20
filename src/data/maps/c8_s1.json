@@ -2,7 +2,7 @@
   "id": "c8_s1",
   "name": "River Run",
   "chapter": 8,
-  "baseInk": 1460,
+  "baseInk": 1560,
   "starts": [
     {
       "x": 655,
@@ -11,10 +11,10 @@
   ],
   "bosses": [
     {
-      "type": "shadow_mage",
+      "type": "crimson_scribe",
       "x": 72,
       "y": 380,
-      "scale": 1.62
+      "scale": 2.63
     }
   ],
   "obstacles": [],
@@ -170,12 +170,12 @@
     "h": 1000
   },
   "design": {
-    "winInk": 1068,
+    "winInk": 1148,
     "threeStarInk": 1384,
     "threeStarBrush": "quill",
     "ease": 0.87,
-    "winShare": 0.73,
-    "threeShare": 0.95
+    "winShare": 0.74,
+    "threeShare": 0.89
   },
   "redesign": "1015",
   "layout": "N"

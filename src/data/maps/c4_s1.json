@@ -2,7 +2,7 @@
   "id": "c4_s1",
   "name": "Two Banks",
   "chapter": 4,
-  "baseInk": 2240,
+  "baseInk": 2140,
   "starts": [
     {
       "x": 207,
@@ -15,16 +15,16 @@
   ],
   "bosses": [
     {
-      "type": "goblin_chief",
+      "type": "inkpot_ogre",
       "x": 207,
       "y": 143,
-      "scale": 1.65
+      "scale": 0.95
     },
     {
-      "type": "goblin_chief",
+      "type": "crimson_scribe",
       "x": 513,
       "y": 143,
-      "scale": 1.65
+      "scale": 0.95
     }
   ],
   "obstacles": [
@@ -311,12 +311,12 @@
     "h": 850
   },
   "design": {
-    "winInk": 1652,
+    "winInk": 1583,
     "threeStarInk": 1757,
     "threeStarBrush": "quill",
     "ease": 0.82,
     "winShare": 0.74,
-    "threeShare": 0.78
+    "threeShare": 0.82
   },
   "layout": "2S"
 }

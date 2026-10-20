@@ -2,7 +2,7 @@
   "id": "c4_s5",
   "name": "Twin Ravines",
   "chapter": 4,
-  "baseInk": 1830,
+  "baseInk": 1870,
   "starts": [
     {
       "x": 207,
@@ -15,16 +15,16 @@
   ],
   "bosses": [
     {
-      "type": "goblin_chief",
+      "type": "inkpot_ogre",
       "x": 207,
       "y": 143,
-      "scale": 1.84
+      "scale": 1.18
     },
     {
-      "type": "goblin_chief",
+      "type": "crimson_scribe",
       "x": 513,
       "y": 143,
-      "scale": 1.84
+      "scale": 1.18
     }
   ],
   "obstacles": [
@@ -392,12 +392,12 @@
     "h": 850
   },
   "design": {
-    "winInk": 1540,
+    "winInk": 1575,
     "threeStarInk": 1690,
     "threeStarBrush": "quill",
     "ease": 0.9,
     "winShare": 0.84,
-    "threeShare": 0.92
+    "threeShare": 0.9
   },
   "layout": "2S"
 }

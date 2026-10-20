@@ -2,7 +2,7 @@
   "id": "c4_s3",
   "name": "Split Assault",
   "chapter": 4,
-  "baseInk": 1160,
+  "baseInk": 1360,
   "starts": [
     {
       "x": 568,
@@ -15,10 +15,10 @@
   ],
   "bosses": [
     {
-      "type": "goblin_chief",
+      "type": "inkpot_ogre",
       "x": 360,
       "y": 500,
-      "scale": 2.83
+      "scale": 1.62
     }
   ],
   "obstacles": [
@@ -252,7 +252,15 @@
         824
       ],
       [
-        384,
+        208,
+        736
+      ],
+      [
+        328,
+        656
+      ],
+      [
+        336,
         560
       ]
     ],
@@ -295,12 +303,12 @@
     "h": 850
   },
   "design": {
-    "winInk": 766,
-    "threeStarInk": 1094,
+    "winInk": 800,
+    "threeStarInk": 1288,
     "threeStarBrush": "quill",
     "ease": 0.87,
-    "winShare": 0.66,
-    "threeShare": 0.94
+    "winShare": 0.59,
+    "threeShare": 0.95
   },
   "layout": "2L"
 }

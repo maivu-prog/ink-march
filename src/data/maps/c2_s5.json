@@ -2,7 +2,7 @@
   "id": "c2_s5",
   "name": "Cliffside Pass",
   "chapter": 2,
-  "baseInk": 1850,
+  "baseInk": 1930,
   "starts": [
     {
       "x": 511,
@@ -11,10 +11,11 @@
   ],
   "bosses": [
     {
-      "type": "goblin_chief",
+      "type": "sealbreaker",
       "x": 209,
       "y": 770,
-      "scale": 1.73
+      "scale": 2.36,
+      "facing": 1.397
     }
   ],
   "obstacles": [
@@ -245,24 +246,28 @@
         320
       ],
       [
-        560,
-        376
+        168,
+        368
       ],
       [
-        544,
-        448
+        160,
+        472
       ],
       [
-        432,
-        552
+        184,
+        568
       ],
       [
-        376,
-        640
+        296,
+        600
       ],
       [
-        264,
-        736
+        296,
+        664
+      ],
+      [
+        248,
+        720
       ]
     ]
   ],
@@ -275,12 +280,12 @@
     "h": 750
   },
   "design": {
-    "winInk": 1561,
-    "threeStarInk": 1678,
+    "winInk": 885,
+    "threeStarInk": 1825,
     "threeStarBrush": "quill",
     "ease": 0.84,
-    "winShare": 0.84,
-    "threeShare": 0.91
+    "winShare": 0.46,
+    "threeShare": 0.95
   },
   "layout": "K"
 }

@@ -2,7 +2,7 @@
   "id": "c9_s4",
   "name": "Witch Hunt",
   "chapter": 9,
-  "baseInk": 1820,
+  "baseInk": 1580,
   "starts": [
     {
       "x": 605,
@@ -15,7 +15,7 @@
   ],
   "bosses": [
     {
-      "type": "shadow_mage",
+      "type": "crimson_scribe",
       "x": 360,
       "y": 500,
       "scale": 3.81
@@ -360,14 +360,6 @@
         70
       ],
       [
-        328,
-        64
-      ],
-      [
-        96,
-        416
-      ],
-      [
         96,
         448
       ],
@@ -401,11 +393,11 @@
     "h": 1000
   },
   "design": {
-    "winInk": 1567,
-    "threeStarInk": 2154,
+    "winInk": 1429,
+    "threeStarInk": 1866,
     "threeStarBrush": "golden",
     "ease": 0.96,
-    "winShare": 0.86,
+    "winShare": 0.9,
     "threeShare": 1.18
   },
   "redesign": "1015",

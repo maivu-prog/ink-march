@@ -11,10 +11,10 @@
   ],
   "bosses": [
     {
-      "type": "shadow_mage",
+      "type": "crimson_scribe",
       "x": 576,
       "y": 80,
-      "scale": 1.72
+      "scale": 2.52
     }
   ],
   "obstacles": [
@@ -379,11 +379,11 @@
     "h": 1000
   },
   "design": {
-    "winInk": 2167,
+    "winInk": 1801,
     "threeStarInk": 5973,
     "threeStarBrush": "marsh",
     "ease": 0.95,
-    "winShare": 0.51,
+    "winShare": 0.43,
     "threeShare": 1.41
   },
   "redesign": "1015",

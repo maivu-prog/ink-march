@@ -2,7 +2,7 @@
   "id": "c3_s1",
   "name": "Bog Crossing",
   "chapter": 3,
-  "baseInk": 1790,
+  "baseInk": 2030,
   "starts": [
     {
       "x": 124,
@@ -11,10 +11,11 @@
   ],
   "bosses": [
     {
-      "type": "goblin_chief",
+      "type": "sealbreaker",
       "x": 590,
       "y": 404,
-      "scale": 1.46
+      "scale": 1.47,
+      "facing": -1.18
     }
   ],
   "obstacles": [
@@ -222,8 +223,16 @@
         408
       ],
       [
-        528,
-        416
+        512,
+        512
+      ],
+      [
+        552,
+        512
+      ],
+      [
+        568,
+        464
       ]
     ]
   ],
@@ -235,11 +244,11 @@
     "h": 800
   },
   "design": {
-    "winInk": 722,
-    "threeStarInk": 1699,
+    "winInk": 910,
+    "threeStarInk": 1925,
     "threeStarBrush": "quill",
     "ease": 0.8,
-    "winShare": 0.4,
+    "winShare": 0.45,
     "threeShare": 0.95
   },
   "layout": "N"

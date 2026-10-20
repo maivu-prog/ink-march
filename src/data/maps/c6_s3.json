@@ -15,16 +15,16 @@
   ],
   "bosses": [
     {
-      "type": "goblin_chief",
+      "type": "inkpot_ogre",
       "x": 194,
       "y": 114,
-      "scale": 1.62
+      "scale": 0.91
     },
     {
-      "type": "goblin_chief",
+      "type": "crimson_scribe",
       "x": 526,
       "y": 114,
-      "scale": 1.62
+      "scale": 0.91
     }
   ],
   "obstacles": [

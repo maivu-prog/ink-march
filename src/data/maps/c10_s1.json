@@ -11,10 +11,11 @@
   ],
   "bosses": [
     {
-      "type": "shadow_mage",
+      "type": "sealbreaker",
       "x": 360,
       "y": 80,
-      "scale": 1.26
+      "scale": 1.55,
+      "facing": 0
     }
   ],
   "obstacles": [
@@ -342,11 +343,11 @@
     "h": 1000
   },
   "design": {
-    "winInk": 1305,
+    "winInk": 1268,
     "threeStarInk": 2842,
     "threeStarBrush": "quill",
     "ease": 0.89,
-    "winShare": 0.43,
+    "winShare": 0.42,
     "threeShare": 0.95
   },
   "redesign": "1015",

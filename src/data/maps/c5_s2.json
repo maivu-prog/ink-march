@@ -11,10 +11,10 @@
   ],
   "bosses": [
     {
-      "type": "goblin_chief",
+      "type": "inkpot_ogre",
       "x": 360,
       "y": 130,
-      "scale": 1.76
+      "scale": 0.92
     }
   ],
   "obstacles": [
@@ -296,11 +296,11 @@
     "h": 880
   },
   "design": {
-    "winInk": 1843,
+    "winInk": 1590,
     "threeStarInk": 2315,
     "threeStarBrush": "reed",
     "ease": 0.86,
-    "winShare": 0.92,
+    "winShare": 0.79,
     "threeShare": 1.15
   },
   "redesign": "1015"

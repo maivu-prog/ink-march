@@ -15,7 +15,7 @@
   ],
   "bosses": [
     {
-      "type": "shadow_mage",
+      "type": "crimson_scribe",
       "x": 360,
       "y": 80,
       "scale": 3.85
@@ -454,18 +454,6 @@
         940
       ],
       [
-        648,
-        848
-      ],
-      [
-        632,
-        736
-      ],
-      [
-        584,
-        720
-      ],
-      [
         584,
         688
       ],
@@ -515,8 +503,8 @@
     "h": 1000
   },
   "design": {
-    "winInk": 2407,
-    "threeStarInk": 2675,
+    "winInk": 2402,
+    "threeStarInk": 2670,
     "threeStarBrush": "quill",
     "ease": 0.96,
     "winShare": 0.84,

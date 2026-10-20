@@ -15,16 +15,17 @@
   ],
   "bosses": [
     {
-      "type": "shadow_mage",
+      "type": "crimson_scribe",
       "x": 180,
       "y": 80,
-      "scale": 1.61
+      "scale": 2.1
     },
     {
-      "type": "shadow_mage",
+      "type": "sealbreaker",
       "x": 540,
       "y": 80,
-      "scale": 1.61
+      "scale": 2.1,
+      "facing": 0
     }
   ],
   "obstacles": [
