@@ -11,10 +11,10 @@
   ],
   "bosses": [
     {
-      "type": "goblin_king",
+      "type": "inkpot_ogre",
       "x": 360,
       "y": 465,
-      "scale": 1.67
+      "scale": 0.9
     }
   ],
   "obstacles": [

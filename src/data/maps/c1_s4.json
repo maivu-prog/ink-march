@@ -11,10 +11,11 @@
   ],
   "bosses": [
     {
-      "type": "goblin_king",
+      "type": "sealbreaker",
       "x": 360,
       "y": 472,
-      "scale": 1.51
+      "scale": 3.23,
+      "facing": 0
     }
   ],
   "obstacles": [
@@ -289,6 +290,7 @@
   ],
   "tutorialHint": "Two warbands march on the King. They steal charms on the way. Check the forecast before you march.",
   "teach": [
+    "boss_sealbreaker",
     "layout",
     "thieves",
     "loot",
@@ -301,11 +303,11 @@
     "h": 700
   },
   "design": {
-    "winInk": 693,
+    "winInk": 478,
     "threeStarInk": 1268,
     "threeStarBrush": "quill",
     "ease": 0.81,
-    "winShare": 0.5,
+    "winShare": 0.35,
     "threeShare": 0.92
   },
   "layout": "P"

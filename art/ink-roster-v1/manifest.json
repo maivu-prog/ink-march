@@ -1,0 +1,110 @@
+{
+  "archer": {
+    "triangles": 7244,
+    "meshes": 8,
+    "materials": 1,
+    "animations": [
+      "Idle",
+      "Walk",
+      "Death",
+      "Attack"
+    ],
+    "bytes": 223256
+  },
+  "shield": {
+    "triangles": 6892,
+    "meshes": 7,
+    "materials": 1,
+    "animations": [
+      "Idle",
+      "Walk",
+      "Death",
+      "Attack"
+    ],
+    "bytes": 216504
+  },
+  "spear": {
+    "triangles": 6870,
+    "meshes": 7,
+    "materials": 1,
+    "animations": [
+      "Idle",
+      "Walk",
+      "Death",
+      "Attack"
+    ],
+    "bytes": 212928
+  },
+  "mage": {
+    "triangles": 7186,
+    "meshes": 7,
+    "materials": 1,
+    "animations": [
+      "Idle",
+      "Walk",
+      "Death",
+      "Attack"
+    ],
+    "bytes": 188232
+  },
+  "healer": {
+    "triangles": 7398,
+    "meshes": 7,
+    "materials": 1,
+    "animations": [
+      "Idle",
+      "Walk",
+      "Death",
+      "Attack"
+    ],
+    "bytes": 210296
+  },
+  "goblin": {
+    "triangles": 6892,
+    "meshes": 7,
+    "materials": 1,
+    "animations": [
+      "Idle",
+      "Walk",
+      "Death",
+      "Attack"
+    ],
+    "bytes": 198536
+  },
+  "goblin_archer": {
+    "triangles": 7326,
+    "meshes": 8,
+    "materials": 1,
+    "animations": [
+      "Idle",
+      "Walk",
+      "Death",
+      "Attack"
+    ],
+    "bytes": 227528
+  },
+  "orc": {
+    "triangles": 7082,
+    "meshes": 7,
+    "materials": 1,
+    "animations": [
+      "Idle",
+      "Walk",
+      "Death",
+      "Attack"
+    ],
+    "bytes": 210916
+  },
+  "shaman": {
+    "triangles": 6698,
+    "meshes": 7,
+    "materials": 1,
+    "animations": [
+      "Idle",
+      "Walk",
+      "Death",
+      "Attack"
+    ],
+    "bytes": 179816
+  }
+}

@@ -38,7 +38,8 @@ const actionLabels:Record<string,string>={pause:'Pause battle',undo:'Undo stroke
 const btn=(action:string,html:string,cls='',disabled=false,attrs='')=>`<button class="g-btn ${cls}" data-action="${action}" ${actionLabels[action]?`aria-label="${actionLabels[action]}"`:''} ${disabled?'disabled':''} ${attrs}>${html}</button>`;
 const beanPortraits=new Set(['sword','archer','shield','spear','mage','healer','goblin']);
 const enemyPortraits=new Set(['goblin_archer','orc','shaman','goblin_king','shadow_mage']);
-const portrait=(id:string)=>`./assets/portraits/${['sword','archer','shield','spear','mage','healer'].includes(id)?'bean-v4/':beanPortraits.has(id)?'bean-v2/':enemyPortraits.has(id)?'bean-v3/':''}${id}.png?v=bean-v4`;
+const inkRosterPortraits=new Set(['archer','shield','spear','mage','healer','goblin','goblin_archer','orc','shaman']);
+const portrait=(id:string)=>`./assets/portraits/${id==='sword'?'ink-sprite-prototype/':inkRosterPortraits.has(id)?'ink-roster-v1/':enemyPortraits.has(id)?'bean-v3/':''}${id}.png?v=ink-roster-v1`;
 const rar=(id:string)=>'rar-'+U[id].rarity,brar=(id:string)=>'rar-'+BR[id].rarity;
 const stars=(n:number,max=3)=>Array.from({length:max},(_,i)=>i<n?icon.star:icon.starOff).join('');
 function toast(text:string){ui.querySelector('.g-toast')?.remove();let d=document.createElement('div');d.className='g-toast g-o';d.textContent=text;ui.append(d);setTimeout(()=>d.remove(),2000);}

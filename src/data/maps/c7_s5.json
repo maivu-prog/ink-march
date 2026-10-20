@@ -2,7 +2,7 @@
   "id": "c7_s5",
   "name": "Iron Warlord",
   "chapter": 7,
-  "baseInk": 4110,
+  "baseInk": 4280,
   "starts": [
     {
       "x": 76,
@@ -11,10 +11,10 @@
   ],
   "bosses": [
     {
-      "type": "goblin_king",
+      "type": "crimson_scribe",
       "x": 636,
       "y": 385,
-      "scale": 1.89
+      "scale": 2.14
     }
   ],
   "obstacles": [
@@ -287,23 +287,23 @@
         712
       ],
       [
-        336,
-        688
+        344,
+        696
       ],
       [
-        320,
-        296
-      ],
-      [
-        160,
+        400,
         272
       ],
       [
-        328,
+        560,
+        272
+      ],
+      [
+        392,
         304
       ],
       [
-        336,
+        384,
         760
       ],
       [
@@ -336,12 +336,12 @@
     "h": 960
   },
   "design": {
-    "winInk": 3069,
-    "threeStarInk": 3781,
+    "winInk": 3505,
+    "threeStarInk": 3788,
     "threeStarBrush": "quill",
     "ease": 0.96,
-    "winShare": 0.75,
-    "threeShare": 0.92
+    "winShare": 0.82,
+    "threeShare": 0.89
   },
   "redesign": "1015",
   "layout": "N"

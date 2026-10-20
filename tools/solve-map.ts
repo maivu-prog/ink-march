@@ -38,7 +38,7 @@ if(!tours.length){console.log(id,'NO 3-CAMP ROUTE');process.exit(1);}
 let lo=.15,hi=4;if(!threeWins(lo)){console.log(`${id}: even at scale ${lo} no 3-camp route wins (camps too strong)`);process.exit(0);}
 for(let i=0;i<8;i++){const mid=(lo+hi)/2;if(threeWins(mid))lo=mid;else hi=mid;}
 // độ khó: nền theo chương + tăng dần trong chương (màn đầu dễ, màn boss là đỉnh)
-const ease=tutorial?.62:Math.min(.98,[.76,.82,.85,.87,.89,.9,.91,.92,.93,.94][base.chapter-1]-.05+.1*pos);let s=+(lo*ease).toFixed(2),three=threeWins(s)!;
+const ease=tutorial?.62:Math.min(.98,[.76,.82,.85,.87,.89,.9,.91,.92,.93,.94][base.chapter-1]-.05+.1*pos);let s=+(lo*ease).toFixed(2),three=threeWins(s)!;/* boss mới (Scribe, Sealbreaker) không đơn điệu theo scale: hạ dần tới khi có tuyến 3 sao thắng */while(!three&&s>.15){s=+(s*.94).toFixed(2);three=threeWins(s)!;}
 let win:any=null;for(const c of [...all].sort((a,b)=>a.reduce((n,x)=>n+x.cost,0)-b.reduce((n,x)=>n+x.cost,0))){const r=run(s,c);if(r.result==='win'){win={c,r};break;}}
 const lazyR=lazy?run(s,lazy.paths.map(p=>({points:p.points} as any))):null;
 console.log(`scale ${s} · 3★ route alive ${three.r.alive}/${three.r.total} · cheapest win alive ${win.r.alive}/${win.r.total} · lazy ${lazyR?.result}`);

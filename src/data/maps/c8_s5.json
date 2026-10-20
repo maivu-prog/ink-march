@@ -11,10 +11,10 @@
   ],
   "bosses": [
     {
-      "type": "goblin_king",
+      "type": "crimson_scribe",
       "x": 360,
       "y": 80,
-      "scale": 2.11
+      "scale": 2.23
     }
   ],
   "obstacles": [

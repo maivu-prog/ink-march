@@ -2,7 +2,7 @@
   "id": "c10_s5",
   "name": "The Ink Citadel",
   "chapter": 10,
-  "baseInk": 2970,
+  "baseInk": 2480,
   "starts": [
     {
       "x": 115,
@@ -15,16 +15,17 @@
   ],
   "bosses": [
     {
-      "type": "goblin_king",
+      "type": "sealbreaker",
       "x": 259,
       "y": 500,
-      "scale": 2.23
+      "scale": 2.26,
+      "facing": -0.323
     },
     {
-      "type": "shadow_mage",
+      "type": "crimson_scribe",
       "x": 461,
       "y": 500,
-      "scale": 2.23
+      "scale": 2.26
     }
   ],
   "obstacles": [
@@ -319,11 +320,11 @@
         896
       ],
       [
-        216,
-        728
+        312,
+        792
       ],
       [
-        232,
+        280,
         560
       ]
     ],
@@ -337,16 +338,12 @@
         136
       ],
       [
-        528,
-        368
+        400,
+        296
       ],
       [
-        592,
-        432
-      ],
-      [
-        520,
-        472
+        440,
+        440
       ]
     ]
   ],
@@ -358,11 +355,11 @@
     "h": 1000
   },
   "design": {
-    "winInk": 2247,
-    "threeStarInk": 2729,
+    "winInk": 1617,
+    "threeStarInk": 2279,
     "threeStarBrush": "quill",
     "ease": 0.98,
-    "winShare": 0.76,
+    "winShare": 0.65,
     "threeShare": 0.92
   },
   "redesign": "1015",

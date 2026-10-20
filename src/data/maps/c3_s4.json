@@ -2,7 +2,7 @@
   "id": "c3_s4",
   "name": "Mire Chieftain",
   "chapter": 3,
-  "baseInk": 2040,
+  "baseInk": 1310,
   "starts": [
     {
       "x": 596,
@@ -11,10 +11,11 @@
   ],
   "bosses": [
     {
-      "type": "goblin_king",
+      "type": "sealbreaker",
       "x": 130,
       "y": 404,
-      "scale": 1.65
+      "scale": 1.91,
+      "facing": 1.18
     }
   ],
   "obstacles": [
@@ -360,24 +361,12 @@
         304
       ],
       [
-        208,
-        344
-      ],
-      [
-        216,
-        696
-      ],
-      [
-        328,
-        736
-      ],
-      [
-        208,
-        688
+        192,
+        352
       ],
       [
         192,
-        424
+        384
       ]
     ]
   ],
@@ -389,8 +378,8 @@
     "h": 800
   },
   "design": {
-    "winInk": 1224,
-    "threeStarInk": 1869,
+    "winInk": 786,
+    "threeStarInk": 1203,
     "threeStarBrush": "quill",
     "ease": 0.9,
     "winShare": 0.6,

@@ -2,7 +2,7 @@
   "id": "c9_s5",
   "name": "Heart of Shadow",
   "chapter": 9,
-  "baseInk": 2420,
+  "baseInk": 2190,
   "starts": [
     {
       "x": 115,
@@ -15,16 +15,16 @@
   ],
   "bosses": [
     {
-      "type": "goblin_king",
+      "type": "inkpot_ogre",
       "x": 259,
       "y": 500,
-      "scale": 1.95
+      "scale": 1.3
     },
     {
-      "type": "shadow_mage",
+      "type": "crimson_scribe",
       "x": 461,
       "y": 500,
-      "scale": 1.95
+      "scale": 1.3
     }
   ],
   "obstacles": [
@@ -297,16 +297,24 @@
         880
       ],
       [
+        336,
+        792
+      ],
+      [
+        336,
+        720
+      ],
+      [
+        264,
+        648
+      ],
+      [
         128,
         464
       ],
       [
-        232,
-        592
-      ],
-      [
-        232,
-        560
+        200,
+        472
       ]
     ],
     [
@@ -336,8 +344,8 @@
     "h": 1000
   },
   "design": {
-    "winInk": 1983,
-    "threeStarInk": 1983,
+    "winInk": 1790,
+    "threeStarInk": 1790,
     "threeStarBrush": "quill",
     "ease": 0.98,
     "winShare": 0.82,
