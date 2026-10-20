@@ -277,3 +277,22 @@
 /* START ở nửa phải sân: nhãn nằm bên trái cờ để không tràn mép */
 #labels .start-label.left:not(.two){transform:translate(calc(-100% - 34px),-50%)!important}
 #labels .start-label.below:not(.two){transform:translate(-50%,40px)!important}
+
+/* Sao trại trong trận: 3 ô dưới thanh máu boss, sao bay từ trại lên */
+#labels .camp-stars-hud{position:absolute;top:10px;left:50%;transform:translateX(-50%);display:flex;gap:10px;z-index:7;pointer-events:none}
+#labels .camp-stars-hud .slot{position:relative;width:40px;height:40px;border-radius:50%;background:#17343bcc;border:2px solid #a9bf8e80;display:grid;place-items:center;box-shadow:0 3px 0 #0003}
+#labels .camp-stars-hud .slot svg{width:26px;height:26px;opacity:.55}
+#labels .camp-stars-hud .slot b{position:absolute;inset:0;display:grid;place-items:center;opacity:0;transform:scale(.3);transition:opacity .15s,transform .25s cubic-bezier(.3,1.6,.5,1)}
+#labels .camp-stars-hud .slot b svg{width:30px;height:30px;opacity:1}
+#labels .camp-stars-hud .slot.on{border-color:#ffd65a;background:#3a3410dd}
+#labels .camp-stars-hud .slot.on b{opacity:1;transform:scale(1)}
+#labels .camp-stars-hud .slot.pop{animation:g-star-pop .45s ease-out}
+@keyframes g-star-pop{0%{transform:scale(1)}40%{transform:scale(1.35)}100%{transform:scale(1)}}
+#labels .fly-star{position:absolute;width:38px;height:38px;transform:translate(-50%,-50%) scale(1.25);z-index:8;pointer-events:none;filter:drop-shadow(0 0 8px #ffd65a);transition:left .7s cubic-bezier(.5,0,.3,1),top .7s cubic-bezier(.6,-.5,.4,1),transform .7s ease-in}
+#labels .fly-star svg{width:100%;height:100%}
+#labels .fly-star.go{transform:translate(-50%,-50%) scale(.8)}
+#labels .camp-stars-hud .slot{flex:none!important;width:40px!important;height:40px!important;min-height:0!important;padding:0!important;line-height:0!important;box-sizing:border-box}
+#labels .camp-stars-hud .slot>svg{position:absolute;left:7px;top:7px;width:26px!important;height:26px!important}
+#labels .camp-stars-hud .slot b{width:40px;height:40px;padding:0!important;background:none!important;border:0!important}
+#labels .camp-stars-hud .slot.on>svg{display:none}
+#labels .fly-star{line-height:0;padding:0!important;background:none!important;border:0!important}
