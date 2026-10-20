@@ -2,7 +2,7 @@
   "id": "c10_s2",
   "name": "Ink Moat",
   "chapter": 10,
-  "baseInk": 3040,
+  "baseInk": 2740,
   "starts": [
     {
       "x": 605,
@@ -455,8 +455,8 @@
     "threeStarInk": 2391,
     "threeStarBrush": "quill",
     "ease": 0.91,
-    "winShare": 0.7,
-    "threeShare": 0.79
+    "winShare": 0.77,
+    "threeShare": 0.87
   },
   "redesign": "1015",
   "layout": "P2L"

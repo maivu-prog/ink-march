@@ -8,6 +8,7 @@ import chapters from '../src/data/chapters.json';
 import {maps,BR,dist,type MapData,type P} from '../src/systems';
 import {teamRoute,drawPool,simulate,lazyPool,pathCost,free,bossFor,brushFx} from './mapTools';
 import {NO_BRUSH} from '../src/systems';
+import {inkPlan} from './reink'; // công thức mực gốc dùng chung (20/10)
 
 const id=process.argv[2],write=process.argv.includes('--write'),base=maps[id];
 const tutorial=id.endsWith('_s1')&&base.chapter===1;
@@ -49,6 +50,7 @@ const costWith=(c:Cand[],fx:any)=>c.reduce((n,x)=>n+pathCost(base,x.points,fx)-x
 const winCost=costWith(chosen.win.c,NO_BRUSH),threeRoute=chosen.three?.c;let threeBrush='quill',threeCost=threeRoute?costWith(threeRoute,NO_BRUSH):0;
 if(threeRoute&&gated)for(const b of tier){const c=costWith(threeRoute,brushFx(b,1));if(c<threeCost){threeCost=c;threeBrush=b;}}
 const rWin=tutorial?.6:.66+.16*pos,rThree=gated?.93:isBoss?.92:.9;
-const baseInk=Math.ceil(Math.max(winCost/rWin,threeCost/rThree)/10)*10,quillThree=threeRoute?costWith(threeRoute,NO_BRUSH):0;
+const plan=inkPlan(base,winCost,fx=>costWith(threeRoute||chosen.win.c,fx));threeBrush=plan.brush;threeCost=plan.three;
+const baseInk=plan.baseInk,quillThree=threeRoute?costWith(threeRoute,NO_BRUSH):0;
 console.log(`${id}: scale ${chosen.s.toFixed(2)} · win route ${Math.round(winCost)} ink (alive ${chosen.win.r.alive}/${chosen.win.r.total}) · 3★ ${threeRoute?Math.round(quillThree)+' with quill, '+Math.round(threeCost)+' with '+threeBrush:'n/a'} · baseInk ${baseInk}${threeRoute&&quillThree>baseInk?' → 3★ needs a better brush':''}`);
 if(write){const file=new URL(`../src/data/maps/${id}.json`,import.meta.url),json=JSON.parse(readFileSync(file,'utf8'));json.bosses.forEach((b:any)=>b.scale=+chosen!.s.toFixed(2));json.baseInk=baseInk;const ref=(threeRoute||chosen.win.c).map((c:Cand)=>c.points.map(p=>[Math.round(p.x),Math.round(p.y)]));json.referenceSolution=ref;json.design={winInk:Math.round(winCost),threeStarInk:Math.round(quillThree),threeStarBrush:threeBrush,ease:+ease.toFixed(2),winShare:+(winCost/baseInk).toFixed(2),threeShare:+(quillThree/baseInk).toFixed(2)};writeFileSync(file,JSON.stringify(json,null,2)+'\n');console.log('written');}

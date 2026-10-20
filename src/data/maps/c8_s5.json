@@ -2,7 +2,7 @@
   "id": "c8_s5",
   "name": "The Drowned King",
   "chapter": 8,
-  "baseInk": 2210,
+  "baseInk": 2060,
   "starts": [
     {
       "x": 360,
@@ -348,8 +348,8 @@
     "threeStarInk": 1842,
     "threeStarBrush": "quill",
     "ease": 0.97,
-    "winShare": 0.82,
-    "threeShare": 0.83
+    "winShare": 0.88,
+    "threeShare": 0.89
   },
   "redesign": "1015"
 }

@@ -2,7 +2,7 @@
   "id": "c4_s2",
   "name": "Crossing Fords",
   "chapter": 4,
-  "baseInk": 2040,
+  "baseInk": 1730,
   "starts": [
     {
       "x": 109,
@@ -323,10 +323,10 @@
   "design": {
     "winInk": 963,
     "threeStarInk": 1831,
-    "threeStarBrush": "quill",
+    "threeStarBrush": "reed",
     "ease": 0.84,
-    "winShare": 0.47,
-    "threeShare": 0.9
+    "winShare": 0.56,
+    "threeShare": 1.06
   },
   "redesign": "1015",
   "layout": "N"

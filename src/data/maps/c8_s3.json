@@ -2,7 +2,7 @@
   "id": "c8_s3",
   "name": "The Golden Bridge",
   "chapter": 8,
-  "baseInk": 3310,
+  "baseInk": 3140,
   "starts": [
     {
       "x": 360,
@@ -319,8 +319,8 @@
     "threeStarInk": 2976,
     "threeStarBrush": "quill",
     "ease": 0.92,
-    "winShare": 0.43,
-    "threeShare": 0.9
+    "winShare": 0.45,
+    "threeShare": 0.95
   },
   "layout": "D"
 }

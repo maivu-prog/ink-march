@@ -2,7 +2,7 @@
   "id": "c10_s4",
   "name": "Last Stand",
   "chapter": 10,
-  "baseInk": 3090,
+  "baseInk": 2850,
   "starts": [
     {
       "x": 180,
@@ -517,10 +517,10 @@
   "design": {
     "winInk": 2407,
     "threeStarInk": 2675,
-    "threeStarBrush": "golden",
+    "threeStarBrush": "quill",
     "ease": 0.96,
-    "winShare": 0.78,
-    "threeShare": 0.87
+    "winShare": 0.84,
+    "threeShare": 0.94
   },
   "redesign": "1015"
 }

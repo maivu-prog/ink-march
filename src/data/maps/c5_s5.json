@@ -2,7 +2,7 @@
   "id": "c5_s5",
   "name": "Canyon Steps",
   "chapter": 5,
-  "baseInk": 2190,
+  "baseInk": 2020,
   "starts": [
     {
       "x": 157,
@@ -239,10 +239,10 @@
   "design": {
     "winInk": 1702,
     "threeStarInk": 1702,
-    "threeStarBrush": "charcoal",
+    "threeStarBrush": "quill",
     "ease": 0.92,
-    "winShare": 0.78,
-    "threeShare": 0.78
+    "winShare": 0.84,
+    "threeShare": 0.84
   },
   "layout": "C"
 }

@@ -2,7 +2,7 @@
   "id": "c9_s2",
   "name": "Twin Shadows",
   "chapter": 9,
-  "baseInk": 3530,
+  "baseInk": 3190,
   "starts": [
     {
       "x": 180,
@@ -386,8 +386,8 @@
     "threeStarInk": 2658,
     "threeStarBrush": "quill",
     "ease": 0.91,
-    "winShare": 0.7,
-    "threeShare": 0.75
+    "winShare": 0.77,
+    "threeShare": 0.83
   },
   "layout": "2S"
 }

@@ -2,7 +2,7 @@
   "id": "c6_s3",
   "name": "Mirror Marsh",
   "chapter": 6,
-  "baseInk": 2300,
+  "baseInk": 2100,
   "starts": [
     {
       "x": 194,
@@ -353,8 +353,8 @@
     "threeStarInk": 1833,
     "threeStarBrush": "quill",
     "ease": 0.9,
-    "winShare": 0.74,
-    "threeShare": 0.8
+    "winShare": 0.81,
+    "threeShare": 0.87
   },
   "redesign": "1015",
   "layout": "2S"

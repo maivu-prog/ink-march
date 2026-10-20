@@ -2,7 +2,7 @@
   "id": "c4_s3",
   "name": "Split Assault",
   "chapter": 4,
-  "baseInk": 1220,
+  "baseInk": 1160,
   "starts": [
     {
       "x": 568,
@@ -299,8 +299,8 @@
     "threeStarInk": 1094,
     "threeStarBrush": "quill",
     "ease": 0.87,
-    "winShare": 0.63,
-    "threeShare": 0.9
+    "winShare": 0.66,
+    "threeShare": 0.94
   },
   "layout": "2L"
 }

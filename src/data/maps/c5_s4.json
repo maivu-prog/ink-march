@@ -2,7 +2,7 @@
   "id": "c5_s4",
   "name": "Warlord's Keep",
   "chapter": 5,
-  "baseInk": 2700,
+  "baseInk": 2620,
   "starts": [
     {
       "x": 360,
@@ -382,8 +382,8 @@
     "threeStarInk": 2484,
     "threeStarBrush": "quill",
     "ease": 0.94,
-    "winShare": 0.25,
-    "threeShare": 0.92
+    "winShare": 0.26,
+    "threeShare": 0.95
   },
   "redesign": "1015",
   "layout": "P"

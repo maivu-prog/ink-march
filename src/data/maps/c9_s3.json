@@ -2,7 +2,7 @@
   "id": "c9_s3",
   "name": "Cursed Crossroads",
   "chapter": 9,
-  "baseInk": 4440,
+  "baseInk": 4210,
   "starts": [
     {
       "x": 360,
@@ -589,8 +589,8 @@
     "threeStarInk": 3995,
     "threeStarBrush": "quill",
     "ease": 0.93,
-    "winShare": 0.45,
-    "threeShare": 0.9
+    "winShare": 0.48,
+    "threeShare": 0.95
   },
   "redesign": "1015",
   "layout": "P"

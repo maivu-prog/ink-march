@@ -2,7 +2,7 @@
   "id": "c5_s1",
   "name": "Canyon Gate",
   "chapter": 5,
-  "baseInk": 2200,
+  "baseInk": 2080,
   "starts": [
     {
       "x": 360,
@@ -240,8 +240,8 @@
     "threeStarInk": 1973,
     "threeStarBrush": "quill",
     "ease": 0.84,
-    "winShare": 0.51,
-    "threeShare": 0.9
+    "winShare": 0.54,
+    "threeShare": 0.95
   },
   "redesign": "1015",
   "layout": "D"

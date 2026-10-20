@@ -2,7 +2,7 @@
   "id": "c4_s4",
   "name": "Twin Fortress",
   "chapter": 4,
-  "baseInk": 1390,
+  "baseInk": 1300,
   "starts": [
     {
       "x": 152,
@@ -234,8 +234,8 @@
     "threeStarInk": 1140,
     "threeStarBrush": "quill",
     "ease": 0.92,
-    "winShare": 0.82,
-    "threeShare": 0.82
+    "winShare": 0.88,
+    "threeShare": 0.88
   },
   "layout": "2L"
 }

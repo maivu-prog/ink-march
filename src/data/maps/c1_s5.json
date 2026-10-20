@@ -2,7 +2,7 @@
   "id": "c1_s5",
   "name": "The Ravine",
   "chapter": 1,
-  "baseInk": 2070,
+  "baseInk": 1960,
   "starts": [
     {
       "x": 360,
@@ -198,8 +198,8 @@
     "threeStarInk": 1857,
     "threeStarBrush": "quill",
     "ease": 0.78,
-    "winShare": 0.3,
-    "threeShare": 0.9
+    "winShare": 0.32,
+    "threeShare": 0.95
   },
   "layout": "D"
 }

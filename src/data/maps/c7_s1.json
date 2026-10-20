@@ -2,7 +2,7 @@
   "id": "c7_s1",
   "name": "Orc Outpost",
   "chapter": 7,
-  "baseInk": 2210,
+  "baseInk": 2090,
   "starts": [
     {
       "x": 138,
@@ -314,8 +314,8 @@
     "threeStarInk": 1983,
     "threeStarBrush": "quill",
     "ease": 0.86,
-    "winShare": 0.38,
-    "threeShare": 0.9
+    "winShare": 0.4,
+    "threeShare": 0.95
   },
   "redesign": "1015",
   "layout": "C"

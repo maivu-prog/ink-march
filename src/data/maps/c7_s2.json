@@ -2,7 +2,7 @@
   "id": "c7_s2",
   "name": "Iron Switchback",
   "chapter": 7,
-  "baseInk": 2690,
+  "baseInk": 1840,
   "starts": [
     {
       "x": 553,
@@ -284,10 +284,10 @@
   "design": {
     "winInk": 1064,
     "threeStarInk": 2415,
-    "threeStarBrush": "quill",
+    "threeStarBrush": "reed",
     "ease": 0.89,
-    "winShare": 0.4,
-    "threeShare": 0.9
+    "winShare": 0.58,
+    "threeShare": 1.31
   },
   "redesign": "1015",
   "layout": "K"

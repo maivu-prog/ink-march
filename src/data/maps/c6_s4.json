@@ -2,7 +2,7 @@
   "id": "c6_s4",
   "name": "Shadow of the Fens",
   "chapter": 6,
-  "baseInk": 2660,
+  "baseInk": 2110,
   "starts": [
     {
       "x": 89,
@@ -406,10 +406,10 @@
   "design": {
     "winInk": 1491,
     "threeStarInk": 2440,
-    "threeStarBrush": "quill",
+    "threeStarBrush": "marsh",
     "ease": 0.95,
-    "winShare": 0.56,
-    "threeShare": 0.92
+    "winShare": 0.71,
+    "threeShare": 1.16
   },
   "redesign": "1015",
   "layout": "N"

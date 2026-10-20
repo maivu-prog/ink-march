@@ -2,7 +2,7 @@
   "id": "c2_s4",
   "name": "Windy Hills",
   "chapter": 2,
-  "baseInk": 1690,
+  "baseInk": 1600,
   "starts": [
     {
       "x": 187,
@@ -265,8 +265,8 @@
     "threeStarInk": 1519,
     "threeStarBrush": "quill",
     "ease": 0.82,
-    "winShare": 0.4,
-    "threeShare": 0.9
+    "winShare": 0.42,
+    "threeShare": 0.95
   },
   "layout": "C"
 }

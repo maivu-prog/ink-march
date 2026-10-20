@@ -2,7 +2,7 @@
   "id": "c3_s1",
   "name": "Bog Crossing",
   "chapter": 3,
-  "baseInk": 1890,
+  "baseInk": 1790,
   "starts": [
     {
       "x": 124,
@@ -239,8 +239,8 @@
     "threeStarInk": 1699,
     "threeStarBrush": "quill",
     "ease": 0.8,
-    "winShare": 0.38,
-    "threeShare": 0.9
+    "winShare": 0.4,
+    "threeShare": 0.95
   },
   "layout": "N"
 }

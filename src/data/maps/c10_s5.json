@@ -2,7 +2,7 @@
   "id": "c10_s5",
   "name": "The Ink Citadel",
   "chapter": 10,
-  "baseInk": 2480,
+  "baseInk": 1920,
   "starts": [
     {
       "x": 115,
@@ -357,10 +357,10 @@
   "design": {
     "winInk": 1617,
     "threeStarInk": 2279,
-    "threeStarBrush": "quill",
+    "threeStarBrush": "golden",
     "ease": 0.98,
-    "winShare": 0.65,
-    "threeShare": 0.92
+    "winShare": 0.84,
+    "threeShare": 1.19
   },
   "redesign": "1015",
   "layout": "P2L"

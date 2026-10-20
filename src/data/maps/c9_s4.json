@@ -2,7 +2,7 @@
   "id": "c9_s4",
   "name": "Witch Hunt",
   "chapter": 9,
-  "baseInk": 2010,
+  "baseInk": 1820,
   "starts": [
     {
       "x": 605,
@@ -405,8 +405,8 @@
     "threeStarInk": 2154,
     "threeStarBrush": "golden",
     "ease": 0.96,
-    "winShare": 0.78,
-    "threeShare": 1.07
+    "winShare": 0.86,
+    "threeShare": 1.18
   },
   "redesign": "1015",
   "layout": "2L"

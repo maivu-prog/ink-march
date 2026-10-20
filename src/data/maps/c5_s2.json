@@ -2,7 +2,7 @@
   "id": "c5_s2",
   "name": "Twin Locks",
   "chapter": 5,
-  "baseInk": 2640,
+  "baseInk": 2010,
   "starts": [
     {
       "x": 360,
@@ -298,10 +298,10 @@
   "design": {
     "winInk": 1843,
     "threeStarInk": 2315,
-    "threeStarBrush": "quill",
+    "threeStarBrush": "reed",
     "ease": 0.86,
-    "winShare": 0.7,
-    "threeShare": 0.88
+    "winShare": 0.92,
+    "threeShare": 1.15
   },
   "redesign": "1015"
 }

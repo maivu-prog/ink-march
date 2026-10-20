@@ -2,7 +2,7 @@
   "id": "c2_s3",
   "name": "Bandit King's Oasis",
   "chapter": 2,
-  "baseInk": 2090,
+  "baseInk": 2020,
   "starts": [
     {
       "x": 360,
@@ -400,8 +400,8 @@
     "threeStarInk": 1917,
     "threeStarBrush": "quill",
     "ease": 0.87,
-    "winShare": 0.56,
-    "threeShare": 0.92
+    "winShare": 0.58,
+    "threeShare": 0.95
   },
   "layout": "P"
 }

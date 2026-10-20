@@ -2,7 +2,7 @@
   "id": "c1_s4",
   "name": "Goblin King's Gate",
   "chapter": 1,
-  "baseInk": 1380,
+  "baseInk": 1340,
   "starts": [
     {
       "x": 360,
@@ -307,8 +307,8 @@
     "threeStarInk": 1268,
     "threeStarBrush": "quill",
     "ease": 0.81,
-    "winShare": 0.35,
-    "threeShare": 0.92
+    "winShare": 0.36,
+    "threeShare": 0.95
   },
   "layout": "P"
 }

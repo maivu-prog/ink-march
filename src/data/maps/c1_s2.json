@@ -2,7 +2,7 @@
   "id": "c1_s2",
   "name": "Camp Muster",
   "chapter": 1,
-  "baseInk": 970,
+  "baseInk": 920,
   "starts": [
     {
       "x": 360,
@@ -175,8 +175,8 @@
     "threeStarInk": 867,
     "threeStarBrush": "quill",
     "ease": 0.73,
-    "winShare": 0.66,
-    "threeShare": 0.89
+    "winShare": 0.69,
+    "threeShare": 0.94
   },
   "layout": "D"
 }

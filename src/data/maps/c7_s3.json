@@ -2,7 +2,7 @@
   "id": "c7_s3",
   "name": "Hammer and Anvil",
   "chapter": 7,
-  "baseInk": 2100,
+  "baseInk": 1990,
   "starts": [
     {
       "x": 125,
@@ -340,8 +340,8 @@
     "threeStarInk": 1884,
     "threeStarBrush": "quill",
     "ease": 0.91,
-    "winShare": 0.52,
-    "threeShare": 0.9
+    "winShare": 0.55,
+    "threeShare": 0.95
   },
   "redesign": "1015",
   "layout": "2L"

@@ -2,7 +2,7 @@
   "id": "c5_s3",
   "name": "Dust Devils",
   "chapter": 5,
-  "baseInk": 1510,
+  "baseInk": 1430,
   "starts": [
     {
       "x": 100,
@@ -390,8 +390,8 @@
     "threeStarInk": 1353,
     "threeStarBrush": "quill",
     "ease": 0.89,
-    "winShare": 0.56,
-    "threeShare": 0.9
+    "winShare": 0.6,
+    "threeShare": 0.95
   },
   "redesign": "1015",
   "layout": "N"

@@ -2,7 +2,7 @@
   "id": "c6_s1",
   "name": "Fen Paths",
   "chapter": 6,
-  "baseInk": 1890,
+  "baseInk": 1790,
   "starts": [
     {
       "x": 585,
@@ -397,8 +397,8 @@
     "threeStarInk": 1698,
     "threeStarBrush": "quill",
     "ease": 0.85,
-    "winShare": 0.62,
-    "threeShare": 0.9
+    "winShare": 0.65,
+    "threeShare": 0.95
   },
   "redesign": "1015",
   "layout": "2L"

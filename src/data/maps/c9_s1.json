@@ -2,7 +2,7 @@
   "id": "c9_s1",
   "name": "Thorn Lanes",
   "chapter": 9,
-  "baseInk": 2770,
+  "baseInk": 2620,
   "starts": [
     {
       "x": 65,
@@ -361,8 +361,8 @@
     "threeStarInk": 2489,
     "threeStarBrush": "quill",
     "ease": 0.88,
-    "winShare": 0.45,
-    "threeShare": 0.9
+    "winShare": 0.48,
+    "threeShare": 0.95
   },
   "redesign": "1015",
   "layout": "N"

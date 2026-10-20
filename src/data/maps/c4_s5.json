@@ -2,7 +2,7 @@
   "id": "c4_s5",
   "name": "Twin Ravines",
   "chapter": 4,
-  "baseInk": 1980,
+  "baseInk": 1830,
   "starts": [
     {
       "x": 207,
@@ -394,10 +394,10 @@
   "design": {
     "winInk": 1540,
     "threeStarInk": 1690,
-    "threeStarBrush": "charcoal",
+    "threeStarBrush": "quill",
     "ease": 0.9,
-    "winShare": 0.78,
-    "threeShare": 0.85
+    "winShare": 0.84,
+    "threeShare": 0.92
   },
   "layout": "2S"
 }

@@ -2,7 +2,7 @@
   "id": "c3_s3",
   "name": "Sunken Shrine",
   "chapter": 3,
-  "baseInk": 2000,
+  "baseInk": 1900,
   "starts": [
     {
       "x": 360,
@@ -364,8 +364,8 @@
     "threeStarInk": 1800,
     "threeStarBrush": "quill",
     "ease": 0.85,
-    "winShare": 0.66,
-    "threeShare": 0.9
+    "winShare": 0.69,
+    "threeShare": 0.95
   },
   "layout": "P"
 }

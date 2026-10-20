@@ -2,7 +2,7 @@
   "id": "c2_s1",
   "name": "Dune Sea",
   "chapter": 2,
-  "baseInk": 2060,
+  "baseInk": 1840,
   "starts": [
     {
       "x": 533,
@@ -230,8 +230,8 @@
     "threeStarInk": 1406,
     "threeStarBrush": "quill",
     "ease": 0.77,
-    "winShare": 0.66,
-    "threeShare": 0.68
+    "winShare": 0.74,
+    "threeShare": 0.76
   },
   "layout": "C"
 }

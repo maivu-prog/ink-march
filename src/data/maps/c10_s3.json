@@ -2,7 +2,7 @@
   "id": "c10_s3",
   "name": "Hall of Gates",
   "chapter": 10,
-  "baseInk": 6260,
+  "baseInk": 5720,
   "starts": [
     {
       "x": 158,
@@ -332,8 +332,8 @@
     "threeStarInk": 4630,
     "threeStarBrush": "quill",
     "ease": 0.94,
-    "winShare": 0.74,
-    "threeShare": 0.74
+    "winShare": 0.81,
+    "threeShare": 0.81
   },
   "redesign": "1015",
   "layout": "K"

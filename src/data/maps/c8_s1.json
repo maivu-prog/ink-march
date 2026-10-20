@@ -2,7 +2,7 @@
   "id": "c8_s1",
   "name": "River Run",
   "chapter": 8,
-  "baseInk": 1620,
+  "baseInk": 1460,
   "starts": [
     {
       "x": 655,
@@ -174,8 +174,8 @@
     "threeStarInk": 1384,
     "threeStarBrush": "quill",
     "ease": 0.87,
-    "winShare": 0.66,
-    "threeShare": 0.85
+    "winShare": 0.73,
+    "threeShare": 0.95
   },
   "redesign": "1015",
   "layout": "N"

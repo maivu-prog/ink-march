@@ -2,7 +2,7 @@
   "id": "c7_s5",
   "name": "Iron Warlord",
   "chapter": 7,
-  "baseInk": 4280,
+  "baseInk": 3990,
   "starts": [
     {
       "x": 76,
@@ -340,8 +340,8 @@
     "threeStarInk": 3788,
     "threeStarBrush": "quill",
     "ease": 0.96,
-    "winShare": 0.82,
-    "threeShare": 0.89
+    "winShare": 0.88,
+    "threeShare": 0.95
   },
   "redesign": "1015",
   "layout": "N"

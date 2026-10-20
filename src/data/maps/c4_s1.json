@@ -2,7 +2,7 @@
   "id": "c4_s1",
   "name": "Two Banks",
   "chapter": 4,
-  "baseInk": 2510,
+  "baseInk": 2240,
   "starts": [
     {
       "x": 207,
@@ -315,8 +315,8 @@
     "threeStarInk": 1757,
     "threeStarBrush": "quill",
     "ease": 0.82,
-    "winShare": 0.66,
-    "threeShare": 0.7
+    "winShare": 0.74,
+    "threeShare": 0.78
   },
   "layout": "2S"
 }

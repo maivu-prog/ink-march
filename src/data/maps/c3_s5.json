@@ -2,7 +2,7 @@
   "id": "c3_s5",
   "name": "Mudslide",
   "chapter": 3,
-  "baseInk": 1850,
+  "baseInk": 1750,
   "starts": [
     {
       "x": 176,
@@ -334,8 +334,8 @@
     "threeStarInk": 1658,
     "threeStarBrush": "quill",
     "ease": 0.88,
-    "winShare": 0.68,
-    "threeShare": 0.9
+    "winShare": 0.72,
+    "threeShare": 0.95
   },
   "layout": "C"
 }

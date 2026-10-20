@@ -2,7 +2,7 @@
   "id": "c6_s2",
   "name": "Healers' Hollow",
   "chapter": 6,
-  "baseInk": 2360,
+  "baseInk": 1660,
   "starts": [
     {
       "x": 175,
@@ -262,10 +262,10 @@
   "design": {
     "winInk": 823,
     "threeStarInk": 2117,
-    "threeStarBrush": "quill",
+    "threeStarBrush": "marsh",
     "ease": 0.88,
-    "winShare": 0.35,
-    "threeShare": 0.9
+    "winShare": 0.5,
+    "threeShare": 1.28
   },
   "redesign": "1015",
   "layout": "K"

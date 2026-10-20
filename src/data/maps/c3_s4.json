@@ -2,7 +2,7 @@
   "id": "c3_s4",
   "name": "Mire Chieftain",
   "chapter": 3,
-  "baseInk": 1310,
+  "baseInk": 1270,
   "starts": [
     {
       "x": 596,
@@ -382,8 +382,8 @@
     "threeStarInk": 1203,
     "threeStarBrush": "quill",
     "ease": 0.9,
-    "winShare": 0.6,
-    "threeShare": 0.92
+    "winShare": 0.62,
+    "threeShare": 0.95
   },
   "layout": "N"
 }

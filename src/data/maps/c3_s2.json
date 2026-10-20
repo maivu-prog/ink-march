@@ -2,7 +2,7 @@
   "id": "c3_s2",
   "name": "Reed Maze",
   "chapter": 3,
-  "baseInk": 1380,
+  "baseInk": 1300,
   "starts": [
     {
       "x": 360,
@@ -316,8 +316,8 @@
     "threeStarInk": 1234,
     "threeStarBrush": "quill",
     "ease": 0.82,
-    "winShare": 0.68,
-    "threeShare": 0.89
+    "winShare": 0.72,
+    "threeShare": 0.95
   },
   "redesign": "1015",
   "teach": [

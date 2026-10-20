@@ -2,7 +2,7 @@
   "id": "c2_s2",
   "name": "Sun-baked Road",
   "chapter": 2,
-  "baseInk": 1670,
+  "baseInk": 1110,
   "starts": [
     {
       "x": 139,
@@ -283,10 +283,10 @@
   "design": {
     "winInk": 1021,
     "threeStarInk": 1495,
-    "threeStarBrush": "quill",
+    "threeStarBrush": "reed",
     "ease": 0.79,
-    "winShare": 0.61,
-    "threeShare": 0.9
+    "winShare": 0.92,
+    "threeShare": 1.35
   },
   "layout": "N"
 }

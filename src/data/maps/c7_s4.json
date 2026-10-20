@@ -2,7 +2,7 @@
   "id": "c7_s4",
   "name": "Gatehouse",
   "chapter": 7,
-  "baseInk": 2390,
+  "baseInk": 2240,
   "starts": [
     {
       "x": 360,
@@ -355,8 +355,8 @@
     "threeStarInk": 2651,
     "threeStarBrush": "golden",
     "ease": 0.94,
-    "winShare": 0.78,
-    "threeShare": 1.11
+    "winShare": 0.83,
+    "threeShare": 1.18
   },
   "redesign": "1015",
   "layout": "D"

@@ -2,7 +2,7 @@
   "id": "c8_s2",
   "name": "Ferry Point",
   "chapter": 8,
-  "baseInk": 1770,
+  "baseInk": 1350,
   "starts": [
     {
       "x": 115,
@@ -306,10 +306,10 @@
   "design": {
     "winInk": 1236,
     "threeStarInk": 1490,
-    "threeStarBrush": "quill",
+    "threeStarBrush": "golden",
     "ease": 0.9,
-    "winShare": 0.7,
-    "threeShare": 0.84
+    "winShare": 0.92,
+    "threeShare": 1.1
   },
   "redesign": "1015",
   "layout": "2L"

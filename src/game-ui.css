@@ -296,3 +296,12 @@
 #labels .camp-stars-hud .slot b{width:40px;height:40px;padding:0!important;background:none!important;border:0!important}
 #labels .camp-stars-hud .slot.on>svg{display:none}
 #labels .fly-star{line-height:0;padding:0!important;background:none!important;border:0!important}
+
+/* Nhắc brush cho 3 sao (màn khoá brush), góc trên phải sân lúc vẽ */
+#labels .brush-need{position:absolute;top:10px;right:10px;z-index:7;display:flex;align-items:center;gap:6px;padding:6px 10px;border-radius:12px;background:#3b2a1ee6;color:#ffe9b8;font:800 13px/1.1 Nunito,sans-serif;box-shadow:0 3px 0 #0004;pointer-events:none}
+#labels .brush-need b{color:#ffd65a}
+#labels .brush-need .stars{display:flex;line-height:0}
+#labels .brush-need .stars svg{width:14px;height:14px;margin-right:-3px}
+#labels .brush-need.ready{background:#1f4a35e6;color:#d8f5c8}
+#labels .brush-need.ready b{color:#9fe88a}
+#labels .brush-need{top:auto!important;bottom:12px}

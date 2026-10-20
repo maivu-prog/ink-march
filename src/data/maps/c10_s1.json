@@ -2,7 +2,7 @@
   "id": "c10_s1",
   "name": "Citadel Approach",
   "chapter": 10,
-  "baseInk": 3160,
+  "baseInk": 3000,
   "starts": [
     {
       "x": 360,
@@ -346,8 +346,8 @@
     "threeStarInk": 2842,
     "threeStarBrush": "quill",
     "ease": 0.89,
-    "winShare": 0.41,
-    "threeShare": 0.9
+    "winShare": 0.43,
+    "threeShare": 0.95
   },
   "redesign": "1015",
   "layout": "D"

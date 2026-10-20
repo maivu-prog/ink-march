@@ -2,7 +2,7 @@
   "id": "c8_s4",
   "name": "Marsh Ferry",
   "chapter": 8,
-  "baseInk": 4320,
+  "baseInk": 4230,
   "starts": [
     {
       "x": 130,
@@ -383,8 +383,8 @@
     "threeStarInk": 5973,
     "threeStarBrush": "marsh",
     "ease": 0.95,
-    "winShare": 0.5,
-    "threeShare": 1.38
+    "winShare": 0.51,
+    "threeShare": 1.41
   },
   "redesign": "1015",
   "layout": "C"

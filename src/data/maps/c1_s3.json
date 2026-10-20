@@ -2,7 +2,7 @@
   "id": "c1_s3",
   "name": "The Crossing",
   "chapter": 1,
-  "baseInk": 2130,
+  "baseInk": 2020,
   "starts": [
     {
       "x": 360,
@@ -232,8 +232,8 @@
     "threeStarInk": 1914,
     "threeStarBrush": "quill",
     "ease": 0.76,
-    "winShare": 0.36,
-    "threeShare": 0.9
+    "winShare": 0.37,
+    "threeShare": 0.95
   },
   "layout": "D"
 }

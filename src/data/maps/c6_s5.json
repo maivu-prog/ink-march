@@ -2,7 +2,7 @@
   "id": "c6_s5",
   "name": "Highland Fens",
   "chapter": 6,
-  "baseInk": 3640,
+  "baseInk": 3560,
   "starts": [
     {
       "x": 572,
@@ -345,8 +345,8 @@
     "threeStarInk": 4063,
     "threeStarBrush": "marsh",
     "ease": 0.93,
-    "winShare": 0.45,
-    "threeShare": 1.12
+    "winShare": 0.46,
+    "threeShare": 1.14
   },
   "layout": "C"
 }

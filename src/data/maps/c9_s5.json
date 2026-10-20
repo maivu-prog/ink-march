@@ -2,7 +2,7 @@
   "id": "c9_s5",
   "name": "Heart of Shadow",
   "chapter": 9,
-  "baseInk": 2190,
+  "baseInk": 2040,
   "starts": [
     {
       "x": 115,
@@ -348,8 +348,8 @@
     "threeStarInk": 1790,
     "threeStarBrush": "quill",
     "ease": 0.98,
-    "winShare": 0.82,
-    "threeShare": 0.82
+    "winShare": 0.88,
+    "threeShare": 0.88
   },
   "redesign": "1015",
   "layout": "2L"

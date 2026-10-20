@@ -2,7 +2,7 @@
   "id": "c2_s5",
   "name": "Cliffside Pass",
   "chapter": 2,
-  "baseInk": 2010,
+  "baseInk": 1850,
   "starts": [
     {
       "x": 511,
@@ -279,8 +279,8 @@
     "threeStarInk": 1678,
     "threeStarBrush": "quill",
     "ease": 0.84,
-    "winShare": 0.78,
-    "threeShare": 0.83
+    "winShare": 0.84,
+    "threeShare": 0.91
   },
   "layout": "K"
 }
